@@ -4,6 +4,174 @@ Personal inventory of **236 products** — 191 from adafruit.com, 39 from pimoro
 
 > Open **index.html** in a browser for a visual catalog with images, search, and source filtering.
 
+---
+
+## Complete Beginner's Guide (Start Here)
+
+If you've never done anything like this before, this section walks you through everything step by step. No experience needed.
+
+### What is this project?
+
+This is a personal catalog of electronics parts. It includes:
+
+- **A visual catalog** (`index.html`) -- a web page you open in your browser that shows all your parts with pictures, search, and filters. This is the main thing most people will use.
+- **A data file** (`products.json`) -- the raw list of all products stored in a format computers can read.
+- **Python scripts** (`scraper.py`, `generate_products.py`, `add_pimoroni.py`) -- programs that automatically fetch product info from supplier websites and update the catalog. You only need these if you want to add or refresh products.
+
+### What files do what?
+
+| File | What it is | Who needs it |
+|------|-----------|--------------|
+| `index.html` | The visual catalog you view in a browser | Everyone |
+| `products.json` | Raw product data in a structured format | Advanced users |
+| `purchase_history.csv` | Spreadsheet of past Adafruit orders | Reference only |
+| `scraper.py` | Script that fetches product info from Adafruit | Only if updating products |
+| `generate_products.py` | Script that builds the HTML catalog from data | Only if updating products |
+| `add_pimoroni.py` | Script that adds Pimoroni products | Only if updating products |
+
+---
+
+### Step 1: Download the project to your computer
+
+You're probably reading this on GitHub right now. You need to download the files to your own computer first.
+
+**Option A -- Download as a ZIP (easiest, no software needed):**
+
+1. On the GitHub page for this project, look for the green **"Code"** button near the top right.
+2. Click it and choose **"Download ZIP"**.
+3. A `.zip` file will download. Find it in your Downloads folder.
+4. **Extract / unzip** the file:
+   - **Windows:** Right-click the `.zip` file and choose **"Extract All..."**, then click **Extract**.
+   - **Mac:** Double-click the `.zip` file -- it unzips automatically.
+5. You now have a folder called something like `InventoryItems-main`. Open it -- you should see `index.html`, `products.json`, and the other files.
+
+**Option B -- Clone with Git (for users who have Git installed):**
+
+If you have Git installed (if you don't know what Git is, use Option A above):
+
+1. Open a terminal (see "What is a terminal?" below).
+2. Type: `git clone https://github.com/YOUR_USERNAME/InventoryItems.git`
+3. Press **Enter**. The project will download into a new folder called `InventoryItems`.
+
+---
+
+### Step 2: View the product catalog (no coding required)
+
+This is the main feature -- a visual page showing all your electronics parts.
+
+1. Open the project folder you downloaded in Step 1.
+2. Find the file called **`index.html`**.
+3. **Double-click** it. It should open in your web browser (Chrome, Firefox, Safari, or Edge).
+4. If it doesn't open automatically: **right-click** the file, choose **"Open with"**, and pick any web browser.
+
+That's it! You should now see a dark-themed page with product cards, images, and a search bar.
+
+**Troubleshooting:** If you see raw code instead of a nice page, you accidentally opened the file in a text editor. Right-click the file and specifically choose a browser like Chrome or Firefox.
+
+---
+
+### Step 3: Use the catalog (searching, filtering, browsing)
+
+Once the page is open in your browser:
+
+**Search for a product:**
+1. Click the search box at the top (it says "Search products by name, ID, description, or category...").
+2. Type what you're looking for -- for example, `sensor` or `ESP32` or `LED`.
+3. The page instantly hides everything that doesn't match. The counter on the right (e.g., "Showing 15 of 236") tells you how many results you have.
+4. To clear the search: delete the text, or click the small X in the search box.
+
+**Filter by supplier:**
+- Click the **Adafruit** or **Pimoroni** buttons to show only products from that supplier.
+- Click **All** to show everything again.
+- Filters combine with search -- you can search for "sensor" within just Pimoroni products.
+
+**Use your browser's built-in find:**
+- Press **Ctrl+F** (Windows/Linux) or **Cmd+F** (Mac) to open your browser's find bar.
+- Type any word and the browser will highlight and jump to every match on the page.
+
+**View product details:**
+- Click a product's **image or name** to visit the supplier's product page (opens a new tab).
+- Click **"Technical Specs"** on any card to expand and read the specifications.
+- Click the **"Learn Guide"** link (if available) for tutorials related to that product.
+
+**Scroll through products:**
+- **Mouse:** Scroll wheel, or drag the scrollbar on the right.
+- **Trackpad:** Swipe up/down with two fingers.
+- **Keyboard:** Press **Space** to scroll down, **Shift+Space** to scroll up.
+
+---
+
+### Step 4 (Optional, Advanced): Run the Python scripts to update products
+
+You only need this if you want to re-fetch product data from supplier websites or rebuild the catalog. If you just want to view your inventory, you can stop at Step 3.
+
+#### What is Python?
+
+Python is a programming language. The `.py` files in this project are Python programs. To run them, you need Python installed on your computer.
+
+#### What is a terminal?
+
+A terminal (also called "command prompt" or "command line") is a text-based window where you type commands. It looks like a black or white window with a blinking cursor.
+
+- **Windows:** Press the **Windows key**, type `cmd`, and press Enter. Or search for "Command Prompt" or "PowerShell".
+- **Mac:** Open **Finder**, go to **Applications > Utilities > Terminal**. Or press **Cmd+Space**, type `Terminal`, and press Enter.
+- **Linux:** Press **Ctrl+Alt+T**, or find "Terminal" in your applications menu.
+
+#### Install Python
+
+1. Check if Python is already installed: open a terminal and type `python --version` (or `python3 --version`) and press Enter.
+   - If you see something like `Python 3.10.4`, you're good -- skip to the next section.
+   - If you get an error like "not recognized" or "command not found", you need to install it.
+2. Go to **https://www.python.org** in your browser.
+3. Click the big **"Download Python"** button.
+4. Run the installer.
+   - **Windows users: Check the box that says "Add Python to PATH"** before clicking Install. This is important!
+5. After installation, close and reopen your terminal, then try `python --version` again.
+
+#### Install required libraries
+
+The scripts need two additional libraries. In your terminal, type:
+
+```
+pip install requests beautifulsoup4
+```
+
+Press Enter. You should see it download and install successfully. If `pip` doesn't work, try `pip3` instead.
+
+#### Navigate to the project folder
+
+In your terminal, you need to go to the folder where you downloaded the project:
+
+```
+cd /path/to/InventoryItems
+```
+
+Replace `/path/to/InventoryItems` with the actual location. For example:
+- **Windows:** `cd C:\Users\YourName\Downloads\InventoryItems-main`
+- **Mac:** `cd ~/Downloads/InventoryItems-main`
+
+**Tip:** On most systems, you can type `cd ` (with a space) and then **drag and drop** the folder onto the terminal window to paste its path.
+
+#### Run the scraper
+
+Now you can run the scripts:
+
+```
+python scraper.py
+```
+
+This fetches the latest product information from Adafruit and updates `products.json` and `index.html`. It takes a few minutes because it visits each product page and waits between requests to be polite to the server.
+
+To force a full refresh of all products (even ones already scraped):
+
+```
+python scraper.py --force
+```
+
+After it finishes, refresh `index.html` in your browser (press **F5** or **Ctrl+R**) to see the updated catalog.
+
+---
+
 ## Quick Links
 
 | File | Description |
@@ -13,7 +181,7 @@ Personal inventory of **236 products** — 191 from adafruit.com, 39 from pimoro
 | [`purchase_history.csv`](purchase_history.csv) | Adafruit order history |
 | [`scraper.py`](scraper.py) | Scraper to fetch live data from adafruit.com |
 
-## How to Update
+## How to Update (Quick Reference)
 
 ```bash
 pip install requests beautifulsoup4

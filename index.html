@@ -432,64 +432,102 @@
     <div class="help-overlay" id="help-overlay" role="dialog" aria-modal="true" aria-label="Browser guide">
         <div class="help-panel">
             <button class="help-close" id="help-close" aria-label="Close guide">&times;</button>
-            <h2>How to View and Search This Page</h2>
+            <h2>Getting Started &amp; How to Use This Page</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.88rem;">
+                New to all of this? No problem. This guide covers everything from downloading the project to searching your inventory. For the full guide (including how to run Python scripts), see the README file in the project folder.
+            </p>
 
             <div class="help-section">
-                <h3>Opening This File</h3>
-                <p>This is an HTML file that displays in any web browser (Chrome, Firefox, Safari, Edge). To open it:</p>
+                <h3>Step 1 &mdash; Download the Project</h3>
+                <p>If you're reading this on GitHub and don't have the files yet:</p>
                 <ol>
-                    <li>Find the <strong>index.html</strong> file on your computer.</li>
-                    <li><strong>Double-click</strong> the file &mdash; it should open in your default browser.</li>
-                    <li>If it doesn't, <strong>right-click</strong> the file, choose <em>"Open with"</em>, and select a web browser from the list.</li>
+                    <li>On the GitHub project page, find the green <strong>"Code"</strong> button near the top right.</li>
+                    <li>Click it and choose <strong>"Download ZIP"</strong>.</li>
+                    <li>Find the downloaded <strong>.zip</strong> file in your Downloads folder.</li>
+                    <li><strong>Extract it:</strong>
+                        <ul>
+                            <li><strong>Windows:</strong> Right-click the .zip &rarr; <em>"Extract All..."</em> &rarr; click <strong>Extract</strong>.</li>
+                            <li><strong>Mac:</strong> Double-click the .zip &mdash; it unzips automatically.</li>
+                        </ul>
+                    </li>
+                    <li>Open the extracted folder. You should see files like <strong>index.html</strong>, <strong>products.json</strong>, etc.</li>
+                </ol>
+                <p><em>Already have the files on your computer? Skip to Step 2.</em></p>
+            </div>
+
+            <div class="help-section">
+                <h3>Step 2 &mdash; Open This Page in a Browser</h3>
+                <p>A "browser" is the app you use to visit websites &mdash; Chrome, Firefox, Safari, or Edge. This page is a file called <strong>index.html</strong> that you open the same way:</p>
+                <ol>
+                    <li>Go to the project folder on your computer.</li>
+                    <li>Find the file called <strong>index.html</strong>.</li>
+                    <li><strong>Double-click</strong> it &mdash; it should open in your browser automatically.</li>
+                    <li>If it opens in a text editor instead (you see code, not a nice page), <strong>right-click</strong> the file, choose <em>"Open with"</em>, and pick a browser like Chrome, Firefox, or Edge.</li>
+                </ol>
+                <p><em>If you're already seeing product cards with pictures, you're here! Move on to Step 3.</em></p>
+            </div>
+
+            <div class="help-section">
+                <h3>Step 3 &mdash; Search for Products</h3>
+                <p>The search box is at the top of the page. It says <em>"Search products by name, ID, description, or category..."</em></p>
+                <ol>
+                    <li><strong>Click</strong> inside the search box (your cursor will start blinking there).</li>
+                    <li><strong>Type</strong> what you're looking for &mdash; for example, <code>sensor</code> or <code>ESP32</code> or <code>LED</code>.</li>
+                    <li>Products that don't match will <strong>disappear instantly</strong> as you type. Only matching ones stay.</li>
+                    <li>The counter on the right (e.g., "Showing 15 of 236") tells you how many match.</li>
+                    <li>To clear your search and see everything again: <strong>select all the text</strong> in the box and <strong>delete</strong> it, or click the small <strong>&times;</strong> at the right end of the search field.</li>
                 </ol>
             </div>
 
             <div class="help-section">
-                <h3>Searching for Products (Search Bar)</h3>
-                <p>At the top of the page you'll see a search box that says <em>"Search products by name, ID, description, or category..."</em></p>
-                <ol>
-                    <li><strong>Click</strong> inside the search box.</li>
-                    <li><strong>Type</strong> what you're looking for (for example, "sensor" or "ESP32").</li>
-                    <li>The product list updates <strong>instantly</strong> as you type &mdash; only matching items will remain visible.</li>
-                    <li>To clear your search, delete the text in the box or click the <strong>&times;</strong> at the right end of the search field.</li>
-                </ol>
-            </div>
-
-            <div class="help-section">
-                <h3>Filtering by Supplier</h3>
-                <p>Below the search box there are buttons labelled <strong>All</strong>, <strong>Adafruit</strong>, <strong>Pimoroni</strong>, etc.</p>
+                <h3>Step 4 &mdash; Filter by Supplier</h3>
+                <p>Next to the search box there are buttons: <strong>All</strong>, <strong>Adafruit</strong>, <strong>Pimoroni</strong>, etc.</p>
                 <ul>
-                    <li>Click a supplier button to show <strong>only</strong> products from that supplier.</li>
+                    <li>Click <strong>Adafruit</strong> to show only Adafruit products. Click <strong>Pimoroni</strong> for just Pimoroni products.</li>
                     <li>Click <strong>All</strong> to show everything again.</li>
-                    <li>Filters work together with the search &mdash; you can search within a specific supplier.</li>
+                    <li>Filters combine with search &mdash; click Pimoroni, then type "sensor" to find only Pimoroni sensors.</li>
                 </ul>
             </div>
 
             <div class="help-section">
-                <h3>Using Your Browser's Built-in Search</h3>
-                <p>Every web browser has a built-in "find on page" feature:</p>
+                <h3>Step 5 &mdash; Browse and Read Product Cards</h3>
+                <p>Each product is shown as a "card" with an image and info. Here's what you can do with them:</p>
                 <ul>
-                    <li><strong>Windows / Linux:</strong> Press <kbd>Ctrl</kbd> + <kbd>F</kbd></li>
-                    <li><strong>Mac:</strong> Press <kbd>&#8984; Cmd</kbd> + <kbd>F</kbd></li>
+                    <li><strong>Click the product image or name</strong> to visit the supplier's website for that product (opens in a new tab).</li>
+                    <li>Look for <strong>"Technical Specs"</strong> &mdash; click it to expand and show detailed specifications. Click again to collapse.</li>
+                    <li>At the bottom of each card, click <strong>"Product Page"</strong> to visit the supplier, or <strong>"Learn Guide"</strong> (if available) for tutorials.</li>
+                    <li>The info line shows: the product <strong>ID</strong>, how many you own (<strong>Qty</strong>), and the <strong>price</strong>.</li>
                 </ul>
-                <p>A small search bar will appear (usually at the top or bottom of the window). Type a word and the browser will highlight every match on the page and let you jump between them with arrow buttons.</p>
             </div>
 
             <div class="help-section">
-                <h3>Viewing Product Details</h3>
+                <h3>Using Your Browser's Built-in Find</h3>
+                <p>Your browser has its own search feature that works on any web page:</p>
                 <ul>
-                    <li><strong>Click a product image or title</strong> to open its product page on the supplier's website (opens in a new tab).</li>
-                    <li>Click <strong>"Technical Specs"</strong> on a card to expand and read specifications.</li>
-                    <li>Click <strong>"Product Page"</strong> or <strong>"Learn Guide"</strong> links at the bottom of a card for more information.</li>
+                    <li><strong>Windows / Linux:</strong> Press <kbd>Ctrl</kbd> + <kbd>F</kbd> at the same time.</li>
+                    <li><strong>Mac:</strong> Press <kbd>&#8984; Cmd</kbd> + <kbd>F</kbd> at the same time.</li>
                 </ul>
+                <p>A small search bar will appear (usually at the top or bottom of the browser window). Type a word and the browser will <strong>highlight every match</strong> in yellow. Use the arrow buttons in the find bar to jump between matches. Press <kbd>Esc</kbd> to close it.</p>
+                <p><em>Note:</em> This searches all text on the page, including products that the search box above may have hidden. The search box at the top of this page is usually more useful for finding products.</p>
             </div>
 
             <div class="help-section">
                 <h3>Scrolling Through Products</h3>
                 <ul>
-                    <li><strong>Mouse:</strong> Use the scroll wheel, or click and drag the scrollbar on the right side of the window.</li>
-                    <li><strong>Trackpad:</strong> Swipe up or down with two fingers.</li>
-                    <li><strong>Keyboard:</strong> Press <kbd>Space</kbd> to scroll down, or <kbd>Shift</kbd> + <kbd>Space</kbd> to scroll up. <kbd>Home</kbd> jumps to the top, <kbd>End</kbd> jumps to the bottom.</li>
+                    <li><strong>Mouse:</strong> Roll the scroll wheel up or down. Or click and drag the scrollbar on the right side of the window.</li>
+                    <li><strong>Trackpad (laptop):</strong> Swipe up or down with two fingers.</li>
+                    <li><strong>Keyboard:</strong> Press <kbd>Space</kbd> to scroll down, <kbd>Shift</kbd> + <kbd>Space</kbd> to scroll up. <kbd>Home</kbd> goes to the very top, <kbd>End</kbd> goes to the very bottom.</li>
+                    <li><strong>Phone/Tablet:</strong> Swipe up or down with your finger.</li>
+                </ul>
+            </div>
+
+            <div class="help-section">
+                <h3>Want to Update Products? (Advanced)</h3>
+                <p>If you want to refresh product data from supplier websites, you'll need Python and a terminal. See the <strong>README.md</strong> file in the project folder for full step-by-step instructions covering:</p>
+                <ul>
+                    <li>What Python is and how to install it</li>
+                    <li>What a terminal / command prompt is and how to open it</li>
+                    <li>How to run the scraper scripts</li>
                 </ul>
             </div>
         </div>

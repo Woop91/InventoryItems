@@ -453,11 +453,15 @@ def save_json(products: dict[str, dict[str, Any]], json_path: Path) -> None:
 def generate_html(products: dict[str, dict[str, Any]], html_path: Path) -> None:
     """Generate a browseable index.html from products.json data."""
 
-    # Sort products by ID numerically
-    sorted_items = sorted(
-        products.values(),
-        key=lambda p: int(p.get("product_id", 0)) if str(p.get("product_id", "")).isdigit() else 0,
-    )
+    # Sort products: Adafruit (numeric IDs first), then others alphabetically
+    def sort_key(p):
+        pid = str(p.get("product_id", ""))
+        source = p.get("source", "adafruit.com")
+        if pid.isdigit():
+            return (0, int(pid), "")
+        return (1, 0, pid)
+
+    sorted_items = sorted(products.values(), key=sort_key)
 
     product_cards = []
     for p in sorted_items:
@@ -472,6 +476,15 @@ def generate_html(products: dict[str, dict[str, Any]], html_path: Path) -> None:
         specs = escape(p.get("technical_specs", "")[:500])
         qty = p.get("total_qty", 0)
         csv_name = escape(p.get("csv_name", ""))
+        source = escape(p.get("source", "adafruit.com"))
+        currency = p.get("currency", "USD")
+        price = p.get("unit_price", 0)
+        price_str = f"£{price:.2f}" if currency == "GBP" else f"${price:.2f}"
+        category = escape(p.get("category", ""))
+
+        # Source badge color
+        source_class = "source-adafruit" if "adafruit" in source else "source-pimoroni"
+        source_label = source.replace(".com", "").title()
 
         learn_link = ""
         if learn_url:
@@ -489,22 +502,28 @@ def generate_html(products: dict[str, dict[str, Any]], html_path: Path) -> None:
         if specs:
             specs_section = f'<details class="specs"><summary>Technical Specs</summary><pre>{specs}</pre></details>'
 
+        # Image fallback depends on source
+        img_fallback = f"this.src='https://cdn-shop.adafruit.com/310x233/{pid}-00.jpg';" if "adafruit" in source else "this.style.display='none';"
+
         card = f"""
-        <div class="product-card" data-product-id="{pid}">
+        <div class="product-card" data-product-id="{pid}" data-source="{source}" data-category="{category}">
             <div class="product-image">
                 <a href="{page_url}" target="_blank">
                     <img src="{img_url}" alt="{name}" loading="lazy"
-                         onerror="this.onerror=null; this.src='https://cdn-shop.adafruit.com/310x233/{pid}-00.jpg';">
+                         onerror="this.onerror=null; {img_fallback}">
                 </a>
             </div>
             <div class="product-info">
+                <div class="card-header">
+                    <span class="source-badge {source_class}">{source_label}</span>
+                    <span class="category-badge">{category}</span>
+                </div>
                 <h2><a href="{page_url}" target="_blank">{name}</a></h2>
-                <p class="product-id">Product ID: {pid} | Qty owned: {qty}</p>
-                <p class="csv-name">CSV name: {csv_name}</p>
+                <p class="product-id">ID: {pid} | Qty: {qty} | {price_str}</p>
                 <p class="description">{desc}</p>
                 {specs_section}
                 <div class="links">
-                    <a href="{page_url}" target="_blank" class="product-link">Adafruit Page</a>
+                    <a href="{page_url}" target="_blank" class="product-link">Product Page</a>
                     {learn_link}
                 </div>
                 {additional_guides}
@@ -514,12 +533,16 @@ def generate_html(products: dict[str, dict[str, Any]], html_path: Path) -> None:
 
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
+    # Count sources
+    adafruit_count = sum(1 for p in sorted_items if "adafruit" in p.get("source", "adafruit.com"))
+    pimoroni_count = sum(1 for p in sorted_items if p.get("source", "adafruit.com") == "pimoroni.com")
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adafruit Inventory Items</title>
+    <title>Electronics Inventory</title>
     <style>
         :root {{
             --bg-primary: #1a1a2e;
@@ -660,11 +683,66 @@ def generate_html(products: dict[str, dict[str, Any]], html_path: Path) -> None:
             margin-bottom: 0.2rem;
         }}
 
-        .csv-name {{
+        .card-header {{
+            display: flex;
+            gap: 0.4rem;
+            margin-bottom: 0.4rem;
+            flex-wrap: wrap;
+        }}
+
+        .source-badge {{
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }}
+
+        .source-adafruit {{
+            background: #1a5c2a;
+            color: #4ade80;
+        }}
+
+        .source-pimoroni {{
+            background: #4a1a5c;
+            color: #c084fc;
+        }}
+
+        .category-badge {{
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+            background: rgba(255,255,255,0.08);
             color: var(--text-secondary);
-            font-size: 0.75rem;
-            margin-bottom: 0.5rem;
-            font-style: italic;
+        }}
+
+        .filter-buttons {{
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }}
+
+        .filter-btn {{
+            font-size: 0.8rem;
+            padding: 0.35rem 0.7rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }}
+
+        .filter-btn:hover {{
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }}
+
+        .filter-btn.active {{
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
         }}
 
         .description {{
@@ -762,12 +840,17 @@ def generate_html(products: dict[str, dict[str, Any]], html_path: Path) -> None:
 </head>
 <body>
     <header>
-        <h1>Adafruit Inventory Items</h1>
-        <p>{len(sorted_items)} unique products from purchase history</p>
+        <h1>Electronics Inventory</h1>
+        <p>{len(sorted_items)} products — {adafruit_count} from Adafruit, {pimoroni_count} from Pimoroni</p>
     </header>
     <div class="controls">
-        <input type="search" id="search" placeholder="Search products by name, ID, or description..."
+        <input type="search" id="search" placeholder="Search products by name, ID, description, or category..."
                aria-label="Search products">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All ({len(sorted_items)})</button>
+            <button class="filter-btn" data-filter="adafruit">Adafruit ({adafruit_count})</button>
+            <button class="filter-btn" data-filter="pimoroni">Pimoroni ({pimoroni_count})</button>
+        </div>
         <span class="count" id="count">Showing {len(sorted_items)} of {len(sorted_items)}</span>
     </div>
     <div class="container" id="products">
@@ -780,19 +863,35 @@ def generate_html(products: dict[str, dict[str, Any]], html_path: Path) -> None:
         const searchInput = document.getElementById('search');
         const countDisplay = document.getElementById('count');
         const cards = document.querySelectorAll('.product-card');
+        const filterBtns = document.querySelectorAll('.filter-btn');
         const total = cards.length;
+        let activeFilter = 'all';
 
-        searchInput.addEventListener('input', function() {{
-            const query = this.value.toLowerCase().trim();
+        function applyFilters() {{
+            const query = searchInput.value.toLowerCase().trim();
             let visible = 0;
             cards.forEach(card => {{
                 const text = card.textContent.toLowerCase();
                 const id = card.dataset.productId;
-                const match = !query || text.includes(query) || id.includes(query);
-                card.classList.toggle('hidden', !match);
-                if (match) visible++;
+                const source = card.dataset.source || '';
+                const matchSearch = !query || text.includes(query) || id.includes(query);
+                const matchSource = activeFilter === 'all' || source.includes(activeFilter);
+                const show = matchSearch && matchSource;
+                card.classList.toggle('hidden', !show);
+                if (show) visible++;
             }});
             countDisplay.textContent = `Showing ${{visible}} of ${{total}}`;
+        }}
+
+        searchInput.addEventListener('input', applyFilters);
+
+        filterBtns.forEach(btn => {{
+            btn.addEventListener('click', function() {{
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                activeFilter = this.dataset.filter;
+                applyFilters();
+            }});
         }});
     </script>
 </body>

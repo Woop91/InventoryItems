@@ -3300,5 +3300,746 @@
       "2930687"
     ],
     "last_scraped": null
+  },
+  "pimoroni_PIM373": {
+    "product_id": "PIM373",
+    "name": "VL53L1X Time of Flight (ToF) Sensor Breakout",
+    "csv_name": "VL53L1X Time of Flight (ToF) Sensor Breakout",
+    "description": "VL53L1X Time of Flight sensor breakout from Pimoroni. Measures distances up to 4m using a laser. I2C interface with Breakout Garden compatible header.",
+    "technical_specs": "Sensor: VL53L1X; Range: 40mm-4000mm; Interface: I2C (0x29); Voltage: 3.3V; Laser: 940nm Class 1 VCSEL; FoV: 27°; Connector: Breakout Garden",
+    "category": "Sensor",
+    "page_url": "https://shop.pimoroni.com/products/vl53l1x-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM373-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-vl53l1x-breakout",
+    "unit_price": 8.9,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM301": {
+    "product_id": "PIM301",
+    "name": "Button SHIM",
+    "csv_name": "Button SHIM",
+    "description": "Button SHIM - a slim 5-button input add-on for Raspberry Pi. Uses only one GPIO pin with an interrupt-driven design.",
+    "technical_specs": "Buttons: 5 (A, B, C, D, E); Interface: I2C; Form Factor: SHIM (slim HAT); LED: 1x RGB pixel; Compatible: All 40-pin Pi",
+    "category": "Breakout Board",
+    "page_url": "https://shop.pimoroni.com/products/button-shim",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM301-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-button-shim",
+    "unit_price": 4.5,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM449": {
+    "product_id": "PIM449",
+    "name": "RV3028 Real-Time Clock (RTC) Breakout",
+    "csv_name": "RV3028 Real-Time Clock (RTC) Breakout",
+    "description": "RV3028 Real-Time Clock breakout from Pimoroni. Ultra-low power RTC with battery backup and Breakout Garden I2C header.",
+    "technical_specs": "IC: RV3028; Accuracy: ±1 ppm; Interface: I2C (0x52); Battery: CR1220 backup; Current Draw: 40nA; Connector: Breakout Garden",
+    "category": "Breakout Board",
+    "page_url": "https://shop.pimoroni.com/products/rv3028-real-time-clock-rtc-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM449-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-rv3028-real-time-clock-breakout",
+    "unit_price": 7.5,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM575": {
+    "product_id": "PIM575",
+    "name": "BME688 4-in-1 Air Quality Breakout (Gas, Temperature, Pressure, Humidity)",
+    "csv_name": "BME688 4-in-1 Air Quality Breakout (Gas, Temperature, Pressure, Humidity)",
+    "description": "BME688 4-in-1 air quality breakout. Measures gas (VOC), temperature, pressure, and humidity with AI gas scanning capabilities.",
+    "technical_specs": "Sensor: BME688; Measures: Gas/VOC, Temperature (±1°C), Pressure (±0.6hPa), Humidity (±3%RH); Interface: I2C; Voltage: 3.3V; Connector: Breakout Garden",
+    "category": "Sensor",
+    "page_url": "https://shop.pimoroni.com/products/bme688-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM575-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-bme688-breakout",
+    "unit_price": 12.05,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_BOB-19389": {
+    "product_id": "BOB-19389",
+    "name": "SparkFun Analog MEMS Microphone Breakout - SPH8878LR5H-1",
+    "csv_name": "SparkFun Analog MEMS Microphone Breakout - SPH8878LR5H-1",
+    "description": "SparkFun analog MEMS microphone breakout using the SPH8878LR5H-1. Outputs an analog signal proportional to sound.",
+    "technical_specs": "Sensor: SPH8878LR5H-1; Type: Analog MEMS microphone; Frequency: 100Hz-10kHz; SNR: 65dB; Voltage: 3.3V; Output: Analog",
+    "category": "Sensor",
+    "page_url": "https://www.sparkfun.com/products/19389",
+    "image_url": "https://cdn.sparkfun.com/assets/parts/1/9/0/0/0/19389-SparkFun_Analog_MEMS_Microphone_Breakout_-_SPH8878LR5H-1-01.jpg",
+    "learn_guide_url": "https://learn.sparkfun.com/tutorials/analog-mems-microphone-breakout---sph8878lr5h-1-hookup-guide",
+    "unit_price": 4.55,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_COM0216": {
+    "product_id": "COM0216",
+    "name": "Optoisolator - 1 Channel",
+    "csv_name": "Optoisolator - 1 Channel",
+    "description": "Single channel optoisolator / optocoupler. Electrically isolates two parts of a circuit using an LED and phototransistor.",
+    "technical_specs": "Channels: 1; Type: Optocoupler; Isolation: Optical; Package: DIP-4",
+    "category": "Component",
+    "page_url": "https://shop.pimoroni.com/products/optoisolator",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/COM0216-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.55,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PA-21": {
+    "product_id": "PA-21",
+    "name": "Engineer Universal Crimping Pliers",
+    "csv_name": "Engineer Universal Crimping Pliers",
+    "description": "Engineer PA-21 universal crimping pliers. Precision Japanese-made crimping tool for various connector types.",
+    "technical_specs": "Brand: Engineer; Model: PA-21; Type: Universal crimping pliers; Material: Carbon steel; Made in Japan",
+    "category": "Tool",
+    "page_url": "https://shop.pimoroni.com/products/engineer-universal-crimping-pliers",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PA-21-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 26.0,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_COM0005": {
+    "product_id": "COM0005",
+    "name": "Pico Stacking Header Pack",
+    "csv_name": "Pico Stacking Header Pack",
+    "description": "Pico stacking header pack. Allows stacking add-on boards onto a Raspberry Pi Pico.",
+    "technical_specs": "Pins: 2x 20-pin; Type: Female stacking headers; Pitch: 2.54mm; Compatible: Raspberry Pi Pico/Pico W",
+    "category": "Accessory",
+    "page_url": "https://shop.pimoroni.com/products/pico-stacking-header-pack",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/COM0005-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.75,
+    "currency": "GBP",
+    "total_qty": 3,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_COM1117": {
+    "product_id": "COM1117",
+    "name": "Pico Header Pack",
+    "csv_name": "Pico Header Pack",
+    "description": "Pico header pack. Standard male headers for soldering onto a Raspberry Pi Pico.",
+    "technical_specs": "Pins: 2x 20-pin; Type: Male headers; Pitch: 2.54mm; Compatible: Raspberry Pi Pico/Pico W",
+    "category": "Accessory",
+    "page_url": "https://shop.pimoroni.com/products/pico-header-pack",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/COM1117-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.9,
+    "currency": "GBP",
+    "total_qty": 3,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_ADA1207": {
+    "product_id": "ADA1207",
+    "name": "Adafruit SMT breakout PCB for SOIC or TSSOP - 16 pin - pack of three",
+    "csv_name": "Adafruit SMT breakout PCB for SOIC or TSSOP - 16 pin - pack of three",
+    "description": "Adafruit SMT breakout PCB for SOIC or TSSOP packages, 16-pin, pack of three. Adapts surface-mount ICs to breadboard-friendly DIP.",
+    "technical_specs": "Quantity: 3; Pins: 16; Compatible: SOIC and TSSOP packages; Output: DIP breadboard spacing",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/1207",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1207-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.75,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_ADA1211": {
+    "product_id": "ADA1211",
+    "name": "Adafruit SMT breakout PCB for SOIC or TSSOP - 12 pin - pack of six",
+    "csv_name": "Adafruit SMT breakout PCB for SOIC or TSSOP - 12 pin - pack of six",
+    "description": "Adafruit SMT breakout PCB for SOIC or TSSOP packages, 12-pin, pack of six. Adapts surface-mount ICs to breadboard-friendly DIP.",
+    "technical_specs": "Quantity: 6; Pins: 12; Compatible: SOIC and TSSOP packages; Output: DIP breadboard spacing",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/1211",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1211-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 3.4,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM479": {
+    "product_id": "PIM479",
+    "name": "DRV8830 DC Motor Driver Breakout",
+    "csv_name": "DRV8830 DC Motor Driver Breakout",
+    "description": "DRV8830 DC motor driver breakout from Pimoroni. I2C-controlled motor driver for small DC motors with Breakout Garden header.",
+    "technical_specs": "IC: DRV8830; Interface: I2C (0x60-0x63); Voltage: 2.75-6.8V motor; Current: 1A peak; Features: Speed + direction; Connector: Breakout Garden",
+    "category": "Breakout Board",
+    "page_url": "https://shop.pimoroni.com/products/drv8830-dc-motor-driver-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM479-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-drv8830-motor-driver-breakout",
+    "unit_price": 5.4,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM442": {
+    "product_id": "PIM442",
+    "name": "11x7 LED Matrix Breakout",
+    "csv_name": "11x7 LED Matrix Breakout",
+    "description": "11x7 LED matrix breakout from Pimoroni. I2C-controlled white LED matrix with individual brightness control per pixel.",
+    "technical_specs": "Matrix: 11x7 (77 LEDs); Color: White; Driver: IS31FL3731; Interface: I2C; Brightness: 8-bit per pixel; Connector: Breakout Garden",
+    "category": "Display",
+    "page_url": "https://shop.pimoroni.com/products/11x7-led-matrix-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM442-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-11x7-led-matrix-breakout",
+    "unit_price": 6.25,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM435": {
+    "product_id": "PIM435",
+    "name": "5x5 RGB Matrix Breakout",
+    "csv_name": "5x5 RGB Matrix Breakout",
+    "description": "5x5 RGB LED matrix breakout from Pimoroni. 25 individually-addressable RGB LEDs driven over I2C with Breakout Garden header.",
+    "technical_specs": "Matrix: 5x5 (25 LEDs); Color: RGB; Driver: IS31FL3731; Interface: I2C; Brightness: 8-bit per channel; Connector: Breakout Garden",
+    "category": "Display",
+    "page_url": "https://shop.pimoroni.com/products/5x5-rgb-matrix-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM435-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-5x5-rgb-matrix-breakout",
+    "unit_price": 4.1,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM517": {
+    "product_id": "PIM517",
+    "name": "IO Expander Breakout",
+    "csv_name": "IO Expander Breakout",
+    "description": "IO Expander breakout from Pimoroni. Adds 14 multi-function I/O pins controllable via I2C including PWM, ADC, and digital I/O.",
+    "technical_specs": "IC: Nuvoton MS51; GPIO: 14 (6x ADC, 6x PWM capable); Interface: I2C; Voltage: 3.3V; Connector: Breakout Garden",
+    "category": "Breakout Board",
+    "page_url": "https://shop.pimoroni.com/products/io-expander",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM517-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-io-expander-breakout",
+    "unit_price": 4.2,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM438": {
+    "product_id": "PIM438",
+    "name": "MAX30101 Breakout - Heart Rate, Oximeter, Smoke Sensor",
+    "csv_name": "MAX30101 Breakout - Heart Rate, Oximeter, Smoke Sensor",
+    "description": "MAX30101 breakout for heart rate, blood oxygen (SpO2), and smoke detection. High-sensitivity optical sensor with I2C interface.",
+    "technical_specs": "Sensor: MAX30101; Measures: Heart rate, SpO2, smoke/particles; LEDs: Red + IR + Green; Interface: I2C (0x57); Connector: Breakout Garden",
+    "category": "Sensor",
+    "page_url": "https://shop.pimoroni.com/products/max30101-breakout-heart-rate-oximeter-smoke-sensor",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM438-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-max30101-breakout",
+    "unit_price": 8.9,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_COM3900": {
+    "product_id": "COM3900",
+    "name": "Breakout Garden I2C Connector (pack of 5)",
+    "csv_name": "Breakout Garden I2C Connector (pack of 5)",
+    "description": "Breakout Garden I2C connector headers, pack of 5. Standard 5-pin I2C headers used by Pimoroni Breakout Garden ecosystem.",
+    "technical_specs": "Quantity: 5; Pins: 5 (3V3, SDA, SCL, INT, GND); Pitch: 2.54mm; Ecosystem: Breakout Garden",
+    "category": "Cable/Connector",
+    "page_url": "https://shop.pimoroni.com/products/breakout-garden-i2c-connector-pack-of-5",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/COM3900-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.35,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM572": {
+    "product_id": "PIM572",
+    "name": "Breakout Garden to STEMMA QT / Qwiic Adapter",
+    "csv_name": "Breakout Garden to STEMMA QT / Qwiic Adapter",
+    "description": "Breakout Garden to STEMMA QT / Qwiic adapter. Converts Pimoroni Breakout Garden I2C header to JST SH 4-pin STEMMA QT / Qwiic.",
+    "technical_specs": "Input: Breakout Garden 5-pin; Output: STEMMA QT / Qwiic JST SH 4-pin; Type: Adapter PCB",
+    "category": "Cable/Connector",
+    "page_url": "https://shop.pimoroni.com/products/breakout-garden-to-stemma-qt-qwiic-adapter",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM572-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.8,
+    "currency": "GBP",
+    "total_qty": 4,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM455": {
+    "product_id": "PIM455",
+    "name": "HT0740 40V / 10A Switch Breakout",
+    "csv_name": "HT0740 40V / 10A Switch Breakout",
+    "description": "HT0740 40V/10A switch breakout from Pimoroni. I2C-controlled high-side power switch for switching high-voltage/current loads.",
+    "technical_specs": "IC: HT0740; Voltage: Up to 40V; Current: Up to 10A; Interface: I2C (0x38-0x3F); Type: High-side N-FET switch; Connector: Breakout Garden",
+    "category": "Breakout Board",
+    "page_url": "https://shop.pimoroni.com/products/ht0740-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM455-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-ht0740-breakout",
+    "unit_price": 11.75,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_ADA5664": {
+    "product_id": "ADA5664",
+    "name": "Adafruit PCA9546 4-Channel STEMMA QT / Qwiic I2C Multiplexer",
+    "csv_name": "Adafruit PCA9546 4-Channel STEMMA QT / Qwiic I2C Multiplexer",
+    "description": "Adafruit PCA9546 4-channel STEMMA QT / Qwiic I2C multiplexer. TCA9546A compatible, allows 4 separate I2C buses from one port.",
+    "technical_specs": "IC: PCA9546; Channels: 4; Interface: I2C; Voltage: 3.3-5V; Connector: STEMMA QT / Qwiic; Compatible: TCA9546A",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/5664",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5664-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-pca9546-4-channel-i2c-multiplexer",
+    "unit_price": 3.5,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM699": {
+    "product_id": "PIM699",
+    "name": "NVMe Base for Raspberry Pi 5",
+    "csv_name": "NVMe Base for Raspberry Pi 5",
+    "description": "NVMe Base for Raspberry Pi 5. Adds M.2 NVMe SSD storage to the Pi 5 via the PCIe connector on the bottom of the board.",
+    "technical_specs": "Interface: M.2 M-Key (2230/2242); Connection: PCIe Gen 2 x1 via FPC; Compatible: Raspberry Pi 5; Speed: Up to ~800MB/s",
+    "category": "Accessory",
+    "page_url": "https://shop.pimoroni.com/products/nvme-base",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM699-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-nvme-base",
+    "unit_price": 11.25,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM560": {
+    "product_id": "PIM560",
+    "name": "Pimoroni Pico LiPo - 16MB",
+    "csv_name": "Pimoroni Pico LiPo - 16MB",
+    "description": "Pimoroni Pico LiPo - a RP2040 board with 16MB flash, LiPo/LiIon battery management, USB-C, and STEMMA QT / Qwiic connector.",
+    "technical_specs": "MCU: RP2040 (Dual ARM Cortex M0+); Clock: 133MHz; Flash: 16MB QSPI; RAM: 264KB; USB: USB-C; Battery: LiPo/LiIon charger; Connector: STEMMA QT; GPIO: 22",
+    "category": "Microcontroller",
+    "page_url": "https://shop.pimoroni.com/products/pimoroni-pico-lipo",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM560-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-pico-lipo",
+    "unit_price": 11.25,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_POL-3781": {
+    "product_id": "POL-3781",
+    "name": "Step-Down Voltage Regulator D36V28Fx - 3.3V 3.6A",
+    "csv_name": "Step-Down Voltage Regulator D36V28Fx - 3.3V 3.6A",
+    "description": "Pololu D36V28F3 step-down voltage regulator. Efficient 3.3V 3.6A buck converter with wide input range.",
+    "technical_specs": "Output: 3.3V; Max Current: 3.6A; Input: 4.5-50V; Type: Step-down (buck); Efficiency: Up to 95%; Brand: Pololu",
+    "category": "Power",
+    "page_url": "https://www.pololu.com/product/3781",
+    "image_url": "https://a.pololu-files.com/picture/0J11774.1200.jpg",
+    "learn_guide_url": null,
+    "unit_price": 6.55,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_ADA4258": {
+    "product_id": "ADA4258",
+    "name": "Adafruit LPS35HW Water Resistant Pressure Sensor - STEMMA QT",
+    "csv_name": "Adafruit LPS35HW Water Resistant Pressure Sensor - STEMMA QT",
+    "description": "Adafruit LPS35HW water-resistant pressure sensor with STEMMA QT. Measures barometric pressure with a gel-protected sensor element.",
+    "technical_specs": "Sensor: LPS35HW; Range: 260-1260 hPa; Accuracy: ±0.1 hPa; Interface: I2C/SPI; Feature: Water-resistant gel coating; Connector: STEMMA QT",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/4258",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4258-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-lps35hw-water-resistant-barometric-pressure-sensor",
+    "unit_price": 4.8,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_ADA715": {
+    "product_id": "ADA715",
+    "name": "Adafruit I2C Controlled + Keypad Shield Kit for 16x2 LCD",
+    "csv_name": "Adafruit I2C Controlled + Keypad Shield Kit for 16x2 LCD",
+    "description": "Adafruit I2C controlled keypad shield kit for 16x2 LCD. Same as Adafruit product 715, purchased via Pimoroni.",
+    "technical_specs": "Display: 16x2 character LCD; Interface: I2C; Buttons: 5 (Select, Up, Down, Left, Right); Voltage: 5V; Shield: Arduino UNO compatible",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/715",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/715-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-i2c-controlled-keypad-shield-for-16x2-lcd",
+    "unit_price": 3.1,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_ADA3135": {
+    "product_id": "ADA3135",
+    "name": "Adafruit 15x7 CharliePlex LED Matrix Display FeatherWing - Yellow",
+    "csv_name": "Adafruit 15x7 CharliePlex LED Matrix Display FeatherWing - Yellow",
+    "description": "Adafruit 15x7 CharliePlex LED matrix display FeatherWing in yellow. Same as Adafruit 3134 but yellow color.",
+    "technical_specs": "Matrix: 15x7 (105 LEDs); Color: Yellow; Driver: IS31FL3731; Interface: I2C; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/3135",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3135-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-15x7-7x15-charlieplex-led-matrix-display-featherwing",
+    "unit_price": 2.25,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM321": {
+    "product_id": "PIM321",
+    "name": "pHAT Stack - Solder Yourself Kit",
+    "csv_name": "pHAT Stack - Solder Yourself Kit",
+    "description": "pHAT Stack solder-yourself kit. Lets you stack up to 5 Pimoroni pHATs or mini HATs on a single Raspberry Pi.",
+    "technical_specs": "Slots: Up to 5 pHATs; Type: Stacking adapter; Assembly: Solder required; Compatible: All 40-pin Pi",
+    "category": "Accessory",
+    "page_url": "https://shop.pimoroni.com/products/phat-stack",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM321-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/assembling-phat-stack",
+    "unit_price": 2.95,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM549": {
+    "product_id": "PIM549",
+    "name": "Pico Breakout Garden Base",
+    "csv_name": "Pico Breakout Garden Base",
+    "description": "Pico Breakout Garden Base from Pimoroni. Adds two I2C and one SPI Breakout Garden slots to a Raspberry Pi Pico.",
+    "technical_specs": "Slots: 2x I2C + 1x SPI Breakout Garden; Compatible: Raspberry Pi Pico/Pico W; Connector: STEMMA QT / Qwiic; Feature: Reset button",
+    "category": "Accessory",
+    "page_url": "https://shop.pimoroni.com/products/pico-breakout-garden-base",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM549-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-pico-breakout-garden",
+    "unit_price": 11.0,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM569": {
+    "product_id": "PIM569",
+    "name": "MICS6814 3-in-1 Gas Sensor Breakout (CO, NO2, NH3)",
+    "csv_name": "MICS6814 3-in-1 Gas Sensor Breakout (CO, NO2, NH3)",
+    "description": "MICS6814 3-in-1 gas sensor breakout from Pimoroni. Detects carbon monoxide (CO), nitrogen dioxide (NO2), and ammonia (NH3).",
+    "technical_specs": "Sensor: MICS6814; Gases: CO, NO2, NH3; Interface: I2C (via ADC); Voltage: 3.3V; Type: Analog MEMS; Heater: Built-in; Connector: Breakout Garden",
+    "category": "Sensor",
+    "page_url": "https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM569-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-mics6814-breakout",
+    "unit_price": 19.25,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM461": {
+    "product_id": "PIM461",
+    "name": "Fan SHIM for Raspberry Pi",
+    "csv_name": "Fan SHIM for Raspberry Pi",
+    "description": "Fan SHIM for Raspberry Pi. Slim add-on with a 30mm fan and LED for active cooling, controllable via software.",
+    "technical_specs": "Fan: 30mm; Control: GPIO (software PWM); LED: 1x RGB; Current: ~100mA; Form Factor: SHIM; Compatible: All 40-pin Pi",
+    "category": "Accessory",
+    "page_url": "https://shop.pimoroni.com/products/fan-shim",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM461-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-fan-shim",
+    "unit_price": 10.0,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM527": {
+    "product_id": "PIM527",
+    "name": "LED Dot Matrix Breakout - Green",
+    "csv_name": "LED Dot Matrix Breakout - Green",
+    "description": "LED dot matrix breakout in green from Pimoroni. 5x7 green LED matrix driven over I2C via Breakout Garden header.",
+    "technical_specs": "Matrix: 7x5 (35 LEDs); Color: Green; Driver: IS31FL3730; Interface: I2C; Connector: Breakout Garden",
+    "category": "Display",
+    "page_url": "https://shop.pimoroni.com/products/led-dot-matrix-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM527-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-led-dot-matrix-breakout",
+    "unit_price": 3.55,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM409": {
+    "product_id": "PIM409",
+    "name": "I2C Breakout Extender (pack of 3)",
+    "csv_name": "I2C Breakout Extender (pack of 3)",
+    "description": "I2C breakout extender from Pimoroni, pack of 3. Extends Breakout Garden I2C headers with wire-friendly connections.",
+    "technical_specs": "Quantity: 3; Type: I2C breakout extender; Pins: 5 (3V3, SDA, SCL, INT, GND); Ecosystem: Breakout Garden",
+    "category": "Cable/Connector",
+    "page_url": "https://shop.pimoroni.com/products/i2c-breakout-extender-pack-of-3",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM409-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.9,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_IFIX-EU145439-1": {
+    "product_id": "IFIX-EU145439-1",
+    "name": "Mahi 1/4\" Bit Driver",
+    "csv_name": "Mahi 1/4\" Bit Driver",
+    "description": "Mahi 1/4 inch bit driver from iFixit. Precision screwdriver with magnetic bit holder and comfortable grip.",
+    "technical_specs": "Bit Size: 1/4\" (6.35mm); Type: Magnetic bit driver; Brand: iFixit/Mahi; Feature: Swivel top cap",
+    "category": "Tool",
+    "page_url": "https://www.ifixit.com/products/mahi-driver",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/IFIX-EU145439-1-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.6,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM333": {
+    "product_id": "PIM333",
+    "name": "Scroll pHAT HD - Yellow",
+    "csv_name": "Scroll pHAT HD - Yellow",
+    "description": "Scroll pHAT HD in yellow from Pimoroni. 17x7 LED matrix HAT for Raspberry Pi with scrolling text and graphics.",
+    "technical_specs": "Matrix: 17x7 (119 LEDs); Color: Yellow; Driver: IS31FL3731; Interface: I2C; Form Factor: pHAT; Compatible: All 40-pin Pi",
+    "category": "Display",
+    "page_url": "https://shop.pimoroni.com/products/scroll-phat-hd",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM333-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-scroll-phat-hd",
+    "unit_price": 3.45,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM587": {
+    "product_id": "PIM587",
+    "name": "SCD41 CO2 Sensor Breakout (Carbon Dioxide / Temperature / Humidity)",
+    "csv_name": "SCD41 CO2 Sensor Breakout (Carbon Dioxide / Temperature / Humidity)",
+    "description": "SCD41 CO2 sensor breakout from Pimoroni. Measures true CO2 concentration using photoacoustic sensing, plus temperature and humidity.",
+    "technical_specs": "Sensor: SCD41; CO2 Range: 400-5000 ppm; CO2 Accuracy: ±(40ppm + 5%); Temperature: ±0.8°C; Humidity: ±6%RH; Interface: I2C; Connector: Breakout Garden",
+    "category": "Sensor",
+    "page_url": "https://shop.pimoroni.com/products/scd41-co2-sensor-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM587-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-scd41-co2-breakout",
+    "unit_price": 45.5,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_PIM447": {
+    "product_id": "PIM447",
+    "name": "Trackball Breakout",
+    "csv_name": "Trackball Breakout",
+    "description": "Trackball breakout from Pimoroni. A mini trackball with RGBW LED backlight, controllable over I2C via Breakout Garden header.",
+    "technical_specs": "Type: Trackball (5-way: up/down/left/right/click); LED: RGBW backlight; Interface: I2C (0x0A); Interrupt: Yes; Connector: Breakout Garden",
+    "category": "Breakout Board",
+    "page_url": "https://shop.pimoroni.com/products/trackball-breakout",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PIM447-1_1024x1024.jpg",
+    "learn_guide_url": "https://learn.pimoroni.com/article/getting-started-with-trackball-breakout",
+    "unit_price": 12.75,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_WPM463": {
+    "product_id": "WPM463",
+    "name": "2 Channel Solid State Relay Module",
+    "csv_name": "2 Channel Solid State Relay Module",
+    "description": "2-channel solid state relay module. Safely switches AC or DC loads using optically-isolated solid state relays.",
+    "technical_specs": "Channels: 2; Type: Solid State Relay; Isolation: Optical; Trigger: 3.3-5V logic; Load: AC/DC",
+    "category": "Component",
+    "page_url": "https://shop.pimoroni.com/products/2-channel-solid-state-relay-module",
+    "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/WPM463-1_1024x1024.jpg",
+    "learn_guide_url": null,
+    "unit_price": 3.3,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_POL-5065": {
+    "product_id": "POL-5065",
+    "name": "Motoron Dual Motor Controller - M2T256 - I2C",
+    "csv_name": "Motoron Dual Motor Controller - M2T256 - I2C",
+    "description": "Pololu Motoron M2T256 dual motor controller with I2C interface. Controls two brushed DC motors with current limiting.",
+    "technical_specs": "Motors: 2x brushed DC; Interface: I2C; Voltage: 6.5-48V motor; Current: 2A continuous per channel; PWM: 20kHz; Brand: Pololu",
+    "category": "Breakout Board",
+    "page_url": "https://www.pololu.com/product/5065",
+    "image_url": "https://a.pololu-files.com/picture/0J12034.1200.jpg",
+    "learn_guide_url": null,
+    "unit_price": 6.9,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
+  },
+  "pimoroni_POL-2122": {
+    "product_id": "POL-2122",
+    "name": "Pololu 3.3V Step-Up/Step-Down Voltage Regulator S7V8F3",
+    "csv_name": "Pololu 3.3V Step-Up/Step-Down Voltage Regulator S7V8F3",
+    "description": "Pololu S7V8F3 3.3V step-up/step-down voltage regulator. Maintains steady 3.3V output from inputs above or below 3.3V.",
+    "technical_specs": "Output: 3.3V; Max Current: 1A; Input: 2.7-11.8V; Type: Buck-boost; Efficiency: Up to 90%; Size: 7.5mm x 9.7mm; Brand: Pololu",
+    "category": "Power",
+    "page_url": "https://www.pololu.com/product/2122",
+    "image_url": "https://a.pololu-files.com/picture/0J4337.1200.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.6,
+    "currency": "GBP",
+    "total_qty": 1,
+    "orders": [
+      "pimoroni"
+    ],
+    "source": "pimoroni.com",
+    "last_scraped": null
   }
 }

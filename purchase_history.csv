@@ -1,0 +1,247 @@
+order,"product id","product name",quantity,price,subtotal
+2567892,153,"Breadboarding wire bundle",1,4.9500,4.95
+2567892,239,"Full Sized Premium Breadboard   830 Tie Points",1,5.9500,5.95
+2567892,1754,"Adafruit Assembled Pi T Cobbler Breakout for Raspberry Pi",1,6.9500,6.95
+2567892,4354,"Adafruit Perma Proto 40 Pin Raspberry Pi Breadboard PCB Kit",1,7.9500,7.95
+2567892,4886,"Adafruit AW9523 GPIO Expander and LED Driver Breakout",1,4.9500,4.95
+2596354,431,"Tiny Modular Snap Boxes   SMD component storage   10 pack",1,3.9500,3.95
+2596354,432,"Small Modular Snap Boxes   SMD component storage   3 pack",1,2.9500,2.95
+2596354,433,"Medium Modular Snap Boxes   SMD component storage   2 pack",1,2.9500,2.95
+2596354,434,"Large Modular Snap Box   SMD component storage",1,1.9500,1.95
+2596354,1399,"RGB 7 Segment Digit   1"" Tall Digit",1,14.9500,14.95
+2596354,4042,"Diffused Red and Green Indicator LED   18mm Round",2,1.5000,3
+2599853,50,"Adafruit METRO 328 Fully Assembled   Arduino IDE compatible",1,17.5000,17.5
+2599853,2028,"Assembled Pi T Cobbler Plus   GPIO Breakout",1,7.9500,7.95
+2599853,3333,"Circuit Playground Express",1,24.9500,24.95
+2599853,3915,"Adafruit Circuit Playground Express or Bluefruit Enclosure",1,4.9500,4.95
+2599853,4042,"Diffused Red and Green Indicator LED   18mm Round",1,1.5000,1.5
+2599853,4154,"Break away 0.1"" 36 pin strip male header   Rainbow Combo 10 Pack",1,4.9500,4.95
+2599853,4160,"20 pin 0.1"" Female Headers   Rainbow Color Mix   5 pack",1,2.5000,2.5
+2600583,2028,"Assembled Pi T Cobbler Plus   GPIO Breakout",1,7.9500,7.95
+2600583,3333,"Circuit Playground Express",1,24.9500,24.95
+2600583,3505,"Adafruit METRO M0 Express   designed for CircuitPython",1,24.9500,24.95
+2600583,3915,"Adafruit Circuit Playground Express or Bluefruit Enclosure",1,4.9500,4.95
+2600583,4042,"Diffused Red and Green Indicator LED   18mm Round",1,1.5000,1.5
+2600583,4154,"Break away 0.1"" 36 pin strip male header   Rainbow Combo 10 Pack",1,4.9500,4.95
+2600583,4160,"20 pin 0.1"" Female Headers   Rainbow Color Mix   5 pack",1,2.5000,2.5
+2600583,4209,"STEMMA QT / Qwiic JST SH 4 pin to Premium Male Headers Cable",1,0.9500,0.95
+2600583,4210,"STEMMA QT / Qwiic JST SH 4 pin Cable   100mm Long",1,0.9500,0.95
+2600583,4286,"Adafruit DS3502 I2C Digital 10K Potentiometer Breakout",1,4.9500,4.95
+2600583,4600,"Adafruit QT Py   SAMD21 Dev Board with STEMMA QT",1,7.5000,7.5
+2600583,4763,"GD25Q16   2MB SPI Flash in 8 Pin SOIC package",1,1.2500,1.25
+2604757,356,"Breadboard trim potentiometer",1,1.2500,1.25
+2604757,373,"Breadboard friendly 2.1mm DC barrel jack",2,0.9500,1.9
+2604757,434,"Large Modular Snap Box   SMD component storage",2,1.9500,3.9
+2604757,758,"Premium Male/Male Jumper Wires   40 x 6"" (150mm)",1,3.9500,3.95
+2604757,805,"Breadboard friendly SPDT Slide Switch",2,0.9500,1.9
+2604757,1009,"Colorful Round Tactile Button Switch Assortment   15 pack",1,5.9500,5.95
+2604757,1010,"Colorful 12mm Square Tactile Button Switch Assortment   15 pack",1,5.9500,5.95
+2604757,1119,"Tactile Switch Buttons (12mm square, 6mm tall) x 10 pack",1,2.5000,2.5
+2604757,1265,"Yellow 7 segment clock display   1.2"" digit height",1,7.5000,7.5
+2604757,1592,"Short Wire Alligator Clip Test Lead (set of 12)",1,3.9500,3.95
+2604757,1609,"Adafruit Perma Proto Half sized Breadboard PCB   Single",1,4.5000,4.5
+2604757,1683,"On Off Power Button / Pushbutton Toggle Switch",1,1.9500,1.95
+2604757,2046,"Potentiometer Knob   Soft Touch T18   Red",1,0.5000,0.5
+2604757,2047,"Potentiometer Knob   Soft Touch T18   White",1,0.5000,0.5
+2604757,3217,"Maker Paste   Low Temperature Lead Free Prototyping Solder Paste",1,6.9500,6.95
+2604757,3255,"Small Alligator Clip to Male Jumper Wire Bundle   12 Pieces",1,7.9500,7.95
+2604757,3885,"Adafruit STEMMA Speaker   Plug and Play Audio Amplifier",1,5.9500,5.95
+2604757,3893,"STEMMA JST PH 2mm 3 Pin to Male Header Cable   200mm",1,1.2500,1.25
+2604757,4030,"JST PH 2mm 3 pin Plug to Color Coded Alligator Clips Cable",1,1.9500,1.95
+2604757,4042,"Diffused Red and Green Indicator LED   18mm Round",1,1.5000,1.5
+2604757,4046,"JST PH 2mm 3 Pin Socket to Color Coded Cable   200mm",1,0.9500,0.95
+2604757,4209,"STEMMA QT / Qwiic JST SH 4 pin to Premium Male Headers Cable",2,0.9500,1.9
+2604757,4210,"STEMMA QT / Qwiic JST SH 4 pin Cable   100mm Long",2,0.9500,1.9
+2604757,4271,"Slide Potentiometer with Plastic Knob   35mm Long   10KΩ",1,1.9500,1.95
+2604757,4351,"Adafruit Infineon Trust M Breakout Board   STEMMA QT / Qwiic",1,4.9500,4.95
+2604757,4398,"JST SH 4 pin Cable with Alligator Clips   STEMMA QT / Qwiic",1,2.9500,2.95
+2604757,4401,"STEMMA QT / Qwiic JST SH 4 Pin Cable   200mm Long",2,0.9500,1.9
+2604757,4483,"5 pin JST ESLOV to 4 pin JST SH STEMMA QT / Qwiic Cable",1,1.5000,1.5
+2604757,4528,"Grove to STEMMA QT / Qwiic / JST SH Cable",2,1.9500,3.9
+2604757,4677,"Generic 64 Mbit Serial Pseudo SRAM   PSRAM   3.3V 133 MHz",1,1.7500,1.75
+2604757,4763,"GD25Q16   2MB SPI Flash in 8 Pin SOIC package",1,1.2500,1.25
+2604757,5142,"SparkFun Qwiic pHAT v2.0 for Raspberry Pi   STEMMA QT / Qwiic",1,7.9500,7.95
+2626886,3067,"AdaBox Subscription",1,0.0000,0
+2643648,64,"Half Sized Premium Breadboard   400 Tie Points",1,5.0000,5
+2643648,136,"Ladyada's Electronics Toolkit",1,100.0000,100
+2643648,159,"Diffused RGB (tri color) LED",1,2.0000,2
+2643648,239,"Full Sized Premium Breadboard   830 Tie Points",4,5.9500,23.8
+2643648,356,"Breadboard trim potentiometer",1,1.2500,1.25
+2643648,377,"Rotary Encoder   Extras",1,4.5000,4.5
+2643648,443,"Large Premium Solderless Breadboard",1,19.9500,19.95
+2643648,453,"MAX7219CNG LED Matrix/Digit Display Driver",1,12.9500,12.95
+2643648,455,"Small 1.2"" 8x8 Ultra Bright Red LED Matrix",1,3.9500,3.95
+2643648,735,"74LVC245   Breadboard Friendly 8 bit Logic Level Shifter",4,1.5000,6
+2643648,758,"Premium Male/Male Jumper Wires   40 x 6"" (150mm)",2,3.9500,7.9
+2643648,759,"Premium Male/Male Jumper Wires   40 x 3"" (75mm)",1,3.9500,3.95
+2643648,760,"Premium Male/Male Jumper Wires   40 x 12"" (300mm)",1,7.9500,7.95
+2643648,805,"Breadboard friendly SPDT Slide Switch",1,0.9500,0.95
+2643648,1048,"Adafruit 1.2"" 8x8 LED Matrix Backpack",1,6.0000,6
+2643648,1074,"Configurable Spring Terminal Blocks   3 Pin 0.1"" Pitch R/A   x 5",1,4.9500,4.95
+2643648,1081,"Configurable Spring Terminal Blocks   3 Pin 0.1"" Pitch x 5",1,4.9500,4.95
+2643648,1312,"Breadboard friendly RGB Smart NeoPixel   Pack of 5",1,7.9500,7.95
+2643648,1399,"RGB 7 Segment Digit   1"" Tall Digit",1,14.9500,14.95
+2643648,1426,"NeoPixel Stick   8 x 5050 RGB LED with Integrated Drivers",1,5.9500,5.95
+2643648,1536,"Buzzer 5V   Breadboard friendly",2,0.9500,1.9
+2643648,1598,"Professional IC Extraction Tool",1,14.9500,14.95
+2643648,1609,"Adafruit Perma Proto Half sized Breadboard PCB   Single",1,4.5000,4.5
+2643648,1734,"NeoPixel Diffused 8mm Through Hole LED   5 Pack",1,4.9500,4.95
+2643648,1766,"Fast Vibration Sensor Switch (Easy to trigger)",2,0.9500,1.9
+2643648,1898,"Breadboard Friendly PCB Mount Mini Speaker   8 Ohm 0.2W",2,1.8500,3.7
+2643648,1950,"Premium Female/Female Jumper Wires   20 x 6"" (150mm)",1,1.9500,1.95
+2643648,1953,"Premium Female/Male 'Extension' Jumper Wires   20 x 3""",1,1.9500,1.95
+2643648,2055,"Scrubber Knob for Rotary Encoder   35mm",1,0.9500,0.95
+2643648,2384,"Medium Vibration Sensor Switch",2,0.9500,1.9
+2643648,2739,"Diffused Rectangular 5mm RGB LEDs   Pack of 10",1,5.9500,5.95
+2643648,3104,"Mini Illuminated Momentary Pushbutton   Red Power Symbol",1,1.9500,1.95
+2643648,3333,"Circuit Playground Express",1,24.9500,24.95
+2643648,3642,"2.1mm DC Power Jack with Slide Switch",1,1.9500,1.95
+2643648,4042,"Diffused Red and Green Indicator LED   18mm Round",4,1.7500,7
+2643648,4081,"Flat Vibration Switch   Breadboard friendly",4,0.9500,3.8
+2643648,4594,"Black LED Diffusion Acrylic Panel 12"" x 12""   0.1"" / 2.6mm thick",1,9.9500,9.95
+2643648,4631,"Mini Magnet Feet for RGB LED Matrices (Pack of 4)",1,2.5000,2.5
+2643648,4681,"Adafruit BH1750 Light Sensor   STEMMA QT / Qwiic",1,4.5000,4.5
+2643648,4813,"Clear Adhesive Squares   6 pack",1,0.5000,0.5
+2643648,4871,"Breadboard friendly Mini PIR Motion Sensor with 3 Pin Header",3,3.9500,11.850000000000001
+2643648,5036,"64x32 RGB LED Matrix   2.5mm pitch",1,34.9500,34.95
+2643648,5093,"Slim Rubber Rotary Encoder Knob   11.5mm x 14.5mm D Shaft",2,0.7500,1.5
+2660281,153,"Breadboarding wire bundle",2,4.9500,9.9
+2660281,239,"Full Sized Premium Breadboard   830 Tie Points",3,5.9500,17.85
+2660281,443,"Large Premium Solderless Breadboard",1,19.9500,19.95
+2660281,758,"Premium Male/Male Jumper Wires   40 x 6"" (150mm)",1,3.9500,3.95
+2660281,954,"USB to TTL Serial Cable   Debug / Console Cable for Raspberry Pi",1,9.9500,9.95
+2660281,1048,"Adafruit 1.2"" 8x8 LED Matrix Backpack",1,6.0000,6
+2660281,1623,"Small 1.2"" 8x8 Ultra Bright Pure Green LED Matrix",1,4.9500,4.95
+2660281,5154,"Digi Key Innovation Handbook",1,5.9500,5.95
+2820999,727,"3 x AAA Battery Holder with On/Off Switch and 2 Pin JST",1,1.9500,1.95
+2820999,905,"Large Plastic Project Enclosure   Weatherproof with Clear Top",1,19.9500,19.95
+2820999,3915,"Adafruit Circuit Playground Express or Bluefruit Enclosure",1,4.9500,4.95
+2820999,4036,"DIY Ornament Kit   6cm Diameter   Perfect for Circuit Playground",1,1.9500,1.95
+2820999,4103,"Bolt On Kit for Circuit Playground, micro:bit, Flora or Gemma",1,1.5000,1.5
+2820999,4263,"4 H Circuit Playground Express   Base Kit",1,29.9500,29.95
+2846279,151,"Panavise Jr.",1,30.0000,30
+2846279,1328,"2.1mm DC Barrel Jack to Alligator Clips",1,1.9500,1.95
+2846279,1597,"Engineer Professional Silicone Tip Solder Sucker",1,17.5000,17.5
+2846279,2476,"Replacement Tubes for Professional Silicone Tip Solder Sucker",1,1.9500,1.95
+2846279,3019,"Third Hand Pana Hand Workstation Add On for Panavise",1,39.9500,39.95
+2846279,3310,"5.5 / 2.1mm Barrel Connector   DC Power Plug",1,0.9500,0.95
+2846279,4287,"3.5mm / 1.1mm to 5.5mm / 2.1mm DC Jack Adapter",1,1.5000,1.5
+2862474,377,"Rotary Encoder   Extras",2,4.5000,9
+2862474,805,"Breadboard friendly SPDT Slide Switch",1,0.9500,0.95
+2862474,1201,"Vibrating Mini Motor Disc",1,1.9500,1.95
+2862474,1518,"Adafruit Flex Perma Proto   Half sized Breadboard Flex PCB",1,7.5000,7.5
+2862474,1609,"Adafruit Perma Proto Half sized Breadboard PCB   Single",1,4.5000,4.5
+2862474,1611,"Silicone Elastomer 4x4 Button Keypad   for 3mm LEDs",1,4.9500,4.95
+2862474,1616,"Adafruit Trellis Monochrome Driver PCB for 4x4 Keypad & 3mm LEDs",1,9.9500,9.95
+2862474,1661,"uFL SMT Antenna Connector",2,0.7500,1.5
+2862474,2305,"Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic",2,7.9500,15.9
+2862474,2830,"Stacking Headers for Feather   12 pin and 16 pin female headers",1,1.2500,1.25
+2862474,2900,"Adafruit FeatherWing OLED   128x32 OLED Add on For Feather",1,14.9500,14.95
+2862474,2928,"8 Channel PWM or Servo FeatherWing Add on For All Feather Boards",1,9.9500,9.95
+2862474,3176,"Adafruit Feather M0 RFM69HCW Packet Radio   868 or 915 MHz",1,24.9500,24.95
+2862474,3340,"900Mhz Antenna Kit   For LoPy, LoRa, etc",1,12.7500,12.75
+2862474,4203,"Diffused 5mm LED Pack   5 LEDs each in 5 Colors   25 Pack",1,4.9500,4.95
+2862474,5001,"ANO Directional Navigation and Scroll Wheel Rotary Encoder",1,8.9500,8.95
+2862474,5128,"Adafruit MacroPad RP2040 Starter Kit   3x4 Keys   Encoder   OLED",1,49.9500,49.95
+2862474,5221,"Adafruit ANO Rotary Navigation Encoder Breakout PCB",1,1.5000,1.5
+2871753,157,"IR (Infrared) Receiver Sensor",1,1.9500,1.95
+2871753,2056,"Solid Machined Metal Knob   1"" Diameter",1,3.9500,3.95
+2871753,2927,"DC Motor   Stepper FeatherWing Add on For All Feather Boards",1,19.9500,19.95
+2871753,2940,"Short Headers Kit for Feather   12 pin   16 pin Female Headers",4,1.5000,6
+2871753,3299,"Black Nylon Machine Screw and Stand off Set – M2.5 Thread",1,16.9500,16.95
+2871753,4399,"STEMMA QT / Qwiic JST SH 4 Pin Cable   50mm Long",1,0.9500,0.95
+2871753,4559,"Pre Cut Multi Colored Heat Shrink Pack Kit   280 pcs",1,9.9500,9.95
+2887702,9,"High strength 'rare earth' magnet",2,2.5000,5
+2887702,292,"i2c / SPI character LCD backpack   STEMMA QT / Qwiic",1,9.9500,9.95
+2887702,398,"RGB backlight positive LCD 16x2   extras",1,12.9500,12.95
+2887702,455,"Small 1.2"" 8x8 Ultra Bright Red LED Matrix",2,3.9500,7.9
+2887702,715,"Adafruit I2C Controlled   Keypad Shield Kit for 16x2 LCD",1,14.9500,14.95
+2887702,757,"4 channel I2C safe Bi directional Logic Level Converter",1,3.9500,3.95
+2887702,860,"Miniature 8x8 Yellow LED Matrix",1,3.9500,3.95
+2887702,877,"Adafruit 7 Segment LED Matrix Backpack   STEMMA QT / qwiic",1,6.9500,6.95
+2887702,1048,"Adafruit 1.2"" 8x8 LED Matrix Backpack",1,6.0000,6
+2887702,1528,"Oscilloscope Probe 100MHz",1,14.9500,14.95
+2887702,1609,"Adafruit Perma Proto Half sized Breadboard PCB   Single",1,4.5000,4.5
+2887702,1612,"NeoPixel Mini Button PCB   Pack of 5",1,4.9500,4.95
+2887702,1655,"NeoPixel 5050 RGB LED with Integrated Driver Chip   10 Pack",1,4.5000,4.5
+2887702,1661,"uFL SMT Antenna Connector",1,0.7500,0.75
+2887702,2530,"3W RGB LED   Common Anode",1,2.9500,2.95
+2887702,2884,"FeatherWing Proto   Prototyping Add on For All Feather Boards",1,4.9500,4.95
+2887702,2888,"BNC Male Plug Terminal Block",1,0.9500,0.95
+2887702,2889,"BNC Female Jack Terminal Block",1,0.9500,0.95
+2887702,2926,"Assembled Terminal Block Breakout FeatherWing for all Feathers",1,14.9500,14.95
+2887702,3152,"Adafruit 0.8"" 8x16 LED Matrix FeatherWing Display   Red",1,11.9500,11.95
+2887702,3333,"Circuit Playground Express",1,24.9500,24.95
+2887702,3417,"FeatherWing Tripler Mini Kit   Prototyping Add on For Feathers",1,8.5000,8.5
+2887702,3500,"Adafruit Trinket M0   for use with CircuitPython & Arduino IDE",1,8.9500,8.95
+2887702,3804,"Large Clear Practice Padlock",1,7.5000,7.5
+2887702,3806,"Basic Lock sport Pick Set   9 Picks and 2 Wrenches",1,6.9500,6.95
+2887702,3954,"Adafruit NeoTrellis RGB Driver PCB for 4x4 Keypad",2,12.5000,25
+2887702,3988,"Adafruit Prop Maker FeatherWing",1,9.9500,9.95
+2887702,4147,"Adafruit ADXL343   ADT7410 Sensor FeatherWing",1,11.9500,11.95
+2887702,4209,"STEMMA QT / Qwiic JST SH 4 pin to Premium Male Headers Cable",2,0.9500,1.9
+2887702,4210,"STEMMA QT / Qwiic JST SH 4 pin Cable   100mm Long",1,0.9500,0.95
+2887702,4220,"Learn CircuitPython with 1 Month Subscription to Codecademy Pro",1,19.9900,19.99
+2887702,4227,"Mini Oval Speaker with Short Wires   8 Ohm 1 Watt",1,1.9500,1.95
+2887702,4399,"STEMMA QT / Qwiic JST SH 4 Pin Cable   50mm Long",1,0.9500,0.95
+2887702,4401,"STEMMA QT / Qwiic JST SH 4 Pin Cable   200mm Long",1,1.2500,1.25
+2887702,4566,"Adafruit AHT20   Temperature & Humidity Sensor Breakout Board",1,4.5000,4.5
+2887702,4650,"Adafruit FeatherWing OLED   128x64 OLED Add on For Feather",1,14.9500,14.95
+2887702,4884,"Adafruit Feather RP2040",1,11.9500,11.95
+2887702,5188,"Adafruit DS3231 Precision RTC   STEMMA QT",1,13.9500,13.95
+2887702,5195,"Etched Glow Through Keycap with LGTM (Looks Good To Me) Acronym",1,4.9500,4.95
+2887702,5302,"Adafruit KB2040   RP2040 Kee Boar Driver",1,8.9500,8.95
+2887702,5348,"Adafruit QT Py ESP32 S2 WiFi Dev Board with uFL Antenna Port",1,12.5000,12.5
+2887702,5358,"DIY Magnetic Connector   Right Angle Four Contact Pins",2,6.5000,13
+2887702,5412,"Magnetic USB Charging Cable for 4 Pin 0.1"" Magnetic Connector",1,4.9500,4.95
+2887702,5444,"RP SMA to w.FL / MHF3 / IPEX3 Adapter",1,2.9500,2.95
+2887702,5527,"Anodized Aluminum Machined Knob   Black   20mm Diameter",1,2.9500,2.95
+2894370,326,"Monochrome 0.96"" 128x64 OLED Graphic Display   STEMMA QT",1,17.5000,17.5
+2894370,377,"Rotary Encoder   Extras",1,4.5000,4.5
+2894370,380,"CR1220 12mm Diameter   3V Lithium Coin Cell Battery",1,0.9500,0.95
+2894370,480,"Small Arcade Joystick",1,14.9500,14.95
+2894370,1201,"Vibrating Mini Motor Disc",2,1.9500,3.9
+2894370,1431,"OLED Breakout Board   16 bit Color 1.5"" w/microSD holder",1,39.9500,39.95
+2894370,1609,"Adafruit Perma Proto Half sized Breadboard PCB   Single",1,4.5000,4.5
+2894370,1661,"uFL SMT Antenna Connector",1,0.7500,0.75
+2894370,1865,"Edge Launch SMA Connector for 1.6mm / 0.062"" Thick PCBs",1,2.5000,2.5
+2894370,2305,"Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic",1,7.9500,7.95
+2894370,2922,"Adalogger FeatherWing   RTC   SD Add on For All Feather Boards",1,8.9500,8.95
+2894370,2940,"Short Headers Kit for Feather   12 pin   16 pin Female Headers",4,1.5000,6
+2894370,3002,"Short Feather Male Headers   12 pin and 16 pin Male Header Set",4,0.5000,2
+2894370,3070,"Adafruit RFM69HCW Transceiver Radio Breakout   868 or 915 MHz",2,9.9500,19.9
+2894370,3101,"Soft Tactile Button (8mm) x 10",1,1.9500,1.95
+2894370,3134,"Adafruit 15x7 CharliePlex LED Matrix Display FeatherWing   Red",1,9.9500,9.95
+2894370,3176,"Adafruit Feather M0 RFM69HCW Packet Radio   868 or 915 MHz",1,24.9500,24.95
+2894370,3540,"Square 60mm x 60mm Soldering Sponge – 3 Pack",1,2.5000,2.5
+2894370,4209,"STEMMA QT / Qwiic JST SH 4 pin to Premium Male Headers Cable",1,0.9500,0.95
+2894370,4210,"STEMMA QT / Qwiic JST SH 4 pin Cable   100mm Long",1,0.9500,0.95
+2894370,4269,"Simple Spring Antenna   915MHz",1,0.9500,0.95
+2894370,4991,"Adafruit I2C Stemma QT Rotary Encoder Breakout with NeoPixel",3,5.9500,17.85
+2894370,5056,"Adafruit Trinkey QT2040   RP2040 USB Key with Stemma QT",1,7.5000,7.5
+2894370,5302,"Adafruit KB2040   RP2040 Kee Boar Driver",1,8.9500,8.95
+2894370,5531,"Anodized Aluminum Machined Knob   Gold   20mm Diameter",1,2.9500,2.95
+2930687,261,"JST PH 2 Pin Cable   Female Connector 100mm",3,0.7500,2.25
+2930687,669,"ESD (Electrostatic discharge)   Sticker!",2,1.5000,3
+2930687,904,"INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max",1,9.9500,9.95
+2930687,1609,"Adafruit Perma Proto Half sized Breadboard PCB   Single",1,4.5000,4.5
+2930687,1661,"uFL SMT Antenna Connector",2,0.7500,1.5
+2930687,1883,"Silicone Cover Stranded Core Wire   2m 26AWG Orange",1,0.9500,0.95
+2930687,2003,"Silicone Cover Stranded Core Wire   2m 30AWG Black",1,0.7500,0.75
+2930687,2005,"Silicone Cover Stranded Core Wire   2m 30AWG Green",1,0.7500,0.75
+2930687,2200,"Precision LM4040 Voltage Reference Breakout   2.048V and 4.096V",1,7.5000,7.5
+2930687,2717,"TCA9548A I2C Multiplexer",1,6.9500,6.95
+2930687,2830,"Stacking Headers for Feather   12 pin and 16 pin female headers",4,1.2500,5
+2930687,3175,"Hook up Wire Spool Set   22AWG Stranded Core   10 x 25ft",1,29.9500,29.95
+2930687,3417,"FeatherWing Tripler Mini Kit   Prototyping Add on For Feathers",1,8.5000,8.5
+2930687,3585,"Great Scott Gadgets ANT700   300MHz to 1100MHz Telescope Antenna",1,27.9500,27.95
+2930687,3786,"2 Pin Wire Joints (3 pack)",2,0.9500,1.9
+2930687,4397,"STEMMA QT / Qwiic JST SH 4 pin Cable with Premium Female Sockets",1,0.9500,0.95
+2930687,4399,"STEMMA QT / Qwiic JST SH 4 Pin Cable   50mm Long",3,0.9500,2.8499999999999996
+2930687,4483,"5 pin JST ESLOV to 4 pin JST SH STEMMA QT / Qwiic Cable",1,1.5000,1.5
+2930687,4565,"Adafruit LSM6DSOX   LIS3MDL FeatherWing   Precision 9 DoF IMU",1,19.9500,19.95
+2930687,4582,"Finger Pulse Oximeter with Bluetooth LE",1,49.9500,49.95
+2930687,5051,"Black Anodized Aluminum Bumper Feet   Pack of 2",1,8.9500,8.95
+2930687,5244,"Grove Cable Pigtail   2mm pitch 100mm long",2,0.9500,1.9
+2930687,5302,"Adafruit KB2040   RP2040 Kee Boar Driver",1,8.9500,8.95
+2930687,5625,"Adafruit Qwiic / Stemma QT 5 Port Hub",3,2.5000,7.5

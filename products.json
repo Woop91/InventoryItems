@@ -1,0 +1,3304 @@
+{
+  "9": {
+    "product_id": "9",
+    "name": "High strength 'rare earth' magnet",
+    "csv_name": "High strength 'rare earth' magnet",
+    "description": "Super strong neodymium rare earth magnet. Great for holding things together or making magnetic clasps.",
+    "technical_specs": "Type: Neodymium (NdFeB); Shape: Disc; Coating: Nickel plated",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/9",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/9-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.5,
+    "total_qty": 2,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "50": {
+    "product_id": "50",
+    "name": "Adafruit METRO 328 Fully Assembled   Arduino IDE compatible",
+    "csv_name": "Adafruit METRO 328 Fully Assembled   Arduino IDE compatible",
+    "description": "The Adafruit METRO 328 is an ATmega328-based microcontroller board, fully compatible with the Arduino IDE. Features a standard Arduino UNO R3 shield-compatible header layout.",
+    "technical_specs": "Microcontroller: ATmega328P; Clock: 16 MHz; Digital I/O: 20 (6 PWM); Analog Inputs: 6; Flash: 32KB; SRAM: 2KB; EEPROM: 1KB; USB: Micro-B; Voltage: 5V logic",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/50",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/50-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-metro",
+    "unit_price": 17.5,
+    "total_qty": 1,
+    "orders": [
+      "2599853"
+    ],
+    "last_scraped": null
+  },
+  "64": {
+    "product_id": "64",
+    "name": "Half Sized Premium Breadboard   400 Tie Points",
+    "csv_name": "Half Sized Premium Breadboard   400 Tie Points",
+    "description": "Half-size solderless breadboard with 400 tie points. High quality with nickel-plated contacts and strong adhesive backing.",
+    "technical_specs": "Tie Points: 400; Size: 3.3\" x 2.1\" x 0.33\" (83mm x 54mm x 8.5mm); Rows: 30; Power Rails: 2",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/64",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/64-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 5.0,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "136": {
+    "product_id": "136",
+    "name": "Ladyada's Electronics Toolkit",
+    "csv_name": "Ladyada's Electronics Toolkit",
+    "description": "Ladyada's Electronics Toolkit - a comprehensive set of tools for electronics work including multimeter, soldering iron, wire strippers, pliers, and more.",
+    "technical_specs": "Includes: Multimeter, soldering iron, solder, wire strippers, flush cutters, needle-nose pliers, screwdrivers, helping hands, and more",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/136",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/136-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0",
+    "unit_price": 100.0,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "151": {
+    "product_id": "151",
+    "name": "Panavise Jr.",
+    "csv_name": "Panavise Jr.",
+    "description": "Panavise Jr. - a compact and versatile vise for holding PCBs and small parts during soldering and assembly work.",
+    "technical_specs": "Jaw Opening: 2.5\"; Jaw Width: 1.5\"; Base: Weighted; Head: 360° rotation",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/151",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/151-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 30.0,
+    "total_qty": 1,
+    "orders": [
+      "2846279"
+    ],
+    "last_scraped": null
+  },
+  "153": {
+    "product_id": "153",
+    "name": "Breadboarding wire bundle",
+    "csv_name": "Breadboarding wire bundle",
+    "description": "Bundle of pre-cut breadboarding wires in various lengths and colors. Perfect for making neat breadboard circuits.",
+    "technical_specs": "Wire Gauge: 22AWG; Type: Solid core; Colors: Assorted; Lengths: Various (pre-cut)",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/153",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/153-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 3,
+    "orders": [
+      "2567892",
+      "2660281"
+    ],
+    "last_scraped": null
+  },
+  "157": {
+    "product_id": "157",
+    "name": "IR (Infrared) Receiver Sensor",
+    "csv_name": "IR (Infrared) Receiver Sensor",
+    "description": "Miniature IR receiver sensor module for detecting 38KHz infrared signals from remote controls.",
+    "technical_specs": "Frequency: 38KHz; Voltage: 3.3-5V; Output: Digital; Wavelength: 940nm; Range: ~10m",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/157",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/157-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/ir-sensor",
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2871753"
+    ],
+    "last_scraped": null
+  },
+  "159": {
+    "product_id": "159",
+    "name": "Diffused RGB (tri color) LED",
+    "csv_name": "Diffused RGB (tri color) LED",
+    "description": "Diffused 5mm RGB LED with separate red, green, and blue elements. Common cathode, can produce any color by mixing.",
+    "technical_specs": "Size: 5mm; Type: Common Cathode; Colors: Red/Green/Blue; Forward Voltage: 2.0-3.4V; Max Current: 20mA per channel",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/159",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/159-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.0,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "239": {
+    "product_id": "239",
+    "name": "Full Sized Premium Breadboard   830 Tie Points",
+    "csv_name": "Full Sized Premium Breadboard   830 Tie Points",
+    "description": "Full-size solderless breadboard with 830 tie points. Premium quality with nickel-plated contacts.",
+    "technical_specs": "Tie Points: 830; Size: 6.5\" x 2.1\"; Rows: 63; Power Rails: 4; Contact: Nickel alloy",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/239",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/239-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 5.95,
+    "total_qty": 8,
+    "orders": [
+      "2567892",
+      "2643648",
+      "2660281"
+    ],
+    "last_scraped": null
+  },
+  "261": {
+    "product_id": "261",
+    "name": "JST PH 2 Pin Cable   Female Connector 100mm",
+    "csv_name": "JST PH 2 Pin Cable   Female Connector 100mm",
+    "description": "JST PH 2-pin cable with female connector, 100mm long. Used for battery and power connections on many Adafruit boards.",
+    "technical_specs": "Connector: JST PH 2mm pitch; Pins: 2; Length: 100mm; Wire: 26AWG",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/261",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/261-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.75,
+    "total_qty": 3,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "292": {
+    "product_id": "292",
+    "name": "i2c / SPI character LCD backpack   STEMMA QT / Qwiic",
+    "csv_name": "i2c / SPI character LCD backpack   STEMMA QT / Qwiic",
+    "description": "I2C/SPI character LCD backpack that lets you control a character LCD display over I2C or SPI with just 2 wires. STEMMA QT compatible.",
+    "technical_specs": "Interface: I2C (default) or SPI; Voltage: 5V; Address: 0x20 (default); Compatible: Standard HD44780 LCDs; Connector: STEMMA QT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/292",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/292-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/i2c-spi-lcd-backpack",
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "326": {
+    "product_id": "326",
+    "name": "Monochrome 0.96\" 128x64 OLED Graphic Display   STEMMA QT",
+    "csv_name": "Monochrome 0.96\" 128x64 OLED Graphic Display   STEMMA QT",
+    "description": "Monochrome 0.96 inch 128x64 OLED graphic display with STEMMA QT connector. Crisp white pixels on black background.",
+    "technical_specs": "Display: 128x64 pixels; Size: 0.96\"; Interface: I2C; Voltage: 3.3-5V; Driver: SSD1306; Connector: STEMMA QT / Qwiic",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/326",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/326-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/monochrome-oled-breakouts",
+    "unit_price": 17.5,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "356": {
+    "product_id": "356",
+    "name": "Breadboard trim potentiometer",
+    "csv_name": "Breadboard trim potentiometer",
+    "description": "Small breadboard-friendly trim potentiometer for adjusting voltage levels in circuits. 10K ohm resistance.",
+    "technical_specs": "Resistance: 10K Ohm; Type: Single turn trimmer; Pin Spacing: 0.1\" breadboard compatible",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/356",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/356-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.25,
+    "total_qty": 2,
+    "orders": [
+      "2604757",
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "373": {
+    "product_id": "373",
+    "name": "Breadboard friendly 2.1mm DC barrel jack",
+    "csv_name": "Breadboard friendly 2.1mm DC barrel jack",
+    "description": "Breadboard-friendly 2.1mm DC barrel jack for easily adding DC power to breadboard projects.",
+    "technical_specs": "Barrel Size: 2.1mm inner / 5.5mm outer; Pin Spacing: 0.1\" breadboard compatible; Max Voltage: 24V DC",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/373",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/373-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 2,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "377": {
+    "product_id": "377",
+    "name": "Rotary Encoder   Extras",
+    "csv_name": "Rotary Encoder   Extras",
+    "description": "Rotary encoder with extras - a mechanical rotary encoder with built-in pushbutton switch and a nice knurled knob.",
+    "technical_specs": "Type: Mechanical incremental; Detents: 24 per revolution; Switch: Built-in pushbutton; Shaft: 6mm D-shaft",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/377",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/377-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/rotary-encoder",
+    "unit_price": 4.5,
+    "total_qty": 4,
+    "orders": [
+      "2643648",
+      "2862474",
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "380": {
+    "product_id": "380",
+    "name": "CR1220 12mm Diameter   3V Lithium Coin Cell Battery",
+    "csv_name": "CR1220 12mm Diameter   3V Lithium Coin Cell Battery",
+    "description": "CR1220 3V lithium coin cell battery. Used for RTC backup and low-power applications.",
+    "technical_specs": "Type: CR1220; Voltage: 3V; Chemistry: Lithium; Diameter: 12mm; Height: 2.0mm; Capacity: ~40mAh",
+    "category": "Power",
+    "page_url": "https://www.adafruit.com/product/380",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/380-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "398": {
+    "product_id": "398",
+    "name": "RGB backlight positive LCD 16x2   extras",
+    "csv_name": "RGB backlight positive LCD 16x2   extras",
+    "description": "RGB backlight positive LCD 16x2 display with extras. Features adjustable RGB backlight to create any color.",
+    "technical_specs": "Display: 16x2 characters; Backlight: RGB (adjustable); Controller: HD44780 compatible; Voltage: 5V; Interface: Parallel",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/398",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/398-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/rgb-backlit-lcds",
+    "unit_price": 12.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "431": {
+    "product_id": "431",
+    "name": "Tiny Modular Snap Boxes   SMD component storage   10 pack",
+    "csv_name": "Tiny Modular Snap Boxes   SMD component storage   10 pack",
+    "description": "Tiny modular snap boxes for SMD component storage. 10 pack of small snap-together storage compartments.",
+    "technical_specs": "Quantity: 10 pack; Size: Tiny; Material: Plastic; Feature: Snap-together modular design",
+    "category": "Storage",
+    "page_url": "https://www.adafruit.com/product/431",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/431-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 3.95,
+    "total_qty": 1,
+    "orders": [
+      "2596354"
+    ],
+    "last_scraped": null
+  },
+  "432": {
+    "product_id": "432",
+    "name": "Small Modular Snap Boxes   SMD component storage   3 pack",
+    "csv_name": "Small Modular Snap Boxes   SMD component storage   3 pack",
+    "description": "Small modular snap boxes for SMD component storage. 3 pack of snap-together storage compartments.",
+    "technical_specs": "Quantity: 3 pack; Size: Small; Material: Plastic; Feature: Snap-together modular design",
+    "category": "Storage",
+    "page_url": "https://www.adafruit.com/product/432",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/432-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.95,
+    "total_qty": 1,
+    "orders": [
+      "2596354"
+    ],
+    "last_scraped": null
+  },
+  "433": {
+    "product_id": "433",
+    "name": "Medium Modular Snap Boxes   SMD component storage   2 pack",
+    "csv_name": "Medium Modular Snap Boxes   SMD component storage   2 pack",
+    "description": "Medium modular snap boxes for SMD component storage. 2 pack of snap-together storage compartments.",
+    "technical_specs": "Quantity: 2 pack; Size: Medium; Material: Plastic; Feature: Snap-together modular design",
+    "category": "Storage",
+    "page_url": "https://www.adafruit.com/product/433",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/433-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.95,
+    "total_qty": 1,
+    "orders": [
+      "2596354"
+    ],
+    "last_scraped": null
+  },
+  "434": {
+    "product_id": "434",
+    "name": "Large Modular Snap Box   SMD component storage",
+    "csv_name": "Large Modular Snap Box   SMD component storage",
+    "description": "Large modular snap box for SMD component storage. Snaps together with other boxes in the series.",
+    "technical_specs": "Quantity: 1; Size: Large; Material: Plastic; Feature: Snap-together modular design",
+    "category": "Storage",
+    "page_url": "https://www.adafruit.com/product/434",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/434-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 3,
+    "orders": [
+      "2596354",
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "443": {
+    "product_id": "443",
+    "name": "Large Premium Solderless Breadboard",
+    "csv_name": "Large Premium Solderless Breadboard",
+    "description": "Large premium solderless breadboard with extra-long power rails and strong adhesive backing.",
+    "technical_specs": "Tie Points: 1660+; Power Rails: Full length; Size: Extra large; Contact: Nickel alloy",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/443",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/443-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 19.95,
+    "total_qty": 2,
+    "orders": [
+      "2643648",
+      "2660281"
+    ],
+    "last_scraped": null
+  },
+  "453": {
+    "product_id": "453",
+    "name": "MAX7219CNG LED Matrix/Digit Display Driver",
+    "csv_name": "MAX7219CNG LED Matrix/Digit Display Driver",
+    "description": "MAX7219CNG LED matrix/digit display driver IC. Drives up to 8 digits of 7-segment displays or an 8x8 LED matrix via SPI.",
+    "technical_specs": "IC: MAX7219; Interface: SPI; Max Digits: 8 (7-segment); Max LEDs: 64; Package: DIP-24; Voltage: 5V",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/453",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/453-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 12.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "455": {
+    "product_id": "455",
+    "name": "Small 1.2\" 8x8 Ultra Bright Red LED Matrix",
+    "csv_name": "Small 1.2\" 8x8 Ultra Bright Red LED Matrix",
+    "description": "Small 1.2 inch 8x8 ultra bright red LED matrix. Commonly used with the HT16K33 LED backpack.",
+    "technical_specs": "Size: 1.2\" (30mm); Matrix: 8x8 (64 LEDs); Color: Red; Forward Voltage: ~2V; Interface: Multiplex",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/455",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/455-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-led-backpack",
+    "unit_price": 3.95,
+    "total_qty": 3,
+    "orders": [
+      "2643648",
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "480": {
+    "product_id": "480",
+    "name": "Small Arcade Joystick",
+    "csv_name": "Small Arcade Joystick",
+    "description": "Small arcade-style joystick with 4 microswitches for up/down/left/right. Classic arcade feel.",
+    "technical_specs": "Type: 4-way with microswitches; Mounting: Panel mount; Shaft: Removable ball top; Switches: SPDT micro",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/480",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/480-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 14.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "669": {
+    "product_id": "669",
+    "name": "ESD (Electrostatic discharge)   Sticker!",
+    "csv_name": "ESD (Electrostatic discharge)   Sticker!",
+    "description": "ESD (Electrostatic Discharge) warning sticker. Fun and functional static awareness sticker.",
+    "technical_specs": "Type: Vinyl sticker; Theme: ESD warning",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/669",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/669-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.5,
+    "total_qty": 2,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "715": {
+    "product_id": "715",
+    "name": "Adafruit I2C Controlled   Keypad Shield Kit for 16x2 LCD",
+    "csv_name": "Adafruit I2C Controlled   Keypad Shield Kit for 16x2 LCD",
+    "description": "Adafruit I2C controlled keypad shield kit for 16x2 LCD. Includes 5 navigation buttons and a 16x2 character LCD.",
+    "technical_specs": "Display: 16x2 character LCD; Interface: I2C; Buttons: 5 (Select, Up, Down, Left, Right); Voltage: 5V; Shield: Arduino UNO compatible",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/715",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/715-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-i2c-controlled-keypad-shield-for-16x2-lcd",
+    "unit_price": 14.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "727": {
+    "product_id": "727",
+    "name": "3 x AAA Battery Holder with On/Off Switch and 2 Pin JST",
+    "csv_name": "3 x AAA Battery Holder with On/Off Switch and 2 Pin JST",
+    "description": "3xAAA battery holder with on/off switch and 2-pin JST PH connector. Perfect for portable projects.",
+    "technical_specs": "Batteries: 3x AAA; Voltage: 4.5V (3x1.5V); Connector: JST PH 2-pin; Feature: On/Off slide switch; Lead Length: ~6\"",
+    "category": "Power",
+    "page_url": "https://www.adafruit.com/product/727",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/727-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2820999"
+    ],
+    "last_scraped": null
+  },
+  "735": {
+    "product_id": "735",
+    "name": "74LVC245   Breadboard Friendly 8 bit Logic Level Shifter",
+    "csv_name": "74LVC245   Breadboard Friendly 8 bit Logic Level Shifter",
+    "description": "74LVC245 breadboard-friendly 8-bit logic level shifter. Shifts between 3.3V and 5V logic levels bidirectionally.",
+    "technical_specs": "IC: 74LVC245; Channels: 8-bit; Direction: Bidirectional; Voltage: 1.65V-5.5V; Package: DIP; Breadboard friendly",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/735",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/735-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.5,
+    "total_qty": 4,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "757": {
+    "product_id": "757",
+    "name": "4 channel I2C safe Bi directional Logic Level Converter",
+    "csv_name": "4 channel I2C safe Bi directional Logic Level Converter",
+    "description": "4-channel I2C-safe bidirectional logic level converter. Safely steps between 3.3V and 5V logic on I2C and other buses.",
+    "technical_specs": "Channels: 4; Direction: Bidirectional; Low Side: 1.8-3.3V; High Side: 3.3-5V; Safe for: I2C, SPI, UART",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/757",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/757-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts",
+    "unit_price": 3.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "758": {
+    "product_id": "758",
+    "name": "Premium Male/Male Jumper Wires   40 x 6\" (150mm)",
+    "csv_name": "Premium Male/Male Jumper Wires   40 x 6\" (150mm)",
+    "description": "Premium male/male jumper wires, 40 wires x 6 inches (150mm). Color-coded for easy identification.",
+    "technical_specs": "Quantity: 40; Length: 6\" (150mm); Type: Male/Male; Gauge: 24AWG; Colors: Rainbow assorted",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/758",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/758-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 3.95,
+    "total_qty": 4,
+    "orders": [
+      "2604757",
+      "2643648",
+      "2660281"
+    ],
+    "last_scraped": null
+  },
+  "759": {
+    "product_id": "759",
+    "name": "Premium Male/Male Jumper Wires   40 x 3\" (75mm)",
+    "csv_name": "Premium Male/Male Jumper Wires   40 x 3\" (75mm)",
+    "description": "Premium male/male jumper wires, 40 wires x 3 inches (75mm). Short length for compact breadboard circuits.",
+    "technical_specs": "Quantity: 40; Length: 3\" (75mm); Type: Male/Male; Gauge: 24AWG; Colors: Rainbow assorted",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/759",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/759-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 3.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "760": {
+    "product_id": "760",
+    "name": "Premium Male/Male Jumper Wires   40 x 12\" (300mm)",
+    "csv_name": "Premium Male/Male Jumper Wires   40 x 12\" (300mm)",
+    "description": "Premium male/male jumper wires, 40 wires x 12 inches (300mm). Extra long for larger projects.",
+    "technical_specs": "Quantity: 40; Length: 12\" (300mm); Type: Male/Male; Gauge: 24AWG; Colors: Rainbow assorted",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/760",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/760-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 7.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "805": {
+    "product_id": "805",
+    "name": "Breadboard friendly SPDT Slide Switch",
+    "csv_name": "Breadboard friendly SPDT Slide Switch",
+    "description": "Breadboard-friendly SPDT slide switch. Small form factor that plugs directly into a breadboard.",
+    "technical_specs": "Type: SPDT (Single Pole Double Throw); Rating: 0.3A at 30VDC; Pin Spacing: 0.1\" breadboard compatible",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/805",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/805-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 4,
+    "orders": [
+      "2604757",
+      "2643648",
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "860": {
+    "product_id": "860",
+    "name": "Miniature 8x8 Yellow LED Matrix",
+    "csv_name": "Miniature 8x8 Yellow LED Matrix",
+    "description": "Miniature 8x8 yellow LED matrix display, 0.8 inch size. Great for small indicator displays.",
+    "technical_specs": "Size: 0.8\" (20mm); Matrix: 8x8 (64 LEDs); Color: Yellow; Interface: Multiplex row/column",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/860",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/860-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-led-backpack",
+    "unit_price": 3.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "877": {
+    "product_id": "877",
+    "name": "Adafruit 7 Segment LED Matrix Backpack   STEMMA QT / qwiic",
+    "csv_name": "Adafruit 7 Segment LED Matrix Backpack   STEMMA QT / qwiic",
+    "description": "Adafruit 7-segment LED matrix backpack with STEMMA QT connector. I2C-controlled 4-digit 7-segment display driver.",
+    "technical_specs": "Driver: HT16K33; Interface: I2C; Address: 0x70 (configurable); Digits: 4x 7-segment; Voltage: 5V; Connector: STEMMA QT",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/877",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/877-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-led-backpack",
+    "unit_price": 6.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "904": {
+    "product_id": "904",
+    "name": "INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max",
+    "csv_name": "INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max",
+    "description": "INA219 high-side DC current sensor breakout board. Measures current and voltage over I2C with 1% precision.",
+    "technical_specs": "Sensor: INA219; Interface: I2C; Max Voltage: 26V; Max Current: ±3.2A; Resolution: 0.8mA; Accuracy: 1%; Connector: STEMMA QT compatible",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/904",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/904-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout",
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "905": {
+    "product_id": "905",
+    "name": "Large Plastic Project Enclosure   Weatherproof with Clear Top",
+    "csv_name": "Large Plastic Project Enclosure   Weatherproof with Clear Top",
+    "description": "Large plastic project enclosure, weatherproof with clear top. IP65 rated for outdoor projects.",
+    "technical_specs": "Size: 6.3\" x 6.3\" x 3.5\" (160x160x90mm); Rating: IP65 weatherproof; Material: ABS plastic; Top: Clear polycarbonate",
+    "category": "Enclosure",
+    "page_url": "https://www.adafruit.com/product/905",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/905-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 19.95,
+    "total_qty": 1,
+    "orders": [
+      "2820999"
+    ],
+    "last_scraped": null
+  },
+  "954": {
+    "product_id": "954",
+    "name": "USB to TTL Serial Cable   Debug / Console Cable for Raspberry Pi",
+    "csv_name": "USB to TTL Serial Cable   Debug / Console Cable for Raspberry Pi",
+    "description": "USB to TTL serial cable for Raspberry Pi debug/console. Connects to Pi's UART pins for serial terminal access.",
+    "technical_specs": "Interface: USB to TTL UART; Chipset: PL2303HX; Voltage: 3.3V logic; Baud: Up to 115200; Connector: USB-A to bare wires",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/954",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/954-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable",
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2660281"
+    ],
+    "last_scraped": null
+  },
+  "1009": {
+    "product_id": "1009",
+    "name": "Colorful Round Tactile Button Switch Assortment   15 pack",
+    "csv_name": "Colorful Round Tactile Button Switch Assortment   15 pack",
+    "description": "Colorful round tactile button switch assortment. 15 pack of 6mm round pushbuttons in various colors.",
+    "technical_specs": "Quantity: 15; Shape: Round; Size: 6mm; Type: Momentary tactile; Colors: Assorted; Pin Spacing: Breadboard compatible",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1009",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1009-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 5.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "1010": {
+    "product_id": "1010",
+    "name": "Colorful 12mm Square Tactile Button Switch Assortment   15 pack",
+    "csv_name": "Colorful 12mm Square Tactile Button Switch Assortment   15 pack",
+    "description": "Colorful 12mm square tactile button switch assortment. 15 pack of square pushbuttons in various colors.",
+    "technical_specs": "Quantity: 15; Shape: Square; Size: 12mm; Type: Momentary tactile; Colors: Assorted",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1010",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1010-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 5.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "1048": {
+    "product_id": "1048",
+    "name": "Adafruit 1.2\" 8x8 LED Matrix Backpack",
+    "csv_name": "Adafruit 1.2\" 8x8 LED Matrix Backpack",
+    "description": "Adafruit 1.2 inch 8x8 LED matrix backpack. I2C-controlled HT16K33 driver board for 8x8 LED matrices.",
+    "technical_specs": "Driver: HT16K33; Interface: I2C; Address: 0x70 (configurable); Matrix: 8x8; Voltage: 5V; Size: 1.2\"",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/1048",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1048-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-led-backpack",
+    "unit_price": 6.0,
+    "total_qty": 3,
+    "orders": [
+      "2643648",
+      "2660281",
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "1074": {
+    "product_id": "1074",
+    "name": "Configurable Spring Terminal Blocks   3 Pin 0.1\" Pitch R/A   x 5",
+    "csv_name": "Configurable Spring Terminal Blocks   3 Pin 0.1\" Pitch R/A   x 5",
+    "description": "Configurable spring terminal blocks, 3-pin 0.1 inch pitch, right angle. 5 pack for PCB connections.",
+    "technical_specs": "Quantity: 5; Pins: 3; Pitch: 0.1\" (2.54mm); Type: Right angle; Connection: Spring clamp",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1074",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1074-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1081": {
+    "product_id": "1081",
+    "name": "Configurable Spring Terminal Blocks   3 Pin 0.1\" Pitch x 5",
+    "csv_name": "Configurable Spring Terminal Blocks   3 Pin 0.1\" Pitch x 5",
+    "description": "Configurable spring terminal blocks, 3-pin 0.1 inch pitch, vertical. 5 pack for PCB connections.",
+    "technical_specs": "Quantity: 5; Pins: 3; Pitch: 0.1\" (2.54mm); Type: Vertical; Connection: Spring clamp",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1081",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1081-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1119": {
+    "product_id": "1119",
+    "name": "Tactile Switch Buttons (12mm square, 6mm tall) x 10 pack",
+    "csv_name": "Tactile Switch Buttons (12mm square, 6mm tall) x 10 pack",
+    "description": "Tactile switch buttons, 12mm square, 6mm tall. 10 pack of standard pushbutton switches.",
+    "technical_specs": "Quantity: 10; Size: 12mm x 12mm; Height: 6mm; Type: Momentary tactile; Pin Spacing: Breadboard compatible",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1119",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1119-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.5,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "1201": {
+    "product_id": "1201",
+    "name": "Vibrating Mini Motor Disc",
+    "csv_name": "Vibrating Mini Motor Disc",
+    "description": "Vibrating mini motor disc. Small pancake vibration motor for haptic feedback in wearables and handheld devices.",
+    "technical_specs": "Type: Pancake/coin; Voltage: 2-3.6V; Current: ~60mA; Diameter: 10mm; Thickness: 2.7mm",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1201",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1201-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 3,
+    "orders": [
+      "2862474",
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "1265": {
+    "product_id": "1265",
+    "name": "Yellow 7 segment clock display   1.2\" digit height",
+    "csv_name": "Yellow 7 segment clock display   1.2\" digit height",
+    "description": "Yellow 7-segment clock display with 1.2 inch digit height. 4 digits with colon for clock display.",
+    "technical_specs": "Digits: 4 (with colon); Digit Height: 1.2\" (30mm); Color: Yellow; Interface: Multiplex; Common Cathode",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/1265",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1265-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-led-backpack",
+    "unit_price": 7.5,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "1312": {
+    "product_id": "1312",
+    "name": "Breadboard friendly RGB Smart NeoPixel   Pack of 5",
+    "csv_name": "Breadboard friendly RGB Smart NeoPixel   Pack of 5",
+    "description": "Breadboard-friendly RGB smart NeoPixel LEDs. Pack of 5 individually-addressable WS2812B RGB LEDs on breakout PCBs.",
+    "technical_specs": "Quantity: 5; Type: WS2812B (NeoPixel); LED: RGB; Voltage: 5V; Data: Single wire; Breadboard compatible",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/1312",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1312-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-neopixel-uberguide",
+    "unit_price": 7.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1328": {
+    "product_id": "1328",
+    "name": "2.1mm DC Barrel Jack to Alligator Clips",
+    "csv_name": "2.1mm DC Barrel Jack to Alligator Clips",
+    "description": "2.1mm DC barrel jack to alligator clips cable. Connect a DC power supply to alligator clips.",
+    "technical_specs": "Input: 2.1mm DC barrel jack; Output: Alligator clips (red/black); Length: ~3 feet",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/1328",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1328-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2846279"
+    ],
+    "last_scraped": null
+  },
+  "1399": {
+    "product_id": "1399",
+    "name": "RGB 7 Segment Digit   1\" Tall Digit",
+    "csv_name": "RGB 7 Segment Digit   1\" Tall Digit",
+    "description": "RGB 7-segment digit, 1 inch tall. Each segment is individually controllable with RGB color mixing.",
+    "technical_specs": "Digit Height: 1\" (25mm); Type: Common anode RGB; Segments: 7 + decimal; Colors: Full RGB per segment",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/1399",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1399-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 14.95,
+    "total_qty": 2,
+    "orders": [
+      "2596354",
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1426": {
+    "product_id": "1426",
+    "name": "NeoPixel Stick   8 x 5050 RGB LED with Integrated Drivers",
+    "csv_name": "NeoPixel Stick   8 x 5050 RGB LED with Integrated Drivers",
+    "description": "NeoPixel stick with 8x 5050 RGB LEDs with integrated WS2812B drivers. Chainable addressable LED strip.",
+    "technical_specs": "LEDs: 8x WS2812B; Size: 5050; Color: RGB; Voltage: 5V; Dimensions: 2\" x 0.4\"; Chainable: Yes",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/1426",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1426-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-neopixel-uberguide",
+    "unit_price": 5.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1431": {
+    "product_id": "1431",
+    "name": "OLED Breakout Board   16 bit Color 1.5\" w/microSD holder",
+    "csv_name": "OLED Breakout Board   16 bit Color 1.5\" w/microSD holder",
+    "description": "OLED breakout board, 16-bit color 1.5 inch display with microSD card holder. Full color OLED with SPI interface.",
+    "technical_specs": "Display: 128x128 pixels; Size: 1.5\"; Color: 16-bit (65K colors); Interface: SPI; Driver: SSD1351; Feature: microSD slot",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/1431",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1431-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-1-5-color-oled-breakout-board",
+    "unit_price": 39.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "1518": {
+    "product_id": "1518",
+    "name": "Adafruit Flex Perma Proto   Half sized Breadboard Flex PCB",
+    "csv_name": "Adafruit Flex Perma Proto   Half sized Breadboard Flex PCB",
+    "description": "Adafruit Flex Perma-Proto - a flexible half-sized breadboard PCB made from thin flex material.",
+    "technical_specs": "Size: Half breadboard; Material: Flexible PCB; Layout: Breadboard pattern; Holes: Plated through-hole",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/1518",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1518-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 7.5,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "1528": {
+    "product_id": "1528",
+    "name": "Oscilloscope Probe 100MHz",
+    "csv_name": "Oscilloscope Probe 100MHz",
+    "description": "Oscilloscope probe rated for 100MHz bandwidth. Standard BNC connector with x1/x10 switch.",
+    "technical_specs": "Bandwidth: 100MHz; Impedance: 1M Ohm; Switch: x1/x10; Connector: BNC; Cable Length: ~4 feet",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/1528",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1528-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 14.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "1536": {
+    "product_id": "1536",
+    "name": "Buzzer 5V   Breadboard friendly",
+    "csv_name": "Buzzer 5V   Breadboard friendly",
+    "description": "5V breadboard-friendly buzzer/piezo speaker. Emits a loud tone when powered with 5V.",
+    "technical_specs": "Voltage: 5V; Type: Piezo buzzer; Sound: ~2300Hz; Breadboard compatible; Current: ~30mA",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1536",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1536-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 2,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1592": {
+    "product_id": "1592",
+    "name": "Short Wire Alligator Clip Test Lead (set of 12)",
+    "csv_name": "Short Wire Alligator Clip Test Lead (set of 12)",
+    "description": "Short wire alligator clip test leads, set of 12. Color-coded clips for easy circuit testing.",
+    "technical_specs": "Quantity: 12; Length: Short; Type: Alligator clip to alligator clip; Colors: 6 pairs",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/1592",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1592-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 3.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "1597": {
+    "product_id": "1597",
+    "name": "Engineer Professional Silicone Tip Solder Sucker",
+    "csv_name": "Engineer Professional Silicone Tip Solder Sucker",
+    "description": "Engineer SS-02 professional silicone tip solder sucker. High-quality desoldering pump with replaceable silicone tip.",
+    "technical_specs": "Brand: Engineer; Model: SS-02; Tip: Silicone (heat resistant); Type: Manual vacuum desoldering pump; Tip: Replaceable",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/1597",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1597-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 17.5,
+    "total_qty": 1,
+    "orders": [
+      "2846279"
+    ],
+    "last_scraped": null
+  },
+  "1598": {
+    "product_id": "1598",
+    "name": "Professional IC Extraction Tool",
+    "csv_name": "Professional IC Extraction Tool",
+    "description": "Professional IC extraction tool for safely removing DIP ICs from sockets without bending pins.",
+    "technical_specs": "Type: IC extraction/insertion tool; Compatible: DIP packages; Material: Anti-static plastic",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/1598",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1598-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 14.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1609": {
+    "product_id": "1609",
+    "name": "Adafruit Perma Proto Half sized Breadboard PCB   Single",
+    "csv_name": "Adafruit Perma Proto Half sized Breadboard PCB   Single",
+    "description": "Adafruit Perma-Proto half-sized breadboard PCB. Solderable breadboard-layout PCB for making permanent circuits.",
+    "technical_specs": "Size: Half breadboard (3.25\" x 2.15\"); Layout: Breadboard pattern; Holes: Plated through-hole; Material: FR4",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/1609",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1609-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-perma-proto-half-sized-breadboard-pcb",
+    "unit_price": 4.5,
+    "total_qty": 6,
+    "orders": [
+      "2604757",
+      "2643648",
+      "2862474",
+      "2887702",
+      "2894370",
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "1611": {
+    "product_id": "1611",
+    "name": "Silicone Elastomer 4x4 Button Keypad   for 3mm LEDs",
+    "csv_name": "Silicone Elastomer 4x4 Button Keypad   for 3mm LEDs",
+    "description": "Silicone elastomer 4x4 button keypad for 3mm LEDs. Translucent silicone pad for the Trellis system.",
+    "technical_specs": "Layout: 4x4 (16 buttons); LED Size: 3mm; Material: Translucent silicone elastomer; Compatible: Adafruit Trellis",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1611",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1611-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-trellis-diy-open-source-led-keypad",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "1612": {
+    "product_id": "1612",
+    "name": "NeoPixel Mini Button PCB   Pack of 5",
+    "csv_name": "NeoPixel Mini Button PCB   Pack of 5",
+    "description": "NeoPixel mini button PCB, pack of 5. Tiny circular PCBs with a single WS2812B NeoPixel LED each.",
+    "technical_specs": "Quantity: 5; LED: WS2812B; Size: ~10mm diameter; Color: RGB; Voltage: 5V; Chainable: Yes",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/1612",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1612-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-neopixel-uberguide",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "1616": {
+    "product_id": "1616",
+    "name": "Adafruit Trellis Monochrome Driver PCB for 4x4 Keypad & 3mm LEDs",
+    "csv_name": "Adafruit Trellis Monochrome Driver PCB for 4x4 Keypad & 3mm LEDs",
+    "description": "Adafruit Trellis monochrome driver PCB for 4x4 keypad and 3mm LEDs. HT16K33-based I2C keypad/LED matrix controller.",
+    "technical_specs": "Driver: HT16K33; Interface: I2C; Layout: 4x4; LEDs: 16x 3mm; Buttons: 16 elastomer; Address: Configurable; Tileable: Yes",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/1616",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1616-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-trellis-diy-open-source-led-keypad",
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "1623": {
+    "product_id": "1623",
+    "name": "Small 1.2\" 8x8 Ultra Bright Pure Green LED Matrix",
+    "csv_name": "Small 1.2\" 8x8 Ultra Bright Pure Green LED Matrix",
+    "description": "Small 1.2 inch 8x8 ultra bright pure green LED matrix display.",
+    "technical_specs": "Size: 1.2\" (30mm); Matrix: 8x8 (64 LEDs); Color: Pure Green; Interface: Multiplex",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/1623",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1623-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-led-backpack",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2660281"
+    ],
+    "last_scraped": null
+  },
+  "1655": {
+    "product_id": "1655",
+    "name": "NeoPixel 5050 RGB LED with Integrated Driver Chip   10 Pack",
+    "csv_name": "NeoPixel 5050 RGB LED with Integrated Driver Chip   10 Pack",
+    "description": "NeoPixel WS2812B 5050 RGB LED with integrated driver chip. 10 pack of loose addressable LEDs.",
+    "technical_specs": "Quantity: 10; Type: WS2812B; Package: 5050 SMD; Color: RGB; Voltage: 5V; Data: Single wire",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/1655",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1655-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-neopixel-uberguide",
+    "unit_price": 4.5,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "1661": {
+    "product_id": "1661",
+    "name": "uFL SMT Antenna Connector",
+    "csv_name": "uFL SMT Antenna Connector",
+    "description": "uFL (U.FL/IPEX) SMT antenna connector. Tiny surface-mount coaxial RF connector for antenna connections.",
+    "technical_specs": "Type: U.FL / IPEX MHF1; Impedance: 50 Ohm; Mounting: SMT; Frequency: DC-6GHz",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/1661",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1661-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.75,
+    "total_qty": 6,
+    "orders": [
+      "2862474",
+      "2887702",
+      "2894370",
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "1683": {
+    "product_id": "1683",
+    "name": "On Off Power Button / Pushbutton Toggle Switch",
+    "csv_name": "On Off Power Button / Pushbutton Toggle Switch",
+    "description": "On/Off power button pushbutton toggle switch. Latching pushbutton that toggles between on and off states.",
+    "technical_specs": "Type: Latching push-on/push-off; Rating: 3A at 250VAC; Mounting: Panel mount; Thread: 16mm",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1683",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1683-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "1734": {
+    "product_id": "1734",
+    "name": "NeoPixel Diffused 8mm Through Hole LED   5 Pack",
+    "csv_name": "NeoPixel Diffused 8mm Through Hole LED   5 Pack",
+    "description": "NeoPixel diffused 8mm through-hole LED, 5 pack. Large diffused addressable RGB LEDs with WS2812B driver.",
+    "technical_specs": "Quantity: 5; Size: 8mm; Type: WS2812B; Color: RGB; Voltage: 5V; Lens: Diffused; Through-hole",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/1734",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1734-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-neopixel-uberguide",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1754": {
+    "product_id": "1754",
+    "name": "Adafruit Assembled Pi T Cobbler Breakout for Raspberry Pi",
+    "csv_name": "Adafruit Assembled Pi T Cobbler Breakout for Raspberry Pi",
+    "description": "Adafruit assembled Pi T-Cobbler breakout for original Raspberry Pi. Connects Pi GPIO to a breadboard via ribbon cable.",
+    "technical_specs": "Compatible: Raspberry Pi Model A/B (26-pin); Connection: Ribbon cable to breadboard; Pins: 26 GPIO",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/1754",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1754-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-pi-t-cobbler",
+    "unit_price": 6.95,
+    "total_qty": 1,
+    "orders": [
+      "2567892"
+    ],
+    "last_scraped": null
+  },
+  "1766": {
+    "product_id": "1766",
+    "name": "Fast Vibration Sensor Switch (Easy to trigger)",
+    "csv_name": "Fast Vibration Sensor Switch (Easy to trigger)",
+    "description": "Fast vibration sensor switch, easy to trigger. Detects vibration and movement, closes circuit when shaken.",
+    "technical_specs": "Type: Spring vibration switch; Trigger: Easy (sensitive); Output: Normally open; Breadboard compatible",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/1766",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1766-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 2,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1865": {
+    "product_id": "1865",
+    "name": "Edge Launch SMA Connector for 1.6mm / 0.062\" Thick PCBs",
+    "csv_name": "Edge Launch SMA Connector for 1.6mm / 0.062\" Thick PCBs",
+    "description": "Edge-launch SMA connector for 1.6mm / 0.062 inch thick PCBs. Standard 50-ohm RF connector.",
+    "technical_specs": "Type: SMA female; Impedance: 50 Ohm; Mounting: Edge-launch PCB; PCB Thickness: 1.6mm (0.062\")",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/1865",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1865-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.5,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "1883": {
+    "product_id": "1883",
+    "name": "Silicone Cover Stranded Core Wire   2m 26AWG Orange",
+    "csv_name": "Silicone Cover Stranded Core Wire   2m 26AWG Orange",
+    "description": "Silicone cover stranded core wire, 2 meters, 26AWG, orange. Flexible and heat-resistant.",
+    "technical_specs": "Length: 2m; Gauge: 26AWG; Color: Orange; Insulation: Silicone; Type: Stranded core",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/1883",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1883-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "1898": {
+    "product_id": "1898",
+    "name": "Breadboard Friendly PCB Mount Mini Speaker   8 Ohm 0.2W",
+    "csv_name": "Breadboard Friendly PCB Mount Mini Speaker   8 Ohm 0.2W",
+    "description": "Breadboard-friendly PCB-mount mini speaker. Small 8 Ohm 0.2W speaker that plugs into a breadboard.",
+    "technical_specs": "Impedance: 8 Ohm; Power: 0.2W; Mounting: PCB/breadboard; Diameter: ~25mm",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/1898",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1898-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.85,
+    "total_qty": 2,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1950": {
+    "product_id": "1950",
+    "name": "Premium Female/Female Jumper Wires   20 x 6\" (150mm)",
+    "csv_name": "Premium Female/Female Jumper Wires   20 x 6\" (150mm)",
+    "description": "Premium female/female jumper wires, 20 wires x 6 inches (150mm). For connecting pin headers.",
+    "technical_specs": "Quantity: 20; Length: 6\" (150mm); Type: Female/Female; Gauge: 24AWG; Colors: Rainbow",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/1950",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1950-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "1953": {
+    "product_id": "1953",
+    "name": "Premium Female/Male 'Extension' Jumper Wires   20 x 3\"",
+    "csv_name": "Premium Female/Male 'Extension' Jumper Wires   20 x 3\"",
+    "description": "Premium female/male extension jumper wires, 20 wires x 3 inches. Extends pin header connections.",
+    "technical_specs": "Quantity: 20; Length: 3\" (75mm); Type: Female/Male; Gauge: 24AWG; Colors: Rainbow",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/1953",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/1953-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "2003": {
+    "product_id": "2003",
+    "name": "Silicone Cover Stranded Core Wire   2m 30AWG Black",
+    "csv_name": "Silicone Cover Stranded Core Wire   2m 30AWG Black",
+    "description": "Silicone cover stranded core wire, 2 meters, 30AWG, black. Ultra-flexible thin hookup wire.",
+    "technical_specs": "Length: 2m; Gauge: 30AWG; Color: Black; Insulation: Silicone; Type: Stranded core",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/2003",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2003-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.75,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "2005": {
+    "product_id": "2005",
+    "name": "Silicone Cover Stranded Core Wire   2m 30AWG Green",
+    "csv_name": "Silicone Cover Stranded Core Wire   2m 30AWG Green",
+    "description": "Silicone cover stranded core wire, 2 meters, 30AWG, green. Ultra-flexible thin hookup wire.",
+    "technical_specs": "Length: 2m; Gauge: 30AWG; Color: Green; Insulation: Silicone; Type: Stranded core",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/2005",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2005-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.75,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "2028": {
+    "product_id": "2028",
+    "name": "Assembled Pi T Cobbler Plus   GPIO Breakout",
+    "csv_name": "Assembled Pi T Cobbler Plus   GPIO Breakout",
+    "description": "Assembled Pi T-Cobbler Plus GPIO breakout for Raspberry Pi 2/3/4 with 40-pin connector. Brings all Pi GPIO pins to a breadboard.",
+    "technical_specs": "Compatible: Raspberry Pi 2/3/4/Zero (40-pin); Connection: Ribbon cable to breadboard; Pins: 40 GPIO",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/2028",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2028-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-pi-t-cobbler-plus",
+    "unit_price": 7.95,
+    "total_qty": 2,
+    "orders": [
+      "2599853",
+      "2600583"
+    ],
+    "last_scraped": null
+  },
+  "2046": {
+    "product_id": "2046",
+    "name": "Potentiometer Knob   Soft Touch T18   Red",
+    "csv_name": "Potentiometer Knob   Soft Touch T18   Red",
+    "description": "Potentiometer knob, soft touch T18, red color. Fits standard 6mm D-shaft potentiometers.",
+    "technical_specs": "Color: Red; Shaft: T18 (6mm D-shaft); Material: Soft touch plastic",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/2046",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2046-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.5,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "2047": {
+    "product_id": "2047",
+    "name": "Potentiometer Knob   Soft Touch T18   White",
+    "csv_name": "Potentiometer Knob   Soft Touch T18   White",
+    "description": "Potentiometer knob, soft touch T18, white color. Fits standard 6mm D-shaft potentiometers.",
+    "technical_specs": "Color: White; Shaft: T18 (6mm D-shaft); Material: Soft touch plastic",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/2047",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2047-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.5,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "2055": {
+    "product_id": "2055",
+    "name": "Scrubber Knob for Rotary Encoder   35mm",
+    "csv_name": "Scrubber Knob for Rotary Encoder   35mm",
+    "description": "Scrubber knob for rotary encoder, 35mm diameter. Large knob for comfortable scrubbing/scrolling.",
+    "technical_specs": "Diameter: 35mm; Shaft: D-shaft compatible; Material: Plastic; Type: Friction grip",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/2055",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2055-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "2056": {
+    "product_id": "2056",
+    "name": "Solid Machined Metal Knob   1\" Diameter",
+    "csv_name": "Solid Machined Metal Knob   1\" Diameter",
+    "description": "Solid machined metal knob, 1 inch diameter. Premium aluminum knob for potentiometers and encoders.",
+    "technical_specs": "Diameter: 1\" (25mm); Material: Machined aluminum; Shaft: 6mm D-shaft; Finish: Brushed metal",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/2056",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2056-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 3.95,
+    "total_qty": 1,
+    "orders": [
+      "2871753"
+    ],
+    "last_scraped": null
+  },
+  "2200": {
+    "product_id": "2200",
+    "name": "Precision LM4040 Voltage Reference Breakout   2.048V and 4.096V",
+    "csv_name": "Precision LM4040 Voltage Reference Breakout   2.048V and 4.096V",
+    "description": "Precision LM4040 voltage reference breakout providing stable 2.048V and 4.096V reference voltages for ADC calibration.",
+    "technical_specs": "IC: LM4040; References: 2.048V and 4.096V; Accuracy: 0.1%; Interface: Analog output; Voltage: 3-15V input",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/2200",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2200-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-lm4040-voltage-reference-breakout",
+    "unit_price": 7.5,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "2305": {
+    "product_id": "2305",
+    "name": "Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic",
+    "csv_name": "Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic",
+    "description": "Adafruit DRV2605L haptic motor controller breakout with STEMMA QT connector. I2C-controlled driver for vibration motors and LRAs.",
+    "technical_specs": "IC: DRV2605L; Interface: I2C; Effects: 123 built-in; Motor Types: ERM and LRA; Voltage: 3-5V; Connector: STEMMA QT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/2305",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2305-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout",
+    "unit_price": 7.95,
+    "total_qty": 3,
+    "orders": [
+      "2862474",
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "2384": {
+    "product_id": "2384",
+    "name": "Medium Vibration Sensor Switch",
+    "csv_name": "Medium Vibration Sensor Switch",
+    "description": "Medium vibration sensor switch. Detects vibration and tilting, moderate sensitivity level.",
+    "technical_specs": "Type: Spring vibration switch; Trigger: Medium sensitivity; Output: Normally open; Breadboard compatible",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/2384",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2384-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 2,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "2476": {
+    "product_id": "2476",
+    "name": "Replacement Tubes for Professional Silicone Tip Solder Sucker",
+    "csv_name": "Replacement Tubes for Professional Silicone Tip Solder Sucker",
+    "description": "Replacement silicone tubes for the Engineer SS-02 professional solder sucker. Pack of replacement tips.",
+    "technical_specs": "Compatible: Engineer SS-02; Material: Silicone; Type: Replacement tip/tube",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/2476",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2476-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2846279"
+    ],
+    "last_scraped": null
+  },
+  "2530": {
+    "product_id": "2530",
+    "name": "3W RGB LED   Common Anode",
+    "csv_name": "3W RGB LED   Common Anode",
+    "description": "3W RGB LED with common anode. High-power LED capable of producing bright colors with heat sink recommended.",
+    "technical_specs": "Power: 3W; Type: Common Anode; Colors: Red/Green/Blue; Forward Current: ~350mA per channel; Requires: Heat sink",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/2530",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2530-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "2717": {
+    "product_id": "2717",
+    "name": "TCA9548A I2C Multiplexer",
+    "csv_name": "TCA9548A I2C Multiplexer",
+    "description": "TCA9548A I2C multiplexer breakout. Allows connecting up to 8 I2C devices with the same address to one bus.",
+    "technical_specs": "IC: TCA9548A; Interface: I2C; Channels: 8; Voltage: 3.3-5V; Address: 0x70 (configurable, 8 addresses); Connector: STEMMA QT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/2717",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2717-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout",
+    "unit_price": 6.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "2739": {
+    "product_id": "2739",
+    "name": "Diffused Rectangular 5mm RGB LEDs   Pack of 10",
+    "csv_name": "Diffused Rectangular 5mm RGB LEDs   Pack of 10",
+    "description": "Diffused rectangular 5mm RGB LEDs, pack of 10. Common cathode rectangular-shaped RGB LEDs.",
+    "technical_specs": "Quantity: 10; Size: 5mm; Shape: Rectangular/Square; Type: Common Cathode RGB; Lens: Diffused",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/2739",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2739-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 5.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "2830": {
+    "product_id": "2830",
+    "name": "Stacking Headers for Feather   12 pin and 16 pin female headers",
+    "csv_name": "Stacking Headers for Feather   12 pin and 16 pin female headers",
+    "description": "Stacking headers for Adafruit Feather, 12-pin and 16-pin female headers. Allows stacking multiple FeatherWings.",
+    "technical_specs": "Pins: 12-pin + 16-pin; Type: Female stacking; Height: Extra tall; Compatible: Feather ecosystem",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/2830",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2830-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.25,
+    "total_qty": 5,
+    "orders": [
+      "2862474",
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "2884": {
+    "product_id": "2884",
+    "name": "FeatherWing Proto   Prototyping Add on For All Feather Boards",
+    "csv_name": "FeatherWing Proto   Prototyping Add on For All Feather Boards",
+    "description": "FeatherWing Proto - a prototyping add-on board for all Feather boards. Solderable prototype area in Feather form factor.",
+    "technical_specs": "Form Factor: Feather; Type: Prototyping; Holes: Plated through-hole; Compatible: All Feather boards",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/2884",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2884-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/featherwing-proto-and-doubler",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "2888": {
+    "product_id": "2888",
+    "name": "BNC Male Plug Terminal Block",
+    "csv_name": "BNC Male Plug Terminal Block",
+    "description": "BNC male plug to terminal block adapter. Converts BNC to screw terminal connections.",
+    "technical_specs": "Input: BNC male plug; Output: Screw terminal; Impedance: 50 Ohm",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/2888",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2888-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "2889": {
+    "product_id": "2889",
+    "name": "BNC Female Jack Terminal Block",
+    "csv_name": "BNC Female Jack Terminal Block",
+    "description": "BNC female jack to terminal block adapter. Converts BNC to screw terminal connections.",
+    "technical_specs": "Input: BNC female jack; Output: Screw terminal; Impedance: 50 Ohm",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/2889",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2889-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "2900": {
+    "product_id": "2900",
+    "name": "Adafruit FeatherWing OLED   128x32 OLED Add on For Feather",
+    "csv_name": "Adafruit FeatherWing OLED   128x32 OLED Add on For Feather",
+    "description": "Adafruit FeatherWing OLED, 128x32 pixel monochrome display add-on for Feather boards. I2C interface with buttons.",
+    "technical_specs": "Display: 128x32 OLED; Interface: I2C; Buttons: 3 (A, B, C); Driver: SSD1306; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/2900",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2900-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-oled-featherwing",
+    "unit_price": 14.95,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "2922": {
+    "product_id": "2922",
+    "name": "Adalogger FeatherWing   RTC   SD Add on For All Feather Boards",
+    "csv_name": "Adalogger FeatherWing   RTC   SD Add on For All Feather Boards",
+    "description": "Adalogger FeatherWing with RTC and SD card slot. Add data logging capabilities to any Feather board.",
+    "technical_specs": "RTC: PCF8523; Storage: microSD slot; Interface: I2C (RTC) + SPI (SD); Battery: CR1220 backup; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/2922",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2922-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-adalogger-featherwing",
+    "unit_price": 8.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "2926": {
+    "product_id": "2926",
+    "name": "Assembled Terminal Block Breakout FeatherWing for all Feathers",
+    "csv_name": "Assembled Terminal Block Breakout FeatherWing for all Feathers",
+    "description": "Assembled terminal block breakout FeatherWing. Brings all Feather pins out to screw terminal blocks for secure connections.",
+    "technical_specs": "Terminals: Screw type; Pins: All Feather pins broken out; Form Factor: FeatherWing; Pre-assembled",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/2926",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2926-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-terminal-block-breakout-featherwing",
+    "unit_price": 14.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "2927": {
+    "product_id": "2927",
+    "name": "DC Motor   Stepper FeatherWing Add on For All Feather Boards",
+    "csv_name": "DC Motor   Stepper FeatherWing Add on For All Feather Boards",
+    "description": "DC Motor + Stepper FeatherWing for all Feather boards. Drive 4 DC motors or 2 stepper motors from a Feather.",
+    "technical_specs": "IC: TB6612; DC Motors: 4 (or 2 steppers); Voltage: 4.5-13.5V motor; PWM: Dedicated; Interface: I2C; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/2927",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2927-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-stepper-dc-motor-featherwing",
+    "unit_price": 19.95,
+    "total_qty": 1,
+    "orders": [
+      "2871753"
+    ],
+    "last_scraped": null
+  },
+  "2928": {
+    "product_id": "2928",
+    "name": "8 Channel PWM or Servo FeatherWing Add on For All Feather Boards",
+    "csv_name": "8 Channel PWM or Servo FeatherWing Add on For All Feather Boards",
+    "description": "8-Channel PWM or Servo FeatherWing for all Feather boards. Control up to 8 servos or PWM outputs via I2C.",
+    "technical_specs": "IC: PCA9685; Channels: 8; Interface: I2C; PWM: 12-bit resolution; Voltage: 3.3/5V logic; Servo Voltage: External V+; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/2928",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2928-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-8-channel-pwm-or-servo-featherwing",
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "2940": {
+    "product_id": "2940",
+    "name": "Short Headers Kit for Feather   12 pin   16 pin Female Headers",
+    "csv_name": "Short Headers Kit for Feather   12 pin   16 pin Female Headers",
+    "description": "Short headers kit for Feather, 12-pin and 16-pin female headers. Low-profile headers for compact stacking.",
+    "technical_specs": "Pins: 12-pin + 16-pin; Type: Female; Height: Short/low-profile; Compatible: Feather ecosystem",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/2940",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/2940-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.5,
+    "total_qty": 8,
+    "orders": [
+      "2871753",
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "3002": {
+    "product_id": "3002",
+    "name": "Short Feather Male Headers   12 pin and 16 pin Male Header Set",
+    "csv_name": "Short Feather Male Headers   12 pin and 16 pin Male Header Set",
+    "description": "Short Feather male headers, 12-pin and 16-pin. For soldering onto Feather boards for breadboard use.",
+    "technical_specs": "Pins: 12-pin + 16-pin; Type: Male; Height: Short; Compatible: Feather ecosystem",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/3002",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3002-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.5,
+    "total_qty": 4,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "3019": {
+    "product_id": "3019",
+    "name": "Third Hand Pana Hand Workstation Add On for Panavise",
+    "csv_name": "Third Hand Pana Hand Workstation Add On for Panavise",
+    "description": "Third Hand / Pana-Hand workstation add-on for Panavise. Flexible arms with clips for holding PCBs and components during soldering.",
+    "technical_specs": "Arms: Multiple flexible; Clips: Alligator; Compatible: Panavise bases; Feature: Adjustable positions",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/3019",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3019-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 39.95,
+    "total_qty": 1,
+    "orders": [
+      "2846279"
+    ],
+    "last_scraped": null
+  },
+  "3067": {
+    "product_id": "3067",
+    "name": "AdaBox Subscription",
+    "csv_name": "AdaBox Subscription",
+    "description": "AdaBox subscription - quarterly surprise box of electronics, components, and projects from Adafruit.",
+    "technical_specs": "Type: Subscription box; Frequency: Quarterly; Contents: Electronics projects, components, guides",
+    "category": "Book/Subscription",
+    "page_url": "https://www.adafruit.com/product/3067",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3067-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adabox",
+    "unit_price": 0.0,
+    "total_qty": 1,
+    "orders": [
+      "2626886"
+    ],
+    "last_scraped": null
+  },
+  "3070": {
+    "product_id": "3070",
+    "name": "Adafruit RFM69HCW Transceiver Radio Breakout   868 or 915 MHz",
+    "csv_name": "Adafruit RFM69HCW Transceiver Radio Breakout   868 or 915 MHz",
+    "description": "Adafruit RFM69HCW transceiver radio breakout at 868 or 915 MHz. Long-range packet radio for wireless communication.",
+    "technical_specs": "Chipset: RFM69HCW; Frequency: 868/915 MHz; Range: ~500m (line of sight); Power: Up to +20dBm; Interface: SPI; Modulation: FSK",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/3070",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3070-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts",
+    "unit_price": 9.95,
+    "total_qty": 2,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "3101": {
+    "product_id": "3101",
+    "name": "Soft Tactile Button (8mm) x 10",
+    "csv_name": "Soft Tactile Button (8mm) x 10",
+    "description": "Soft tactile buttons, 8mm, pack of 10. Quiet and soft-press momentary pushbuttons.",
+    "technical_specs": "Quantity: 10; Size: 8mm; Type: Soft tactile momentary; Feel: Quiet, soft press",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/3101",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3101-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "3104": {
+    "product_id": "3104",
+    "name": "Mini Illuminated Momentary Pushbutton   Red Power Symbol",
+    "csv_name": "Mini Illuminated Momentary Pushbutton   Red Power Symbol",
+    "description": "Mini illuminated momentary pushbutton with red power symbol. Lights up when active.",
+    "technical_specs": "Type: Momentary; LED: Red illuminated; Symbol: Power icon; Mounting: Panel mount; Thread: 16mm",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/3104",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3104-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "3134": {
+    "product_id": "3134",
+    "name": "Adafruit 15x7 CharliePlex LED Matrix Display FeatherWing   Red",
+    "csv_name": "Adafruit 15x7 CharliePlex LED Matrix Display FeatherWing   Red",
+    "description": "Adafruit 15x7 CharliePlex LED matrix display FeatherWing in red. Ultra-compact LED matrix for Feather boards.",
+    "technical_specs": "Matrix: 15x7 (105 LEDs); Color: Red; Driver: IS31FL3731; Interface: I2C; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/3134",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3134-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-15x7-7x15-charlieplex-led-matrix-display-featherwing",
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "3152": {
+    "product_id": "3152",
+    "name": "Adafruit 0.8\" 8x16 LED Matrix FeatherWing Display   Red",
+    "csv_name": "Adafruit 0.8\" 8x16 LED Matrix FeatherWing Display   Red",
+    "description": "Adafruit 0.8 inch 8x16 LED matrix FeatherWing display in red. Dual 8x8 matrices on a FeatherWing.",
+    "technical_specs": "Matrix: 8x16 (128 LEDs); Size: 0.8\"; Color: Red; Driver: HT16K33; Interface: I2C; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/3152",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3152-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-led-backpack",
+    "unit_price": 11.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "3175": {
+    "product_id": "3175",
+    "name": "Hook up Wire Spool Set   22AWG Stranded Core   10 x 25ft",
+    "csv_name": "Hook up Wire Spool Set   22AWG Stranded Core   10 x 25ft",
+    "description": "Hook-up wire spool set, 22AWG stranded core, 10 spools x 25ft each in different colors.",
+    "technical_specs": "Gauge: 22AWG; Type: Stranded core; Quantity: 10 spools x 25ft; Colors: 10 different; Total: 250ft",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/3175",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3175-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 29.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "3176": {
+    "product_id": "3176",
+    "name": "Adafruit Feather M0 RFM69HCW Packet Radio   868 or 915 MHz",
+    "csv_name": "Adafruit Feather M0 RFM69HCW Packet Radio   868 or 915 MHz",
+    "description": "Adafruit Feather M0 RFM69HCW packet radio at 868 or 915 MHz. ATSAMD21 Feather with built-in radio transceiver.",
+    "technical_specs": "MCU: ATSAMD21G18 (ARM Cortex M0+); Clock: 48MHz; Flash: 256KB; RAM: 32KB; Radio: RFM69HCW 868/915MHz; USB: Micro-B; Battery: LiPo charger",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/3176",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3176-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-feather-m0-radio-with-rfm69-packet-radio",
+    "unit_price": 24.95,
+    "total_qty": 2,
+    "orders": [
+      "2862474",
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "3217": {
+    "product_id": "3217",
+    "name": "Maker Paste   Low Temperature Lead Free Prototyping Solder Paste",
+    "csv_name": "Maker Paste   Low Temperature Lead Free Prototyping Solder Paste",
+    "description": "Maker Paste - low temperature lead-free prototyping solder paste. Easy to use syringe applicator for SMD soldering.",
+    "technical_specs": "Type: Lead-free solder paste; Temperature: Low temp (138°C); Alloy: Sn42/Bi58; Applicator: Syringe",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/3217",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3217-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 6.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "3255": {
+    "product_id": "3255",
+    "name": "Small Alligator Clip to Male Jumper Wire Bundle   12 Pieces",
+    "csv_name": "Small Alligator Clip to Male Jumper Wire Bundle   12 Pieces",
+    "description": "Small alligator clip to male jumper wire bundle, 12 pieces. Connect alligator clips to breadboards.",
+    "technical_specs": "Quantity: 12; Type: Alligator clip to male jumper; Colors: Assorted; Length: ~6\"",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/3255",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3255-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 7.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "3299": {
+    "product_id": "3299",
+    "name": "Black Nylon Machine Screw and Stand off Set – M2.5 Thread",
+    "csv_name": "Black Nylon Machine Screw and Stand off Set – M2.5 Thread",
+    "description": "Black nylon machine screw and standoff set with M2.5 thread. Assorted lengths for mounting PCBs and projects.",
+    "technical_specs": "Thread: M2.5; Material: Black nylon; Contents: Screws, nuts, standoffs in various lengths; Non-conductive",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/3299",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3299-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 16.95,
+    "total_qty": 1,
+    "orders": [
+      "2871753"
+    ],
+    "last_scraped": null
+  },
+  "3310": {
+    "product_id": "3310",
+    "name": "5.5 / 2.1mm Barrel Connector   DC Power Plug",
+    "csv_name": "5.5 / 2.1mm Barrel Connector   DC Power Plug",
+    "description": "5.5mm/2.1mm barrel connector DC power plug. Standard size for most DC power adapters.",
+    "technical_specs": "Size: 5.5mm outer / 2.1mm inner; Type: Male plug; Connection: Screw terminal",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/3310",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3310-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2846279"
+    ],
+    "last_scraped": null
+  },
+  "3333": {
+    "product_id": "3333",
+    "name": "Circuit Playground Express",
+    "csv_name": "Circuit Playground Express",
+    "description": "Circuit Playground Express - an all-in-one electronics learning board with 10 NeoPixels, sensors, buttons, and more. Programmable with MakeCode, CircuitPython, and Arduino.",
+    "technical_specs": "MCU: ATSAMD21G18 (ARM Cortex M0+); Clock: 48MHz; Flash: 256KB; RAM: 32KB; LEDs: 10x NeoPixel RGB; Sensors: Temperature, light, sound (MEMS mic), accelerometer (LIS3DH); Buttons: 2 + slide switch; Speaker: Built-in mini; IR: Transmit and receive; Capacitive Touch: 8 pads; USB: Micro-B",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/3333",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3333-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-circuit-playground-express",
+    "unit_price": 24.95,
+    "total_qty": 4,
+    "orders": [
+      "2599853",
+      "2600583",
+      "2643648",
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "3340": {
+    "product_id": "3340",
+    "name": "900Mhz Antenna Kit   For LoPy, LoRa, etc",
+    "csv_name": "900Mhz Antenna Kit   For LoPy, LoRa, etc",
+    "description": "900MHz antenna kit for LoRa, LoPy, and other sub-GHz radios. Includes antenna and uFL adapter cable.",
+    "technical_specs": "Frequency: 900MHz (868-915MHz); Type: Dipole antenna; Connector: uFL to SMA adapter included; Gain: ~2dBi",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/3340",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3340-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 12.75,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "3417": {
+    "product_id": "3417",
+    "name": "FeatherWing Tripler Mini Kit   Prototyping Add on For Feathers",
+    "csv_name": "FeatherWing Tripler Mini Kit   Prototyping Add on For Feathers",
+    "description": "FeatherWing Tripler mini kit. Connect three Feather boards together, allowing a Feather and two FeatherWings to share one bus.",
+    "technical_specs": "Slots: 3 (1 Feather + 2 FeatherWings); Assembly: Soldering required; Pins: All Feather pins connected",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/3417",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3417-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/featherwing-proto-and-doubler",
+    "unit_price": 8.5,
+    "total_qty": 2,
+    "orders": [
+      "2887702",
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "3500": {
+    "product_id": "3500",
+    "name": "Adafruit Trinket M0   for use with CircuitPython & Arduino IDE",
+    "csv_name": "Adafruit Trinket M0   for use with CircuitPython & Arduino IDE",
+    "description": "Adafruit Trinket M0 - tiny ATSAMD21-based microcontroller board for CircuitPython and Arduino. The tiniest Adafruit board.",
+    "technical_specs": "MCU: ATSAMD21E18 (ARM Cortex M0+); Clock: 48MHz; Flash: 256KB; RAM: 32KB; GPIO: 5; USB: Micro-B (native); LED: DotStar RGB; Size: 27mm x 15mm",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/3500",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3500-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino",
+    "unit_price": 8.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "3505": {
+    "product_id": "3505",
+    "name": "Adafruit METRO M0 Express   designed for CircuitPython",
+    "csv_name": "Adafruit METRO M0 Express   designed for CircuitPython",
+    "description": "Adafruit METRO M0 Express - ATSAMD21-based board designed for CircuitPython. Arduino UNO form factor with native USB.",
+    "technical_specs": "MCU: ATSAMD21G18 (ARM Cortex M0+); Clock: 48MHz; Flash: 256KB + 2MB SPI; RAM: 32KB; Digital I/O: 25; Analog: 6 in + 1 out; USB: Micro-B (native); LED: NeoPixel",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/3505",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3505-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-metro-m0-express",
+    "unit_price": 24.95,
+    "total_qty": 1,
+    "orders": [
+      "2600583"
+    ],
+    "last_scraped": null
+  },
+  "3540": {
+    "product_id": "3540",
+    "name": "Square 60mm x 60mm Soldering Sponge – 3 Pack",
+    "csv_name": "Square 60mm x 60mm Soldering Sponge – 3 Pack",
+    "description": "Square 60mm x 60mm soldering sponge, 3 pack. Replacement sponges for soldering iron stands.",
+    "technical_specs": "Quantity: 3; Size: 60mm x 60mm; Material: Cellulose sponge; Use: Soldering iron tip cleaning",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/3540",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3540-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.5,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "3585": {
+    "product_id": "3585",
+    "name": "Great Scott Gadgets ANT700   300MHz to 1100MHz Telescope Antenna",
+    "csv_name": "Great Scott Gadgets ANT700   300MHz to 1100MHz Telescope Antenna",
+    "description": "Great Scott Gadgets ANT700 telescoping antenna, 300MHz to 1100MHz. Adjustable length for tuning to different frequencies.",
+    "technical_specs": "Frequency: 300-1100MHz; Type: Telescoping; Connector: SMA male; Length: Adjustable; Impedance: 50 Ohm",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/3585",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3585-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 27.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "3642": {
+    "product_id": "3642",
+    "name": "2.1mm DC Power Jack with Slide Switch",
+    "csv_name": "2.1mm DC Power Jack with Slide Switch",
+    "description": "2.1mm DC power jack with built-in slide switch. Convenient power input with on/off control.",
+    "technical_specs": "Barrel: 2.1mm/5.5mm; Switch: SPDT slide; Rating: 5A; Mounting: Panel or breadboard",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/3642",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3642-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "3786": {
+    "product_id": "3786",
+    "name": "2 Pin Wire Joints (3 pack)",
+    "csv_name": "2 Pin Wire Joints (3 pack)",
+    "description": "2-pin wire joints, 3 pack. Quick no-solder wire splice connectors for joining wires.",
+    "technical_specs": "Quantity: 3; Pins: 2; Type: Wire splice joint; Method: No-solder push-in",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/3786",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3786-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 2,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "3804": {
+    "product_id": "3804",
+    "name": "Large Clear Practice Padlock",
+    "csv_name": "Large Clear Practice Padlock",
+    "description": "Large clear practice padlock for lock picking practice. Transparent body shows the pin mechanism.",
+    "technical_specs": "Type: Practice/training padlock; Body: Clear/transparent; Pins: Standard pin tumbler; Feature: Visible mechanism",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/3804",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3804-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 7.5,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "3806": {
+    "product_id": "3806",
+    "name": "Basic Lock sport Pick Set   9 Picks and 2 Wrenches",
+    "csv_name": "Basic Lock sport Pick Set   9 Picks and 2 Wrenches",
+    "description": "Basic lock sport pick set with 9 picks and 2 tension wrenches. Starter set for learning lock picking.",
+    "technical_specs": "Picks: 9; Tension Wrenches: 2; Material: Stainless steel; Type: Beginner/basic set",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/3806",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3806-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 6.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "3885": {
+    "product_id": "3885",
+    "name": "Adafruit STEMMA Speaker   Plug and Play Audio Amplifier",
+    "csv_name": "Adafruit STEMMA Speaker   Plug and Play Audio Amplifier",
+    "description": "Adafruit STEMMA speaker - plug and play audio amplifier. Simple powered speaker with JST connector for audio output.",
+    "technical_specs": "Amplifier: Class D; Connector: JST PH 3-pin (STEMMA); Power: 3-5V; Audio: Mono; Size: Compact",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/3885",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3885-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-stemma-speaker",
+    "unit_price": 5.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "3893": {
+    "product_id": "3893",
+    "name": "STEMMA JST PH 2mm 3 Pin to Male Header Cable   200mm",
+    "csv_name": "STEMMA JST PH 2mm 3 Pin to Male Header Cable   200mm",
+    "description": "STEMMA JST PH 2mm 3-pin to male header cable, 200mm long. Connects STEMMA 3-pin devices to breadboards.",
+    "technical_specs": "Connector A: JST PH 3-pin; Connector B: Male headers; Length: 200mm; Wire: 26AWG",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/3893",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3893-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.25,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "3915": {
+    "product_id": "3915",
+    "name": "Adafruit Circuit Playground Express or Bluefruit Enclosure",
+    "csv_name": "Adafruit Circuit Playground Express or Bluefruit Enclosure",
+    "description": "Adafruit Circuit Playground Express or Bluefruit enclosure. Snap-fit clear case that protects the board while exposing sensors.",
+    "technical_specs": "Compatible: Circuit Playground Express, Bluefruit; Material: Clear plastic; Type: Snap-fit; Feature: Access to buttons, LEDs, sensors",
+    "category": "Enclosure",
+    "page_url": "https://www.adafruit.com/product/3915",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3915-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 3,
+    "orders": [
+      "2599853",
+      "2600583",
+      "2820999"
+    ],
+    "last_scraped": null
+  },
+  "3954": {
+    "product_id": "3954",
+    "name": "Adafruit NeoTrellis RGB Driver PCB for 4x4 Keypad",
+    "csv_name": "Adafruit NeoTrellis RGB Driver PCB for 4x4 Keypad",
+    "description": "Adafruit NeoTrellis RGB driver PCB for 4x4 keypad. I2C-controlled 4x4 elastomer keypad with NeoPixel RGB LEDs.",
+    "technical_specs": "LEDs: 16x NeoPixel (seesaw controlled); Buttons: 4x4 elastomer; Interface: I2C (seesaw); Voltage: 3.3-5V; Tileable: Yes (up to 8)",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/3954",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3954-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-neotrellis",
+    "unit_price": 12.5,
+    "total_qty": 2,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "3988": {
+    "product_id": "3988",
+    "name": "Adafruit Prop Maker FeatherWing",
+    "csv_name": "Adafruit Prop Maker FeatherWing",
+    "description": "Adafruit Prop-Maker FeatherWing - add-on board for building cosplay props, lightsabers, and wands. Includes amplifier, accelerometer, and NeoPixel driver.",
+    "technical_specs": "Features: 3W audio amp, accelerometer (LIS3DH), NeoPixel level-shifter; Power: Servo + high-current output; Form Factor: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/3988",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/3988-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-prop-maker-featherwing",
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4030": {
+    "product_id": "4030",
+    "name": "JST PH 2mm 3 pin Plug to Color Coded Alligator Clips Cable",
+    "csv_name": "JST PH 2mm 3 pin Plug to Color Coded Alligator Clips Cable",
+    "description": "JST PH 2mm 3-pin plug to color-coded alligator clips cable. Quick prototyping connection.",
+    "technical_specs": "Connector: JST PH 3-pin; Output: 3 alligator clips (color coded); Length: ~12\"",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4030",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4030-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4036": {
+    "product_id": "4036",
+    "name": "DIY Ornament Kit   6cm Diameter   Perfect for Circuit Playground",
+    "csv_name": "DIY Ornament Kit   6cm Diameter   Perfect for Circuit Playground",
+    "description": "DIY ornament kit, 6cm diameter, perfect for Circuit Playground. Clear plastic ornament ball for holiday decorations.",
+    "technical_specs": "Diameter: 6cm; Material: Clear plastic; Compatible: Circuit Playground; Type: 2-piece snap-together",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/4036",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4036-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2820999"
+    ],
+    "last_scraped": null
+  },
+  "4042": {
+    "product_id": "4042",
+    "name": "Diffused Red and Green Indicator LED   18mm Round",
+    "csv_name": "Diffused Red and Green Indicator LED   18mm Round",
+    "description": "Diffused red and green indicator LED, 18mm round. Bi-color LED indicator light with built-in resistor.",
+    "technical_specs": "Size: 18mm; Colors: Red/Green; Type: Bi-color diffused; Voltage: 5-12V (built-in resistor); Current: ~20mA",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/4042",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4042-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.5,
+    "total_qty": 9,
+    "orders": [
+      "2596354",
+      "2599853",
+      "2600583",
+      "2604757",
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "4046": {
+    "product_id": "4046",
+    "name": "JST PH 2mm 3 Pin Socket to Color Coded Cable   200mm",
+    "csv_name": "JST PH 2mm 3 Pin Socket to Color Coded Cable   200mm",
+    "description": "JST PH 2mm 3-pin socket to color-coded cable, 200mm. For connecting to STEMMA 3-pin ports.",
+    "technical_specs": "Connector: JST PH 3-pin socket; Output: Color coded bare wires; Length: 200mm",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4046",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4046-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4081": {
+    "product_id": "4081",
+    "name": "Flat Vibration Switch   Breadboard friendly",
+    "csv_name": "Flat Vibration Switch   Breadboard friendly",
+    "description": "Flat vibration switch, breadboard-friendly. Low-profile vibration/tilt sensor that plugs into a breadboard.",
+    "technical_specs": "Type: Flat vibration switch; Profile: Low/flat; Output: Normally open; Breadboard compatible",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/4081",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4081-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 4,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "4103": {
+    "product_id": "4103",
+    "name": "Bolt On Kit for Circuit Playground, micro:bit, Flora or Gemma",
+    "csv_name": "Bolt On Kit for Circuit Playground, micro:bit, Flora or Gemma",
+    "description": "Bolt-on kit for Circuit Playground, micro:bit, Flora, or Gemma. M3 bolts and nuts for secure attachment.",
+    "technical_specs": "Hardware: M3 bolts and nuts; Compatible: Circuit Playground, micro:bit, Flora, Gemma; Material: Nylon",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/4103",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4103-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.5,
+    "total_qty": 1,
+    "orders": [
+      "2820999"
+    ],
+    "last_scraped": null
+  },
+  "4147": {
+    "product_id": "4147",
+    "name": "Adafruit ADXL343   ADT7410 Sensor FeatherWing",
+    "csv_name": "Adafruit ADXL343   ADT7410 Sensor FeatherWing",
+    "description": "Adafruit ADXL343 + ADT7410 sensor FeatherWing. Accelerometer and precision temperature sensor combo on a FeatherWing.",
+    "technical_specs": "Accelerometer: ADXL343 (±2/4/8/16g); Temperature: ADT7410 (±0.5°C accuracy); Interface: I2C; Form Factor: FeatherWing; Connector: STEMMA QT",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/4147",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4147-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-adxl343-adt7410-sensor-featherwing",
+    "unit_price": 11.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4154": {
+    "product_id": "4154",
+    "name": "Break away 0.1\" 36 pin strip male header   Rainbow Combo 10 Pack",
+    "csv_name": "Break away 0.1\" 36 pin strip male header   Rainbow Combo 10 Pack",
+    "description": "Break-away 0.1 inch 36-pin strip male header, rainbow combo 10 pack. Color-coded headers for easy identification.",
+    "technical_specs": "Quantity: 10 strips; Pins: 36 per strip; Pitch: 0.1\" (2.54mm); Type: Male; Colors: Rainbow assorted; Break-away",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/4154",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4154-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 2,
+    "orders": [
+      "2599853",
+      "2600583"
+    ],
+    "last_scraped": null
+  },
+  "4160": {
+    "product_id": "4160",
+    "name": "20 pin 0.1\" Female Headers   Rainbow Color Mix   5 pack",
+    "csv_name": "20 pin 0.1\" Female Headers   Rainbow Color Mix   5 pack",
+    "description": "20-pin 0.1 inch female headers, rainbow color mix, 5 pack. Colorful female headers for pin connections.",
+    "technical_specs": "Quantity: 5; Pins: 20 per header; Pitch: 0.1\" (2.54mm); Type: Female; Colors: Rainbow mix",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/4160",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4160-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.5,
+    "total_qty": 2,
+    "orders": [
+      "2599853",
+      "2600583"
+    ],
+    "last_scraped": null
+  },
+  "4203": {
+    "product_id": "4203",
+    "name": "Diffused 5mm LED Pack   5 LEDs each in 5 Colors   25 Pack",
+    "csv_name": "Diffused 5mm LED Pack   5 LEDs each in 5 Colors   25 Pack",
+    "description": "Diffused 5mm LED pack with 5 LEDs each in 5 colors, 25 pack total. Standard through-hole LEDs.",
+    "technical_specs": "Quantity: 25 (5 each of 5 colors); Size: 5mm; Colors: Red, Yellow, Green, Blue, White; Lens: Diffused",
+    "category": "LED",
+    "page_url": "https://www.adafruit.com/product/4203",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4203-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "4209": {
+    "product_id": "4209",
+    "name": "STEMMA QT / Qwiic JST SH 4 pin to Premium Male Headers Cable",
+    "csv_name": "STEMMA QT / Qwiic JST SH 4 pin to Premium Male Headers Cable",
+    "description": "STEMMA QT / Qwiic JST SH 4-pin to premium male headers cable. Connects STEMMA QT devices to breadboards.",
+    "technical_specs": "Connector A: JST SH 4-pin; Connector B: Male pin headers; Length: ~150mm; Wire: 28AWG; Compatible: STEMMA QT / Qwiic",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4209",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4209-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 6,
+    "orders": [
+      "2600583",
+      "2604757",
+      "2887702",
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "4210": {
+    "product_id": "4210",
+    "name": "STEMMA QT / Qwiic JST SH 4 pin Cable   100mm Long",
+    "csv_name": "STEMMA QT / Qwiic JST SH 4 pin Cable   100mm Long",
+    "description": "STEMMA QT / Qwiic JST SH 4-pin cable, 100mm long. Connects two STEMMA QT / Qwiic devices together.",
+    "technical_specs": "Connector: JST SH 4-pin (both ends); Length: 100mm; Wire: 28AWG; Compatible: STEMMA QT / Qwiic",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4210",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4210-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 5,
+    "orders": [
+      "2600583",
+      "2604757",
+      "2887702",
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "4220": {
+    "product_id": "4220",
+    "name": "Learn CircuitPython with 1 Month Subscription to Codecademy Pro",
+    "csv_name": "Learn CircuitPython with 1 Month Subscription to Codecademy Pro",
+    "description": "Learn CircuitPython with 1 month subscription to Codecademy Pro. Online coding course access.",
+    "technical_specs": "Type: Digital subscription; Duration: 1 month; Platform: Codecademy Pro; Topic: CircuitPython",
+    "category": "Book/Subscription",
+    "page_url": "https://www.adafruit.com/product/4220",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4220-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/welcome-to-circuitpython",
+    "unit_price": 19.99,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4227": {
+    "product_id": "4227",
+    "name": "Mini Oval Speaker with Short Wires   8 Ohm 1 Watt",
+    "csv_name": "Mini Oval Speaker with Short Wires   8 Ohm 1 Watt",
+    "description": "Mini oval speaker with short wires, 8 Ohm 1 Watt. Small speaker for audio projects and alerts.",
+    "technical_specs": "Impedance: 8 Ohm; Power: 1W; Shape: Oval; Size: Mini; Wires: Short leads",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/4227",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4227-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4263": {
+    "product_id": "4263",
+    "name": "4 H Circuit Playground Express   Base Kit",
+    "csv_name": "4 H Circuit Playground Express   Base Kit",
+    "description": "4-H Circuit Playground Express base kit. Includes Circuit Playground Express, USB cable, battery pack, and alligator clips for 4-H learning.",
+    "technical_specs": "Includes: Circuit Playground Express, USB cable, AAA battery pack, alligator clips; Purpose: 4-H education",
+    "category": "Kit",
+    "page_url": "https://www.adafruit.com/product/4263",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4263-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/4-h-circuit-playground-express-base-kit",
+    "unit_price": 29.95,
+    "total_qty": 1,
+    "orders": [
+      "2820999"
+    ],
+    "last_scraped": null
+  },
+  "4269": {
+    "product_id": "4269",
+    "name": "Simple Spring Antenna   915MHz",
+    "csv_name": "Simple Spring Antenna   915MHz",
+    "description": "Simple spring antenna for 915MHz. Wire antenna for sub-GHz radio applications.",
+    "technical_specs": "Frequency: 915MHz; Type: Helical spring; Connector: Solder; Size: ~28mm",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/4269",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4269-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "4271": {
+    "product_id": "4271",
+    "name": "Slide Potentiometer with Plastic Knob   35mm Long   10KΩ",
+    "csv_name": "Slide Potentiometer with Plastic Knob   35mm Long   10KΩ",
+    "description": "Slide potentiometer with plastic knob, 35mm long travel, 10K Ohm. Linear sliding control for projects.",
+    "technical_specs": "Resistance: 10K Ohm; Travel: 35mm; Type: Linear slide; Knob: Plastic; Taper: Linear (B)",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/4271",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4271-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4286": {
+    "product_id": "4286",
+    "name": "Adafruit DS3502 I2C Digital 10K Potentiometer Breakout",
+    "csv_name": "Adafruit DS3502 I2C Digital 10K Potentiometer Breakout",
+    "description": "Adafruit DS3502 I2C digital 10K potentiometer breakout. Digitally controlled potentiometer over I2C.",
+    "technical_specs": "IC: DS3502; Resistance: 10K Ohm; Resolution: 7-bit (128 steps); Interface: I2C; Voltage: 3.3-5V; Connector: STEMMA QT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/4286",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4286-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/ds3502-i2c-potentiometer",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2600583"
+    ],
+    "last_scraped": null
+  },
+  "4287": {
+    "product_id": "4287",
+    "name": "3.5mm / 1.1mm to 5.5mm / 2.1mm DC Jack Adapter",
+    "csv_name": "3.5mm / 1.1mm to 5.5mm / 2.1mm DC Jack Adapter",
+    "description": "3.5mm/1.1mm to 5.5mm/2.1mm DC jack adapter. Converts between common DC barrel jack sizes.",
+    "technical_specs": "Input: 3.5mm/1.1mm; Output: 5.5mm/2.1mm; Type: Adapter plug",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4287",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4287-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.5,
+    "total_qty": 1,
+    "orders": [
+      "2846279"
+    ],
+    "last_scraped": null
+  },
+  "4351": {
+    "product_id": "4351",
+    "name": "Adafruit Infineon Trust M Breakout Board   STEMMA QT / Qwiic",
+    "csv_name": "Adafruit Infineon Trust M Breakout Board   STEMMA QT / Qwiic",
+    "description": "Adafruit Infineon Trust M breakout board with STEMMA QT. Hardware security element for cryptographic operations.",
+    "technical_specs": "IC: Infineon OPTIGA Trust M; Interface: I2C; Features: ECC-256/384, RSA-1024/2048, SHA-256, AES-128; Voltage: 3.3V; Connector: STEMMA QT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/4351",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4351-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-infineon-trust-m-breakout",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4354": {
+    "product_id": "4354",
+    "name": "Adafruit Perma Proto 40 Pin Raspberry Pi Breadboard PCB Kit",
+    "csv_name": "Adafruit Perma Proto 40 Pin Raspberry Pi Breadboard PCB Kit",
+    "description": "Adafruit Perma-Proto 40-pin Raspberry Pi breadboard PCB kit. Solderable prototyping board matching Pi's GPIO layout.",
+    "technical_specs": "Layout: Raspberry Pi 40-pin GPIO compatible; Size: HAT form factor; Holes: Plated through-hole; Material: FR4",
+    "category": "Prototyping",
+    "page_url": "https://www.adafruit.com/product/4354",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4354-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-perma-proto-raspberry-pi-pcb",
+    "unit_price": 7.95,
+    "total_qty": 1,
+    "orders": [
+      "2567892"
+    ],
+    "last_scraped": null
+  },
+  "4397": {
+    "product_id": "4397",
+    "name": "STEMMA QT / Qwiic JST SH 4 pin Cable with Premium Female Sockets",
+    "csv_name": "STEMMA QT / Qwiic JST SH 4 pin Cable with Premium Female Sockets",
+    "description": "STEMMA QT / Qwiic JST SH 4-pin cable with premium female sockets. Connect STEMMA QT to female headers.",
+    "technical_specs": "Connector A: JST SH 4-pin; Connector B: Female sockets; Length: ~150mm; Compatible: STEMMA QT / Qwiic",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4397",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4397-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "4398": {
+    "product_id": "4398",
+    "name": "JST SH 4 pin Cable with Alligator Clips   STEMMA QT / Qwiic",
+    "csv_name": "JST SH 4 pin Cable with Alligator Clips   STEMMA QT / Qwiic",
+    "description": "JST SH 4-pin cable with alligator clips, STEMMA QT / Qwiic compatible. For quick prototyping connections.",
+    "technical_specs": "Connector: JST SH 4-pin; Output: 4 alligator clips (color coded); Length: ~12\"; Compatible: STEMMA QT / Qwiic",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4398",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4398-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4399": {
+    "product_id": "4399",
+    "name": "STEMMA QT / Qwiic JST SH 4 Pin Cable   50mm Long",
+    "csv_name": "STEMMA QT / Qwiic JST SH 4 Pin Cable   50mm Long",
+    "description": "STEMMA QT / Qwiic JST SH 4-pin cable, 50mm long. Short cable for close-together STEMMA QT devices.",
+    "technical_specs": "Connector: JST SH 4-pin (both ends); Length: 50mm; Wire: 28AWG; Compatible: STEMMA QT / Qwiic",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4399",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4399-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 5,
+    "orders": [
+      "2871753",
+      "2887702",
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "4401": {
+    "product_id": "4401",
+    "name": "STEMMA QT / Qwiic JST SH 4 Pin Cable   200mm Long",
+    "csv_name": "STEMMA QT / Qwiic JST SH 4 Pin Cable   200mm Long",
+    "description": "STEMMA QT / Qwiic JST SH 4-pin cable, 200mm long. Medium-length cable for STEMMA QT connections.",
+    "technical_specs": "Connector: JST SH 4-pin (both ends); Length: 200mm; Wire: 28AWG; Compatible: STEMMA QT / Qwiic",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4401",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4401-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 3,
+    "orders": [
+      "2604757",
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4483": {
+    "product_id": "4483",
+    "name": "5 pin JST ESLOV to 4 pin JST SH STEMMA QT / Qwiic Cable",
+    "csv_name": "5 pin JST ESLOV to 4 pin JST SH STEMMA QT / Qwiic Cable",
+    "description": "5-pin JST ESLOV to 4-pin JST SH STEMMA QT / Qwiic cable. Adapter between Arduino ESLOV and STEMMA QT ecosystems.",
+    "technical_specs": "Connector A: JST ESLOV 5-pin; Connector B: JST SH 4-pin (STEMMA QT); Length: ~100mm",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4483",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4483-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.5,
+    "total_qty": 2,
+    "orders": [
+      "2604757",
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "4528": {
+    "product_id": "4528",
+    "name": "Grove to STEMMA QT / Qwiic / JST SH Cable",
+    "csv_name": "Grove to STEMMA QT / Qwiic / JST SH Cable",
+    "description": "Grove to STEMMA QT / Qwiic / JST SH cable. Adapter cable between Seeed Grove and Adafruit STEMMA QT ecosystems.",
+    "technical_specs": "Connector A: Grove (4-pin HY2.0); Connector B: JST SH 4-pin (STEMMA QT); Length: ~100mm",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/4528",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4528-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.95,
+    "total_qty": 2,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4559": {
+    "product_id": "4559",
+    "name": "Pre Cut Multi Colored Heat Shrink Pack Kit   280 pcs",
+    "csv_name": "Pre Cut Multi Colored Heat Shrink Pack Kit   280 pcs",
+    "description": "Pre-cut multi-colored heat shrink pack kit, 280 pieces. Assorted sizes and colors for wire insulation.",
+    "technical_specs": "Quantity: 280 pieces; Sizes: Assorted (various diameters); Colors: Multi-colored; Shrink Ratio: 2:1",
+    "category": "Tool",
+    "page_url": "https://www.adafruit.com/product/4559",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4559-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2871753"
+    ],
+    "last_scraped": null
+  },
+  "4565": {
+    "product_id": "4565",
+    "name": "Adafruit LSM6DSOX   LIS3MDL FeatherWing   Precision 9 DoF IMU",
+    "csv_name": "Adafruit LSM6DSOX   LIS3MDL FeatherWing   Precision 9 DoF IMU",
+    "description": "Adafruit LSM6DSOX + LIS3MDL FeatherWing - precision 9-DoF IMU. Accelerometer, gyroscope, and magnetometer combo.",
+    "technical_specs": "Accel/Gyro: LSM6DSOX; Magnetometer: LIS3MDL; DoF: 9 (3-axis accel + 3-axis gyro + 3-axis mag); Interface: I2C/SPI; Form Factor: FeatherWing; Connector: STEMMA QT",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/4565",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4565-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/st-9-dof-combo",
+    "unit_price": 19.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "4566": {
+    "product_id": "4566",
+    "name": "Adafruit AHT20   Temperature & Humidity Sensor Breakout Board",
+    "csv_name": "Adafruit AHT20   Temperature & Humidity Sensor Breakout Board",
+    "description": "Adafruit AHT20 temperature and humidity sensor breakout board. Simple I2C sensor with STEMMA QT connector.",
+    "technical_specs": "Sensor: AHT20; Temperature: ±0.3°C accuracy; Humidity: ±2% RH; Interface: I2C; Voltage: 3.3-5V; Connector: STEMMA QT",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/4566",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4566-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-aht20",
+    "unit_price": 4.5,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4582": {
+    "product_id": "4582",
+    "name": "Finger Pulse Oximeter with Bluetooth LE",
+    "csv_name": "Finger Pulse Oximeter with Bluetooth LE",
+    "description": "Finger pulse oximeter with Bluetooth LE. Measures blood oxygen saturation (SpO2) and heart rate wirelessly.",
+    "technical_specs": "Measures: SpO2 and heart rate; Connectivity: Bluetooth LE; Display: OLED; Power: 2x AAA batteries; Feature: BLE data streaming",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/4582",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4582-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/bluetooth-le-finger-pulse-oximeter",
+    "unit_price": 49.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "4594": {
+    "product_id": "4594",
+    "name": "Black LED Diffusion Acrylic Panel 12\" x 12\"   0.1\" / 2.6mm thick",
+    "csv_name": "Black LED Diffusion Acrylic Panel 12\" x 12\"   0.1\" / 2.6mm thick",
+    "description": "Black LED diffusion acrylic panel, 12x12 inches, 0.1 inch (2.6mm) thick. Diffuses LED light evenly.",
+    "technical_specs": "Size: 12\" x 12\"; Thickness: 0.1\" (2.6mm); Color: Black (diffusing); Material: Acrylic; Use: LED matrix diffusion",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/4594",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4594-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 9.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "4600": {
+    "product_id": "4600",
+    "name": "Adafruit QT Py   SAMD21 Dev Board with STEMMA QT",
+    "csv_name": "Adafruit QT Py   SAMD21 Dev Board with STEMMA QT",
+    "description": "Adafruit QT Py - SAMD21 dev board with STEMMA QT connector. Tiny but powerful board for CircuitPython and Arduino.",
+    "technical_specs": "MCU: ATSAMD21E18 (ARM Cortex M0+); Clock: 48MHz; Flash: 256KB; RAM: 32KB; GPIO: 11; USB: USB-C; Connector: STEMMA QT; Size: 0.85\" x 0.7\"",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/4600",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4600-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-qt-py",
+    "unit_price": 7.5,
+    "total_qty": 1,
+    "orders": [
+      "2600583"
+    ],
+    "last_scraped": null
+  },
+  "4631": {
+    "product_id": "4631",
+    "name": "Mini Magnet Feet for RGB LED Matrices (Pack of 4)",
+    "csv_name": "Mini Magnet Feet for RGB LED Matrices (Pack of 4)",
+    "description": "Mini magnet feet for RGB LED matrices, pack of 4. Magnetic mounting feet for LED panels.",
+    "technical_specs": "Quantity: 4; Type: Magnetic feet; Compatible: RGB LED matrices; Material: Rubber + magnet",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/4631",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4631-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.5,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "4650": {
+    "product_id": "4650",
+    "name": "Adafruit FeatherWing OLED   128x64 OLED Add on For Feather",
+    "csv_name": "Adafruit FeatherWing OLED   128x64 OLED Add on For Feather",
+    "description": "Adafruit FeatherWing OLED, 128x64 pixel monochrome display add-on for Feather boards. Larger OLED with buttons.",
+    "technical_specs": "Display: 128x64 OLED; Interface: I2C; Buttons: 3 (A, B, C); Driver: SH1107; Form Factor: FeatherWing; Size: 1.0\"",
+    "category": "FeatherWing",
+    "page_url": "https://www.adafruit.com/product/4650",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4650-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-128x64-oled-featherwing",
+    "unit_price": 14.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4677": {
+    "product_id": "4677",
+    "name": "Generic 64 Mbit Serial Pseudo SRAM   PSRAM   3.3V 133 MHz",
+    "csv_name": "Generic 64 Mbit Serial Pseudo SRAM   PSRAM   3.3V 133 MHz",
+    "description": "Generic 64 Mbit serial pseudo-SRAM (PSRAM), 3.3V 133MHz. Additional RAM for microcontroller projects.",
+    "technical_specs": "Capacity: 64 Mbit (8MB); Interface: SPI/QSPI; Voltage: 3.3V; Speed: 133MHz; Package: SOP-8",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/4677",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4677-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.75,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4681": {
+    "product_id": "4681",
+    "name": "Adafruit BH1750 Light Sensor   STEMMA QT / Qwiic",
+    "csv_name": "Adafruit BH1750 Light Sensor   STEMMA QT / Qwiic",
+    "description": "Adafruit BH1750 light sensor breakout with STEMMA QT connector. Digital ambient light intensity sensor.",
+    "technical_specs": "Sensor: BH1750; Range: 1-65535 lux; Interface: I2C; Resolution: 16-bit; Voltage: 3.3-5V; Connector: STEMMA QT",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/4681",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4681-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor",
+    "unit_price": 4.5,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "4763": {
+    "product_id": "4763",
+    "name": "GD25Q16   2MB SPI Flash in 8 Pin SOIC package",
+    "csv_name": "GD25Q16   2MB SPI Flash in 8 Pin SOIC package",
+    "description": "GD25Q16 2MB SPI flash memory in 8-pin SOIC package. External flash storage for microcontrollers.",
+    "technical_specs": "Capacity: 2MB (16 Mbit); Interface: SPI; Speed: 120MHz; Package: 8-pin SOIC; Voltage: 2.7-3.6V",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/4763",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4763-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 1.25,
+    "total_qty": 2,
+    "orders": [
+      "2600583",
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "4813": {
+    "product_id": "4813",
+    "name": "Clear Adhesive Squares   6 pack",
+    "csv_name": "Clear Adhesive Squares   6 pack",
+    "description": "Clear adhesive squares, 6 pack. Sticky mounting squares for attaching components and boards.",
+    "technical_specs": "Quantity: 6; Type: Clear adhesive mounting squares; Feature: Removable/repositionable",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/4813",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4813-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.5,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "4871": {
+    "product_id": "4871",
+    "name": "Breadboard friendly Mini PIR Motion Sensor with 3 Pin Header",
+    "csv_name": "Breadboard friendly Mini PIR Motion Sensor with 3 Pin Header",
+    "description": "Breadboard-friendly mini PIR motion sensor with 3-pin header. Compact passive infrared sensor for detecting movement.",
+    "technical_specs": "Type: Passive Infrared (PIR); Range: ~3m; Angle: ~120°; Output: Digital; Voltage: 3.3-5V; Pin Spacing: 0.1\" breadboard compatible",
+    "category": "Sensor",
+    "page_url": "https://www.adafruit.com/product/4871",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4871-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor",
+    "unit_price": 3.95,
+    "total_qty": 3,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "4884": {
+    "product_id": "4884",
+    "name": "Adafruit Feather RP2040",
+    "csv_name": "Adafruit Feather RP2040",
+    "description": "Adafruit Feather RP2040 - Raspberry Pi RP2040-based Feather board. Dual-core ARM Cortex M0+ with tons of RAM.",
+    "technical_specs": "MCU: RP2040 (Dual ARM Cortex M0+); Clock: 133MHz; Flash: 8MB QSPI; RAM: 264KB; GPIO: 21; USB: USB-C; Battery: LiPo charger; LED: NeoPixel; STEMMA QT",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/4884",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4884-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-feather-rp2040-pico",
+    "unit_price": 11.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "4886": {
+    "product_id": "4886",
+    "name": "Adafruit AW9523 GPIO Expander and LED Driver Breakout",
+    "csv_name": "Adafruit AW9523 GPIO Expander and LED Driver Breakout",
+    "description": "Adafruit AW9523 GPIO expander and LED driver breakout. Add 16 extra GPIO pins or LED channels over I2C.",
+    "technical_specs": "IC: AW9523B; GPIO: 16 pins; Interface: I2C; LED Drive: 256-step (8-bit) per pin; Voltage: 3.3V; Max Current: 37mA per pin; Connector: STEMMA QT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/4886",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4886-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-aw9523-gpio-expander-and-led-driver",
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2567892"
+    ],
+    "last_scraped": null
+  },
+  "4991": {
+    "product_id": "4991",
+    "name": "Adafruit I2C Stemma QT Rotary Encoder Breakout with NeoPixel",
+    "csv_name": "Adafruit I2C Stemma QT Rotary Encoder Breakout with NeoPixel",
+    "description": "Adafruit I2C STEMMA QT rotary encoder breakout with NeoPixel. Connects a rotary encoder via I2C with RGB LED feedback.",
+    "technical_specs": "Controller: seesaw (ATSAMD09); Interface: I2C; Features: Encoder input, NeoPixel, interrupt; Voltage: 3.3-5V; Connector: STEMMA QT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/4991",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/4991-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-i2c-qt-rotary-encoder",
+    "unit_price": 5.95,
+    "total_qty": 3,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "5001": {
+    "product_id": "5001",
+    "name": "ANO Directional Navigation and Scroll Wheel Rotary Encoder",
+    "csv_name": "ANO Directional Navigation and Scroll Wheel Rotary Encoder",
+    "description": "ANO directional navigation and scroll wheel rotary encoder. Multi-function input with scroll, click, and D-pad directions.",
+    "technical_specs": "Functions: Scroll wheel + center click + Up/Down/Left/Right; Type: Mechanical; Interface: Digital; Size: Thumbwheel form factor",
+    "category": "Component",
+    "page_url": "https://www.adafruit.com/product/5001",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5001-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/ano-rotary-encoder",
+    "unit_price": 8.95,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "5036": {
+    "product_id": "5036",
+    "name": "64x32 RGB LED Matrix   2.5mm pitch",
+    "csv_name": "64x32 RGB LED Matrix   2.5mm pitch",
+    "description": "64x32 RGB LED matrix panel with 2.5mm pixel pitch. Full-color LED display panel driven via HUB75 interface.",
+    "technical_specs": "Resolution: 64x32 pixels; Pitch: 2.5mm; Colors: RGB (full color); Interface: HUB75; Size: 160mm x 80mm; Voltage: 5V; Scan: 1/16",
+    "category": "Display",
+    "page_url": "https://www.adafruit.com/product/5036",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5036-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-matrixportal-m4",
+    "unit_price": 34.95,
+    "total_qty": 1,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "5051": {
+    "product_id": "5051",
+    "name": "Black Anodized Aluminum Bumper Feet   Pack of 2",
+    "csv_name": "Black Anodized Aluminum Bumper Feet   Pack of 2",
+    "description": "Black anodized aluminum bumper feet, pack of 2. Adhesive rubber feet for enclosures and projects.",
+    "technical_specs": "Quantity: 2; Material: Anodized aluminum + rubber; Color: Black; Mounting: Adhesive",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/5051",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5051-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 8.95,
+    "total_qty": 1,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "5056": {
+    "product_id": "5056",
+    "name": "Adafruit Trinkey QT2040   RP2040 USB Key with Stemma QT",
+    "csv_name": "Adafruit Trinkey QT2040   RP2040 USB Key with Stemma QT",
+    "description": "Adafruit Trinkey QT2040 - RP2040 USB key with STEMMA QT. Plugs directly into USB-A port, has a STEMMA QT connector for I2C devices.",
+    "technical_specs": "MCU: RP2040 (Dual ARM Cortex M0+); Clock: 133MHz; Flash: 8MB QSPI; RAM: 264KB; USB: USB-A (plug-in); Connector: STEMMA QT; LED: NeoPixel; Touch: 1 capacitive pad",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/5056",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5056-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-trinkey-qt2040",
+    "unit_price": 7.5,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "5093": {
+    "product_id": "5093",
+    "name": "Slim Rubber Rotary Encoder Knob   11.5mm x 14.5mm D Shaft",
+    "csv_name": "Slim Rubber Rotary Encoder Knob   11.5mm x 14.5mm D Shaft",
+    "description": "Slim rubber rotary encoder knob, 11.5mm x 14.5mm, D-shaft. Low-profile knob for encoders and pots.",
+    "technical_specs": "Diameter: 11.5mm; Height: 14.5mm; Shaft: D-shaft (6mm); Material: Rubber; Color: Black",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/5093",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5093-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.75,
+    "total_qty": 2,
+    "orders": [
+      "2643648"
+    ],
+    "last_scraped": null
+  },
+  "5128": {
+    "product_id": "5128",
+    "name": "Adafruit MacroPad RP2040 Starter Kit   3x4 Keys   Encoder   OLED",
+    "csv_name": "Adafruit MacroPad RP2040 Starter Kit   3x4 Keys   Encoder   OLED",
+    "description": "Adafruit MacroPad RP2040 starter kit - 3x4 mechanical keys, rotary encoder, and OLED. Programmable macro keyboard.",
+    "technical_specs": "MCU: RP2040; Keys: 12 (3x4 mechanical); Encoder: Rotary with click; Display: 128x64 OLED; LEDs: 12x NeoPixel (per-key); USB: USB-C; Audio: Speaker",
+    "category": "Kit",
+    "page_url": "https://www.adafruit.com/product/5128",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5128-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-macropad-rp2040",
+    "unit_price": 49.95,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "5142": {
+    "product_id": "5142",
+    "name": "SparkFun Qwiic pHAT v2.0 for Raspberry Pi   STEMMA QT / Qwiic",
+    "csv_name": "SparkFun Qwiic pHAT v2.0 for Raspberry Pi   STEMMA QT / Qwiic",
+    "description": "SparkFun Qwiic pHAT v2.0 for Raspberry Pi. Adds four STEMMA QT / Qwiic connectors to a Raspberry Pi.",
+    "technical_specs": "Connectors: 4x STEMMA QT/Qwiic; Compatible: Raspberry Pi (40-pin); Interface: I2C; Form Factor: pHAT",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/5142",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5142-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 7.95,
+    "total_qty": 1,
+    "orders": [
+      "2604757"
+    ],
+    "last_scraped": null
+  },
+  "5154": {
+    "product_id": "5154",
+    "name": "Digi Key Innovation Handbook",
+    "csv_name": "Digi Key Innovation Handbook",
+    "description": "Digi-Key Innovation Handbook - a reference book covering electronics fundamentals and maker projects.",
+    "technical_specs": "Type: Physical book; Publisher: Digi-Key; Topic: Electronics and innovation",
+    "category": "Book/Subscription",
+    "page_url": "https://www.adafruit.com/product/5154",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5154-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 5.95,
+    "total_qty": 1,
+    "orders": [
+      "2660281"
+    ],
+    "last_scraped": null
+  },
+  "5188": {
+    "product_id": "5188",
+    "name": "Adafruit DS3231 Precision RTC   STEMMA QT",
+    "csv_name": "Adafruit DS3231 Precision RTC   STEMMA QT",
+    "description": "Adafruit DS3231 precision RTC with STEMMA QT. Extremely accurate real-time clock with temperature-compensated crystal.",
+    "technical_specs": "IC: DS3231; Accuracy: ±2ppm (±1 min/year); Interface: I2C; Battery: CR1220 backup; Voltage: 3.3-5V; Connector: STEMMA QT; Alarm: 2 alarms",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/5188",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5188-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout",
+    "unit_price": 13.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "5195": {
+    "product_id": "5195",
+    "name": "Etched Glow Through Keycap with LGTM (Looks Good To Me) Acronym",
+    "csv_name": "Etched Glow Through Keycap with LGTM (Looks Good To Me) Acronym",
+    "description": "Etched glow-through keycap with LGTM (Looks Good To Me) acronym. Custom mechanical keyboard keycap.",
+    "technical_specs": "Type: Mechanical keycap; Legend: LGTM; Feature: Glow-through (backlit compatible); Mount: MX compatible",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/5195",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5195-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "5221": {
+    "product_id": "5221",
+    "name": "Adafruit ANO Rotary Navigation Encoder Breakout PCB",
+    "csv_name": "Adafruit ANO Rotary Navigation Encoder Breakout PCB",
+    "description": "Adafruit ANO rotary navigation encoder breakout PCB. Breakout board for the ANO scroll wheel encoder.",
+    "technical_specs": "Compatible: ANO Rotary Navigation Encoder; Connections: Breakout pads; Mounting: PCB; Interface: Digital GPIO",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/5221",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5221-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-ano-rotary-navigation-encoder-breakout",
+    "unit_price": 1.5,
+    "total_qty": 1,
+    "orders": [
+      "2862474"
+    ],
+    "last_scraped": null
+  },
+  "5244": {
+    "product_id": "5244",
+    "name": "Grove Cable Pigtail   2mm pitch 100mm long",
+    "csv_name": "Grove Cable Pigtail   2mm pitch 100mm long",
+    "description": "Grove cable pigtail, 2mm pitch, 100mm long. Grove connector on one end, bare wires on other.",
+    "technical_specs": "Connector: Grove (HY2.0 4-pin); Output: Bare wire pigtail; Length: 100mm; Pitch: 2mm",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/5244",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5244-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0.95,
+    "total_qty": 2,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "5302": {
+    "product_id": "5302",
+    "name": "Adafruit KB2040   RP2040 Kee Boar Driver",
+    "csv_name": "Adafruit KB2040   RP2040 Kee Boar Driver",
+    "description": "Adafruit KB2040 - RP2040 Kee Boar Driver. Arduino Pro Micro form factor board with RP2040 for mechanical keyboards.",
+    "technical_specs": "MCU: RP2040 (Dual ARM Cortex M0+); Clock: 133MHz; Flash: 8MB QSPI; RAM: 264KB; USB: USB-C; Form Factor: Pro Micro; LED: NeoPixel; STEMMA QT; GPIO: 18",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/5302",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5302-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-kb2040",
+    "unit_price": 8.95,
+    "total_qty": 3,
+    "orders": [
+      "2887702",
+      "2894370",
+      "2930687"
+    ],
+    "last_scraped": null
+  },
+  "5348": {
+    "product_id": "5348",
+    "name": "Adafruit QT Py ESP32 S2 WiFi Dev Board with uFL Antenna Port",
+    "csv_name": "Adafruit QT Py ESP32 S2 WiFi Dev Board with uFL Antenna Port",
+    "description": "Adafruit QT Py ESP32-S2 WiFi dev board with uFL antenna port. Tiny WiFi-enabled board with STEMMA QT.",
+    "technical_specs": "MCU: ESP32-S2 (240MHz Xtensa); Flash: 4MB + 2MB PSRAM; WiFi: 802.11 b/g/n; USB: USB-C (native); Connector: STEMMA QT + uFL; GPIO: 11; LED: NeoPixel",
+    "category": "Microcontroller",
+    "page_url": "https://www.adafruit.com/product/5348",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5348-00.jpg",
+    "learn_guide_url": "https://learn.adafruit.com/adafruit-qt-py-esp32-s2",
+    "unit_price": 12.5,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "5358": {
+    "product_id": "5358",
+    "name": "DIY Magnetic Connector   Right Angle Four Contact Pins",
+    "csv_name": "DIY Magnetic Connector   Right Angle Four Contact Pins",
+    "description": "DIY magnetic connector with right-angle four contact pins. Magnetic pogo pin connector for detachable connections.",
+    "technical_specs": "Pins: 4; Type: Magnetic pogo pin; Angle: Right angle; Current: Up to 3A; Feature: Snap-on magnetic",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/5358",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5358-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 6.5,
+    "total_qty": 2,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "5412": {
+    "product_id": "5412",
+    "name": "Magnetic USB Charging Cable for 4 Pin 0.1\" Magnetic Connector",
+    "csv_name": "Magnetic USB Charging Cable for 4 Pin 0.1\" Magnetic Connector",
+    "description": "Magnetic USB charging cable for 4-pin 0.1 inch magnetic connector. Pairs with DIY magnetic connector.",
+    "technical_specs": "Interface: USB to 4-pin magnetic; Compatible: Adafruit magnetic connectors; Feature: Magnetic snap-on; Cable: USB-A",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/5412",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5412-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 4.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "5444": {
+    "product_id": "5444",
+    "name": "RP SMA to w.FL / MHF3 / IPEX3 Adapter",
+    "csv_name": "RP SMA to w.FL / MHF3 / IPEX3 Adapter",
+    "description": "RP-SMA to w.FL/MHF3/IPEX3 adapter cable. Converts between RP-SMA antenna connector and miniature w.FL/IPEX3.",
+    "technical_specs": "Connector A: RP-SMA; Connector B: w.FL/MHF3/IPEX3; Impedance: 50 Ohm; Type: Adapter pigtail",
+    "category": "Cable/Connector",
+    "page_url": "https://www.adafruit.com/product/5444",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5444-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "5527": {
+    "product_id": "5527",
+    "name": "Anodized Aluminum Machined Knob   Black   20mm Diameter",
+    "csv_name": "Anodized Aluminum Machined Knob   Black   20mm Diameter",
+    "description": "Anodized aluminum machined knob, black, 20mm diameter. Premium metal knob for potentiometers and encoders.",
+    "technical_specs": "Diameter: 20mm; Material: Anodized aluminum; Color: Black; Shaft: 6mm D-shaft",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/5527",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5527-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.95,
+    "total_qty": 1,
+    "orders": [
+      "2887702"
+    ],
+    "last_scraped": null
+  },
+  "5531": {
+    "product_id": "5531",
+    "name": "Anodized Aluminum Machined Knob   Gold   20mm Diameter",
+    "csv_name": "Anodized Aluminum Machined Knob   Gold   20mm Diameter",
+    "description": "Anodized aluminum machined knob, gold, 20mm diameter. Premium metal knob for potentiometers and encoders.",
+    "technical_specs": "Diameter: 20mm; Material: Anodized aluminum; Color: Gold; Shaft: 6mm D-shaft",
+    "category": "Accessory",
+    "page_url": "https://www.adafruit.com/product/5531",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5531-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.95,
+    "total_qty": 1,
+    "orders": [
+      "2894370"
+    ],
+    "last_scraped": null
+  },
+  "5625": {
+    "product_id": "5625",
+    "name": "Adafruit Qwiic / Stemma QT 5 Port Hub",
+    "csv_name": "Adafruit Qwiic / Stemma QT 5 Port Hub",
+    "description": "Adafruit Qwiic / STEMMA QT 5-port hub. Expands one STEMMA QT / Qwiic port into five for connecting multiple I2C devices.",
+    "technical_specs": "Ports: 5x STEMMA QT/Qwiic; Type: I2C hub (passive); Voltage: 3.3V; No active components (just wired in parallel)",
+    "category": "Breakout Board",
+    "page_url": "https://www.adafruit.com/product/5625",
+    "image_url": "https://cdn-shop.adafruit.com/970x728/5625-00.jpg",
+    "learn_guide_url": null,
+    "unit_price": 2.5,
+    "total_qty": 3,
+    "orders": [
+      "2930687"
+    ],
+    "last_scraped": null
+  }
+}

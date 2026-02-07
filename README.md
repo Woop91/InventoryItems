@@ -1,6 +1,6 @@
 # Electronics Product Inventory
 
-Personal inventory of **230 products** from [adafruit.com](https://www.adafruit.com) and [pimoroni.com](https://shop.pimoroni.com).
+Personal inventory of **236 products** — 191 from adafruit.com, 39 from pimoroni.com, 3 from aliexpress.com, 1 from waveshare.com, 1 from sparkfun.com, 1 from mouser.com.
 
 > Open **index.html** in a browser for a visual catalog with images, search, and source filtering.
 
@@ -15,16 +15,15 @@ Personal inventory of **230 products** from [adafruit.com](https://www.adafruit.
 
 ## How to Update
 
-Run the scraper locally to pull live specs, images, and learn guides from adafruit.com:
 ```bash
 pip install requests beautifulsoup4
-python scraper.py          # scrape all products
+python scraper.py          # scrape Adafruit products
 python scraper.py --force  # re-scrape everything
 ```
 
 ---
 
-## Categories
+## Categories by Source
 
 ### Adafruit (191 products)
 
@@ -59,6 +58,22 @@ python scraper.py --force  # re-scrape everything
 - [Tool](#pimoroni-tool) (2)
 - [Accessory](#pimoroni-accessory) (6)
 
+### Waveshare (1 products)
+
+- [Display](#waveshare-display) (1)
+
+### SparkFun (1 products)
+
+- [Breakout Board](#sparkfun-breakout-board) (1)
+
+### Mouser (1 products)
+
+- [Sensor](#mouser-sensor) (1)
+
+### AliExpress (3 products)
+
+- [Microcontroller](#aliexpress-microcontroller) (3)
+
 ---
 
 # Adafruit Products
@@ -66,14 +81,14 @@ python scraper.py --force  # re-scrape everything
 ## Adafruit - Microcontroller
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 50 | Adafruit METRO 328 Fully Assembled   Arduino IDE compatible | 1 | $17.50 | [Product](https://www.adafruit.com/product/50) · [Guide](https://learn.adafruit.com/adafruit-metro) |
+|------|---------|----:|------:|-------|
 | 3176 | Adafruit Feather M0 RFM69HCW Packet Radio   868 or 915 MHz | 2 | $24.95 | [Product](https://www.adafruit.com/product/3176) · [Guide](https://learn.adafruit.com/adafruit-feather-m0-radio-with-rfm69-packet-radio) |
 | 3333 | Circuit Playground Express | 4 | $24.95 | [Product](https://www.adafruit.com/product/3333) · [Guide](https://learn.adafruit.com/adafruit-circuit-playground-express) |
 | 3500 | Adafruit Trinket M0   for use with CircuitPython & Arduino IDE | 1 | $8.95 | [Product](https://www.adafruit.com/product/3500) · [Guide](https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino) |
 | 3505 | Adafruit METRO M0 Express   designed for CircuitPython | 1 | $24.95 | [Product](https://www.adafruit.com/product/3505) · [Guide](https://learn.adafruit.com/adafruit-metro-m0-express) |
 | 4600 | Adafruit QT Py   SAMD21 Dev Board with STEMMA QT | 1 | $7.50 | [Product](https://www.adafruit.com/product/4600) · [Guide](https://learn.adafruit.com/adafruit-qt-py) |
 | 4884 | Adafruit Feather RP2040 | 1 | $11.95 | [Product](https://www.adafruit.com/product/4884) · [Guide](https://learn.adafruit.com/adafruit-feather-rp2040-pico) |
+| 50 | Adafruit METRO 328 Fully Assembled   Arduino IDE compatible | 1 | $17.50 | [Product](https://www.adafruit.com/product/50) · [Guide](https://learn.adafruit.com/adafruit-metro) |
 | 5056 | Adafruit Trinkey QT2040   RP2040 USB Key with Stemma QT | 1 | $7.50 | [Product](https://www.adafruit.com/product/5056) · [Guide](https://learn.adafruit.com/adafruit-trinkey-qt2040) |
 | 5302 | Adafruit KB2040   RP2040 Kee Boar Driver | 3 | $8.95 | [Product](https://www.adafruit.com/product/5302) · [Guide](https://learn.adafruit.com/adafruit-kb2040) |
 | 5348 | Adafruit QT Py ESP32 S2 WiFi Dev Board with uFL Antenna Port | 1 | $12.50 | [Product](https://www.adafruit.com/product/5348) · [Guide](https://learn.adafruit.com/adafruit-qt-py-esp32-s2) |
@@ -81,9 +96,8 @@ python scraper.py --force  # re-scrape everything
 ## Adafruit - Sensor
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
+|------|---------|----:|------:|-------|
 | 157 | IR (Infrared) Receiver Sensor | 1 | $1.95 | [Product](https://www.adafruit.com/product/157) · [Guide](https://learn.adafruit.com/ir-sensor) |
-| 904 | INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max | 1 | $9.95 | [Product](https://www.adafruit.com/product/904) · [Guide](https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout) |
 | 1766 | Fast Vibration Sensor Switch (Easy to trigger) | 2 | $0.95 | [Product](https://www.adafruit.com/product/1766) |
 | 2384 | Medium Vibration Sensor Switch | 2 | $0.95 | [Product](https://www.adafruit.com/product/2384) |
 | 4081 | Flat Vibration Switch   Breadboard friendly | 4 | $0.95 | [Product](https://www.adafruit.com/product/4081) |
@@ -91,30 +105,29 @@ python scraper.py --force  # re-scrape everything
 | 4582 | Finger Pulse Oximeter with Bluetooth LE | 1 | $49.95 | [Product](https://www.adafruit.com/product/4582) · [Guide](https://learn.adafruit.com/bluetooth-le-finger-pulse-oximeter) |
 | 4681 | Adafruit BH1750 Light Sensor   STEMMA QT / Qwiic | 1 | $4.50 | [Product](https://www.adafruit.com/product/4681) · [Guide](https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor) |
 | 4871 | Breadboard friendly Mini PIR Motion Sensor with 3 Pin Header | 3 | $3.95 | [Product](https://www.adafruit.com/product/4871) · [Guide](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor) |
+| 904 | INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max | 1 | $9.95 | [Product](https://www.adafruit.com/product/904) · [Guide](https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout) |
 
 ## Adafruit - Display
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 326 | Monochrome 0.96" 128x64 OLED Graphic Display   STEMMA QT | 1 | $17.50 | [Product](https://www.adafruit.com/product/326) · [Guide](https://learn.adafruit.com/monochrome-oled-breakouts) |
-| 398 | RGB backlight positive LCD 16x2   extras | 1 | $12.95 | [Product](https://www.adafruit.com/product/398) · [Guide](https://learn.adafruit.com/rgb-backlit-lcds) |
-| 715 | Adafruit I2C Controlled   Keypad Shield Kit for 16x2 LCD | 1 | $14.95 | [Product](https://www.adafruit.com/product/715) · [Guide](https://learn.adafruit.com/adafruit-i2c-controlled-keypad-shield-for-16x2-lcd) |
-| 877 | Adafruit 7 Segment LED Matrix Backpack   STEMMA QT / qwiic | 1 | $6.95 | [Product](https://www.adafruit.com/product/877) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
+|------|---------|----:|------:|-------|
 | 1048 | Adafruit 1.2" 8x8 LED Matrix Backpack | 3 | $6.00 | [Product](https://www.adafruit.com/product/1048) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
 | 1265 | Yellow 7 segment clock display   1.2" digit height | 1 | $7.50 | [Product](https://www.adafruit.com/product/1265) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
 | 1431 | OLED Breakout Board   16 bit Color 1.5" w/microSD holder | 1 | $39.95 | [Product](https://www.adafruit.com/product/1431) · [Guide](https://learn.adafruit.com/adafruit-1-5-color-oled-breakout-board) |
+| 326 | Monochrome 0.96" 128x64 OLED Graphic Display   STEMMA QT | 1 | $17.50 | [Product](https://www.adafruit.com/product/326) · [Guide](https://learn.adafruit.com/monochrome-oled-breakouts) |
+| 398 | RGB backlight positive LCD 16x2   extras | 1 | $12.95 | [Product](https://www.adafruit.com/product/398) · [Guide](https://learn.adafruit.com/rgb-backlit-lcds) |
 | 5036 | 64x32 RGB LED Matrix   2.5mm pitch | 1 | $34.95 | [Product](https://www.adafruit.com/product/5036) · [Guide](https://learn.adafruit.com/adafruit-matrixportal-m4) |
+| 715 | Adafruit I2C Controlled   Keypad Shield Kit for 16x2 LCD | 1 | $14.95 | [Product](https://www.adafruit.com/product/715) · [Guide](https://learn.adafruit.com/adafruit-i2c-controlled-keypad-shield-for-16x2-lcd) |
+| 877 | Adafruit 7 Segment LED Matrix Backpack   STEMMA QT / qwiic | 1 | $6.95 | [Product](https://www.adafruit.com/product/877) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
 
 ## Adafruit - LED
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 159 | Diffused RGB (tri color) LED | 1 | $2.00 | [Product](https://www.adafruit.com/product/159) |
-| 455 | Small 1.2" 8x8 Ultra Bright Red LED Matrix | 3 | $3.95 | [Product](https://www.adafruit.com/product/455) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
-| 860 | Miniature 8x8 Yellow LED Matrix | 1 | $3.95 | [Product](https://www.adafruit.com/product/860) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
+|------|---------|----:|------:|-------|
 | 1312 | Breadboard friendly RGB Smart NeoPixel   Pack of 5 | 1 | $7.95 | [Product](https://www.adafruit.com/product/1312) · [Guide](https://learn.adafruit.com/adafruit-neopixel-uberguide) |
 | 1399 | RGB 7 Segment Digit   1" Tall Digit | 2 | $14.95 | [Product](https://www.adafruit.com/product/1399) |
 | 1426 | NeoPixel Stick   8 x 5050 RGB LED with Integrated Drivers | 1 | $5.95 | [Product](https://www.adafruit.com/product/1426) · [Guide](https://learn.adafruit.com/adafruit-neopixel-uberguide) |
+| 159 | Diffused RGB (tri color) LED | 1 | $2.00 | [Product](https://www.adafruit.com/product/159) |
 | 1612 | NeoPixel Mini Button PCB   Pack of 5 | 1 | $4.95 | [Product](https://www.adafruit.com/product/1612) · [Guide](https://learn.adafruit.com/adafruit-neopixel-uberguide) |
 | 1623 | Small 1.2" 8x8 Ultra Bright Pure Green LED Matrix | 1 | $4.95 | [Product](https://www.adafruit.com/product/1623) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
 | 1655 | NeoPixel 5050 RGB LED with Integrated Driver Chip   10 Pack | 1 | $4.50 | [Product](https://www.adafruit.com/product/1655) · [Guide](https://learn.adafruit.com/adafruit-neopixel-uberguide) |
@@ -123,19 +136,20 @@ python scraper.py --force  # re-scrape everything
 | 2739 | Diffused Rectangular 5mm RGB LEDs   Pack of 10 | 1 | $5.95 | [Product](https://www.adafruit.com/product/2739) |
 | 4042 | Diffused Red and Green Indicator LED   18mm Round | 9 | $1.50 | [Product](https://www.adafruit.com/product/4042) |
 | 4203 | Diffused 5mm LED Pack   5 LEDs each in 5 Colors   25 Pack | 1 | $4.95 | [Product](https://www.adafruit.com/product/4203) |
+| 455 | Small 1.2" 8x8 Ultra Bright Red LED Matrix | 3 | $3.95 | [Product](https://www.adafruit.com/product/455) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
+| 860 | Miniature 8x8 Yellow LED Matrix | 1 | $3.95 | [Product](https://www.adafruit.com/product/860) · [Guide](https://learn.adafruit.com/adafruit-led-backpack) |
 
 ## Adafruit - Breakout Board
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 292 | i2c / SPI character LCD backpack   STEMMA QT / Qwiic | 1 | $9.95 | [Product](https://www.adafruit.com/product/292) · [Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack) |
-| 757 | 4 channel I2C safe Bi directional Logic Level Converter | 1 | $3.95 | [Product](https://www.adafruit.com/product/757) · [Guide](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts) |
+|------|---------|----:|------:|-------|
 | 1616 | Adafruit Trellis Monochrome Driver PCB for 4x4 Keypad & 3mm LEDs | 1 | $9.95 | [Product](https://www.adafruit.com/product/1616) · [Guide](https://learn.adafruit.com/adafruit-trellis-diy-open-source-led-keypad) |
 | 1754 | Adafruit Assembled Pi T Cobbler Breakout for Raspberry Pi | 1 | $6.95 | [Product](https://www.adafruit.com/product/1754) · [Guide](https://learn.adafruit.com/adafruit-pi-t-cobbler) |
 | 2028 | Assembled Pi T Cobbler Plus   GPIO Breakout | 2 | $7.95 | [Product](https://www.adafruit.com/product/2028) · [Guide](https://learn.adafruit.com/adafruit-pi-t-cobbler-plus) |
 | 2200 | Precision LM4040 Voltage Reference Breakout   2.048V and 4.096V | 1 | $7.50 | [Product](https://www.adafruit.com/product/2200) · [Guide](https://learn.adafruit.com/adafruit-lm4040-voltage-reference-breakout) |
 | 2305 | Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic | 3 | $7.95 | [Product](https://www.adafruit.com/product/2305) · [Guide](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout) |
 | 2717 | TCA9548A I2C Multiplexer | 1 | $6.95 | [Product](https://www.adafruit.com/product/2717) · [Guide](https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout) |
+| 292 | i2c / SPI character LCD backpack   STEMMA QT / Qwiic | 1 | $9.95 | [Product](https://www.adafruit.com/product/292) · [Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack) |
 | 3070 | Adafruit RFM69HCW Transceiver Radio Breakout   868 or 915 MHz | 2 | $9.95 | [Product](https://www.adafruit.com/product/3070) · [Guide](https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts) |
 | 3954 | Adafruit NeoTrellis RGB Driver PCB for 4x4 Keypad | 2 | $12.50 | [Product](https://www.adafruit.com/product/3954) · [Guide](https://learn.adafruit.com/adafruit-neotrellis) |
 | 4286 | Adafruit DS3502 I2C Digital 10K Potentiometer Breakout | 1 | $4.95 | [Product](https://www.adafruit.com/product/4286) · [Guide](https://learn.adafruit.com/ds3502-i2c-potentiometer) |
@@ -146,11 +160,12 @@ python scraper.py --force  # re-scrape everything
 | 5188 | Adafruit DS3231 Precision RTC   STEMMA QT | 1 | $13.95 | [Product](https://www.adafruit.com/product/5188) · [Guide](https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout) |
 | 5221 | Adafruit ANO Rotary Navigation Encoder Breakout PCB | 1 | $1.50 | [Product](https://www.adafruit.com/product/5221) · [Guide](https://learn.adafruit.com/adafruit-ano-rotary-navigation-encoder-breakout) |
 | 5625 | Adafruit Qwiic / Stemma QT 5 Port Hub | 3 | $2.50 | [Product](https://www.adafruit.com/product/5625) |
+| 757 | 4 channel I2C safe Bi directional Logic Level Converter | 1 | $3.95 | [Product](https://www.adafruit.com/product/757) · [Guide](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts) |
 
 ## Adafruit - FeatherWing
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
+|------|---------|----:|------:|-------|
 | 2884 | FeatherWing Proto   Prototyping Add on For All Feather Boards | 1 | $4.95 | [Product](https://www.adafruit.com/product/2884) · [Guide](https://learn.adafruit.com/featherwing-proto-and-doubler) |
 | 2900 | Adafruit FeatherWing OLED   128x32 OLED Add on For Feather | 1 | $14.95 | [Product](https://www.adafruit.com/product/2900) · [Guide](https://learn.adafruit.com/adafruit-oled-featherwing) |
 | 2922 | Adalogger FeatherWing   RTC   SD Add on For All Feather Boards | 1 | $8.95 | [Product](https://www.adafruit.com/product/2922) · [Guide](https://learn.adafruit.com/adafruit-adalogger-featherwing) |
@@ -167,15 +182,7 @@ python scraper.py --force  # re-scrape everything
 ## Adafruit - Component
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 9 | High strength 'rare earth' magnet | 2 | $2.50 | [Product](https://www.adafruit.com/product/9) |
-| 356 | Breadboard trim potentiometer | 2 | $1.25 | [Product](https://www.adafruit.com/product/356) |
-| 373 | Breadboard friendly 2.1mm DC barrel jack | 2 | $0.95 | [Product](https://www.adafruit.com/product/373) |
-| 377 | Rotary Encoder   Extras | 4 | $4.50 | [Product](https://www.adafruit.com/product/377) · [Guide](https://learn.adafruit.com/rotary-encoder) |
-| 453 | MAX7219CNG LED Matrix/Digit Display Driver | 1 | $12.95 | [Product](https://www.adafruit.com/product/453) |
-| 480 | Small Arcade Joystick | 1 | $14.95 | [Product](https://www.adafruit.com/product/480) |
-| 735 | 74LVC245   Breadboard Friendly 8 bit Logic Level Shifter | 4 | $1.50 | [Product](https://www.adafruit.com/product/735) |
-| 805 | Breadboard friendly SPDT Slide Switch | 4 | $0.95 | [Product](https://www.adafruit.com/product/805) |
+|------|---------|----:|------:|-------|
 | 1009 | Colorful Round Tactile Button Switch Assortment   15 pack | 1 | $5.95 | [Product](https://www.adafruit.com/product/1009) |
 | 1010 | Colorful 12mm Square Tactile Button Switch Assortment   15 pack | 1 | $5.95 | [Product](https://www.adafruit.com/product/1010) |
 | 1074 | Configurable Spring Terminal Blocks   3 Pin 0.1" Pitch R/A   x 5 | 1 | $4.95 | [Product](https://www.adafruit.com/product/1074) |
@@ -188,23 +195,30 @@ python scraper.py --force  # re-scrape everything
 | 1898 | Breadboard Friendly PCB Mount Mini Speaker   8 Ohm 0.2W | 2 | $1.85 | [Product](https://www.adafruit.com/product/1898) |
 | 3101 | Soft Tactile Button (8mm) x 10 | 1 | $1.95 | [Product](https://www.adafruit.com/product/3101) |
 | 3104 | Mini Illuminated Momentary Pushbutton   Red Power Symbol | 1 | $1.95 | [Product](https://www.adafruit.com/product/3104) |
+| 356 | Breadboard trim potentiometer | 2 | $1.25 | [Product](https://www.adafruit.com/product/356) |
 | 3642 | 2.1mm DC Power Jack with Slide Switch | 1 | $1.95 | [Product](https://www.adafruit.com/product/3642) |
+| 373 | Breadboard friendly 2.1mm DC barrel jack | 2 | $0.95 | [Product](https://www.adafruit.com/product/373) |
+| 377 | Rotary Encoder   Extras | 4 | $4.50 | [Product](https://www.adafruit.com/product/377) · [Guide](https://learn.adafruit.com/rotary-encoder) |
 | 3885 | Adafruit STEMMA Speaker   Plug and Play Audio Amplifier | 1 | $5.95 | [Product](https://www.adafruit.com/product/3885) · [Guide](https://learn.adafruit.com/adafruit-stemma-speaker) |
 | 4227 | Mini Oval Speaker with Short Wires   8 Ohm 1 Watt | 1 | $1.95 | [Product](https://www.adafruit.com/product/4227) |
 | 4271 | Slide Potentiometer with Plastic Knob   35mm Long   10KΩ | 1 | $1.95 | [Product](https://www.adafruit.com/product/4271) |
+| 453 | MAX7219CNG LED Matrix/Digit Display Driver | 1 | $12.95 | [Product](https://www.adafruit.com/product/453) |
 | 4677 | Generic 64 Mbit Serial Pseudo SRAM   PSRAM   3.3V 133 MHz | 1 | $1.75 | [Product](https://www.adafruit.com/product/4677) |
 | 4763 | GD25Q16   2MB SPI Flash in 8 Pin SOIC package | 2 | $1.25 | [Product](https://www.adafruit.com/product/4763) |
+| 480 | Small Arcade Joystick | 1 | $14.95 | [Product](https://www.adafruit.com/product/480) |
 | 5001 | ANO Directional Navigation and Scroll Wheel Rotary Encoder | 1 | $8.95 | [Product](https://www.adafruit.com/product/5001) · [Guide](https://learn.adafruit.com/ano-rotary-encoder) |
+| 735 | 74LVC245   Breadboard Friendly 8 bit Logic Level Shifter | 4 | $1.50 | [Product](https://www.adafruit.com/product/735) |
+| 805 | Breadboard friendly SPDT Slide Switch | 4 | $0.95 | [Product](https://www.adafruit.com/product/805) |
+| 9 | High strength 'rare earth' magnet | 2 | $2.50 | [Product](https://www.adafruit.com/product/9) |
 
 ## Adafruit - Cable/Connector
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 261 | JST PH 2 Pin Cable   Female Connector 100mm | 3 | $0.75 | [Product](https://www.adafruit.com/product/261) |
-| 954 | USB to TTL Serial Cable   Debug / Console Cable for Raspberry Pi | 1 | $9.95 | [Product](https://www.adafruit.com/product/954) · [Guide](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable) |
+|------|---------|----:|------:|-------|
 | 1328 | 2.1mm DC Barrel Jack to Alligator Clips | 1 | $1.95 | [Product](https://www.adafruit.com/product/1328) |
 | 1661 | uFL SMT Antenna Connector | 6 | $0.75 | [Product](https://www.adafruit.com/product/1661) |
 | 1865 | Edge Launch SMA Connector for 1.6mm / 0.062" Thick PCBs | 1 | $2.50 | [Product](https://www.adafruit.com/product/1865) |
+| 261 | JST PH 2 Pin Cable   Female Connector 100mm | 3 | $0.75 | [Product](https://www.adafruit.com/product/261) |
 | 2888 | BNC Male Plug Terminal Block | 1 | $0.95 | [Product](https://www.adafruit.com/product/2888) |
 | 2889 | BNC Female Jack Terminal Block | 1 | $0.95 | [Product](https://www.adafruit.com/product/2889) |
 | 3310 | 5.5 / 2.1mm Barrel Connector   DC Power Plug | 1 | $0.95 | [Product](https://www.adafruit.com/product/3310) |
@@ -225,50 +239,51 @@ python scraper.py --force  # re-scrape everything
 | 5358 | DIY Magnetic Connector   Right Angle Four Contact Pins | 2 | $6.50 | [Product](https://www.adafruit.com/product/5358) |
 | 5412 | Magnetic USB Charging Cable for 4 Pin 0.1" Magnetic Connector | 1 | $4.95 | [Product](https://www.adafruit.com/product/5412) |
 | 5444 | RP SMA to w.FL / MHF3 / IPEX3 Adapter | 1 | $2.95 | [Product](https://www.adafruit.com/product/5444) |
+| 954 | USB to TTL Serial Cable   Debug / Console Cable for Raspberry Pi | 1 | $9.95 | [Product](https://www.adafruit.com/product/954) · [Guide](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable) |
 
 ## Adafruit - Prototyping
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 64 | Half Sized Premium Breadboard   400 Tie Points | 1 | $5.00 | [Product](https://www.adafruit.com/product/64) |
-| 153 | Breadboarding wire bundle | 3 | $4.95 | [Product](https://www.adafruit.com/product/153) |
-| 239 | Full Sized Premium Breadboard   830 Tie Points | 8 | $5.95 | [Product](https://www.adafruit.com/product/239) |
-| 443 | Large Premium Solderless Breadboard | 2 | $19.95 | [Product](https://www.adafruit.com/product/443) |
-| 758 | Premium Male/Male Jumper Wires   40 x 6" (150mm) | 4 | $3.95 | [Product](https://www.adafruit.com/product/758) |
-| 759 | Premium Male/Male Jumper Wires   40 x 3" (75mm) | 1 | $3.95 | [Product](https://www.adafruit.com/product/759) |
-| 760 | Premium Male/Male Jumper Wires   40 x 12" (300mm) | 1 | $7.95 | [Product](https://www.adafruit.com/product/760) |
+|------|---------|----:|------:|-------|
 | 1518 | Adafruit Flex Perma Proto   Half sized Breadboard Flex PCB | 1 | $7.50 | [Product](https://www.adafruit.com/product/1518) |
+| 153 | Breadboarding wire bundle | 3 | $4.95 | [Product](https://www.adafruit.com/product/153) |
 | 1609 | Adafruit Perma Proto Half sized Breadboard PCB   Single | 6 | $4.50 | [Product](https://www.adafruit.com/product/1609) · [Guide](https://learn.adafruit.com/adafruit-perma-proto-half-sized-breadboard-pcb) |
 | 1883 | Silicone Cover Stranded Core Wire   2m 26AWG Orange | 1 | $0.95 | [Product](https://www.adafruit.com/product/1883) |
 | 1950 | Premium Female/Female Jumper Wires   20 x 6" (150mm) | 1 | $1.95 | [Product](https://www.adafruit.com/product/1950) |
 | 1953 | Premium Female/Male 'Extension' Jumper Wires   20 x 3" | 1 | $1.95 | [Product](https://www.adafruit.com/product/1953) |
 | 2003 | Silicone Cover Stranded Core Wire   2m 30AWG Black | 1 | $0.75 | [Product](https://www.adafruit.com/product/2003) |
 | 2005 | Silicone Cover Stranded Core Wire   2m 30AWG Green | 1 | $0.75 | [Product](https://www.adafruit.com/product/2005) |
+| 239 | Full Sized Premium Breadboard   830 Tie Points | 8 | $5.95 | [Product](https://www.adafruit.com/product/239) |
 | 3175 | Hook up Wire Spool Set   22AWG Stranded Core   10 x 25ft | 1 | $29.95 | [Product](https://www.adafruit.com/product/3175) |
 | 3255 | Small Alligator Clip to Male Jumper Wire Bundle   12 Pieces | 1 | $7.95 | [Product](https://www.adafruit.com/product/3255) |
 | 3417 | FeatherWing Tripler Mini Kit   Prototyping Add on For Feathers | 2 | $8.50 | [Product](https://www.adafruit.com/product/3417) · [Guide](https://learn.adafruit.com/featherwing-proto-and-doubler) |
 | 4154 | Break away 0.1" 36 pin strip male header   Rainbow Combo 10 Pack | 2 | $4.95 | [Product](https://www.adafruit.com/product/4154) |
 | 4160 | 20 pin 0.1" Female Headers   Rainbow Color Mix   5 pack | 2 | $2.50 | [Product](https://www.adafruit.com/product/4160) |
 | 4354 | Adafruit Perma Proto 40 Pin Raspberry Pi Breadboard PCB Kit | 1 | $7.95 | [Product](https://www.adafruit.com/product/4354) · [Guide](https://learn.adafruit.com/adafruit-perma-proto-raspberry-pi-pcb) |
+| 443 | Large Premium Solderless Breadboard | 2 | $19.95 | [Product](https://www.adafruit.com/product/443) |
+| 64 | Half Sized Premium Breadboard   400 Tie Points | 1 | $5.00 | [Product](https://www.adafruit.com/product/64) |
+| 758 | Premium Male/Male Jumper Wires   40 x 6" (150mm) | 4 | $3.95 | [Product](https://www.adafruit.com/product/758) |
+| 759 | Premium Male/Male Jumper Wires   40 x 3" (75mm) | 1 | $3.95 | [Product](https://www.adafruit.com/product/759) |
+| 760 | Premium Male/Male Jumper Wires   40 x 12" (300mm) | 1 | $7.95 | [Product](https://www.adafruit.com/product/760) |
 
 ## Adafruit - Power
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
+|------|---------|----:|------:|-------|
 | 380 | CR1220 12mm Diameter   3V Lithium Coin Cell Battery | 1 | $0.95 | [Product](https://www.adafruit.com/product/380) |
 | 727 | 3 x AAA Battery Holder with On/Off Switch and 2 Pin JST | 1 | $1.95 | [Product](https://www.adafruit.com/product/727) |
 
 ## Adafruit - Kit
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
+|------|---------|----:|------:|-------|
 | 4263 | 4 H Circuit Playground Express   Base Kit | 1 | $29.95 | [Product](https://www.adafruit.com/product/4263) · [Guide](https://learn.adafruit.com/4-h-circuit-playground-express-base-kit) |
 | 5128 | Adafruit MacroPad RP2040 Starter Kit   3x4 Keys   Encoder   OLED | 1 | $49.95 | [Product](https://www.adafruit.com/product/5128) · [Guide](https://learn.adafruit.com/adafruit-macropad-rp2040) |
 
 ## Adafruit - Tool
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
+|------|---------|----:|------:|-------|
 | 136 | Ladyada's Electronics Toolkit | 1 | $100.00 | [Product](https://www.adafruit.com/product/136) · [Guide](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0) |
 | 151 | Panavise Jr. | 1 | $30.00 | [Product](https://www.adafruit.com/product/151) |
 | 1528 | Oscilloscope Probe 100MHz | 1 | $14.95 | [Product](https://www.adafruit.com/product/1528) |
@@ -285,14 +300,14 @@ python scraper.py --force  # re-scrape everything
 ## Adafruit - Enclosure
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 905 | Large Plastic Project Enclosure   Weatherproof with Clear Top | 1 | $19.95 | [Product](https://www.adafruit.com/product/905) |
+|------|---------|----:|------:|-------|
 | 3915 | Adafruit Circuit Playground Express or Bluefruit Enclosure | 3 | $4.95 | [Product](https://www.adafruit.com/product/3915) |
+| 905 | Large Plastic Project Enclosure   Weatherproof with Clear Top | 1 | $19.95 | [Product](https://www.adafruit.com/product/905) |
 
 ## Adafruit - Storage
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
+|------|---------|----:|------:|-------|
 | 431 | Tiny Modular Snap Boxes   SMD component storage   10 pack | 1 | $3.95 | [Product](https://www.adafruit.com/product/431) |
 | 432 | Small Modular Snap Boxes   SMD component storage   3 pack | 1 | $2.95 | [Product](https://www.adafruit.com/product/432) |
 | 433 | Medium Modular Snap Boxes   SMD component storage   2 pack | 1 | $2.95 | [Product](https://www.adafruit.com/product/433) |
@@ -301,8 +316,7 @@ python scraper.py --force  # re-scrape everything
 ## Adafruit - Accessory
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 669 | ESD (Electrostatic discharge)   Sticker! | 2 | $1.50 | [Product](https://www.adafruit.com/product/669) |
+|------|---------|----:|------:|-------|
 | 2046 | Potentiometer Knob   Soft Touch T18   Red | 1 | $0.50 | [Product](https://www.adafruit.com/product/2046) |
 | 2047 | Potentiometer Knob   Soft Touch T18   White | 1 | $0.50 | [Product](https://www.adafruit.com/product/2047) |
 | 2055 | Scrubber Knob for Rotary Encoder   35mm | 1 | $0.95 | [Product](https://www.adafruit.com/product/2055) |
@@ -325,12 +339,13 @@ python scraper.py --force  # re-scrape everything
 | 5195 | Etched Glow Through Keycap with LGTM (Looks Good To Me) Acronym | 1 | $4.95 | [Product](https://www.adafruit.com/product/5195) |
 | 5527 | Anodized Aluminum Machined Knob   Black   20mm Diameter | 1 | $2.95 | [Product](https://www.adafruit.com/product/5527) |
 | 5531 | Anodized Aluminum Machined Knob   Gold   20mm Diameter | 1 | $2.95 | [Product](https://www.adafruit.com/product/5531) |
+| 669 | ESD (Electrostatic discharge)   Sticker! | 2 | $1.50 | [Product](https://www.adafruit.com/product/669) |
 
 ## Adafruit - Book/Subscription
 
 | ID | Product | Qty | Price | Links |
-|---:|---------|----:|------:|-------|
-| 3067 | AdaBox Subscription | 1 | $0.00 | [Product](https://www.adafruit.com/product/3067) · [Guide](https://learn.adafruit.com/adabox) |
+|------|---------|----:|------:|-------|
+| 3067 | AdaBox Subscription | 1 | — | [Product](https://www.adafruit.com/product/3067) · [Guide](https://learn.adafruit.com/adabox) |
 | 4220 | Learn CircuitPython with 1 Month Subscription to Codecademy Pro | 1 | $19.99 | [Product](https://www.adafruit.com/product/4220) · [Guide](https://learn.adafruit.com/welcome-to-circuitpython) |
 | 5154 | Digi Key Innovation Handbook | 1 | $5.95 | [Product](https://www.adafruit.com/product/5154) |
 
@@ -340,13 +355,13 @@ python scraper.py --force  # re-scrape everything
 
 ## Pimoroni - Microcontroller
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | PIM560 | Pimoroni Pico LiPo - 16MB | 1 | £11.25 | [Product](https://shop.pimoroni.com/products/pimoroni-pico-lipo) · [Guide](https://learn.pimoroni.com/article/getting-started-with-pico-lipo) |
 
 ## Pimoroni - Sensor
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | ADA4258 | Adafruit LPS35HW Water Resistant Pressure Sensor - STEMMA QT | 1 | £4.80 | [Product](https://www.adafruit.com/product/4258) · [Guide](https://learn.adafruit.com/adafruit-lps35hw-water-resistant-barometric-pressure-sensor) |
 | BOB-19389 | SparkFun Analog MEMS Microphone Breakout - SPH8878LR5H-1 | 1 | £4.55 | [Product](https://www.sparkfun.com/products/19389) · [Guide](https://learn.sparkfun.com/tutorials/analog-mems-microphone-breakout---sph8878lr5h-1-hookup-guide) |
@@ -358,7 +373,7 @@ python scraper.py --force  # re-scrape everything
 
 ## Pimoroni - Display
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | ADA715 | Adafruit I2C Controlled + Keypad Shield Kit for 16x2 LCD | 1 | £3.10 | [Product](https://www.adafruit.com/product/715) · [Guide](https://learn.adafruit.com/adafruit-i2c-controlled-keypad-shield-for-16x2-lcd) |
 | PIM333 | Scroll pHAT HD - Yellow | 1 | £3.45 | [Product](https://shop.pimoroni.com/products/scroll-phat-hd) · [Guide](https://learn.pimoroni.com/article/getting-started-with-scroll-phat-hd) |
@@ -368,7 +383,7 @@ python scraper.py --force  # re-scrape everything
 
 ## Pimoroni - Breakout Board
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | ADA5664 | Adafruit PCA9546 4-Channel STEMMA QT / Qwiic I2C Multiplexer | 1 | £3.50 | [Product](https://www.adafruit.com/product/5664) · [Guide](https://learn.adafruit.com/adafruit-pca9546-4-channel-i2c-multiplexer) |
 | PIM301 | Button SHIM | 1 | £4.50 | [Product](https://shop.pimoroni.com/products/button-shim) · [Guide](https://learn.pimoroni.com/article/getting-started-with-button-shim) |
@@ -381,20 +396,20 @@ python scraper.py --force  # re-scrape everything
 
 ## Pimoroni - FeatherWing
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | ADA3135 | Adafruit 15x7 CharliePlex LED Matrix Display FeatherWing - Yellow | 1 | £2.25 | [Product](https://www.adafruit.com/product/3135) · [Guide](https://learn.adafruit.com/adafruit-15x7-7x15-charlieplex-led-matrix-display-featherwing) |
 
 ## Pimoroni - Component
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | COM0216 | Optoisolator - 1 Channel | 1 | £0.55 | [Product](https://shop.pimoroni.com/products/optoisolator) |
 | WPM463 | 2 Channel Solid State Relay Module | 1 | £3.30 | [Product](https://shop.pimoroni.com/products/2-channel-solid-state-relay-module) |
 
 ## Pimoroni - Cable/Connector
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | COM3900 | Breakout Garden I2C Connector (pack of 5) | 1 | £2.35 | [Product](https://shop.pimoroni.com/products/breakout-garden-i2c-connector-pack-of-5) |
 | PIM409 | I2C Breakout Extender (pack of 3) | 1 | £1.90 | [Product](https://shop.pimoroni.com/products/i2c-breakout-extender-pack-of-3) |
@@ -402,28 +417,28 @@ python scraper.py --force  # re-scrape everything
 
 ## Pimoroni - Prototyping
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | ADA1207 | Adafruit SMT breakout PCB for SOIC or TSSOP - 16 pin - pack of three | 1 | £2.75 | [Product](https://www.adafruit.com/product/1207) |
 | ADA1211 | Adafruit SMT breakout PCB for SOIC or TSSOP - 12 pin - pack of six | 1 | £3.40 | [Product](https://www.adafruit.com/product/1211) |
 
 ## Pimoroni - Power
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | POL-2122 | Pololu 3.3V Step-Up/Step-Down Voltage Regulator S7V8F3 | 1 | £4.60 | [Product](https://www.pololu.com/product/2122) |
 | POL-3781 | Step-Down Voltage Regulator D36V28Fx - 3.3V 3.6A | 1 | £6.55 | [Product](https://www.pololu.com/product/3781) |
 
 ## Pimoroni - Tool
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | IFIX-EU145439-1 | Mahi 1/4" Bit Driver | 1 | £4.60 | [Product](https://www.ifixit.com/products/mahi-driver) |
 | PA-21 | Engineer Universal Crimping Pliers | 1 | £26.00 | [Product](https://shop.pimoroni.com/products/engineer-universal-crimping-pliers) |
 
 ## Pimoroni - Accessory
 
-| Code | Product | Qty | Price | Links |
+| ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | COM0005 | Pico Stacking Header Pack | 3 | £0.75 | [Product](https://shop.pimoroni.com/products/pico-stacking-header-pack) |
 | COM1117 | Pico Header Pack | 3 | £0.90 | [Product](https://shop.pimoroni.com/products/pico-header-pack) |
@@ -431,3 +446,45 @@ python scraper.py --force  # re-scrape everything
 | PIM461 | Fan SHIM for Raspberry Pi | 1 | £10.00 | [Product](https://shop.pimoroni.com/products/fan-shim) · [Guide](https://learn.pimoroni.com/article/getting-started-with-fan-shim) |
 | PIM549 | Pico Breakout Garden Base | 1 | £11.00 | [Product](https://shop.pimoroni.com/products/pico-breakout-garden-base) · [Guide](https://learn.pimoroni.com/article/getting-started-with-pico-breakout-garden) |
 | PIM699 | NVMe Base for Raspberry Pi 5 | 1 | £11.25 | [Product](https://shop.pimoroni.com/products/nvme-base) · [Guide](https://learn.pimoroni.com/article/getting-started-with-nvme-base) |
+
+---
+
+# Waveshare Products
+
+## Waveshare - Display
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 10.4HP-CAPQLED | Waveshare 10.4HP-CAPQLED | 1 | — | [Product](https://www.waveshare.com/10.4hp-capqled.htm) · [Guide](https://www.waveshare.com/wiki/10.4HP-CAPQLED) |
+
+---
+
+# SparkFun Products
+
+## SparkFun - Breakout Board
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| ROB-16836 | SparkFun ProDriver TC78H670FTG | 1 | — | [Product](https://www.sparkfun.com/sparkfun-prodriver-stepper-motor-driver-tc78h670ftg.html) · [Guide](https://learn.sparkfun.com/tutorials/sparkfun-prodriver-and-mini-stepper-motor-driver-hookup-guide/all) |
+
+---
+
+# Mouser Products
+
+## Mouser - Sensor
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| TF03-100 | Benewake TF03-100 LiDAR | 1 | — | [Product](https://en.benewake.com/TF03/index_proid_329.html) · [Guide](https://www.mouser.com/catalog/specsheets/Benewake_10152020_TF03-100.pdf) |
+
+---
+
+# AliExpress Products
+
+## AliExpress - Microcontroller
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| AE-3256802908925724 | LilyGO T-Display-S3 (AliExpress) | 1 | — | [Product](https://www.aliexpress.us/item/3256802908925724.html) · [Guide](https://github.com/Xinyuan-LilyGO/T-Display-S3) |
+| T-Display-S3 | LilyGO T-Display-S3 | 1 | — | [Product](https://lilygo.cc/products/t-display-s3) · [Guide](https://github.com/Xinyuan-LilyGO/T-Display-S3) |
+| Wrist-E-Paper | LilyGO Wrist-E-Paper | 1 | — | [Product](https://github.com/Xinyuan-LilyGO/Wrist-E-Paper) · [Guide](https://github.com/Xinyuan-LilyGO/Wrist-E-Paper) |

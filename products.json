@@ -4041,5 +4041,119 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null
+  },
+  "waveshare_10.4HP-CAPQLED": {
+    "product_id": "10.4HP-CAPQLED",
+    "name": "Waveshare 10.4inch QLED Quantum Dot Display, Capacitive Touch, 1600x720, HDMI",
+    "csv_name": "Waveshare 10.4HP-CAPQLED",
+    "description": "10.4-inch QLED quantum dot display with capacitive touch from Waveshare. Features 1600x720 resolution, optical bonding toughened glass panel (6H hardness), high brightness, and HDMI interface. Compatible with Raspberry Pi 5/4B/3B/Zero, Jetson Nano, and PC.",
+    "technical_specs": "Display: 10.4\" QLED Quantum Dot; Resolution: 1600x720; Touch: 10-point capacitive; Glass: 6H toughened, optical bonding; Interface: HDMI + USB (touch); Brightness: High; Compatible: Raspberry Pi (all models), Jetson Nano, PC; Includes: HDMI flat cable, USB-A to USB-C cable, adapters, button board, screws",
+    "category": "Display",
+    "page_url": "https://www.waveshare.com/10.4hp-capqled.htm",
+    "image_url": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/1/0/10.4hp-capqled-1.jpg",
+    "learn_guide_url": "https://www.waveshare.com/wiki/10.4HP-CAPQLED",
+    "unit_price": 0,
+    "currency": "USD",
+    "total_qty": 1,
+    "orders": [
+      "waveshare"
+    ],
+    "source": "waveshare.com",
+    "last_scraped": null
+  },
+  "sparkfun_ROB-16836": {
+    "product_id": "ROB-16836",
+    "name": "SparkFun ProDriver - Stepper Motor Driver (TC78H670FTG)",
+    "csv_name": "SparkFun ProDriver TC78H670FTG",
+    "description": "SparkFun ProDriver breakout board for the Toshiba TC78H670FTG bipolar stepper motor driver. Features two H-bridge motor drivers with step resolutions from full to 1/128 micro-stepping. Controllable via clock-in stepping or serial communication with software-adjustable current limiting. Includes latch terminals for solder-less connections.",
+    "technical_specs": "IC: TC78H670FTG; Motor Type: Bipolar stepper; Voltage: 3.6-16.0V; Max Current: 2.0A; Step Sizes: Full, 1/2, 1/4, 1/8, 1/16, 1/32, 1/64, 1/128; Control: Clock-in or serial; Protection: TSD, OSD, OPD, UVLO; Regulator: 3.3V onboard (LM117); Connections: Latch terminals (no solder); Open source",
+    "category": "Breakout Board",
+    "page_url": "https://www.sparkfun.com/sparkfun-prodriver-stepper-motor-driver-tc78h670ftg.html",
+    "image_url": "https://cdn.sparkfun.com/assets/parts/1/5/7/5/2/16836-SparkFun_ProDriver_-_Stepper_Motor_Driver__TC78H670FTG_-01.jpg",
+    "learn_guide_url": "https://learn.sparkfun.com/tutorials/sparkfun-prodriver-and-mini-stepper-motor-driver-hookup-guide/all",
+    "unit_price": 0,
+    "currency": "USD",
+    "total_qty": 1,
+    "orders": [
+      "digikey"
+    ],
+    "source": "sparkfun.com",
+    "last_scraped": null
+  },
+  "benewake_TF03-100": {
+    "product_id": "TF03-100",
+    "name": "Benewake TF03-100 Long Range LiDAR Sensor (100m, IP67, UART)",
+    "csv_name": "Benewake TF03-100 LiDAR",
+    "description": "Industrial-grade long-range LiDAR distance sensor from Benewake. Measures distances up to 100 meters using time-of-flight technology with up to 1000Hz frame rate. IP67 rated aluminum housing for harsh environments. Supports UART, CAN, RS232, and RS485 interfaces. High sunlight resistance up to 100 KLux.",
+    "technical_specs": "Type: ToF LiDAR; Range: 0.1-100m; Frame Rate: Up to 1000Hz; Accuracy: ±1cm (0.1-10m), ±1% (10-100m); Interfaces: UART, CAN, RS232, RS485; IP Rating: IP67; Dimensions: 44x43x32mm; Sunlight Resistance: 100 KLux; Wavelength: 905nm; Voltage: 5V; Weight: ~50g; Features: Customizable parameters, firmware upgradeable",
+    "category": "Sensor",
+    "page_url": "https://en.benewake.com/TF03/index_proid_329.html",
+    "image_url": "https://en.benewake.com/uploadfiles/2023/09/20230925140619684.png",
+    "learn_guide_url": "https://www.mouser.com/catalog/specsheets/Benewake_10152020_TF03-100.pdf",
+    "unit_price": 0,
+    "currency": "USD",
+    "total_qty": 1,
+    "orders": [
+      "mouser"
+    ],
+    "source": "mouser.com",
+    "last_scraped": null
+  },
+  "lilygo_wrist-e-paper": {
+    "product_id": "Wrist-E-Paper",
+    "name": "LilyGO Wrist E-Paper Watch (ESP32)",
+    "csv_name": "LilyGO Wrist-E-Paper",
+    "description": "E-ink display wristwatch development platform by LilyGO based on ESP32. Features an e-paper display for ultra-low power consumption. Includes demo firmware for watch functions with GPS support, WiFi image transfer, and partial display refresh. Open source with MIT license, schematics, and 3D print files available.",
+    "technical_specs": "MCU: ESP32; Display: E-Paper (EPD); Features: WiFi, Bluetooth; Software: Arduino IDE; Libraries: Adafruit-GFX, GxEPD; Examples: Watch demo (with/without GPS), WiFi send, partial refresh; License: MIT; Files: Schematics, 3D models, firmware binaries",
+    "category": "Microcontroller",
+    "page_url": "https://github.com/Xinyuan-LilyGO/Wrist-E-Paper",
+    "image_url": "https://raw.githubusercontent.com/Xinyuan-LilyGO/Wrist-E-Paper/master/image/1.jpg",
+    "learn_guide_url": "https://github.com/Xinyuan-LilyGO/Wrist-E-Paper",
+    "unit_price": 0,
+    "currency": "USD",
+    "total_qty": 1,
+    "orders": [
+      "aliexpress"
+    ],
+    "source": "aliexpress.com",
+    "last_scraped": null
+  },
+  "lilygo_t-display-s3": {
+    "product_id": "T-Display-S3",
+    "name": "LilyGO T-Display-S3 (ESP32-S3, 1.9\" LCD, 16MB Flash, 8MB PSRAM)",
+    "csv_name": "LilyGO T-Display-S3",
+    "description": "ESP32-S3 development board from LilyGO featuring a 1.9-inch ST7789 LCD display (170x320 resolution). Includes 16MB flash and 8MB OPI PSRAM. USB-C with native USB support, LiPo battery charging (500mA), two programmable buttons, and WiFi/BLE 5 connectivity. Available in touch and non-touch variants.",
+    "technical_specs": "MCU: ESP32-S3R8 (Dual-core Xtensa LX7, 240MHz); Flash: 16MB; PSRAM: 8MB (OPI); Display: 1.9\" ST7789 LCD, 170x320; Interface: I8080; Touch: Capacitive (touch variant); USB: USB-C (native); WiFi: 802.11 b/g/n; Bluetooth: BLE 5 + BT Mesh; Battery: LiPo charging (500mA); Buttons: 2 programmable; Frameworks: Arduino, PlatformIO, ESP-IDF, MicroPython",
+    "category": "Microcontroller",
+    "page_url": "https://lilygo.cc/products/t-display-s3",
+    "image_url": "https://cdn.shopify.com/s/files/1/0621/3962/7925/products/T-Display-S3.jpg",
+    "learn_guide_url": "https://github.com/Xinyuan-LilyGO/T-Display-S3",
+    "unit_price": 0,
+    "currency": "USD",
+    "total_qty": 1,
+    "orders": [
+      "aliexpress"
+    ],
+    "source": "aliexpress.com",
+    "last_scraped": null
+  },
+  "lilygo_t-display-s3-aliexpress": {
+    "product_id": "AE-3256802908925724",
+    "name": "LilyGO T-Display-S3 (AliExpress Purchase)",
+    "csv_name": "LilyGO T-Display-S3 (AliExpress)",
+    "description": "LilyGO T-Display-S3 purchased from AliExpress. ESP32-S3 dev board with 1.9\" LCD display, 16MB flash, 8MB PSRAM, USB-C, WiFi, and BLE 5. See T-Display-S3 entry for full specifications.",
+    "technical_specs": "See T-Display-S3 entry for full specs. AliExpress item ID: 3256802908925724",
+    "category": "Microcontroller",
+    "page_url": "https://www.aliexpress.us/item/3256802908925724.html",
+    "image_url": "https://cdn.shopify.com/s/files/1/0621/3962/7925/products/T-Display-S3.jpg",
+    "learn_guide_url": "https://github.com/Xinyuan-LilyGO/T-Display-S3",
+    "unit_price": 0,
+    "currency": "USD",
+    "total_qty": 1,
+    "orders": [
+      "aliexpress"
+    ],
+    "source": "aliexpress.com",
+    "last_scraped": null
   }
 }

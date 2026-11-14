@@ -1,6 +1,6 @@
 # Electronics Product Inventory
 
-Personal inventory of **369 products** — 191 from Adafruit, 131 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot.
+Personal inventory of **383 products** — 191 from Adafruit, 131 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, and 14 photographed parts whose store isn't recorded yet. **48 parts are marked as in use**, with my own photos.
 
 > Open **index.html** in a browser for a visual catalog: every product with its picture, grouped by category (or store), with search, sorting and filters.
 
@@ -34,6 +34,8 @@ This is a personal catalog of electronics parts. It includes:
 | `add_purchase_pdfs.py` | Script that adds the order-PDF products to `products.json` | Only if updating products |
 | `fetch_product_images.py` | Script that downloads a picture for any product that lacks a local one | Only if updating products |
 | `build_catalog.py` | Script that builds `index.html` (and, with `--readme`, the product tables below) | Only if updating products |
+| `data/parts_in_use.json` | The parts I'm currently using, with my photos (`images/my-photos/`) | Reference only |
+| `mark_in_use.py` | Script that applies `data/parts_in_use.json` to `products.json` | Only if updating products |
 
 ---
 
@@ -83,7 +85,7 @@ Once the page is open in your browser:
 **Search for a product:**
 1. Click the search box at the top (it says "Search name, specs, chip, store…").
 2. Type what you're looking for -- for example, `sensor` or `ESP32` or `LED`.
-3. The page instantly hides everything that doesn't match. The counter on the right (e.g., "Showing 15 of 369") tells you how many results you have.
+3. The page instantly hides everything that doesn't match. The counter on the right (e.g., "Showing 15 of 383") tells you how many results you have.
 4. To clear the search: delete the text, or click the small X in the search box.
 
 **Arrange by category:**
@@ -91,6 +93,7 @@ Once the page is open in your browser:
 - **Group by** switches between Category, Store, or one big grid. **Groups** orders them A–Z or by most items. **Sort** orders products inside each group by name, price or store.
 - Click a coloured category chip to hide or show that category. Click a store chip (Adafruit, AliExpress, ...) to show only that store; click it again to undo.
 - **Compact view** shows smaller cards with just the picture, name and price.
+- **Using now** at the top lists the parts I'm working with, each with my own photos (click one to enlarge). Tick **Only parts I'm using** to hide everything else.
 - Your choices are remembered the next time you open the page in the same browser.
 - Filters combine with search -- you can search for "sensor" within just AliExpress products.
 
@@ -201,8 +204,66 @@ python scraper.py              # scrape Adafruit products
 python scraper.py --force      # re-scrape everything
 python add_purchase_pdfs.py    # merge data/purchase_pdfs.json into products.json
 python fetch_product_images.py # download pictures for products without one
+python mark_in_use.py          # mark the parts in data/parts_in_use.json as in use
 python build_catalog.py --readme  # rebuild index.html and the README tables
 ```
+
+---
+
+## Parts I'm using
+
+48 parts, each with my own photos in `images/my-photos/`.
+
+| Product | Category | Store | My photos |
+|---------|----------|-------|----------:|
+| Pico Breakout Garden Base | Accessory | Pimoroni | 7 |
+| pHAT Stack - Solder Yourself Kit | Accessory | Pimoroni | 2 |
+| 01Studio PiHAT Expansion Board for Raspberry Pi (with OLED) | Breakout Board | AliExpress | 3 |
+| Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic | Breakout Board | Adafruit | 1 |
+| Adafruit DS3502 I2C Digital 10K Potentiometer Breakout | Breakout Board | Adafruit | 2 |
+| Adafruit I2C Stemma QT Rotary Encoder Breakout with NeoPixel | Breakout Board | Adafruit | 2 |
+| Adafruit Infineon Trust M Breakout Board   STEMMA QT / Qwiic | Breakout Board | Adafruit | 2 |
+| Adafruit Qwiic / Stemma QT 5 Port Hub | Breakout Board | Adafruit | 2 |
+| Button SHIM | Breakout Board | Pimoroni | 1 |
+| DRV8830 DC Motor Driver Breakout | Breakout Board | Pimoroni | 3 |
+| HT0740 40V / 10A Switch Breakout | Breakout Board | Pimoroni | 4 |
+| IO Expander Breakout | Breakout Board | Pimoroni | 5 |
+| Pimoroni Haptic Bzzz Breakout (DRV2605L) | Breakout Board | Store not recorded | 3 |
+| RV3028 Real-Time Clock (RTC) Breakout | Breakout Board | Pimoroni | 2 |
+| SparkFun Qwiic pHAT v2.0 for Raspberry Pi   STEMMA QT / Qwiic | Breakout Board | Adafruit | 2 |
+| Breakout Garden to STEMMA QT / Qwiic Adapter | Cable/Connector | Pimoroni | 5 |
+| GD25Q16   2MB SPI Flash in 8 Pin SOIC package | Component | Adafruit | 6 |
+| 0.91" 128x32 OLED Display Module (SSD1306, I2C, White) | Display | AliExpress | 3 |
+| 1602 16x2 Character LCD with PCF8574 I2C Backpack (blue) | Display | Store not recorded | 3 |
+| Adafruit RGB Matrix HAT + RTC for Raspberry Pi | Display | Store not recorded | 3 |
+| LED Dot Matrix Breakout - Green | Display | Pimoroni | 3 |
+| P3 RGB LED Matrix Panel, 64x32, 192x96mm (SMD2121) | Display | AliExpress | 1 |
+| Scroll pHAT HD - Yellow | Display | Pimoroni | 2 |
+| Adafruit RGB Matrix FeatherWing | FeatherWing | Store not recorded | 3 |
+| Adafruit QT Py   SAMD21 Dev Board with STEMMA QT | Microcontroller | Adafruit | 7 |
+| Adafruit QT Py ESP32 S2 WiFi Dev Board with uFL Antenna Port | Microcontroller | Adafruit | 9 |
+| Adafruit Trinkey QT2040   RP2040 USB Key with Stemma QT | Microcontroller | Adafruit | 7 |
+| Pimoroni Pico LiPo - 16MB | Microcontroller | Pimoroni | 3 |
+| Raspberry Pi 4 Model B | Microcontroller | Store not recorded | 2 |
+| Raspberry Pi Pico W | Microcontroller | Store not recorded | 3 |
+| Waveshare RP2040-PiZero | Microcontroller | Store not recorded | 2 |
+| Waveshare RP2040-Plus | Microcontroller | Store not recorded | 2 |
+| YD-RP2040 RP2040 Development Board (black) | Microcontroller | Store not recorded | 1 |
+| AHT10 Temperature and Humidity Sensor Module (I2C) | Sensor | AliExpress | 5 |
+| Adafruit AHT20   Temperature & Humidity Sensor Breakout Board | Sensor | Adafruit | 2 |
+| Adafruit BH1750 Light Sensor   STEMMA QT / Qwiic | Sensor | Adafruit | 2 |
+| Adafruit LPS35HW Water Resistant Pressure Sensor - STEMMA QT | Sensor | Pimoroni | 2 |
+| Adafruit VL53L1X Time of Flight Distance Sensor (STEMMA QT) | Sensor | Store not recorded | 2 |
+| BME688 4-in-1 Air Quality Breakout (Gas, Temperature, Pressure, Humidity) | Sensor | Pimoroni | 2 |
+| CJMCU-3216 AP3216C Light and Proximity Sensor | Sensor | Store not recorded | 5 |
+| INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max | Sensor | Adafruit | 2 |
+| MAX30101 Breakout - Heart Rate, Oximeter, Smoke Sensor | Sensor | Pimoroni | 1 |
+| MICS6814 3-in-1 Gas Sensor Breakout (CO, NO2, NH3) | Sensor | Pimoroni | 2 |
+| SCD41 CO2 Sensor Breakout (Carbon Dioxide / Temperature / Humidity) | Sensor | Pimoroni | 3 |
+| VL53L1X Time of Flight (ToF) Sensor Breakout | Sensor | Pimoroni | 2 |
+| Waveshare Pico-BLE | Wireless/RF | Store not recorded | 3 |
+| Waveshare Pico-CAN-B | Wireless/RF | Store not recorded | 3 |
+| Waveshare Pico-LoRa-SX126X | Wireless/RF | Store not recorded | 1 |
 
 ---
 
@@ -291,6 +352,15 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 ### Home Depot (1 products)
 
 - [Accessory](#home-depot---accessory) (1)
+
+### Store not recorded (14 products)
+
+- [Microcontroller](#store-not-recorded---microcontroller) (5)
+- [Sensor](#store-not-recorded---sensor) (2)
+- [Display](#store-not-recorded---display) (2)
+- [Breakout Board](#store-not-recorded---breakout-board) (1)
+- [FeatherWing](#store-not-recorded---featherwing) (1)
+- [Wireless/RF](#store-not-recorded---wirelessrf) (3)
 
 ---
 
@@ -959,3 +1029,51 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | general-tools-1-4-in-x-1-13-in-fluted-dowel-pins-72-pcs | General Tools 1/4 in. x 1.13 in. Fluted Dowel Pins (72 pcs) | 1 | $3.28 |  |
+
+---
+
+# Store not recorded Products
+
+## Store not recorded - Microcontroller
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| raspberry-pi-4-model-b | Raspberry Pi 4 Model B | 1 | — |  |
+| raspberry-pi-pico-w | Raspberry Pi Pico W | 1 | — |  |
+| waveshare-rp2040-pizero | Waveshare RP2040-PiZero | 1 | — |  |
+| waveshare-rp2040-plus | Waveshare RP2040-Plus | 1 | — |  |
+| yd-rp2040-rp2040-development-board-black | YD-RP2040 RP2040 Development Board (black) | 1 | — |  |
+
+## Store not recorded - Sensor
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| adafruit-vl53l1x-time-of-flight-distance-sensor-stemma-qt | Adafruit VL53L1X Time of Flight Distance Sensor (STEMMA QT) | 1 | — |  |
+| cjmcu-3216-ap3216c-light-and-proximity-sensor | CJMCU-3216 AP3216C Light and Proximity Sensor | 1 | — |  |
+
+## Store not recorded - Display
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 1602-16x2-character-lcd-with-pcf8574-i2c-backpack-blue | 1602 16x2 Character LCD with PCF8574 I2C Backpack (blue) | 1 | — |  |
+| adafruit-rgb-matrix-hat-rtc-for-raspberry-pi | Adafruit RGB Matrix HAT + RTC for Raspberry Pi | 1 | — |  |
+
+## Store not recorded - Breakout Board
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| pimoroni-haptic-bzzz-breakout-drv2605l | Pimoroni Haptic Bzzz Breakout (DRV2605L) | 1 | — |  |
+
+## Store not recorded - FeatherWing
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| adafruit-rgb-matrix-featherwing | Adafruit RGB Matrix FeatherWing | 1 | — |  |
+
+## Store not recorded - Wireless/RF
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| waveshare-pico-ble | Waveshare Pico-BLE | 1 | — |  |
+| waveshare-pico-can-b | Waveshare Pico-CAN-B | 1 | — |  |
+| waveshare-pico-lora-sx126x | Waveshare Pico-LoRa-SX126X | 1 | — |  |

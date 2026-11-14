@@ -32,6 +32,7 @@ STORE_NAMES = {
     "batteryjunction.com": "Battery Junction",
     "voltaplex.com": "Voltaplex",
     "homedepot.com": "Home Depot",
+    "unrecorded": "Store not recorded",
 }
 
 
@@ -63,6 +64,8 @@ def slim(key: str, p: dict) -> dict:
         "qty": p.get("total_qty") or 0,
         "pack": p.get("pack") or "",
         "pdf": p.get("source_pdf") or "",
+        "use": bool(p.get("in_use")),
+        "photos": p.get("my_photos") or [],
     }
 
 
@@ -98,7 +101,15 @@ def readme_section(products: dict) -> str:
     rank = {c: i for i, c in enumerate(CATEGORY_ORDER)}
     for store in stores:
         stores[store] = dict(sorted(stores[store].items(), key=lambda kv: (rank.get(kv[0], len(rank)), kv[0])))
-    out = ["## Categories by Source", ""]
+    out = []
+    using = [p for p in products.values() if p.get("in_use")]
+    if using:
+        out += ["## Parts I'm using", "", f"{len(using)} parts, each with my own photos in `images/my-photos/`.", "",
+                "| Product | Category | Store | My photos |", "|---------|----------|-------|----------:|"]
+        for p in sorted(using, key=lambda p: ((p.get("category") or ""), p["name"])):
+            out.append(f"| {p['name'].replace('|', '/')} | {p.get('category') or ''} | {store_of(p)} | {len(p.get('my_photos') or [])} |")
+        out += ["", "---", ""]
+    out += ["## Categories by Source", ""]
     for store, cats in stores.items():
         out += [f"### {store} ({sum(map(len, cats.values()))} products)", ""]
         out += [f"- [{c}](#{anchor(f'{store} - {c}')}) ({len(ps)})" for c, ps in cats.items()]
@@ -123,7 +134,8 @@ def readme_section(products: dict) -> str:
 
 def update_readme(products: dict, readme: Path) -> None:
     text = readme.read_text(encoding="utf-8")
-    head = text.split("## Categories by Source", 1)[0]
+    marker = "## Parts I'm using" if "## Parts I'm using" in text else "## Categories by Source"
+    head = text.split(marker, 1)[0]
     readme.write_text(head + readme_section(products), encoding="utf-8")
     print(f"Updated product tables in {readme}")
 

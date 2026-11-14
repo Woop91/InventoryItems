@@ -676,7 +676,12 @@
       "2930687"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/904-09.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/904-09.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5829.jpg",
+      "images/my-photos/IMG_5828.jpg"
+    ]
   },
   "905": {
     "product_id": "905",
@@ -1518,7 +1523,11 @@
       "2894370"
     ],
     "last_scraped": null,
-    "image_source_url": "https://cdn-shop.adafruit.com/970x728/2305-09.jpg"
+    "image_source_url": "https://cdn-shop.adafruit.com/970x728/2305-09.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5831.jpg"
+    ]
   },
   "2384": {
     "product_id": "2384",
@@ -2673,7 +2682,12 @@
       "2600583"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/4286-05.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/4286-05.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5829.jpg",
+      "images/my-photos/IMG_5828.jpg"
+    ]
   },
   "4287": {
     "product_id": "4287",
@@ -2709,7 +2723,12 @@
       "2604757"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/4351-09.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/4351-09.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5829.jpg",
+      "images/my-photos/IMG_5828.jpg"
+    ]
   },
   "4354": {
     "product_id": "4354",
@@ -2893,7 +2912,12 @@
       "2887702"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/4566-04.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/4566-04.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5831.jpg",
+      "images/my-photos/IMG_5832.jpg"
+    ]
   },
   "4582": {
     "product_id": "4582",
@@ -2947,7 +2971,17 @@
       "2600583"
     ],
     "last_scraped": null,
-    "image_source_url": "https://cdn-shop.adafruit.com/970x728/4600-08.jpg"
+    "image_source_url": "https://cdn-shop.adafruit.com/970x728/4600-08.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5872.jpg",
+      "images/my-photos/IMG_5874.jpg",
+      "images/my-photos/IMG_5875.jpg",
+      "images/my-photos/IMG_5876.jpg",
+      "images/my-photos/IMG_5877.jpg",
+      "images/my-photos/IMG_5878.jpg",
+      "images/my-photos/IMG_5879.jpg"
+    ]
   },
   "4631": {
     "product_id": "4631",
@@ -3019,7 +3053,12 @@
       "2643648"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/4681-05.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/4681-05.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5831.jpg",
+      "images/my-photos/IMG_5832.jpg"
+    ]
   },
   "4763": {
     "product_id": "4763",
@@ -3038,7 +3077,16 @@
       "2604757"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/4763-00.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/4763-00.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5875.jpg",
+      "images/my-photos/IMG_5876.jpg",
+      "images/my-photos/IMG_5877.jpg",
+      "images/my-photos/IMG_5878.jpg",
+      "images/my-photos/IMG_5879.jpg",
+      "images/my-photos/IMG_5874.jpg"
+    ]
   },
   "4813": {
     "product_id": "4813",
@@ -3128,7 +3176,12 @@
       "2894370"
     ],
     "last_scraped": null,
-    "image_source_url": "https://cdn-shop.adafruit.com/970x728/4991-06.jpg"
+    "image_source_url": "https://cdn-shop.adafruit.com/970x728/4991-06.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5841.jpg",
+      "images/my-photos/IMG_5842.jpg"
+    ]
   },
   "5001": {
     "product_id": "5001",
@@ -3200,7 +3253,17 @@
       "2894370"
     ],
     "last_scraped": null,
-    "image_source_url": "https://cdn-shop.adafruit.com/970x728/5056-07.jpg"
+    "image_source_url": "https://cdn-shop.adafruit.com/970x728/5056-07.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5886.jpg",
+      "images/my-photos/IMG_5887.jpg",
+      "images/my-photos/IMG_5888.jpg",
+      "images/my-photos/IMG_5889.jpg",
+      "images/my-photos/IMG_5890.jpg",
+      "images/my-photos/IMG_5828.jpg",
+      "images/my-photos/IMG_5832.jpg"
+    ]
   },
   "5093": {
     "product_id": "5093",
@@ -3254,7 +3317,12 @@
       "2604757"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/5142-04.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/5142-04.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5857.jpg",
+      "images/my-photos/IMG_5858.jpg"
+    ]
   },
   "5154": {
     "product_id": "5154",
@@ -3382,7 +3450,19 @@
       "2887702"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/5348-01.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/5348-01.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5873.jpg",
+      "images/my-photos/IMG_5880.jpg",
+      "images/my-photos/IMG_5881.jpg",
+      "images/my-photos/IMG_5882.jpg",
+      "images/my-photos/IMG_5883.jpg",
+      "images/my-photos/IMG_5884.jpg",
+      "images/my-photos/IMG_5885.jpg",
+      "images/my-photos/IMG_5872.jpg",
+      "images/my-photos/IMG_5874.jpg"
+    ]
   },
   "5358": {
     "product_id": "5358",
@@ -3490,7 +3570,12 @@
       "2930687"
     ],
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/5625-05.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/5625-05.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5860.jpg",
+      "images/my-photos/IMG_5865.jpg"
+    ]
   },
   "pimoroni_PIM373": {
     "product_id": "PIM373",
@@ -3510,7 +3595,12 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/VL53L1X_3_of_4.JPG?v=1532596605"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/VL53L1X_3_of_4.JPG?v=1532596605",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5830.jpg"
+    ]
   },
   "pimoroni_PIM301": {
     "product_id": "PIM301",
@@ -3530,7 +3620,11 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/btn-shim-1.jpg?v=1539264482"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/btn-shim-1.jpg?v=1539264482",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5858.jpg"
+    ]
   },
   "pimoroni_PIM449": {
     "product_id": "PIM449",
@@ -3550,7 +3644,12 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RV3028_RTC_3_of_4.JPG?v=1560180301"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RV3028_RTC_3_of_4.JPG?v=1560180301",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5830.jpg"
+    ]
   },
   "pimoroni_PIM575": {
     "product_id": "PIM575",
@@ -3570,7 +3669,12 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/BME688-2.jpg?v=1621005992"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/BME688-2.jpg?v=1621005992",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5828.jpg"
+    ]
   },
   "pimoroni_BOB-19389": {
     "product_id": "BOB-19389",
@@ -3730,7 +3834,13 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/drv8830-1.jpg?v=1568823698"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/drv8830-1.jpg?v=1568823698",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5828.jpg",
+      "images/my-photos/IMG_5829.jpg",
+      "images/my-photos/IMG_5830.jpg"
+    ]
   },
   "pimoroni_PIM442": {
     "product_id": "PIM442",
@@ -3790,7 +3900,15 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/IoExpander_1of1.jpg?v=1595604677"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/IoExpander_1of1.jpg?v=1595604677",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5828.jpg",
+      "images/my-photos/IMG_5829.jpg",
+      "images/my-photos/IMG_5830.jpg",
+      "images/my-photos/IMG_5835.jpg",
+      "images/my-photos/IMG_5836.jpg"
+    ]
   },
   "pimoroni_PIM438": {
     "product_id": "PIM438",
@@ -3810,7 +3928,11 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/MAX30101Breakout_3of3.jpg?v=1636048040"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/MAX30101Breakout_3of3.jpg?v=1636048040",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg"
+    ]
   },
   "pimoroni_COM3900": {
     "product_id": "COM3900",
@@ -3850,7 +3972,15 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/BreakoutGardentoSTEMMAQT-QwiicAdapter_1of3.jpg?v=1618586242"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/BreakoutGardentoSTEMMAQT-QwiicAdapter_1of3.jpg?v=1618586242",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5830.jpg",
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5828.jpg",
+      "images/my-photos/IMG_5829.jpg",
+      "images/my-photos/IMG_5836.jpg"
+    ]
   },
   "pimoroni_PIM455": {
     "product_id": "PIM455",
@@ -3870,7 +4000,14 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/HT0740_-_Big_Damn_Switch_1_of_4.jpg?v=1565781630"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/HT0740_-_Big_Damn_Switch_1_of_4.jpg?v=1565781630",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5828.jpg",
+      "images/my-photos/IMG_5830.jpg",
+      "images/my-photos/IMG_5835.jpg",
+      "images/my-photos/IMG_5836.jpg"
+    ]
   },
   "pimoroni_ADA5664": {
     "product_id": "ADA5664",
@@ -3930,7 +4067,13 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/pimoroni-pico-lipo-1.jpg?v=1625483549"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/pimoroni-pico-lipo-1.jpg?v=1625483549",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5837.jpg",
+      "images/my-photos/IMG_5836.jpg",
+      "images/my-photos/IMG_5843.jpg"
+    ]
   },
   "pimoroni_POL-3781": {
     "product_id": "POL-3781",
@@ -3970,7 +4113,12 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://www.adafruit.com/images/480x360/4258-10.jpg"
+    "image_source_url": "https://www.adafruit.com/images/480x360/4258-10.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5831.jpg",
+      "images/my-photos/IMG_5832.jpg"
+    ]
   },
   "pimoroni_ADA715": {
     "product_id": "ADA715",
@@ -4030,7 +4178,12 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/pHAT_Stack_1_of_1.jpg?v=1539263429"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/pHAT_Stack_1_of_1.jpg?v=1539263429",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5859.jpg",
+      "images/my-photos/IMG_5858.jpg"
+    ]
   },
   "pimoroni_PIM549": {
     "product_id": "PIM549",
@@ -4050,7 +4203,17 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PicoBreakoutGarden_3of3.jpg?v=1611163796"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PicoBreakoutGarden_3of3.jpg?v=1611163796",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5834.jpg",
+      "images/my-photos/IMG_5836.jpg",
+      "images/my-photos/IMG_5828.jpg",
+      "images/my-photos/IMG_5829.jpg",
+      "images/my-photos/IMG_5833.jpg",
+      "images/my-photos/IMG_5843.jpg",
+      "images/my-photos/IMG_5845.jpg"
+    ]
   },
   "pimoroni_PIM569": {
     "product_id": "PIM569",
@@ -4070,7 +4233,12 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/MICS6814breakout_1of3.jpg?v=1617201737"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/MICS6814breakout_1of3.jpg?v=1617201737",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5828.jpg"
+    ]
   },
   "pimoroni_PIM461": {
     "product_id": "PIM461",
@@ -4110,7 +4278,13 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/Microdotbreakout_1of6.jpg?v=1603387110"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/Microdotbreakout_1of6.jpg?v=1603387110",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5853.jpg",
+      "images/my-photos/IMG_5854.jpg"
+    ]
   },
   "pimoroni_PIM409": {
     "product_id": "PIM409",
@@ -4170,7 +4344,12 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/Scroll_pHAT_HD_3_of_4_a26b66c6-1de9-49b7-a254-2ff58981fdd9.JPG?v=1539263677"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/Scroll_pHAT_HD_3_of_4_a26b66c6-1de9-49b7-a254-2ff58981fdd9.JPG?v=1539263677",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5856.jpg",
+      "images/my-photos/IMG_5857.jpg"
+    ]
   },
   "pimoroni_PIM587": {
     "product_id": "PIM587",
@@ -4190,7 +4369,13 @@
     ],
     "source": "pimoroni.com",
     "last_scraped": null,
-    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/P1050087_7fd47a8c-b46f-444f-8ba3-6e5f22cee38b.jpg?v=1643397118"
+    "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/P1050087_7fd47a8c-b46f-444f-8ba3-6e5f22cee38b.jpg?v=1643397118",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5828.jpg",
+      "images/my-photos/IMG_5830.jpg"
+    ]
   },
   "pimoroni_PIM447": {
     "product_id": "PIM447",
@@ -4462,7 +4647,13 @@
     ],
     "source": "aliexpress.com",
     "source_pdf": "0.91 Inch OLED Module 0.91 WhiteBlue 128X32 OLED LCD LED Display Module IIC Communi.pdf",
-    "last_scraped": null
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5863.jpg",
+      "images/my-photos/IMG_5864.jpg",
+      "images/my-photos/IMG_5865.jpg"
+    ]
   },
   "aliexpress_01studio-pihat-expansion-board-for-raspberry-pi-with-oled": {
     "product_id": "01studio-pihat-expansion-board-for-raspberry-pi-with-oled",
@@ -4486,7 +4677,13 @@
     ],
     "source": "aliexpress.com",
     "source_pdf": "01Studio PiHAT Raspberry Pi 3B 3B+ 4B Development Demo Expansion Board Module Python.pdf",
-    "last_scraped": null
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5866.jpg",
+      "images/my-photos/IMG_5867.jpg",
+      "images/my-photos/IMG_5868.jpg"
+    ]
   },
   "aliexpress_3mm-led-assortment-100-pcs-5-colours": {
     "product_id": "3mm-led-assortment-100-pcs-5-colours",
@@ -4918,7 +5115,15 @@
     ],
     "source": "aliexpress.com",
     "source_pdf": "AHT10 High Precision Digital Temperature and Humidity Sensor Measurement Module I2C C.pdf",
-    "last_scraped": null
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5861.jpg",
+      "images/my-photos/IMG_5864.jpg",
+      "images/my-photos/IMG_5865.jpg",
+      "images/my-photos/IMG_5862.jpg",
+      "images/my-photos/IMG_5863.jpg"
+    ]
   },
   "aliexpress_5v-active-buzzer-12x9-5mm-10-pcs": {
     "product_id": "5v-active-buzzer-12x9-5mm-10-pcs",
@@ -7126,7 +7331,11 @@
     ],
     "source": "aliexpress.com",
     "source_pdf": "P3 Rgb Pixel Panel Hd Display 64x32 Dot Matrix Smd2121 Led Module Indoor Screen Full Color Video Wall 192x96mm Message Board - L.pdf",
-    "last_scraped": null
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5847.jpg"
+    ]
   },
   "aliexpress_lanboo-22mm-15a-metal-push-button-switch-ip67": {
     "product_id": "lanboo-22mm-15a-metal-push-button-switch-ip67",
@@ -7583,5 +7792,335 @@
     "source": "homedepot.com",
     "source_pdf": "General Tools 1.13 in. x 14 in. Fluted Dowel Pins 840014.pdf",
     "last_scraped": null
+  },
+  "photo_pimoroni-haptic-bzzz-breakout-drv2605l": {
+    "product_id": "pimoroni-haptic-bzzz-breakout-drv2605l",
+    "name": "Pimoroni Haptic Bzzz Breakout (DRV2605L)",
+    "csv_name": "Pimoroni Haptic Bzzz Breakout (DRV2605L)",
+    "description": "Breakout Garden haptic feedback board: a DRV2605L driver with a linear resonant actuator for buzzes and clicks over I2C.",
+    "technical_specs": "Driver: DRV2605L; Actuator: LRA; Interface: I2C; Format: Breakout Garden",
+    "category": "Breakout Board",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5827.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Pimoroni",
+    "model": null,
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5830.jpg",
+      "images/my-photos/IMG_5836.jpg"
+    ]
+  },
+  "photo_waveshare-rp2040-plus": {
+    "product_id": "waveshare-rp2040-plus",
+    "name": "Waveshare RP2040-Plus",
+    "csv_name": "Waveshare RP2040-Plus",
+    "description": "Pico-compatible RP2040 board with USB-C, extra flash and a LiPo battery connector and charger.",
+    "technical_specs": "MCU: RP2040 dual-core Cortex-M0+; USB: Type-C; Battery: LiPo header with charging; Pinout: Raspberry Pi Pico compatible",
+    "category": "Microcontroller",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5835.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Waveshare",
+    "model": "RP2040-Plus",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5835.jpg",
+      "images/my-photos/IMG_5830.jpg"
+    ]
+  },
+  "photo_adafruit-vl53l1x-time-of-flight-distance-sensor-stemma-qt": {
+    "product_id": "adafruit-vl53l1x-time-of-flight-distance-sensor-stemma-qt",
+    "name": "Adafruit VL53L1X Time of Flight Distance Sensor (STEMMA QT)",
+    "csv_name": "Adafruit VL53L1X Time of Flight Distance Sensor (STEMMA QT)",
+    "description": "Laser time-of-flight distance sensor with STEMMA QT connectors, measuring up to about 4 m.",
+    "technical_specs": "Sensor: ST VL53L1X; Range: up to ~4 m; Interface: I2C; Connectors: STEMMA QT / Qwiic",
+    "category": "Sensor",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5831.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Adafruit",
+    "model": "VL53L1X",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5831.jpg",
+      "images/my-photos/IMG_5832.jpg"
+    ]
+  },
+  "photo_waveshare-rp2040-pizero": {
+    "product_id": "waveshare-rp2040-pizero",
+    "name": "Waveshare RP2040-PiZero",
+    "csv_name": "Waveshare RP2040-PiZero",
+    "description": "RP2040 board in the Raspberry Pi Zero shape with a 40-pin header, microSD slot and DVI (HDMI) output, so Pi HATs can be used with the RP2040.",
+    "technical_specs": "MCU: RP2040; Header: 40-pin Raspberry Pi; Storage: microSD; Video: DVI over mini HDMI; USB: Type-C",
+    "category": "Microcontroller",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5833.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Waveshare",
+    "model": "RP2040-PiZero",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5833.jpg",
+      "images/my-photos/IMG_5834.jpg"
+    ]
+  },
+  "photo_yd-rp2040-rp2040-development-board-black": {
+    "product_id": "yd-rp2040-rp2040-development-board-black",
+    "name": "YD-RP2040 RP2040 Development Board (black)",
+    "csv_name": "YD-RP2040 RP2040 Development Board (black)",
+    "description": "Generic Pico-style RP2040 board with USB-C, a user button and an onboard RGB LED.",
+    "technical_specs": "MCU: RP2040; USB: Type-C; Extras: user button, RGB LED; Pinout: Pico compatible",
+    "category": "Microcontroller",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5838.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": null,
+    "model": "YD-RP2040",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5838.jpg"
+    ]
+  },
+  "photo_raspberry-pi-pico-w": {
+    "product_id": "raspberry-pi-pico-w",
+    "name": "Raspberry Pi Pico W",
+    "csv_name": "Raspberry Pi Pico W",
+    "description": "Raspberry Pi Pico with on-board 2.4 GHz Wi-Fi (Infineon CYW43439).",
+    "technical_specs": "MCU: RP2040 dual-core Cortex-M0+ 133 MHz; RAM: 264 KB; Flash: 2 MB; Wireless: Wi-Fi 802.11n (CYW43439); USB: micro-B",
+    "category": "Microcontroller",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5839.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Raspberry Pi",
+    "model": "Pico W",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5839.jpg",
+      "images/my-photos/IMG_5840.jpg",
+      "images/my-photos/IMG_5843.jpg"
+    ]
+  },
+  "photo_waveshare-pico-lora-sx126x": {
+    "product_id": "waveshare-pico-lora-sx126x",
+    "name": "Waveshare Pico-LoRa-SX126X",
+    "csv_name": "Waveshare Pico-LoRa-SX126X",
+    "description": "LoRa radio add-on that plugs under a Raspberry Pi Pico, based on the Semtech SX1262.",
+    "technical_specs": "Radio: SX1262 LoRa; Interface: SPI; Form factor: Pico add-on board",
+    "category": "Wireless/RF",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5843.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Waveshare",
+    "model": "Pico-LoRa-SX126X",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5843.jpg"
+    ]
+  },
+  "photo_waveshare-pico-can-b": {
+    "product_id": "waveshare-pico-can-b",
+    "name": "Waveshare Pico-CAN-B",
+    "csv_name": "Waveshare Pico-CAN-B",
+    "description": "CAN bus add-on for the Raspberry Pi Pico with a screw-terminal CAN connector.",
+    "technical_specs": "Function: CAN bus interface; Connector: screw terminal; Form factor: Pico add-on board",
+    "category": "Wireless/RF",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5844.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Waveshare",
+    "model": "Pico-CAN-B",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5844.jpg",
+      "images/my-photos/IMG_5845.jpg",
+      "images/my-photos/IMG_5846.jpg"
+    ]
+  },
+  "photo_raspberry-pi-4-model-b": {
+    "product_id": "raspberry-pi-4-model-b",
+    "name": "Raspberry Pi 4 Model B",
+    "csv_name": "Raspberry Pi 4 Model B",
+    "description": "Single-board computer, kept in a yellow 3D-printed case.",
+    "technical_specs": "SoC: BCM2711 quad-core Cortex-A72; Video: 2x micro-HDMI; USB: 2x USB 3.0, 2x USB 2.0, USB-C power; Network: Gigabit Ethernet, Wi-Fi, Bluetooth 5.0",
+    "category": "Microcontroller",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5848.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Raspberry Pi",
+    "model": "Pi 4 B",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5848.jpg",
+      "images/my-photos/IMG_5849.jpg"
+    ]
+  },
+  "photo_waveshare-pico-ble": {
+    "product_id": "waveshare-pico-ble",
+    "name": "Waveshare Pico-BLE",
+    "csv_name": "Waveshare Pico-BLE",
+    "description": "Bluetooth add-on for the Raspberry Pi Pico using a WS-B01 dual-mode module over UART.",
+    "technical_specs": "Module: WS-B01; Bluetooth: dual mode (SPP + BLE); Interface: UART; Form factor: Pico add-on board",
+    "category": "Wireless/RF",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5853.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Waveshare",
+    "model": "Pico-BLE",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5853.jpg",
+      "images/my-photos/IMG_5854.jpg",
+      "images/my-photos/IMG_5855.jpg"
+    ]
+  },
+  "photo_adafruit-rgb-matrix-hat-rtc-for-raspberry-pi": {
+    "product_id": "adafruit-rgb-matrix-hat-rtc-for-raspberry-pi",
+    "name": "Adafruit RGB Matrix HAT + RTC for Raspberry Pi",
+    "csv_name": "Adafruit RGB Matrix HAT + RTC for Raspberry Pi",
+    "description": "Raspberry Pi HAT that drives HUB75 RGB LED matrix panels, with a battery-backed real-time clock.",
+    "technical_specs": "Output: HUB75 for RGB matrix panels; RTC: battery-backed (coin cell); Power: 5V screw terminal",
+    "category": "Display",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5856.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Adafruit",
+    "model": null,
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5856.jpg",
+      "images/my-photos/IMG_5857.jpg",
+      "images/my-photos/IMG_5858.jpg"
+    ]
+  },
+  "photo_cjmcu-3216-ap3216c-light-and-proximity-sensor": {
+    "product_id": "cjmcu-3216-ap3216c-light-and-proximity-sensor",
+    "name": "CJMCU-3216 AP3216C Light and Proximity Sensor",
+    "csv_name": "CJMCU-3216 AP3216C Light and Proximity Sensor",
+    "description": "Small I2C module with ambient light, proximity and IR sensing in one chip.",
+    "technical_specs": "Sensor: AP3216C; Measures: ambient light, proximity, IR; Interface: I2C",
+    "category": "Sensor",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5862.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": null,
+    "model": "AP3216C",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5862.jpg",
+      "images/my-photos/IMG_5864.jpg",
+      "images/my-photos/IMG_5865.jpg",
+      "images/my-photos/IMG_5861.jpg",
+      "images/my-photos/IMG_5863.jpg"
+    ]
+  },
+  "photo_adafruit-rgb-matrix-featherwing": {
+    "product_id": "adafruit-rgb-matrix-featherwing",
+    "name": "Adafruit RGB Matrix FeatherWing",
+    "csv_name": "Adafruit RGB Matrix FeatherWing",
+    "description": "FeatherWing for driving HUB75 RGB LED matrix panels from a Feather board.",
+    "technical_specs": "Output: HUB75 RGB matrix connector; Power: 5V terminal; Format: FeatherWing",
+    "category": "FeatherWing",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5869.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": "Adafruit",
+    "model": null,
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5869.jpg",
+      "images/my-photos/IMG_5870.jpg",
+      "images/my-photos/IMG_5871.jpg"
+    ]
+  },
+  "photo_1602-16x2-character-lcd-with-pcf8574-i2c-backpack-blue": {
+    "product_id": "1602-16x2-character-lcd-with-pcf8574-i2c-backpack-blue",
+    "name": "1602 16x2 Character LCD with PCF8574 I2C Backpack (blue)",
+    "csv_name": "1602 16x2 Character LCD with PCF8574 I2C Backpack (blue)",
+    "description": "Blue-backlight 16x2 character LCD (HD44780-compatible) with an I2C backpack, so it needs only two data wires. One is mounted in a blue 3D-printed case.",
+    "technical_specs": "Display: 16x2 characters, blue backlight; Controller: HD44780 compatible; Backpack: PCF8574 I2C with contrast pot; Supply: 5V",
+    "category": "Display",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5850.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": null,
+    "model": "1602 + PCF8574",
+    "total_qty": 1,
+    "orders": [],
+    "source": "unrecorded",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5850.jpg",
+      "images/my-photos/IMG_5851.jpg",
+      "images/my-photos/IMG_5852.jpg"
+    ]
   }
 }

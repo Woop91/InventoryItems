@@ -123,6 +123,19 @@
   body.compact .card .pic { height: 130px; }
   body.compact .desc, body.compact details, body.compact .links, body.compact .src { display: none; }
 
+  .badge.use { background: #0f7a3d; color: #fff; }
+  .card.using { border-color: #0f7a3d; box-shadow: 0 0 0 1px #0f7a3d, var(--shadow); }
+  .myphotos { display: flex; gap: 4px; flex-wrap: wrap; }
+  .myphotos img {
+    width: 44px; height: 44px; object-fit: cover; border-radius: 6px;
+    border: 1px solid var(--line); cursor: zoom-in;
+  }
+  .myphotos-label { font-size: .72rem; color: #0b5a2d; font-weight: 600; }
+  section.using-now .group-head { --c: #0f7a3d; --c-soft: #e3f5ea; --c-ink: #0b5a2d; }
+  .toggle { font-size: .85rem; color: var(--ink); display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .toggle input { width: 16px; height: 16px; accent-color: #0f7a3d; }
+  body.compact .myphotos, body.compact .myphotos-label { display: none; }
+
   .empty { text-align: center; color: var(--muted); padding: 60px 0; }
 
   #zoom {
@@ -175,6 +188,7 @@
       <option value="store">Store</option>
     </select>
   </label>
+  <label class="toggle"><input type="checkbox" id="onlyUsing"> Only parts I'm using</label>
   <button class="btn" id="toggleAll" type="button">Collapse all</button>
   <button class="btn" id="density" type="button">Compact view</button>
   <span class="count" id="count"></span>
@@ -209,7 +223,7 @@ const storeKeys = [...new Set(PRODUCTS.map(p => p.store))].sort();
 
 const $ = id => document.getElementById(id);
 const state = { q: "", groupBy: "cat", groupOrder: "az", sortBy: "name", compact: false,
-                hiddenCats: [], stores: [], collapsed: [] };
+                hiddenCats: [], stores: [], collapsed: [], onlyUsing: false };
 try { Object.assign(state, JSON.parse(localStorage.getItem("inventory-view") || "{}")); } catch (e) {}
 const save = () => { try { localStorage.setItem("inventory-view", JSON.stringify(state)); } catch (e) {} };
 
@@ -230,14 +244,23 @@ const money = (v, cur = "$") => v ? cur + Number(v).toFixed(2) : "";
 
 function card(p) {
   const pic = el("div", { className: "pic", title: "Click to enlarge" });
-  if (p.img) {
-    const img = el("img", { src: p.img, alt: p.name, loading: "lazy" });
+  const main = p.img || p.photos[0];
+  if (main) {
+    const img = el("img", { src: main, alt: p.name, loading: "lazy" });
     img.onerror = () => pic.replaceChildren(el("span", { className: "none" }, "No picture"));
     pic.append(img);
-    pic.onclick = () => openZoom(p);
+    pic.onclick = () => openZoom(p, main);
   } else pic.append(el("span", { className: "none" }, "No picture"));
+  const strip = p.photos.length ? [
+    el("div", { className: "myphotos-label" }, `My photos (${p.photos.length})`),
+    el("div", { className: "myphotos" }, ...p.photos.map(src => {
+      const t = el("img", { src, alt: "My photo of " + p.name, loading: "lazy" });
+      t.onclick = () => openZoom(p, src);
+      return t;
+    }))] : [];
 
   const badges = el("div", { className: "badges" },
+    p.use ? el("span", { className: "badge use" }, "Using") : null,
     tint(el("span", { className: "badge" }, p.cat), p.cat),
     el("span", { className: "badge store" }, p.store));
   const priceBits = [money(p.price, p.cur), p.unit ? el("small", {}, " / " + p.unit) : null,
@@ -247,11 +270,12 @@ function card(p) {
   const links = el("div", { className: "links" },
     p.url ? el("a", { href: p.url, target: "_blank", rel: "noopener" }, "Product page") : null,
     p.guide ? el("a", { href: p.guide, target: "_blank", rel: "noopener" }, "Guide") : null);
-  return el("article", { className: "card" }, pic,
+  return el("article", { className: "card" + (p.use ? " using" : "") }, pic,
     el("div", { className: "body" },
       el("h3", {}, p.name), badges,
       priceBits.length ? el("div", { className: "price" }, ...priceBits) : null,
       p.pack ? el("div", { className: "src" }, "Pack: " + p.pack) : null,
+      ...strip,
       p.desc ? el("p", { className: "desc", title: p.desc }, p.desc) : null,
       specs, links,
       p.pdf ? el("div", { className: "src" }, "From: " + p.pdf) : null));
@@ -267,6 +291,7 @@ function sorter(a, b) {
 }
 
 function matches(p) {
+  if (state.onlyUsing && !p.use) return false;
   if (state.hiddenCats.includes(p.cat)) return false;
   if (state.stores.length && !state.stores.includes(p.store)) return false;
   if (!state.q) return true;
@@ -322,7 +347,7 @@ function render() {
   });
   const keys = [...groups.keys()].sort((a, b) =>
     state.groupOrder === "size" ? groups.get(b).length - groups.get(a).length || a.localeCompare(b) : a.localeCompare(b));
-  main.replaceChildren(...keys.map(k => {
+  const sections = keys.map(k => {
     const id = state.groupBy + ":" + k;
     const head = el("div", { className: "group-head", role: "button", tabIndex: 0, "aria-expanded": String(!state.collapsed.includes(id)) },
       el("h2", {}, k), el("span", { className: "n" }, String(groups.get(k).length)), el("span", { className: "caret" }, "▾"));
@@ -337,7 +362,17 @@ function render() {
     head.onclick = flip;
     head.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flip(); } };
     return sec;
-  }));
+  });
+  const using = shown.filter(p => p.use);
+  if (using.length && !state.onlyUsing) {
+    const sec = el("section", { className: "group using-now" },
+      el("div", { className: "group-head" }, el("h2", {}, "Using now"),
+        el("span", { className: "n" }, String(using.length)),
+        el("span", { className: "caret", style: "transform:none;font-size:.8rem" }, "parts I'm working with")),
+      el("div", { className: "grid" }, ...using.map(card)));
+    sections.unshift(sec);
+  }
+  main.replaceChildren(...sections);
   syncToggle();
 }
 
@@ -346,9 +381,9 @@ function syncToggle() {
   $("toggleAll").textContent = anyOpen ? "Collapse all" : "Expand all";
 }
 
-function openZoom(p) {
+function openZoom(p, src) {
   const z = $("zoom");
-  z.querySelector("img").src = p.img; z.querySelector("img").alt = p.name;
+  z.querySelector("img").src = src || p.img; z.querySelector("img").alt = p.name;
   z.querySelector("figcaption").textContent = `${p.name} — ${p.store}${p.price ? " · " + money(p.price, p.cur) : ""}`;
   z.classList.add("open");
 }
@@ -359,6 +394,8 @@ $("q").value = state.q;
 $("groupBy").value = state.groupBy; $("groupOrder").value = state.groupOrder; $("sortBy").value = state.sortBy;
 $("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
 ["groupBy", "groupOrder", "sortBy"].forEach(id => $(id).addEventListener("change", e => { state[id] = e.target.value; render(); }));
+$("onlyUsing").checked = state.onlyUsing;
+$("onlyUsing").onchange = e => { state.onlyUsing = e.target.checked; render(); };
 $("density").onclick = () => { state.compact = !state.compact; render(); };
 $("toggleAll").onclick = () => {
   const secs = [...document.querySelectorAll("section.group")];

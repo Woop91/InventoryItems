@@ -231,7 +231,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | Pimoroni Haptic Bzzz Breakout (DRV2605L) | Breakout Board | Store not recorded | 3 |
 | RV3028 Real-Time Clock (RTC) Breakout | Breakout Board | Pimoroni | 2 |
 | SparkFun Qwiic pHAT v2.0 for Raspberry Pi   STEMMA QT / Qwiic | Breakout Board | Adafruit | 2 |
-| Breakout Garden to STEMMA QT / Qwiic Adapter | Cable/Connector | Pimoroni | 5 |
+| Breakout Garden to STEMMA QT / Qwiic Adapter | Cable/Connector | Pimoroni | 6 |
 | GD25Q16   2MB SPI Flash in 8 Pin SOIC package | Component | Adafruit | 6 |
 | 0.91" 128x32 OLED Display Module (SSD1306, I2C, White) | Display | AliExpress | 3 |
 | 1602 16x2 Character LCD with PCF8574 I2C Backpack (blue) | Display | Store not recorded | 3 |

@@ -3979,7 +3979,8 @@
       "images/my-photos/IMG_5827.jpg",
       "images/my-photos/IMG_5828.jpg",
       "images/my-photos/IMG_5829.jpg",
-      "images/my-photos/IMG_5836.jpg"
+      "images/my-photos/IMG_5836.jpg",
+      "images/my-photos/IMG_5834.jpg"
     ]
   },
   "pimoroni_PIM455": {
@@ -5340,11 +5341,11 @@
     "source": "aliexpress.com",
     "source_pdf": "Coin Flat Vibrating Micro Motor DC 3V 8mm For Pager and Cell Phone Mobile.pdf",
     "last_scraped": null,
+    "in_use_note": "Soldered to the Adafruit DRV2605L. Store not certain: AliExpress or Pimoroni.",
     "in_use": true,
     "my_photos": [
       "images/my-photos/IMG_5831.jpg"
-    ],
-    "in_use_note": "Soldered to the Adafruit DRV2605L. Store not certain: AliExpress or Pimoroni."
+    ]
   },
   "aliexpress_tec1-12712-peltier-thermoelectric-cooler-40x40mm-12a": {
     "product_id": "tec1-12712-peltier-thermoelectric-cooler-40x40mm-12a",

@@ -66,6 +66,7 @@ def slim(key: str, p: dict) -> dict:
         "pdf": p.get("source_pdf") or "",
         "use": bool(p.get("in_use")),
         "photos": p.get("my_photos") or [],
+        "note": p.get("in_use_note") or "",
     }
 
 

@@ -1,6 +1,6 @@
 # Electronics Product Inventory
 
-Personal inventory of **383 products** — 191 from Adafruit, 131 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, and 14 photographed parts whose store isn't recorded yet. **48 parts are marked as in use**, with my own photos.
+Personal inventory of **384 products** — 191 from Adafruit, 132 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, and 14 photographed parts whose store isn't recorded yet. **50 parts are marked as in use**, with my own photos.
 
 > Open **index.html** in a browser for a visual catalog: every product with its picture, grouped by category (or store), with search, sorting and filters.
 
@@ -85,7 +85,7 @@ Once the page is open in your browser:
 **Search for a product:**
 1. Click the search box at the top (it says "Search name, specs, chip, store…").
 2. Type what you're looking for -- for example, `sensor` or `ESP32` or `LED`.
-3. The page instantly hides everything that doesn't match. The counter on the right (e.g., "Showing 15 of 383") tells you how many results you have.
+3. The page instantly hides everything that doesn't match. The counter on the right (e.g., "Showing 15 of 384") tells you how many results you have.
 4. To clear the search: delete the text, or click the small X in the search box.
 
 **Arrange by category:**
@@ -212,7 +212,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 
 ## Parts I'm using
 
-48 parts, each with my own photos in `images/my-photos/`.
+50 parts, each with my own photos in `images/my-photos/`.
 
 | Product | Category | Store | My photos |
 |---------|----------|-------|----------:|
@@ -231,7 +231,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | Pimoroni Haptic Bzzz Breakout (DRV2605L) | Breakout Board | Store not recorded | 3 |
 | RV3028 Real-Time Clock (RTC) Breakout | Breakout Board | Pimoroni | 2 |
 | SparkFun Qwiic pHAT v2.0 for Raspberry Pi   STEMMA QT / Qwiic | Breakout Board | Adafruit | 2 |
-| Breakout Garden to STEMMA QT / Qwiic Adapter | Cable/Connector | Pimoroni | 5 |
+| Breakout Garden to STEMMA QT / Qwiic Adapter | Cable/Connector | Pimoroni | 6 |
 | GD25Q16   2MB SPI Flash in 8 Pin SOIC package | Component | Adafruit | 6 |
 | 0.91" 128x32 OLED Display Module (SSD1306, I2C, White) | Display | AliExpress | 3 |
 | 1602 16x2 Character LCD with PCF8574 I2C Backpack (blue) | Display | Store not recorded | 3 |
@@ -249,6 +249,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | Waveshare RP2040-PiZero | Microcontroller | Store not recorded | 2 |
 | Waveshare RP2040-Plus | Microcontroller | Store not recorded | 2 |
 | YD-RP2040 RP2040 Development Board (black) | Microcontroller | Store not recorded | 1 |
+| 8mm Coin Vibration Motor 3V (2 pcs) | Motor/Actuator | AliExpress | 1 |
 | AHT10 Temperature and Humidity Sensor Module (I2C) | Sensor | AliExpress | 5 |
 | Adafruit AHT20   Temperature & Humidity Sensor Breakout Board | Sensor | Adafruit | 2 |
 | Adafruit BH1750 Light Sensor   STEMMA QT / Qwiic | Sensor | Adafruit | 2 |
@@ -256,6 +257,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | Adafruit VL53L1X Time of Flight Distance Sensor (STEMMA QT) | Sensor | Store not recorded | 2 |
 | BME688 4-in-1 Air Quality Breakout (Gas, Temperature, Pressure, Humidity) | Sensor | Pimoroni | 2 |
 | CJMCU-3216 AP3216C Light and Proximity Sensor | Sensor | Store not recorded | 5 |
+| Generic SCD41 CO2 Sensor Module (purple) | Sensor | AliExpress | 4 |
 | INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max | Sensor | Adafruit | 2 |
 | MAX30101 Breakout - Heart Rate, Oximeter, Smoke Sensor | Sensor | Pimoroni | 1 |
 | MICS6814 3-in-1 Gas Sensor Breakout (CO, NO2, NH3) | Sensor | Pimoroni | 2 |
@@ -314,10 +316,10 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 
 - [Sensor](#mouser---sensor) (1)
 
-### AliExpress (131 products)
+### AliExpress (132 products)
 
 - [Microcontroller](#aliexpress---microcontroller) (8)
-- [Sensor](#aliexpress---sensor) (20)
+- [Sensor](#aliexpress---sensor) (21)
 - [Display](#aliexpress---display) (6)
 - [LED](#aliexpress---led) (9)
 - [Breakout Board](#aliexpress---breakout-board) (2)
@@ -791,6 +793,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | d203s-pyroelectric-pir-sensor-10-pcs | D203S Pyroelectric PIR Sensor (10 pcs) | 1 | $3.35 |  |
 | dht22-am2302-temperature-and-humidity-sensor-module | DHT22 (AM2302) Temperature and Humidity Sensor Module | 1 | $3.41 |  |
 | e3jk-5dm1-photoelectric-beam-sensor-switch-5-m-12-24v-dc | E3JK-5DM1 Photoelectric Beam Sensor Switch (5 m, 12-24V DC) | 1 | $4.24 |  |
+| generic-scd41-co2-sensor-module-purple | Generic SCD41 CO2 Sensor Module (purple) | 1 | — |  |
 | gy-271-hmc5883l-3-axis-compass-module | GY-271 HMC5883L 3-Axis Compass Module | 1 | $1.86 |  |
 | gy-273-hmc5883l-3-axis-magnetometer-compass-module | GY-273 HMC5883L 3-Axis Magnetometer (Compass) Module | 1 | $1.62 |  |
 | gy-31-tcs3200-color-sensor-module | GY-31 TCS3200 Color Sensor Module | 1 | $2.51 |  |

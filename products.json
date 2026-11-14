@@ -3979,7 +3979,8 @@
       "images/my-photos/IMG_5827.jpg",
       "images/my-photos/IMG_5828.jpg",
       "images/my-photos/IMG_5829.jpg",
-      "images/my-photos/IMG_5836.jpg"
+      "images/my-photos/IMG_5836.jpg",
+      "images/my-photos/IMG_5834.jpg"
     ]
   },
   "pimoroni_PIM455": {
@@ -5339,7 +5340,12 @@
     ],
     "source": "aliexpress.com",
     "source_pdf": "Coin Flat Vibrating Micro Motor DC 3V 8mm For Pager and Cell Phone Mobile.pdf",
-    "last_scraped": null
+    "last_scraped": null,
+    "in_use_note": "Soldered to the Adafruit DRV2605L. Store not certain: AliExpress or Pimoroni.",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5831.jpg"
+    ]
   },
   "aliexpress_tec1-12712-peltier-thermoelectric-cooler-40x40mm-12a": {
     "product_id": "tec1-12712-peltier-thermoelectric-cooler-40x40mm-12a",
@@ -8121,6 +8127,31 @@
       "images/my-photos/IMG_5850.jpg",
       "images/my-photos/IMG_5851.jpg",
       "images/my-photos/IMG_5852.jpg"
+    ]
+  },
+  "photo_generic-scd41-co2-sensor-module-purple": {
+    "product_id": "generic-scd41-co2-sensor-module-purple",
+    "name": "Generic SCD41 CO2 Sensor Module (purple)",
+    "csv_name": "Generic SCD41 CO2 Sensor Module (purple)",
+    "description": "Unbranded purple breakout for the Sensirion SCD41 photoacoustic CO2 sensor, which also reports temperature and humidity over I2C. Bought on AliExpress.",
+    "technical_specs": "Sensor: Sensirion SCD41; Measures: CO2, temperature, humidity; Interface: I2C",
+    "category": "Sensor",
+    "page_url": null,
+    "image_url": "images/my-photos/IMG_5830.jpg",
+    "learn_guide_url": null,
+    "unit_price": 0,
+    "brand": null,
+    "model": "SCD41",
+    "total_qty": 1,
+    "orders": [],
+    "source": "aliexpress.com",
+    "last_scraped": null,
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/IMG_5830.jpg",
+      "images/my-photos/IMG_5835.jpg",
+      "images/my-photos/IMG_5836.jpg",
+      "images/my-photos/IMG_5837.jpg"
     ]
   }
 }

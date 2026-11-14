@@ -70,7 +70,8 @@
       "IMG_5827.jpg",
       "IMG_5828.jpg",
       "IMG_5829.jpg",
-      "IMG_5836.jpg"
+      "IMG_5836.jpg",
+      "IMG_5834.jpg"
     ]
   },
   {
@@ -465,5 +466,28 @@
       "IMG_5851.jpg",
       "IMG_5852.jpg"
     ]
+  },
+  {
+    "key": null,
+    "name": "Generic SCD41 CO2 Sensor Module (purple)",
+    "category": "Sensor",
+    "brand": null,
+    "model": "SCD41",
+    "source": "aliexpress.com",
+    "description": "Unbranded purple breakout for the Sensirion SCD41 photoacoustic CO2 sensor, which also reports temperature and humidity over I2C. Bought on AliExpress.",
+    "technical_specs": "Sensor: Sensirion SCD41; Measures: CO2, temperature, humidity; Interface: I2C",
+    "photos": [
+      "IMG_5830.jpg",
+      "IMG_5835.jpg",
+      "IMG_5836.jpg",
+      "IMG_5837.jpg"
+    ]
+  },
+  {
+    "key": "aliexpress_8mm-coin-vibration-motor-3v-2-pcs",
+    "photos": [
+      "IMG_5831.jpg"
+    ],
+    "note": "Soldered to the Adafruit DRV2605L. Store not certain: AliExpress or Pimoroni."
   }
 ]

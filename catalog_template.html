@@ -276,6 +276,7 @@ function card(p) {
       priceBits.length ? el("div", { className: "price" }, ...priceBits) : null,
       p.pack ? el("div", { className: "src" }, "Pack: " + p.pack) : null,
       ...strip,
+      p.note ? el("div", { className: "src" }, "Note: " + p.note) : null,
       p.desc ? el("p", { className: "desc", title: p.desc }, p.desc) : null,
       specs, links,
       p.pdf ? el("div", { className: "src" }, "From: " + p.pdf) : null));

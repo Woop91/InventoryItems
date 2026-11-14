@@ -5,7 +5,8 @@ Source data: data/parts_in_use.json, a list of entries:
   {"key": "<products.json key>", "photos": ["IMG_5881.jpg", ...]}
 or, for a part not yet in the inventory, a new product:
   {"key": null, "name": ..., "category": ..., "description": ...,
-   "technical_specs": ..., "brand": ..., "model": ..., "photos": [...]}
+   "technical_specs": ..., "brand": ..., "model": ..., "source": ..., "photos": [...]}
+Any entry may carry a "note" (kept as in_use_note).
 
 Photos live in images/my-photos/. Every product listed here gets
 in_use = true and my_photos; every other product has in_use cleared, so this
@@ -56,7 +57,7 @@ def main() -> None:
                 "model": e.get("model"),
                 "total_qty": 1,
                 "orders": [],
-                "source": "unrecorded",
+                "source": e.get("source") or "unrecorded",
                 "last_scraped": None,
             }
             added += 1
@@ -64,6 +65,10 @@ def main() -> None:
             raise SystemExit(f"unknown product key in {DATA.name}: {key}")
         products[key]["in_use"] = True
         products[key]["my_photos"] = photos
+        if e.get("note"):
+            products[key]["in_use_note"] = e["note"]
+        else:
+            products[key].pop("in_use_note", None)
     PRODUCTS.write_text(json.dumps(products, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Marked {len(entries)} parts in use ({added} new to the inventory); products.json has {len(products)}")
 

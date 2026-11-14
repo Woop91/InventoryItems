@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Electronics Inventory</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f5f6fa;
+    --surface: #ffffff;
+    --ink: #1c2333;
+    --muted: #5a6478;
+    --line: #dde1ea;
+    --accent: #2453c7;
+    --accent-soft: #e6edff;
+    --price: #0f7a3d;
+    --shadow: 0 1px 2px rgba(20, 30, 60, .06), 0 4px 14px rgba(20, 30, 60, .06);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  }
+  header {
+    background: linear-gradient(120deg, #1d3f9e, #2b6fd6 60%, #18a0b8);
+    color: #fff; padding: 22px 20px 18px;
+  }
+  header h1 { margin: 0 0 4px; font-size: 1.6rem; letter-spacing: -.01em; }
+  header p { margin: 0; color: #e3ecff; font-size: .9rem; }
+  .stores { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .stores span {
+    background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3);
+    padding: 2px 10px; border-radius: 999px; font-size: .8rem;
+  }
+
+  .toolbar {
+    position: sticky; top: 0; z-index: 5; background: var(--surface);
+    border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
+    padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center;
+  }
+  .toolbar input[type=search] {
+    flex: 1 1 240px; min-width: 0; padding: 8px 12px; font-size: .95rem;
+    border: 1px solid var(--line); border-radius: 8px; background: #fbfcfe; color: var(--ink);
+  }
+  .toolbar label { font-size: .82rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .toolbar select {
+    padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px;
+    background: #fff; color: var(--ink); font-size: .88rem;
+  }
+  .btn {
+    border: 1px solid var(--line); background: #fff; color: var(--ink);
+    padding: 7px 11px; border-radius: 8px; font-size: .85rem; cursor: pointer;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .count { font-size: .82rem; color: var(--muted); margin-left: auto; white-space: nowrap; }
+
+  .chips { padding: 10px 20px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    border: 1px solid var(--c, var(--line)); background: #fff; color: var(--ink);
+    padding: 3px 10px; border-radius: 999px; font-size: .8rem; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c, #999); }
+  .chip.off { opacity: .45; text-decoration: line-through; }
+  .chip.store { --c: #8a94a8; }
+  .chip.store.on { background: var(--accent-soft); border-color: var(--accent); color: #173a91; }
+
+  main { padding: 6px 20px 40px; max-width: 1500px; margin: 0 auto; }
+  section.group { margin-top: 18px; }
+  .group-head {
+    display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none;
+    padding: 9px 14px; border-radius: 10px; background: var(--c-soft, #eef1f7);
+    border-left: 6px solid var(--c, #8a94a8);
+  }
+  .group-head h2 { margin: 0; font-size: 1.08rem; color: var(--c-ink, var(--ink)); }
+  .group-head .n {
+    background: var(--c, #5a6478); color: #fff; border-radius: 999px;
+    padding: 0 9px; font-size: .78rem; font-weight: 600;
+  }
+  .group-head .caret { margin-left: auto; color: var(--muted); transition: transform .15s; }
+  section.collapsed .caret { transform: rotate(-90deg); }
+  section.collapsed .grid { display: none; }
+
+  .grid {
+    display: grid; gap: 14px; margin-top: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column;
+  }
+  .card .pic {
+    background: #fff; height: 190px; display: flex; align-items: center; justify-content: center;
+    border-bottom: 1px solid var(--line); cursor: zoom-in; padding: 8px;
+  }
+  .card .pic img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .card .pic .none { color: var(--muted); font-size: .8rem; }
+  .card .body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .card h3 { margin: 0; font-size: .95rem; line-height: 1.3; }
+  .badges { display: flex; flex-wrap: wrap; gap: 5px; }
+  .badge {
+    font-size: .72rem; padding: 1px 8px; border-radius: 999px; font-weight: 600;
+    background: var(--c-soft, #eef1f7); color: var(--c-ink, var(--ink));
+  }
+  .badge.store { background: #eef1f7; color: #3c465a; }
+  .price { color: var(--price); font-weight: 700; font-size: .9rem; }
+  .price small { color: var(--muted); font-weight: 400; }
+  .desc {
+    color: var(--muted); font-size: .84rem; margin: 0;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  details { font-size: .8rem; color: var(--muted); }
+  details summary { cursor: pointer; color: var(--accent); }
+  details ul { margin: 6px 0 0; padding-left: 16px; }
+  .links { margin-top: auto; display: flex; gap: 10px; font-size: .8rem; padding-top: 4px; }
+  .links a { color: var(--accent); text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  .src { font-size: .72rem; color: #5f687b; word-break: break-word; }
+
+  body.compact .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  body.compact .card .pic { height: 130px; }
+  body.compact .desc, body.compact details, body.compact .links, body.compact .src { display: none; }
+
+  .empty { text-align: center; color: var(--muted); padding: 60px 0; }
+
+  #zoom {
+    position: fixed; inset: 0; background: rgba(15, 20, 35, .82); display: none;
+    align-items: center; justify-content: center; z-index: 20; padding: 16px; cursor: zoom-out;
+  }
+  #zoom.open { display: flex; }
+  #zoom figure { margin: 0; background: #fff; border-radius: 12px; padding: 14px; max-width: 640px; width: 100%; }
+  #zoom img { width: 100%; max-height: 70vh; object-fit: contain; }
+  #zoom figcaption { font-size: .9rem; margin-top: 8px; color: var(--ink); }
+
+  footer { text-align: center; color: var(--muted); font-size: .78rem; padding: 0 16px 30px; }
+
+  @media (max-width: 600px) {
+    header, .toolbar, .chips, main { padding-left: 16px; padding-right: 16px; }
+    .toolbar { position: static; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+    .card .pic { height: 140px; }
+    .count { margin-left: 0; width: 100%; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Electronics Inventory</h1>
+  <p id="summary"></p>
+  <div class="stores" id="storeSummary"></div>
+</header>
+
+<div class="toolbar">
+  <input type="search" id="q" placeholder="Search name, specs, chip, store…" aria-label="Search products">
+  <label>Group by
+    <select id="groupBy">
+      <option value="cat">Category</option>
+      <option value="store">Store</option>
+      <option value="none">No grouping</option>
+    </select>
+  </label>
+  <label>Groups
+    <select id="groupOrder">
+      <option value="az">A–Z</option>
+      <option value="size">Most items first</option>
+    </select>
+  </label>
+  <label>Sort
+    <select id="sortBy">
+      <option value="name">Name</option>
+      <option value="price-asc">Price, low to high</option>
+      <option value="price-desc">Price, high to low</option>
+      <option value="store">Store</option>
+    </select>
+  </label>
+  <button class="btn" id="toggleAll" type="button">Collapse all</button>
+  <button class="btn" id="density" type="button">Compact view</button>
+  <span class="count" id="count"></span>
+</div>
+
+<div class="chips" id="storeChips" aria-label="Filter by store"></div>
+<div class="chips" id="catChips" aria-label="Filter by category"></div>
+
+<main id="main"></main>
+
+<div id="zoom" role="dialog" aria-modal="true" aria-label="Product picture">
+  <figure><img alt=""><figcaption></figcaption></figure>
+</div>
+
+<footer>Generated __GENERATED__ by build_catalog.py from products.json</footer>
+
+<script>
+const PRODUCTS = /*__DATA__*/[];
+
+// Category colours: [accent, soft background, dark text]; all text pairs pass WCAG AA.
+const PALETTE = [
+  ["#2453c7", "#e6edff", "#173a91"], ["#0f7a3d", "#e3f5ea", "#0b5a2d"],
+  ["#b4470f", "#fdeee4", "#86340a"], ["#7b3fc4", "#f1e9fc", "#5a2a99"],
+  ["#0b7f8f", "#e0f4f6", "#075b66"], ["#b8326b", "#fbe7ef", "#8a2350"],
+  ["#8a6d00", "#faf3d6", "#5f4b00"], ["#3d5a80", "#e7edf5", "#2a4060"],
+  ["#c0392b", "#fbe8e6", "#8e2a20"], ["#4c7a1a", "#ecf5e1", "#355613"],
+  ["#5e4bb5", "#ecebfb", "#43358a"], ["#9a5b13", "#f8ecdc", "#6f410d"],
+];
+const colour = {};
+[...new Set(PRODUCTS.map(p => p.cat))].sort().forEach((c, i) => colour[c] = PALETTE[i % PALETTE.length]);
+const storeKeys = [...new Set(PRODUCTS.map(p => p.store))].sort();
+
+const $ = id => document.getElementById(id);
+const state = { q: "", groupBy: "cat", groupOrder: "az", sortBy: "name", compact: false,
+                hiddenCats: [], stores: [], collapsed: [] };
+try { Object.assign(state, JSON.parse(localStorage.getItem("inventory-view") || "{}")); } catch (e) {}
+const save = () => { try { localStorage.setItem("inventory-view", JSON.stringify(state)); } catch (e) {} };
+
+function el(tag, attrs, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "style") n.style.cssText = v; else if (k in n) n[k] = v; else n.setAttribute(k, v);
+  }
+  for (const k of kids) if (k != null) n.append(k);
+  return n;
+}
+const tint = (node, c) => {
+  const [a, soft, ink] = colour[c] || ["#8a94a8", "#eef1f7", "#1c2333"];
+  node.style.setProperty("--c", a); node.style.setProperty("--c-soft", soft); node.style.setProperty("--c-ink", ink);
+  return node;
+};
+const money = (v, cur = "$") => v ? cur + Number(v).toFixed(2) : "";
+
+function card(p) {
+  const pic = el("div", { className: "pic", title: "Click to enlarge" });
+  if (p.img) {
+    const img = el("img", { src: p.img, alt: p.name, loading: "lazy" });
+    img.onerror = () => pic.replaceChildren(el("span", { className: "none" }, "No picture"));
+    pic.append(img);
+    pic.onclick = () => openZoom(p);
+  } else pic.append(el("span", { className: "none" }, "No picture"));
+
+  const badges = el("div", { className: "badges" },
+    tint(el("span", { className: "badge" }, p.cat), p.cat),
+    el("span", { className: "badge store" }, p.store));
+  const priceBits = [money(p.price, p.cur), p.unit ? el("small", {}, " / " + p.unit) : null,
+                     p.qty > 1 ? el("small", {}, " · qty " + p.qty) : null].filter(Boolean);
+  const specs = p.specs ? el("details", {}, el("summary", {}, "Specs"),
+    el("ul", {}, ...p.specs.split(/;\s*/).filter(Boolean).map(s => el("li", {}, s)))) : null;
+  const links = el("div", { className: "links" },
+    p.url ? el("a", { href: p.url, target: "_blank", rel: "noopener" }, "Product page") : null,
+    p.guide ? el("a", { href: p.guide, target: "_blank", rel: "noopener" }, "Guide") : null);
+  return el("article", { className: "card" }, pic,
+    el("div", { className: "body" },
+      el("h3", {}, p.name), badges,
+      priceBits.length ? el("div", { className: "price" }, ...priceBits) : null,
+      p.pack ? el("div", { className: "src" }, "Pack: " + p.pack) : null,
+      p.desc ? el("p", { className: "desc", title: p.desc }, p.desc) : null,
+      specs, links,
+      p.pdf ? el("div", { className: "src" }, "From: " + p.pdf) : null));
+}
+
+function sorter(a, b) {
+  switch (state.sortBy) {
+    case "price-asc": return (a.price || 1e9) - (b.price || 1e9);
+    case "price-desc": return (b.price || 0) - (a.price || 0);
+    case "store": return a.store.localeCompare(b.store) || a.name.localeCompare(b.name);
+    default: return a.name.localeCompare(b.name);
+  }
+}
+
+function matches(p) {
+  if (state.hiddenCats.includes(p.cat)) return false;
+  if (state.stores.length && !state.stores.includes(p.store)) return false;
+  if (!state.q) return true;
+  const hay = (p.name + " " + p.desc + " " + p.specs + " " + p.cat + " " + p.store + " " + p.id).toLowerCase();
+  return state.q.toLowerCase().split(/\s+/).every(w => hay.includes(w));
+}
+
+function renderChips() {
+  const catCounts = {};
+  PRODUCTS.forEach(p => catCounts[p.cat] = (catCounts[p.cat] || 0) + 1);
+  $("catChips").replaceChildren(...Object.keys(catCounts).sort().map(c => {
+    const b = tint(el("button", { type: "button", className: "chip" + (state.hiddenCats.includes(c) ? " off" : ""),
+      title: "Show or hide " + c }, el("span", { className: "dot" }), `${c} (${catCounts[c]})`), c);
+    b.onclick = () => {
+      state.hiddenCats = state.hiddenCats.includes(c) ? state.hiddenCats.filter(x => x !== c) : [...state.hiddenCats, c];
+      render();
+    };
+    return b;
+  }));
+  $("storeChips").replaceChildren(
+    el("span", { className: "src", style: "align-self:center" }, "Stores:"),
+    ...storeKeys.map(s => {
+      const b = el("button", { type: "button", className: "chip store" + (state.stores.includes(s) ? " on" : "") }, s);
+      b.onclick = () => {
+        state.stores = state.stores.includes(s) ? state.stores.filter(x => x !== s) : [...state.stores, s];
+        render();
+      };
+      return b;
+    }));
+}
+
+function render() {
+  save();
+  document.body.classList.toggle("compact", state.compact);
+  $("density").textContent = state.compact ? "Detailed view" : "Compact view";
+  renderChips();
+  const shown = PRODUCTS.filter(matches).sort(sorter);
+  $("count").textContent = `Showing ${shown.length} of ${PRODUCTS.length}`;
+  const main = $("main");
+  if (!shown.length) { main.replaceChildren(el("p", { className: "empty" }, "No products match.")); return; }
+
+  if (state.groupBy === "none") {
+    main.replaceChildren(el("div", { className: "grid" }, ...shown.map(card)));
+    $("toggleAll").disabled = true;
+    return;
+  }
+  $("toggleAll").disabled = false;
+  const groups = new Map();
+  shown.forEach(p => {
+    const k = state.groupBy === "store" ? p.store : p.cat;
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(p);
+  });
+  const keys = [...groups.keys()].sort((a, b) =>
+    state.groupOrder === "size" ? groups.get(b).length - groups.get(a).length || a.localeCompare(b) : a.localeCompare(b));
+  main.replaceChildren(...keys.map(k => {
+    const id = state.groupBy + ":" + k;
+    const head = el("div", { className: "group-head", role: "button", tabIndex: 0, "aria-expanded": String(!state.collapsed.includes(id)) },
+      el("h2", {}, k), el("span", { className: "n" }, String(groups.get(k).length)), el("span", { className: "caret" }, "▾"));
+    const sec = el("section", { className: "group" + (state.collapsed.includes(id) ? " collapsed" : "") }, head,
+      el("div", { className: "grid" }, ...groups.get(k).map(card)));
+    if (state.groupBy === "cat") tint(sec, k);
+    const flip = () => {
+      state.collapsed = state.collapsed.includes(id) ? state.collapsed.filter(x => x !== id) : [...state.collapsed, id];
+      sec.classList.toggle("collapsed"); head.setAttribute("aria-expanded", String(!sec.classList.contains("collapsed")));
+      save(); syncToggle();
+    };
+    head.onclick = flip;
+    head.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flip(); } };
+    return sec;
+  }));
+  syncToggle();
+}
+
+function syncToggle() {
+  const anyOpen = [...document.querySelectorAll("section.group")].some(s => !s.classList.contains("collapsed"));
+  $("toggleAll").textContent = anyOpen ? "Collapse all" : "Expand all";
+}
+
+function openZoom(p) {
+  const z = $("zoom");
+  z.querySelector("img").src = p.img; z.querySelector("img").alt = p.name;
+  z.querySelector("figcaption").textContent = `${p.name} — ${p.store}${p.price ? " · " + money(p.price, p.cur) : ""}`;
+  z.classList.add("open");
+}
+$("zoom").onclick = () => $("zoom").classList.remove("open");
+document.addEventListener("keydown", e => { if (e.key === "Escape") $("zoom").classList.remove("open"); });
+
+$("q").value = state.q;
+$("groupBy").value = state.groupBy; $("groupOrder").value = state.groupOrder; $("sortBy").value = state.sortBy;
+$("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
+["groupBy", "groupOrder", "sortBy"].forEach(id => $(id).addEventListener("change", e => { state[id] = e.target.value; render(); }));
+$("density").onclick = () => { state.compact = !state.compact; render(); };
+$("toggleAll").onclick = () => {
+  const secs = [...document.querySelectorAll("section.group")];
+  const collapse = secs.some(s => !s.classList.contains("collapsed"));
+  const ids = [...new Set(PRODUCTS.map(p => state.groupBy + ":" + (state.groupBy === "store" ? p.store : p.cat)))];
+  state.collapsed = collapse ? [...new Set([...state.collapsed, ...ids])] : state.collapsed.filter(x => !ids.includes(x));
+  render();
+};
+
+const storeCounts = {};
+PRODUCTS.forEach(p => storeCounts[p.store] = (storeCounts[p.store] || 0) + 1);
+$("summary").textContent = `${PRODUCTS.length} products in ${Object.keys(colour).length} categories from ${storeKeys.length} stores`;
+$("storeSummary").replaceChildren(...storeKeys.map(s => el("span", {}, `${s}: ${storeCounts[s]}`)));
+render();
+</script>
+</body>
+</html>

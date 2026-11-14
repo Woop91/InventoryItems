@@ -1,8 +1,8 @@
 # Electronics Product Inventory
 
-Personal inventory of **236 products** — 191 from adafruit.com, 39 from pimoroni.com, 3 from aliexpress.com, 1 from waveshare.com, 1 from sparkfun.com, 1 from mouser.com.
+Personal inventory of **369 products** — 191 from Adafruit, 131 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot.
 
-> Open **index.html** in a browser for a visual catalog with images, search, and source filtering.
+> Open **index.html** in a browser for a visual catalog: every product with its picture, grouped by category (or store), with search, sorting and filters.
 
 ---
 
@@ -16,7 +16,8 @@ This is a personal catalog of electronics parts. It includes:
 
 - **A visual catalog** (`index.html`) -- a web page you open in your browser that shows all your parts with pictures, search, and filters. This is the main thing most people will use.
 - **A data file** (`products.json`) -- the raw list of all products stored in a format computers can read.
-- **Python scripts** (`scraper.py`, `generate_products.py`, `add_pimoroni.py`) -- programs that automatically fetch product info from supplier websites and update the catalog. You only need these if you want to add or refresh products.
+- **Pictures** (`images/`) -- a saved picture of every product, so the catalog shows images even offline.
+- **Python scripts** (`scraper.py`, `generate_products.py`, `add_pimoroni.py`, `add_purchase_pdfs.py`, `fetch_product_images.py`, `build_catalog.py`) -- programs that fetch product info, add products and rebuild the catalog. You only need these if you want to add or refresh products.
 
 ### What files do what?
 
@@ -25,9 +26,14 @@ This is a personal catalog of electronics parts. It includes:
 | `index.html` | The visual catalog you view in a browser | Everyone |
 | `products.json` | Raw product data in a structured format | Advanced users |
 | `purchase_history.csv` | Spreadsheet of past Adafruit orders | Reference only |
+| `data/purchase_pdfs.json` | Products read from saved AliExpress (and other store) order PDFs | Reference only |
+| `images/` | Product pictures used by the catalog | Everyone (keep next to `index.html`) |
 | `scraper.py` | Script that fetches product info from Adafruit | Only if updating products |
-| `generate_products.py` | Script that builds the HTML catalog from data | Only if updating products |
+| `generate_products.py` | Script that builds `products.json` from the Adafruit order CSV | Only if updating products |
 | `add_pimoroni.py` | Script that adds Pimoroni products | Only if updating products |
+| `add_purchase_pdfs.py` | Script that adds the order-PDF products to `products.json` | Only if updating products |
+| `fetch_product_images.py` | Script that downloads a picture for any product that lacks a local one | Only if updating products |
+| `build_catalog.py` | Script that builds `index.html` (and, with `--readme`, the product tables below) | Only if updating products |
 
 ---
 
@@ -64,7 +70,7 @@ This is the main feature -- a visual page showing all your electronics parts.
 3. **Double-click** it. It should open in your web browser (Chrome, Firefox, Safari, or Edge).
 4. If it doesn't open automatically: **right-click** the file, choose **"Open with"**, and pick any web browser.
 
-That's it! You should now see a dark-themed page with product cards, images, and a search bar.
+That's it! You should now see a light page with product cards grouped by category, each with a picture.
 
 **Troubleshooting:** If you see raw code instead of a nice page, you accidentally opened the file in a text editor. Right-click the file and specifically choose a browser like Chrome or Firefox.
 
@@ -75,24 +81,28 @@ That's it! You should now see a dark-themed page with product cards, images, and
 Once the page is open in your browser:
 
 **Search for a product:**
-1. Click the search box at the top (it says "Search products by name, ID, description, or category...").
+1. Click the search box at the top (it says "Search name, specs, chip, store…").
 2. Type what you're looking for -- for example, `sensor` or `ESP32` or `LED`.
-3. The page instantly hides everything that doesn't match. The counter on the right (e.g., "Showing 15 of 236") tells you how many results you have.
+3. The page instantly hides everything that doesn't match. The counter on the right (e.g., "Showing 15 of 369") tells you how many results you have.
 4. To clear the search: delete the text, or click the small X in the search box.
 
-**Filter by supplier:**
-- Click the **Adafruit** or **Pimoroni** buttons to show only products from that supplier.
-- Click **All** to show everything again.
-- Filters combine with search -- you can search for "sensor" within just Pimoroni products.
+**Arrange by category:**
+- Products are grouped by category (Sensor, Motor/Actuator, Power, ...). Click a category heading to fold it away; **Collapse all** / **Expand all** folds every group.
+- **Group by** switches between Category, Store, or one big grid. **Groups** orders them A–Z or by most items. **Sort** orders products inside each group by name, price or store.
+- Click a coloured category chip to hide or show that category. Click a store chip (Adafruit, AliExpress, ...) to show only that store; click it again to undo.
+- **Compact view** shows smaller cards with just the picture, name and price.
+- Your choices are remembered the next time you open the page in the same browser.
+- Filters combine with search -- you can search for "sensor" within just AliExpress products.
 
 **Use your browser's built-in find:**
 - Press **Ctrl+F** (Windows/Linux) or **Cmd+F** (Mac) to open your browser's find bar.
 - Type any word and the browser will highlight and jump to every match on the page.
 
 **View product details:**
-- Click a product's **image or name** to visit the supplier's product page (opens a new tab).
-- Click **"Technical Specs"** on any card to expand and read the specifications.
-- Click the **"Learn Guide"** link (if available) for tutorials related to that product.
+- Click a product's **picture** to see it larger (click again or press Esc to close).
+- Click **"Specs"** on any card to expand and read the specifications.
+- Click **"Product page"** or **"Guide"** (when available) to open the store page or a tutorial in a new tab.
+- Products imported from order PDFs show which PDF they came from.
 
 **Scroll through products:**
 - **Mouse:** Scroll wheel, or drag the scrollbar on the right.
@@ -130,10 +140,10 @@ A terminal (also called "command prompt" or "command line") is a text-based wind
 
 #### Install required libraries
 
-The scripts need two additional libraries. In your terminal, type:
+The scripts need a few additional libraries. In your terminal, type:
 
 ```
-pip install requests beautifulsoup4
+pip install requests beautifulsoup4 pillow
 ```
 
 Press Enter. You should see it download and install successfully. If `pip` doesn't work, try `pip3` instead.
@@ -180,13 +190,18 @@ After it finishes, refresh `index.html` in your browser (press **F5** or **Ctrl+
 | [`products.json`](products.json) | Machine-readable product data |
 | [`purchase_history.csv`](purchase_history.csv) | Adafruit order history |
 | [`scraper.py`](scraper.py) | Scraper to fetch live data from adafruit.com |
+| [`data/purchase_pdfs.json`](data/purchase_pdfs.json) | Products read from saved order PDFs |
+| [`build_catalog.py`](build_catalog.py) | Builds `index.html` and the README product tables |
 
 ## How to Update (Quick Reference)
 
 ```bash
-pip install requests beautifulsoup4
-python scraper.py          # scrape Adafruit products
-python scraper.py --force  # re-scrape everything
+pip install requests beautifulsoup4 pillow
+python scraper.py              # scrape Adafruit products
+python scraper.py --force      # re-scrape everything
+python add_purchase_pdfs.py    # merge data/purchase_pdfs.json into products.json
+python fetch_product_images.py # download pictures for products without one
+python build_catalog.py --readme  # rebuild index.html and the README tables
 ```
 
 ---
@@ -195,52 +210,87 @@ python scraper.py --force  # re-scrape everything
 
 ### Adafruit (191 products)
 
-- [Microcontroller](#adafruit-microcontroller) (10)
-- [Sensor](#adafruit-sensor) (9)
-- [Display](#adafruit-display) (8)
-- [LED](#adafruit-led) (14)
-- [Breakout Board](#adafruit-breakout-board) (18)
-- [FeatherWing](#adafruit-featherwing) (12)
-- [Component](#adafruit-component) (27)
-- [Cable/Connector](#adafruit-cableconnector) (25)
-- [Prototyping](#adafruit-prototyping) (20)
-- [Power](#adafruit-power) (2)
-- [Kit](#adafruit-kit) (2)
-- [Tool](#adafruit-tool) (12)
-- [Enclosure](#adafruit-enclosure) (2)
-- [Storage](#adafruit-storage) (4)
-- [Accessory](#adafruit-accessory) (23)
-- [Book/Subscription](#adafruit-booksubscription) (3)
+- [Microcontroller](#adafruit---microcontroller) (10)
+- [Sensor](#adafruit---sensor) (9)
+- [Display](#adafruit---display) (8)
+- [LED](#adafruit---led) (14)
+- [Breakout Board](#adafruit---breakout-board) (18)
+- [FeatherWing](#adafruit---featherwing) (12)
+- [Component](#adafruit---component) (27)
+- [Cable/Connector](#adafruit---cableconnector) (25)
+- [Prototyping](#adafruit---prototyping) (20)
+- [Power](#adafruit---power) (2)
+- [Kit](#adafruit---kit) (2)
+- [Tool](#adafruit---tool) (12)
+- [Enclosure](#adafruit---enclosure) (2)
+- [Storage](#adafruit---storage) (4)
+- [Accessory](#adafruit---accessory) (23)
+- [Book/Subscription](#adafruit---booksubscription) (3)
 
 ### Pimoroni (39 products)
 
-- [Microcontroller](#pimoroni-microcontroller) (1)
-- [Sensor](#pimoroni-sensor) (7)
-- [Display](#pimoroni-display) (5)
-- [Breakout Board](#pimoroni-breakout-board) (8)
-- [FeatherWing](#pimoroni-featherwing) (1)
-- [Component](#pimoroni-component) (2)
-- [Cable/Connector](#pimoroni-cableconnector) (3)
-- [Prototyping](#pimoroni-prototyping) (2)
-- [Power](#pimoroni-power) (2)
-- [Tool](#pimoroni-tool) (2)
-- [Accessory](#pimoroni-accessory) (6)
+- [Microcontroller](#pimoroni---microcontroller) (1)
+- [Sensor](#pimoroni---sensor) (7)
+- [Display](#pimoroni---display) (5)
+- [Breakout Board](#pimoroni---breakout-board) (8)
+- [FeatherWing](#pimoroni---featherwing) (1)
+- [Component](#pimoroni---component) (2)
+- [Cable/Connector](#pimoroni---cableconnector) (3)
+- [Prototyping](#pimoroni---prototyping) (2)
+- [Power](#pimoroni---power) (2)
+- [Tool](#pimoroni---tool) (2)
+- [Accessory](#pimoroni---accessory) (6)
 
 ### Waveshare (1 products)
 
-- [Display](#waveshare-display) (1)
+- [Display](#waveshare---display) (1)
 
 ### SparkFun (1 products)
 
-- [Breakout Board](#sparkfun-breakout-board) (1)
+- [Breakout Board](#sparkfun---breakout-board) (1)
 
 ### Mouser (1 products)
 
-- [Sensor](#mouser-sensor) (1)
+- [Sensor](#mouser---sensor) (1)
 
-### AliExpress (3 products)
+### AliExpress (131 products)
 
-- [Microcontroller](#aliexpress-microcontroller) (3)
+- [Microcontroller](#aliexpress---microcontroller) (8)
+- [Sensor](#aliexpress---sensor) (20)
+- [Display](#aliexpress---display) (6)
+- [LED](#aliexpress---led) (9)
+- [Breakout Board](#aliexpress---breakout-board) (2)
+- [Motor/Actuator](#aliexpress---motoractuator) (16)
+- [Motor Driver/ESC](#aliexpress---motor-driveresc) (10)
+- [Switch/Button](#aliexpress---switchbutton) (9)
+- [Audio](#aliexpress---audio) (5)
+- [Wireless/RF](#aliexpress---wirelessrf) (6)
+- [Component](#aliexpress---component) (10)
+- [Cable/Connector](#aliexpress---cableconnector) (5)
+- [Power](#aliexpress---power) (15)
+- [Battery](#aliexpress---battery) (4)
+- [Kit](#aliexpress---kit) (2)
+- [Tool](#aliexpress---tool) (4)
+
+### Amazon (1 products)
+
+- [Microcontroller](#amazon---microcontroller) (1)
+
+### Orbtronic (1 products)
+
+- [Battery](#orbtronic---battery) (1)
+
+### Battery Junction (1 products)
+
+- [Battery](#battery-junction---battery) (1)
+
+### Voltaplex (1 products)
+
+- [Battery](#voltaplex---battery) (1)
+
+### Home Depot (1 products)
+
+- [Accessory](#home-depot---accessory) (1)
 
 ---
 
@@ -572,7 +622,7 @@ python scraper.py --force  # re-scrape everything
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
-| COM0216 | Optoisolator - 1 Channel | 1 | £0.55 | [Product](https://shop.pimoroni.com/products/optoisolator) |
+| COM0216 | Optoisolator - 1 Channel | 1 | £0.55 | [Product](https://shop.pimoroni.com/products/optoisolator-1-channel) |
 | WPM463 | 2 Channel Solid State Relay Module | 1 | £3.30 | [Product](https://shop.pimoroni.com/products/2-channel-solid-state-relay-module) |
 
 ## Pimoroni - Cable/Connector
@@ -580,8 +630,8 @@ python scraper.py --force  # re-scrape everything
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | COM3900 | Breakout Garden I2C Connector (pack of 5) | 1 | £2.35 | [Product](https://shop.pimoroni.com/products/breakout-garden-i2c-connector-pack-of-5) |
-| PIM409 | I2C Breakout Extender (pack of 3) | 1 | £1.90 | [Product](https://shop.pimoroni.com/products/i2c-breakout-extender-pack-of-3) |
-| PIM572 | Breakout Garden to STEMMA QT / Qwiic Adapter | 4 | £0.80 | [Product](https://shop.pimoroni.com/products/breakout-garden-to-stemma-qt-qwiic-adapter) |
+| PIM409 | I2C Breakout Extender (pack of 3) | 1 | £1.90 | [Product](https://shop.pimoroni.com/products/breakout-extender) |
+| PIM572 | Breakout Garden to STEMMA QT / Qwiic Adapter | 4 | £0.80 | [Product](https://shop.pimoroni.com/products/breakout-garden-to-qwiic-adaptor) |
 
 ## Pimoroni - Prototyping
 
@@ -602,13 +652,13 @@ python scraper.py --force  # re-scrape everything
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | IFIX-EU145439-1 | Mahi 1/4" Bit Driver | 1 | £4.60 | [Product](https://www.ifixit.com/products/mahi-driver) |
-| PA-21 | Engineer Universal Crimping Pliers | 1 | £26.00 | [Product](https://shop.pimoroni.com/products/engineer-universal-crimping-pliers) |
+| PA-21 | Engineer Universal Crimping Pliers | 1 | £26.00 | [Product](https://shop.pimoroni.com/products/universal-crimping-pliers) |
 
 ## Pimoroni - Accessory
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
-| COM0005 | Pico Stacking Header Pack | 3 | £0.75 | [Product](https://shop.pimoroni.com/products/pico-stacking-header-pack) |
+| COM0005 | Pico Stacking Header Pack | 3 | £0.75 | [Product](https://shop.pimoroni.com/products/pico-stacking-headers) |
 | COM1117 | Pico Header Pack | 3 | £0.90 | [Product](https://shop.pimoroni.com/products/pico-header-pack) |
 | PIM321 | pHAT Stack - Solder Yourself Kit | 1 | £2.95 | [Product](https://shop.pimoroni.com/products/phat-stack) · [Guide](https://learn.pimoroni.com/article/assembling-phat-stack) |
 | PIM461 | Fan SHIM for Raspberry Pi | 1 | £10.00 | [Product](https://shop.pimoroni.com/products/fan-shim) · [Guide](https://learn.pimoroni.com/article/getting-started-with-fan-shim) |
@@ -656,3 +706,256 @@ python scraper.py --force  # re-scrape everything
 | AE-3256802908925724 | LilyGO T-Display-S3 (AliExpress) | 1 | — | [Product](https://www.aliexpress.us/item/3256802908925724.html) · [Guide](https://github.com/Xinyuan-LilyGO/T-Display-S3) |
 | T-Display-S3 | LilyGO T-Display-S3 | 1 | — | [Product](https://lilygo.cc/products/t-display-s3) · [Guide](https://github.com/Xinyuan-LilyGO/T-Display-S3) |
 | Wrist-E-Paper | LilyGO Wrist-E-Paper | 1 | — | [Product](https://github.com/Xinyuan-LilyGO/Wrist-E-Paper) · [Guide](https://github.com/Xinyuan-LilyGO/Wrist-E-Paper) |
+| esp32-dev-board-wi-fi-bluetooth-ch9102x | ESP32 Dev Board, Wi-Fi + Bluetooth (CH9102X) | 1 | $3.65 |  |
+| mega-2560-pro-embed-board-atmega2560-ch340g | Mega 2560 PRO Embed Board (ATmega2560 + CH340G) | 1 | $8.95 |  |
+| nodemcu-v2-1-esp8266-esp-12e-wi-fi-board-ch9102 | NodeMCU V2.1 ESP8266 ESP-12E Wi-Fi Board (CH9102) | 1 | $2.43 |  |
+| nodemcu-v3-esp8266-wi-fi-development-board-ch340 | NodeMCU V3 ESP8266 Wi-Fi Development Board (CH340) | 1 | $2.07 |  |
+| stm32f411ceu6-core-development-board | STM32F411CEU6 Core Development Board | 1 | $5.89 |  |
+
+## AliExpress - Sensor
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 12v-rain-sensor-relay-control-module | 12V Rain Sensor Relay Control Module | 1 | $1.62 |  |
+| aht10-temperature-and-humidity-sensor-module-i2c | AHT10 Temperature and Humidity Sensor Module (I2C) | 1 | $1.19 |  |
+| d203s-pyroelectric-pir-sensor-10-pcs | D203S Pyroelectric PIR Sensor (10 pcs) | 1 | $3.35 |  |
+| dht22-am2302-temperature-and-humidity-sensor-module | DHT22 (AM2302) Temperature and Humidity Sensor Module | 1 | $3.41 |  |
+| e3jk-5dm1-photoelectric-beam-sensor-switch-5-m-12-24v-dc | E3JK-5DM1 Photoelectric Beam Sensor Switch (5 m, 12-24V DC) | 1 | $4.24 |  |
+| gy-271-hmc5883l-3-axis-compass-module | GY-271 HMC5883L 3-Axis Compass Module | 1 | $1.86 |  |
+| gy-273-hmc5883l-3-axis-magnetometer-compass-module | GY-273 HMC5883L 3-Axis Magnetometer (Compass) Module | 1 | $1.62 |  |
+| gy-31-tcs3200-color-sensor-module | GY-31 TCS3200 Color Sensor Module | 1 | $2.51 |  |
+| inmp441-i2s-mems-omnidirectional-microphone-module | INMP441 I2S MEMS Omnidirectional Microphone Module | 1 | $1.74 |  |
+| ir-obstacle-avoidance-sensor-module | IR Obstacle Avoidance Sensor Module | 1 | $0.35 |  |
+| jsn-sr04t-aj-sr04m-waterproof-ultrasonic-distance-sensor | JSN-SR04T / AJ-SR04M Waterproof Ultrasonic Distance Sensor | 1 | $5.51 |  |
+| rpr220-reflective-optical-sensor-10-pcs | RPR220 Reflective Optical Sensor (10 pcs) | 1 | $1.68 |  |
+| slot-type-optocoupler-speed-sensor-module-lm393 | Slot-Type Optocoupler Speed Sensor Module (LM393) | 1 | $0.41 |  |
+| sound-detection-sensor-module-microphone-digital-out | Sound Detection Sensor Module (Microphone, Digital Out) | 1 | $0.48 |  |
+| sr602-mini-pir-motion-sensor-module-with-lens | SR602 Mini PIR Motion Sensor Module (with Lens) | 1 | $0.94 |  |
+| sw-520d-ball-tilt-switch-10-pcs | SW-520D Ball Tilt Switch (10 pcs) | 1 | $0.80 |  |
+| sw-520d-tilt-sensor-module-lm393 | SW-520D Tilt Sensor Module (LM393) | 1 | $0.56 |  |
+| vibration-shock-sensor-module-sw-18010p-lm393 | Vibration / Shock Sensor Module (SW-18010P, LM393) | 1 | $0.40 |  |
+| vs1838b-38khz-ir-receiver-10-pcs | VS1838B 38kHz IR Receiver (10 pcs) | 1 | $0.99 |  |
+| xxw-5818-vibration-shock-switch-20-pcs | XXW-5818 Vibration / Shock Switch (20 pcs) | 1 | $1.39 |  |
+
+## AliExpress - Display
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 0-91-128x32-oled-display-module-ssd1306-i2c-white | 0.91" 128x32 OLED Display Module (SSD1306, I2C, White) | 1 | $1.52 |  |
+| 10-segment-4-colour-led-bar-graph-display-10-pcs | 10-Segment 4-Colour LED Bar Graph Display (10 pcs) | 1 | $3.05 |  |
+| 8x8-red-led-dot-matrix-32mm-common-cathode-1088ab | 8x8 Red LED Dot Matrix, 32mm Common Cathode (1088AB) | 1 | $1.20 |  |
+| max7219-4-in-1-8x8-led-dot-matrix-display-module-blue | MAX7219 4-in-1 8x8 LED Dot Matrix Display Module (Blue) | 1 | $3.66 |  |
+| p3-rgb-led-matrix-panel-64x32-192x96mm-smd2121 | P3 RGB LED Matrix Panel, 64x32, 192x96mm (SMD2121) | 1 | $13.39 |  |
+| tm1637-4-digit-7-segment-led-display-module-0-56in-white | TM1637 4-Digit 7-Segment LED Display Module, 0.56in (White) | 1 | $1.04 |  |
+
+## AliExpress - LED
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 10mm-water-clear-led-assortment-5-colours | 10mm Water-Clear LED Assortment (5 colours) | 1 | $0.64 |  |
+| 12-led-piranha-white-led-board-3-5v | 12-LED Piranha White LED Board (3-5V) | 1 | $0.81 |  |
+| 3mm-led-assortment-100-pcs-5-colours | 3mm LED Assortment (100 pcs, 5 colours) | 1 | $0.90 |  |
+| 3w-high-power-led-on-20mm-star-warm-white | 3W High-Power LED on 20mm Star (Warm White) | 1 | $1.27 |  |
+| 5mm-940nm-ir-led-and-ir-receiver-diode-pairs-10-pairs | 5mm 940nm IR LED and IR Receiver Diode Pairs (10 pairs) | 3 | $1.70 |  |
+| 5mm-prewired-12v-diffused-led-kit-with-8mm-holders-10-pcs | 5mm Prewired 12V Diffused LED Kit with 8mm Holders (10 pcs) | 1 | $4.98 |  |
+| 8mm-straw-hat-white-led-0-5w-10-pcs | 8mm Straw Hat White LED, 0.5W (10 pcs) | 1 | $0.52 |  |
+| mini-bluetooth-rgb-led-strip-music-controller-5-24v | Mini Bluetooth RGB LED Strip Music Controller (5-24V) | 1 | $1.28 |  |
+| pir-motion-sensor-led-night-light-85-265v | PIR Motion Sensor LED Night Light (85-265V) | 1 | $2.90 |  |
+
+## AliExpress - Breakout Board
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 01studio-pihat-expansion-board-for-raspberry-pi-with-oled | 01Studio PiHAT Expansion Board for Raspberry Pi (with OLED) | 1 | $18.51 |  |
+| keyestudio-pcf8591-a-d-converter-module-for-raspberry-pi | Keyestudio PCF8591 A/D Converter Module for Raspberry Pi | 1 | $4.99 |  |
+
+## AliExpress - Motor/Actuator
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 716-coreless-vibration-motor-waterproof-1-5-3-7v-3-7-5v | 716 Coreless Vibration Motor, Waterproof (1.5-3.7V / 3.7-5V) | 1 | $1.54 |  |
+| 8mm-coin-vibration-motor-3v-2-pcs | 8mm Coin Vibration Motor 3V (2 pcs) | 1 | $0.39 |  |
+| a2212-1000kv-brushless-outrunner-motor | A2212 1000KV Brushless Outrunner Motor | 1 | $4.94 |  |
+| ds3218-20kg-waterproof-digital-servo-270-degree | DS3218 20kg Waterproof Digital Servo (270 Degree) | 1 | $10.10 |  |
+| dual-channel-12v-peristaltic-dosing-pump | Dual-Channel 12V Peristaltic Dosing Pump | 1 | $9.50 |  |
+| gim8108-quadruped-robot-joint-actuator-mit-mini-cheetah-styl | GIM8108 Quadruped Robot Joint Actuator (MIT Mini Cheetah style, 6:1) | 1 | $328.90 |  |
+| injora-550-brushed-motor-21t | INJORA 550 Brushed Motor 21T | 1 | $9.99 |  |
+| injora-injs025-35kg-digital-servo-270 | INJORA INJS025 35kg Digital Servo (270°) | 1 | $15.99 |  |
+| jgy370-worm-gear-motor-6v-150-rpm | JGY370 Worm Gear Motor (6V, 150 RPM) | 1 | $8.48 |  |
+| mg996r-metal-gear-digital-servo-13-15-kg-4-pcs | MG996R Metal Gear Digital Servo (13-15 kg, 4 pcs) | 1 | $17.64 |  |
+| nidec-25mm-geared-stepper-motor-2-phase-1-12 | Nidec 25mm Geared Stepper Motor (2-Phase, 1:12) | 1 | $1.37 |  |
+| open-smart-5v-electromagnet-module-10n-holding | OPEN-SMART 5V Electromagnet Module (10N Holding) | 1 | $4.20 |  |
+| sg90-mg90s-9g-micro-servo | SG90 / MG90S 9g Micro Servo | 1 | $1.69 |  |
+| stepperonline-nema-17-short-body-stepper-17hs08-1004s-16ncm | STEPPERONLINE Nema 17 Short-Body Stepper 17HS08-1004S (16Ncm) | 1 | $7.99 |  |
+| vibration-motor-module-5v | Vibration Motor Module (5V) | 1 | $0.52 |  |
+| vibration-motor-module-5v-2 | Vibration Motor Module (5V) (2) | 1 | $0.51 |  |
+
+## AliExpress - Motor Driver/ESC
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 20a-brushed-esc-with-brake-2s | 20A Brushed ESC with Brake (2S) | 1 | $3.28 |  |
+| 3-channel-servo-esc-tester-ccpm | 3-Channel Servo / ESC Tester (CCPM) | 1 | $1.75 |  |
+| digital-display-pwm-dc-motor-speed-controller-40a | Digital Display PWM DC Motor Speed Controller (40A) | 1 | $5.26 |  |
+| drv8833-dual-channel-dc-motor-driver-module-1-5a | DRV8833 Dual-Channel DC Motor Driver Module (1.5A) | 1 | $0.67 |  |
+| hobbywing-quicrun-1060-60a-brushed-esc-1-10-rc | HobbyWing QuicRun 1060 60A Brushed ESC (1/10 RC) | 1 | $21.31 |  |
+| keyestudio-pca9685-16-channel-servo-driver-shield | Keyestudio PCA9685 16-Channel Servo Driver Shield | 1 | $7.19 |  |
+| mini-20a-brushed-esc-forward-reverse-with-brake-2s | Mini 20A Brushed ESC, Forward/Reverse with Brake (2S) | 1 | $3.03 |  |
+| pwm-dc-motor-speed-controller-10-60v-20a | PWM DC Motor Speed Controller (10-60V, 20A) | 1 | $3.26 |  |
+| pwm-dc-motor-speed-controller-with-display-10-55v-40a | PWM DC Motor Speed Controller with Display (10-55V, 40A) | 1 | $11.35 |  |
+| red-brick-50a-brushless-esc-2-3s-5v-bec | Red Brick 50A Brushless ESC (2-3S, 5V BEC) | 1 | $13.38 |  |
+
+## AliExpress - Switch/Button
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 16mm-metal-latching-push-button-with-blue-ring-led-6v | 16mm Metal Latching Push Button with Blue Ring LED (6V) | 1 | $1.27 |  |
+| 16mm-rgb-led-latching-toggle-switch-spst-ip67-12-24v | 16mm RGB LED Latching Toggle Switch, SPST, IP67 (12-24V) | 1 | $4.99 |  |
+| bathroom-mirror-touch-switch-for-led-lights-5-12v | Bathroom Mirror Touch Switch for LED Lights (5-12V) | 1 | $3.35 |  |
+| capacitive-touch-switch-module-httm-rgb-flash | Capacitive Touch Switch Module (HTTM, RGB Flash) | 1 | $0.66 |  |
+| daiertek-16mm-ip67-rgb-led-toggle-switch-spst-12v | Daiertek 16mm IP67 RGB LED Toggle Switch (SPST, 12V) | 1 | $4.99 |  |
+| ec11-rotary-encoder-360-degree-5-pcs | EC11 Rotary Encoder, 360 Degree (5 pcs) | 1 | $2.33 |  |
+| lanboo-16mm-metal-toggle-button-switch-with-led-ring-latchin | LANBOO 16mm Metal Toggle Button Switch with LED Ring, Latching | 1 | $0.60 |  |
+| lanboo-22mm-15a-metal-push-button-switch-ip67 | LANBOO 22mm 15A Metal Push Button Switch, IP67 | 1 | $0.60 |  |
+| mts-102-103-202-203-mini-toggle-switches-6mm-5-10-pcs | MTS-102/103/202/203 Mini Toggle Switches, 6mm (5/10 pcs) | 1 | $2.11 |  |
+
+## AliExpress - Audio
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 12v-85db-mini-electronic-alarm-buzzer | 12V 85dB Mini Electronic Alarm Buzzer | 1 | $0.75 |  |
+| 5v-active-buzzer-12x9-5mm-10-pcs | 5V Active Buzzer, 12x9.5mm (10 pcs) | 1 | $1.35 |  |
+| aiyima-44mm-8-ohm-20w-full-range-vibration-speaker | AIYIMA 44mm 8 Ohm 20W Full-Range Vibration Speaker | 1 | $13.32 |  |
+| mini-pcb-mount-speaker-8-0-5w | Mini PCB-Mount Speaker 8Ω 0.5W | 1 | $1.40 |  |
+| qolelarm-120db-wired-mini-siren-6-12v-dc | Qolelarm 120dB Wired Mini Siren (6-12V DC) | 1 | $2.75 |  |
+
+## AliExpress - Wireless/RF
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 315mhz-rf-transmitter-and-receiver-module-pair | 315MHz RF Transmitter and Receiver Module Pair | 1 | $0.75 |  |
+| 433mhz-1-channel-12v-relay-receiver-with-rf-remote | 433MHz 1-Channel 12V Relay Receiver with RF Remote | 1 | $3.40 |  |
+| 433mhz-4-button-cloning-remote-control | 433MHz 4-Button Cloning Remote Control | 1 | $1.79 |  |
+| cdm324-24ghz-microwave-radar-motion-sensor-module | CDM324 24GHz Microwave Radar Motion Sensor Module | 1 | $3.60 |  |
+| lilygo-t-micro32-plus-esp32-module-8mb-flash-2mb-psram | LILYGO T-Micro32 Plus ESP32 Module (8MB Flash, 2MB PSRAM) | 1 | $6.98 |  |
+| sim800l-quad-band-gsm-gprs-module-micro-sim | SIM800L Quad-Band GSM/GPRS Module (Micro SIM) | 1 | $1.82 |  |
+
+## AliExpress - Component
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 2-channel-12v-relay-module-with-optocoupler | 2-Channel 12V Relay Module with Optocoupler | 1 | $1.38 |  |
+| aluminium-electrolytic-capacitor-kit-120-pcs-0-22-470-f | Aluminium Electrolytic Capacitor Kit (120 pcs, 0.22-470 µF) | 1 | $1.44 |  |
+| aluminum-electrolytic-capacitor-kit-0-1-1000uf-24-values-500 | Aluminum Electrolytic Capacitor Kit, 0.1-1000uF, 24 values (500 pcs) | 2 | $15.80 |  |
+| gl5528-photoresistor-ldr-20-pcs | GL5528 Photoresistor LDR (20 pcs) | 1 | $0.48 |  |
+| hk19f-12v-sealed-pcb-relay-5-pcs | HK19F 12V Sealed PCB Relay (5 pcs) | 1 | $2.69 |  |
+| jccon-low-esr-electrolytic-capacitor-kit-1-470uf-15-values-2 | JCCON Low-ESR Electrolytic Capacitor Kit, 1-470uF, 15 values (225 pcs) | 1 | $8.18 |  |
+| polyester-film-capacitor-kit-24-values-100v-660-pcs | Polyester Film Capacitor Kit, 24 values, 100V (660 pcs) | 1 | $18.84 |  |
+| rm065-trimmer-potentiometer-kit-500-ohm-1m-100-pcs | RM065 Trimmer Potentiometer Kit, 500 Ohm-1M (100 pcs) | 1 | $5.94 |  |
+| srd-12vdc-sl-c-12v-pcb-power-relay-5-pcs | SRD-12VDC-SL-C 12V PCB Power Relay (5 pcs) | 1 | $1.72 |  |
+| tec1-12712-peltier-thermoelectric-cooler-40x40mm-12a | TEC1-12712 Peltier Thermoelectric Cooler (40x40mm, 12A) | 1 | $3.17 |  |
+
+## AliExpress - Cable/Connector
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| fpc-ffc-adapter-board-0-5mm-pitch-30-pin | FPC/FFC Adapter Board, 0.5mm pitch, 30-pin | 3 | $0.73 |  |
+| fpc-ffc-adapter-board-1-0mm-pitch-30-pin | FPC/FFC Adapter Board, 1.0mm pitch, 30-pin | 3 | $0.77 |  |
+| kf141r-2-pin-2-54mm-spring-terminal-block-5-pcs | KF141R 2-Pin 2.54mm Spring Terminal Block (5 pcs) | 1 | $0.75 |  |
+| kf301-3p-5-08mm-3-pin-screw-terminal-block-10-pcs | KF301-3P 5.08mm 3-Pin Screw Terminal Block (10 pcs) | 1 | $0.64 |  |
+| silicone-hookup-wire-kit-22awg-box-1-5-colours-30-m | Silicone Hookup Wire Kit 22AWG (Box 1, 5 colours, 30 m) | 1 | $13.90 |  |
+
+## AliExpress - Power
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 12v-battery-undervoltage-cut-off-relay-module-yx-x0001 | 12V Battery Undervoltage Cut-off Relay Module (YX-X0001) | 1 | $1.97 |  |
+| 15kv-high-voltage-arc-ignition-generator-kit-3-7v | 15kV High-Voltage Arc Ignition Generator Kit (3.7V) | 1 | $1.46 |  |
+| 3s-18650-power-wall-battery-holder-board-3s2p-no-bms | 3S 18650 Power Wall Battery Holder Board, 3S2P (no BMS) | 1 | $11.25 |  |
+| 3s-40a-li-ion-bms-protection-board-enhanced-18650 | 3S 40A Li-ion BMS Protection Board, Enhanced (18650) | 1 | $0.99 |  |
+| 400kv-high-voltage-pulse-generator-module-3-7-6v | 400kV High-Voltage Pulse Generator Module (3.7-6V) | 1 | $1.79 |  |
+| 4s-40a-li-ion-bms-protection-board-balanced-18650 | 4S 40A Li-ion BMS Protection Board, Balanced (18650) | 3 | $1.47 |  |
+| ams1117-3-3-ldo-voltage-regulator-ic-20-pcs | AMS1117-3.3 LDO Voltage Regulator IC (20 pcs) | 1 | $1.42 |  |
+| ams1117-5-0-ldo-voltage-regulator-ic-20-pcs | AMS1117-5.0 LDO Voltage Regulator IC (20 pcs) | 1 | $1.42 |  |
+| diymore-18650-battery-shield-v3-usb-power-board | diymore 18650 Battery Shield V3 (USB Power Board) | 1 | $1.72 |  |
+| dual-18650-battery-shield-v8-5v-3a-3v-1a | Dual 18650 Battery Shield V8 (5V/3A, 3V/1A) | 1 | $7.18 |  |
+| isdt-pd60-60w-lipo-balance-charger-usb-c-input | ISDT PD60 60W LiPo Balance Charger (USB-C Input) | 1 | $23.56 |  |
+| lm2596-adjustable-step-down-converter-module | LM2596 Adjustable Step-Down Converter Module | 1 | $2.39 |  |
+| sx1308-adjustable-boost-converter-2-24v-to-2-28v-2a | SX1308 Adjustable Boost Converter (2-24V to 2-28V, 2A) | 1 | $0.40 |  |
+| usb-c-18650-li-ion-charger-board-with-protection-5v-1a-10-pc | USB-C 18650 Li-ion Charger Board with Protection, 5V 1A (10 pcs) | 1 | $6.87 |  |
+| usb-fast-charge-step-down-module-qc3-0-pd-8-32v-in-20w | USB Fast-Charge Step-Down Module, QC3.0/PD (8-32V in, 20W) | 1 | $4.08 |  |
+
+## AliExpress - Battery
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| hrb-2s-7-4v-5200mah-50c-lipo-battery-t-plug-hard-case | HRB 2S 7.4V 5200mAh 50C LiPo Battery (T Plug, Hard Case) | 1 | $27.96 |  |
+| hrb-3s-11-1v-2600mah-35c-lipo-battery-xt60 | HRB 3S 11.1V 2600mAh 35C LiPo Battery (XT60) | 1 | $21.12 |  |
+| liitokala-lii-31s-18650-li-ion-cell-3100mah-35a | LiitoKala Lii-31S 18650 Li-ion Cell (3100mAh, 35A) | 1 | $7.25 |  |
+| ncr18650b-3400mah-18650-li-ion-cell-2-pcs | NCR18650B 3400mAh 18650 Li-ion Cell (2 pcs) | 1 | $7.80 |  |
+
+## AliExpress - Kit
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| a2212-1000kv-brushless-motor-30a-esc-and-sg90-servo-set | A2212 1000KV Brushless Motor, 30A ESC and SG90 Servo Set | 1 | $13.29 |  |
+| single-axis-solar-tracker-module-light-seeking | Single-Axis Solar Tracker Module (Light-Seeking) | 1 | $2.90 |  |
+
+## AliExpress - Tool
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| fnirsi-multi-purpose-transistor-lcr-tester-tft | FNIRSI Multi-Purpose Transistor / LCR Tester (TFT) | 1 | $15.10 |  |
+| portable-12v-spot-welder-pcb-for-18650-nickel-strip-v7 | Portable 12V Spot Welder PCB for 18650 Nickel Strip (V7) | 1 | $8.50 |  |
+| portable-led-tester-box-2-150-ma | Portable LED Tester Box (2-150 mA) | 1 | $3.28 |  |
+| smd-test-clip-tweezer-probe-for-lcr-testers | SMD Test Clip / Tweezer Probe for LCR Testers | 1 | $1.87 |  |
+
+---
+
+# Amazon Products
+
+## Amazon - Microcontroller
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| arduino-uno-rev3-a000066 | Arduino UNO Rev3 (A000066) | 1 | $26.95 |  |
+
+---
+
+# Orbtronic Products
+
+## Orbtronic - Battery
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| samsung-35e-18650-li-ion-cell-3500mah-flat-top-inr18650-35e | Samsung 35E 18650 Li-ion Cell, 3500mAh, Flat Top (INR18650-35E) | 1 | $9.99 |  |
+
+---
+
+# Battery Junction Products
+
+## Battery Junction - Battery
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| samsung-35e-18650-li-ion-cell-3500mah-flat-top | Samsung 35E 18650 Li-ion Cell, 3500mAh, Flat Top | 1 | $8.70 |  |
+
+---
+
+# Voltaplex Products
+
+## Voltaplex - Battery
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| lg-b4-18650-li-ion-cell-2600mah-3-75a | LG B4 18650 Li-ion Cell, 2600mAh, 3.75A | 1 | — |  |
+
+---
+
+# Home Depot Products
+
+## Home Depot - Accessory
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| general-tools-1-4-in-x-1-13-in-fluted-dowel-pins-72-pcs | General Tools 1/4 in. x 1.13 in. Fluted Dowel Pins (72 pcs) | 1 | $3.28 |  |

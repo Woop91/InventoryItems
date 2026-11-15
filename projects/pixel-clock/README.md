@@ -5,6 +5,7 @@ A pixel-art desk clock in the style of the Ulanzi-type clocks: an icon on the le
 - Raspberry Pi 4 Model B
 - Adafruit RGB Matrix HAT + RTC
 - P3 RGB LED matrix panel, 64x32 (HUB75)
+- SparkFun Qwiic pHAT with an SCD41 CO2 sensor (0x62) and an AHT10 temperature and humidity sensor (0x38)
 
 ![Screens](preview.png)
 
@@ -13,6 +14,7 @@ A pixel-art desk clock in the style of the Ulanzi-type clocks: an icon on the le
 | Screen | What it shows |
 |---|---|
 | Clock | Big time with a blinking colon, seconds, the date, the outdoor temperature, a weekday bar. The top-right pixel pulses cyan while T3 agents work and blinks amber when a thread needs you. |
+| Indoor air | CO2 from the SCD41 (green under 800 ppm, amber to 1200, red above, with a level bar), room temperature and humidity from the AHT10. A pop-up says to open a window when CO2 passes 1200 ppm. |
 | Weather | Condition icon, temperature, high and low (Open-Meteo, refreshed every 15 minutes, no API key). Rain and snow fall under the icon. |
 | T3 agents | How many agent runs are going, and how many of your threads finished today. |
 | T3 needs you | Replaces the agents screen when a thread is waiting on an approval or question, with the thread title scrolling. |
@@ -69,5 +71,9 @@ python3 -m pixelclock.app --backend null --config test.json   # then open http:/
 ```
 
 ## Panel settings
+
+Flicker: the defaults (8-bit color, 60 ns pulses, GPIO slowdown 3, refresh capped at 360 Hz) were measured with `tools/refresh_test.py` on a Pi 4 at full speed. A weak power supply makes the Pi throttle to 600 MHz and the refresh rate falls to about 130 Hz, which flickers; `vcgencmd get_throttled` shows it. Power the Pi from its own supply and the panel through the HAT's barrel jack.
+
+`indoor_temp_offset_c` corrects the room temperature if the sensors sit close enough to the Pi to read warm.
 
 `/etc/pixelclock.json` on the Pi overrides the defaults in `pixelclock/app.py`: `hardware_mapping` (`adafruit-hat`, or `adafruit-hat-pwm` if the HAT's PWM jumper is soldered), `gpio_slowdown`, brightness, night hours, `hour24`, `units`, `latitude` and `longitude`, `led_rgb_sequence` if colors come out swapped, and the screen rotation.

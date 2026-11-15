@@ -24,8 +24,12 @@ DEFAULTS = {
     "rows": 32,
     "cols": 64,
     "hardware_mapping": "adafruit-hat",
-    "gpio_slowdown": 4,
-    "brightness_day": 70,
+    # Measured on the Pi 4 with a proper supply: a steady 360 Hz, no visible flicker
+    "gpio_slowdown": 3,
+    "pwm_bits": 8,
+    "pwm_lsb_nanoseconds": 60,
+    "limit_refresh_rate_hz": 360,
+    "brightness_day": 20,
     "brightness_night": 12,
     "night_start": 22,
     "night_end": 7,
@@ -36,7 +40,10 @@ DEFAULTS = {
     "token": "",
     "latitude": None,
     "longitude": None,
-    "rotation": [["clock", 25], ["weather", 7], ["t3", 7], ["clock", 20], ["reminder", 6], ["system", 6]],
+    "rotation": [["clock", 25], ["indoor", 7], ["weather", 7], ["t3", 7], ["clock", 20], ["indoor", 7],
+                 ["reminder", 6], ["system", 6]],
+    "indoor_temp_offset_c": 0.0,  # subtract sensor self-heating, e.g. -3.0
+    "co2_alert_ppm": 1200,
     "fps": 30,
 }
 
@@ -207,6 +214,38 @@ def weather_loop(state, cfg, stop):
             stop.wait(120)
 
 
+def sensor_loop(state, cfg, stop, scd, aht):
+    """Read the SCD41 and AHT sensors every 5 s; pop up once when CO2 crosses the alert level."""
+    off = cfg.get("indoor_temp_offset_c", 0.0)
+    alert = cfg.get("co2_alert_ppm", 1200)
+    alerted = False
+    last = {}
+    while not stop.is_set():
+        try:
+            if scd:
+                r = scd.read()
+                if r:
+                    last["co2"] = r[0]
+                    last.setdefault("temp", r[1] + off)
+                    last.setdefault("hum", r[2])
+            if aht:
+                t, h = aht.read()
+                last["temp"], last["hum"] = t + off, h
+            if last:
+                state.merge({"indoor": dict(last)})
+            co2 = last.get("co2")
+            if co2 is not None:
+                if co2 >= alert and not alerted:
+                    alerted = True
+                    state.notify({"icon": "window", "title": "Air is stale", "text": f"CO2 {co2} ppm. Open a window!",
+                                  "color": [255, 170, 0], "duration": 10})
+                elif co2 < alert - 150:
+                    alerted = False
+        except Exception as e:
+            state.merge({"sensor_error": {"error": str(e)[:200]}})
+        stop.wait(5)
+
+
 def make_handler(state, cfg):
     token = cfg.get("token") or ""
 
@@ -274,11 +313,22 @@ def main():
     ap.add_argument("--config", default="/etc/pixelclock.json")
     ap.add_argument("--backend", choices=["matrix", "null"], default="matrix")
     ap.add_argument("--no-weather", action="store_true")
+    ap.add_argument("--no-sensors", action="store_true")
     args = ap.parse_args()
     cfg = load_cfg(args.config)
     state = State()
     stop = threading.Event()
+    # Open I2C before the matrix library drops root privileges; the open handle keeps working after
+    scd = aht = None
+    if not args.no_sensors:
+        from .sensors import open_sensors
+        try:
+            _bus, scd, aht = open_sensors()
+        except OSError:
+            pass
     backend = MatrixBackend(cfg) if args.backend == "matrix" else NullBackend()
+    if scd or aht:
+        threading.Thread(target=sensor_loop, args=(state, cfg, stop, scd, aht), daemon=True).start()
     srv = ThreadingHTTPServer(("0.0.0.0", cfg["port"]), make_handler(state, cfg))
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     if not args.no_weather:

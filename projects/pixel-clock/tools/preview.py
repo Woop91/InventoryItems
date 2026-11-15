@@ -23,12 +23,16 @@ state = {
     "t3": {"running": 7, "waiting": 0, "done_today": 23, "ts": ts},
     "system": {"cpu": 42, "gpu": 77, "mem": 61, "gpu_temp": 64, "ts": ts},
     "reminder": {"when": "9:00", "ampm": "PM", "text": "Check the release plan", "ts": ts},
+    "indoor": {"co2": 779, "temp": 22.4, "hum": 41, "ts": ts},
 }
 waiting = dict(state, t3={"running": 5, "waiting": 2, "done_today": 9, "ts": ts,
                          "waiting_titles": ["Sunday release plan"]})
 cfg = dict(DEFAULTS)
 frames = [
     ("clock", scenes.scene_clock(state, now, 0, cfg)),
+    ("indoor air", scenes.scene_indoor(state, now, 0, cfg)),
+    ("indoor air, stale", scenes.scene_indoor(dict(state, indoor={"co2": 1460, "temp": 23.5, "hum": 48, "ts": ts}),
+                                              now, 0, cfg)),
     ("weather", scenes.scene_weather(state, now, 0.3, cfg)),
     ("t3 agents", scenes.scene_t3(state, now, 0.2, cfg)),
     ("t3 needs you", scenes.scene_t3(waiting, now, 0.2, cfg)),

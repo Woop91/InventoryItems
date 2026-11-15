@@ -225,6 +225,45 @@ def scene_reminder(state, now, t, cfg):
     return img
 
 
+def co2_color(ppm):
+    if ppm < 800:
+        return GREEN
+    if ppm < 1200:
+        return AMBER
+    return RED
+
+
+def scene_indoor(state, now, t, cfg):
+    s = state.get("indoor")
+    if not s or time.time() - s.get("ts", 0) > 120:
+        return None
+    img = blank()
+    co2 = s.get("co2")
+    if co2 is not None:
+        col = co2_color(co2)
+        draw_icon(img, 1, 4, "leaf" if co2 < 1200 else "window", scale=3)
+        v = str(int(co2))
+        if len(v) <= 3:
+            draw_big(img, 28, 1, v, col, sx=2, sy=2)
+        else:  # 4 digits: narrower
+            draw_big(img, 28, 1, v, col, sx=1, sy=2)
+        draw_text(img, 28, 17, "CO2", (160, 160, 170), font=SMALL)
+        draw_text(img, 50, 17, "PPM", col, font=SMALL)
+        # Level bar: 400 to 2000 ppm
+        n = int(max(0, min(1, (co2 - 400) / 1600)) * 35)
+        for x in range(28, 63):
+            img.putpixel((x, 23), col if x - 28 < n else (30, 30, 35))
+    else:
+        draw_icon(img, 1, 4, "leaf", scale=3)
+    if s.get("temp") is not None:
+        units = cfg.get("units", "F")
+        tt = s["temp"] if units == "C" else s["temp"] * 9 / 5 + 32
+        draw_text(img, 28, 26, f"{round(tt)}°", AMBER, font=SMALL)
+    if s.get("hum") is not None:
+        draw_text(img, 46, 26, f"{round(s['hum'])}%", CYAN, font=SMALL)
+    return img
+
+
 def _ticker(img, y, text, color, t, x0=0, speed=14):
     """Scroll text within [x0, 64) on row y (SMALL font)."""
     tw = text_width(text, SMALL)
@@ -310,5 +349,6 @@ SCENES = {
     "weather": scene_weather,
     "t3": scene_t3,
     "reminder": scene_reminder,
+    "indoor": scene_indoor,
     "system": scene_system,
 }

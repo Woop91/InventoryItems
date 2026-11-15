@@ -18,7 +18,14 @@ done
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get install -y --no-install-recommends git build-essential python3-dev python3-pil \
-    python3-setuptools python3-pip cython3 cmake ninja-build avahi-daemon iw
+    python3-setuptools python3-pip cython3 cmake ninja-build avahi-daemon iw \
+    i2c-tools python3-smbus2
+
+# I2C for the sensors on the Qwiic pHAT (SCD41, AHT10/AHT20)
+sed -i 's/^#dtparam=i2c_arm=on/dtparam=i2c_arm=on/' /boot/firmware/config.txt
+echo i2c-dev > /etc/modules-load.d/i2c.conf
+modprobe i2c-dev || true
+dtparam i2c_arm=on 2>/dev/null || true
 
 # rgbmatrix library (hzeller), Python bindings
 if ! python3 -c "import rgbmatrix" 2>/dev/null; then

@@ -1,0 +1,12 @@
+[Unit]
+Description=Feed T3 status, desktop notifications and system load to the pixel clock
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python3 -I %h/.local/share/pixelclock/pixel_bridge.py
+Restart=always
+RestartSec=10
+Nice=10
+
+[Install]
+WantedBy=default.target

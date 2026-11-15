@@ -1,0 +1,14 @@
+[Unit]
+Description=Pixel clock on the 64x32 RGB matrix
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/opt/pixelclock
+ExecStart=/usr/bin/python3 -u -m pixelclock.app --config /etc/pixelclock.json
+Restart=always
+RestartSec=3
+Nice=-10
+
+[Install]
+WantedBy=multi-user.target

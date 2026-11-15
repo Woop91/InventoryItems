@@ -212,7 +212,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 
 ## Parts I'm using
 
-50 parts, each with my own photos in `images/my-photos/`.
+51 parts, each with my own photos in `images/my-photos/`.
 
 | Product | Category | Store | My photos |
 |---------|----------|-------|----------:|
@@ -239,6 +239,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | LED Dot Matrix Breakout - Green | Display | Pimoroni | 3 |
 | P3 RGB LED Matrix Panel, 64x32, 192x96mm (SMD2121) | Display | AliExpress | 1 |
 | Scroll pHAT HD - Yellow | Display | Pimoroni | 2 |
+| Waveshare 10.4inch QLED Quantum Dot Display, Capacitive Touch, 1600x720, HDMI | Display | Waveshare | 3 |
 | Adafruit RGB Matrix FeatherWing | FeatherWing | Store not recorded | 3 |
 | Adafruit QT Py   SAMD21 Dev Board with STEMMA QT | Microcontroller | Adafruit | 7 |
 | Adafruit QT Py ESP32 S2 WiFi Dev Board with uFL Antenna Port | Microcontroller | Adafruit | 9 |

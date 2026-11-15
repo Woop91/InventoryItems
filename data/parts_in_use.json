@@ -489,5 +489,13 @@
       "IMG_5831.jpg"
     ],
     "note": "Soldered to the Adafruit DRV2605L. Store not certain: AliExpress or Pimoroni."
+  },
+  {
+    "key": "waveshare_10.4HP-CAPQLED",
+    "photos": [
+      "waveshare-10-4hp-1.jpg",
+      "waveshare-10-4hp-2.jpg",
+      "waveshare-10-4hp-3.jpg"
+    ]
   }
 ]

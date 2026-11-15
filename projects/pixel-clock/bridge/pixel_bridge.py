@@ -249,13 +249,40 @@ def next_reminder():
             "text": text[:80] or owner}
 
 
+LOG_MIRROR = Path.home() / ".local/share/pixelclock/logs"
+
+
+def mirror_logs(panel):
+    """Copy the Pi's monthly sensor CSVs here, so the readings survive the SD card."""
+    LOG_MIRROR.mkdir(parents=True, exist_ok=True)
+    with urllib.request.urlopen(panel.base + "/log", timeout=10) as r:
+        names = json.load(r)
+    for name in names:
+        if "/" in name or not name.endswith(".csv"):
+            continue
+        dest = LOG_MIRROR / name
+        with urllib.request.urlopen(panel.base + "/log/" + name, timeout=30) as r:
+            data = r.read()
+        # The Pi's file only grows; never replace a longer local copy with a shorter one
+        if not dest.exists() or len(data) >= dest.stat().st_size:
+            tmp = dest.with_suffix(".tmp")
+            tmp.write_bytes(data)
+            tmp.replace(dest)
+
+
 def main():
     panel = Panel()
     t3 = T3Watch(panel)
     sysmon = Sys()
     threading.Thread(target=desktop_notifications, args=(panel,), daemon=True).start()
-    last_rem = 0
+    last_rem = last_mirror = 0
     while True:
+        if time.time() - last_mirror > 600:
+            last_mirror = time.time()
+            try:
+                mirror_logs(panel)
+            except Exception as e:
+                log("log mirror error:", e)
         try:
             t3.tick()
         except Exception as e:

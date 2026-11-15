@@ -214,14 +214,63 @@ def weather_loop(state, cfg, stop):
             stop.wait(120)
 
 
+class MinuteLog:
+    """Append one line per minute (averages of the 5 s readings) to a monthly CSV.
+
+    Columns: time (Eastern), CO2 ppm, room temperature F, humidity %, outdoor temperature F.
+    """
+
+    HEADER = "time_et,co2_ppm,temp_f,humidity_pct,outdoor_f\n"
+
+    def __init__(self, cfg):
+        self.dir = cfg.get("log_dir", "/var/lib/pixelclock")
+        self.tz = ZoneInfo(cfg["timezone"])
+        self.minute = None
+        self.samples = []
+
+    def add(self, reading, weather):
+        now = datetime.now(self.tz)
+        minute = now.replace(second=0, microsecond=0)
+        if self.minute is not None and minute != self.minute and self.samples:
+            self.write(self.minute, weather)
+            self.samples = []
+        self.minute = minute
+        if reading:
+            self.samples.append(dict(reading))
+
+    def write(self, minute, weather):
+        def avg(k):
+            v = [s[k] for s in self.samples if s.get(k) is not None]
+            return sum(v) / len(v) if v else None
+
+        co2, t, h = avg("co2"), avg("temp"), avg("hum")
+        out = (weather or {}).get("temp")
+        row = [minute.strftime("%Y-%m-%d %H:%M"),
+               "" if co2 is None else f"{co2:.0f}",
+               "" if t is None else f"{t * 9 / 5 + 32:.1f}",
+               "" if h is None else f"{h:.1f}",
+               "" if out is None else f"{out:.1f}"]
+        path = os.path.join(self.dir, f"indoor-{minute:%Y-%m}.csv")
+        try:
+            new = not os.path.exists(path)
+            with open(path, "a") as f:
+                if new:
+                    f.write(self.HEADER)
+                f.write(",".join(row) + "\n")
+        except OSError:
+            pass
+
+
 def sensor_loop(state, cfg, stop, scd, aht):
     """Read the SCD41 and AHT sensors every 5 s; pop up once when CO2 crosses the alert level."""
     off = cfg.get("indoor_temp_offset_c", 0.0)
     alert = cfg.get("co2_alert_ppm", 1200)
     alerted = False
     last = {}
+    log = MinuteLog(cfg)
     while not stop.is_set():
         try:
+            log.add(last, state.snapshot().get("weather"))
             if scd:
                 r = scd.read()
                 if r:
@@ -273,6 +322,23 @@ def make_handler(state, cfg):
                 s["current"] = state.current
                 s["queued"] = len(state.queue)
                 return self._send(200, s)
+            if self.path.startswith("/log"):
+                # /log lists the monthly files; /log/indoor-2026-11.csv downloads one
+                d = cfg.get("log_dir", "/var/lib/pixelclock")
+                name = self.path[len("/log"):].lstrip("/").split("?")[0]
+                if not name:
+                    try:
+                        files = sorted(f for f in os.listdir(d) if f.endswith(".csv"))
+                    except OSError:
+                        files = []
+                    return self._send(200, files)
+                if "/" in name or not name.endswith(".csv"):
+                    return self._send(400, {"error": "bad name"})
+                try:
+                    with open(os.path.join(d, name), "rb") as f:
+                        return self._send(200, f.read(), "text/csv")
+                except OSError:
+                    return self._send(404, {"error": "no such log"})
             if self.path in ("/", "/index.html"):
                 html = (b"<!doctype html><meta name=viewport content='width=device-width'>"
                         b"<title>Pixel clock</title><body style='margin:0;background:#111'>"
@@ -333,7 +399,6 @@ def main():
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     if not args.no_weather:
         threading.Thread(target=weather_loop, args=(state, cfg, stop), daemon=True).start()
-    state.notify({"icon": "heart", "title": "Pixel clock", "text": "Hello!", "color": [255, 60, 170]})
     try:
         run_loop(state, backend, cfg, stop)
     except KeyboardInterrupt:

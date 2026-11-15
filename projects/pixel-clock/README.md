@@ -76,7 +76,7 @@ python3 -m pixelclock.app --backend null --config test.json   # then open http:/
 
 ## Panel settings
 
-Flicker: the defaults (8-bit color, 60 ns pulses, GPIO slowdown 3, refresh capped at 360 Hz) were measured with `tools/refresh_test.py` on a Pi 4 at full speed. A weak power supply makes the Pi throttle to 600 MHz and the refresh rate falls to about 130 Hz, which flickers; `vcgencmd get_throttled` shows it. Power the Pi from its own supply and the panel through the HAT's barrel jack.
+Flicker: the defaults (8-bit color, 100 ns pulses, GPIO slowdown 3, refresh capped at 240 Hz, pure greens, interrupts kept off the matrix core with `irqaffinity=0-2`) were measured with `tools/refresh_test.py` on a Pi 4 at full speed. A weak power supply makes the Pi throttle to 600 MHz and the refresh rate falls to about 130 Hz, which flickers; `vcgencmd get_throttled` shows it. Power the Pi from its own supply and the panel through the HAT's barrel jack.
 
 `indoor_temp_offset_c` corrects the room temperature if the sensors sit close enough to the Pi to read warm.
 

@@ -60,6 +60,9 @@ for s in bluetooth hciuart ModemManager triggerhappy cups; do
   systemctl disable --now "$s" 2>/dev/null || true
 done
 
+# Sensor log (the app runs as 'daemon' after the matrix library drops root)
+install -d -o daemon -g daemon -m 755 /var/lib/pixelclock
+
 install -m 644 "$DEST/pi/pixelclock.service" /etc/systemd/system/pixelclock.service
 systemctl daemon-reload
 systemctl enable pixelclock.service

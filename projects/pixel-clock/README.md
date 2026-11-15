@@ -22,7 +22,11 @@ A pixel-art desk clock in the style of the Ulanzi-type clocks: an icon on the le
 | Desktop | CPU, GPU and memory load and GPU temperature on the workstation. |
 | Pop-ups | Slide in over any screen: T3 thread finished (green), failed (red), needs you (amber), and every desktop notification (purple). |
 
-Screens without fresh data are skipped. The panel dims from 10 PM to 7 AM.
+Screens without fresh data are skipped.
+
+## Sensor log
+
+Every minute the Pi appends the averages of its readings to `/var/lib/pixelclock/indoor-YYYY-MM.csv` (columns `time_et, co2_ppm, temp_f, humidity_pct, outdoor_f`). `GET /log` lists the files and `GET /log/indoor-2026-11.csv` downloads one. The bridge copies them to `~/.local/share/pixelclock/logs/` on the workstation every 10 minutes, so the history survives the SD card. The panel dims from 10 PM to 7 AM.
 
 ## How it fits together
 

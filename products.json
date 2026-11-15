@@ -4476,7 +4476,13 @@
     ],
     "source": "waveshare.com",
     "last_scraped": null,
-    "image_source_url": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/1/0/10.4hp-capqled-1.jpg"
+    "image_source_url": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/1/0/10.4hp-capqled-1.jpg",
+    "in_use": true,
+    "my_photos": [
+      "images/my-photos/waveshare-10-4hp-1.jpg",
+      "images/my-photos/waveshare-10-4hp-2.jpg",
+      "images/my-photos/waveshare-10-4hp-3.jpg"
+    ]
   },
   "sparkfun_ROB-16836": {
     "product_id": "ROB-16836",

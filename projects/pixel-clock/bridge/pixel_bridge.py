@@ -20,6 +20,7 @@ import sqlite3
 import subprocess
 import threading
 import time
+from contextlib import closing
 import urllib.request
 from datetime import datetime
 from pathlib import Path
@@ -116,7 +117,7 @@ class T3Watch:
         today = datetime.now(ET).strftime("%Y-%m-%d")
         if self.counts.get("day") != today:
             self.counts = {"day": today, "done": 0, "failed": 0}
-        with self.con() as c:
+        with closing(self.con()) as c:  # close every tick; sqlite's own context manager does not
             running = {r[0] for r in c.execute(
                 "select distinct thread_id from orchestration_v2_projection_runs "
                 "where status in (%s)" % ",".join("?" * len(IN_PROGRESS)), IN_PROGRESS)}

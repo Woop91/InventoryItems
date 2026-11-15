@@ -24,11 +24,11 @@ DEFAULTS = {
     "rows": 32,
     "cols": 64,
     "hardware_mapping": "adafruit-hat",
-    # Measured on the Pi 4 with a proper supply: a steady 360 Hz, no visible flicker
+    # Measured on the Pi 4 with a proper supply: a steady 240 Hz; 100 ns pulses keep dim colours steady
     "gpio_slowdown": 3,
     "pwm_bits": 8,
-    "pwm_lsb_nanoseconds": 60,
-    "limit_refresh_rate_hz": 360,
+    "pwm_lsb_nanoseconds": 100,
+    "limit_refresh_rate_hz": 240,
     "brightness_day": 20,
     "brightness_night": 12,
     "night_start": 22,

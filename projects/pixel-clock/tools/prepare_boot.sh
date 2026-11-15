@@ -48,7 +48,7 @@ EOF
 umask 022
 
 touch "$B/ssh"
-grep -q "isolcpus=3" "$B/cmdline.txt" || sed -i 's/$/ isolcpus=3/' "$B/cmdline.txt"
+grep -q "isolcpus=3" "$B/cmdline.txt" || sed -i 's/$/ isolcpus=3 irqaffinity=0-2/' "$B/cmdline.txt"
 sed -i 's/^dtparam=audio=on/dtparam=audio=off/' "$B/config.txt"
 
 mkdir -p "$B/pixelclock"

@@ -1,6 +1,6 @@
 # Electronics Product Inventory
 
-Personal inventory of **387 products** — 191 from Adafruit, 132 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, 14 photographed parts whose store isn't recorded yet, and the bench gear (Riden RD6012 power supply, Hantek DSO2D10 oscilloscope and a TP-Link TL-WN823N USB Wi-Fi adapter), store not recorded either. **50 parts are marked as in use**, with my own photos.
+Personal inventory of **388 products** — 191 from Adafruit, 132 from AliExpress, 40 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, 14 photographed parts whose store isn't recorded yet, and the bench gear (Riden RD6012 power supply, Hantek DSO2D10 oscilloscope and a TP-Link TL-WN823N USB Wi-Fi adapter), store not recorded either. **50 parts are marked as in use**, with my own photos.
 
 > Open **index.html** in a browser for a visual catalog: every product with its picture, grouped by category (or store), with search, sorting and filters.
 
@@ -291,9 +291,9 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 - [Accessory](#adafruit---accessory) (23)
 - [Book/Subscription](#adafruit---booksubscription) (3)
 
-### Pimoroni (39 products)
+### Pimoroni (40 products)
 
-- [Microcontroller](#pimoroni---microcontroller) (1)
+- [Microcontroller](#pimoroni---microcontroller) (2)
 - [Sensor](#pimoroni---sensor) (7)
 - [Display](#pimoroni---display) (5)
 - [Breakout Board](#pimoroni---breakout-board) (8)
@@ -650,6 +650,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | PIM560 | Pimoroni Pico LiPo - 16MB | 1 | £11.25 | [Product](https://shop.pimoroni.com/products/pimoroni-pico-lipo) · [Guide](https://learn.pimoroni.com/article/getting-started-with-pico-lipo) |
+| WRL-17506 | SparkFun LoRa Thing Plus - expLoRaBLE | 1 | — | [Product](https://shop.pimoroni.com/products/sparkfun-lora-thing-plus-explorable) · [Guide](https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide) |
 
 ## Pimoroni - Sensor
 

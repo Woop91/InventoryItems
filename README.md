@@ -1,6 +1,6 @@
 # Electronics Product Inventory
 
-Personal inventory of **387 products** — 191 from Adafruit, 132 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, 14 photographed parts whose store isn't recorded yet, and the bench gear (Riden RD6012 power supply, Hantek DSO2D10 oscilloscope and the TP-Link USB Wi-Fi adapter plugged into it), store not recorded either. **50 parts are marked as in use**, with my own photos.
+Personal inventory of **387 products** — 191 from Adafruit, 132 from AliExpress, 39 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, 14 photographed parts whose store isn't recorded yet, and the bench gear (Riden RD6012 power supply, Hantek DSO2D10 oscilloscope and a TP-Link TL-WN823N USB Wi-Fi adapter), store not recorded either. **50 parts are marked as in use**, with my own photos.
 
 > Open **index.html** in a browser for a visual catalog: every product with its picture, grouped by category (or store), with search, sorting and filters.
 
@@ -1079,7 +1079,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
-| tplink-usb-wifi-adapter | TP-Link USB Wi-Fi Adapter | 1 | — |  |
+| tplink-usb-wifi-adapter | TP-Link TL-WN823N | 1 | — | [Product](https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn823n/) |
 | waveshare-pico-ble | Waveshare Pico-BLE | 1 | — |  |
 | waveshare-pico-can-b | Waveshare Pico-CAN-B | 1 | — |  |
 | waveshare-pico-lora-sx126x | Waveshare Pico-LoRa-SX126X | 1 | — |  |

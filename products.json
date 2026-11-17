@@ -8230,10 +8230,12 @@
     "page_url": "https://shop.pimoroni.com/products/sparkfun-lora-thing-plus-explorable",
     "image_url": "images/products/pimoroni_WRL-17506.jpg",
     "learn_guide_url": "https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide",
-    "unit_price": 0,
+    "unit_price": 13.95,
     "currency": "GBP",
     "total_qty": 1,
-    "orders": [],
+    "orders": [
+      "pimoroni"
+    ],
     "source": "pimoroni.com",
     "last_scraped": null,
     "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/17506-SparkFun_LoRa_Thing_Plus_____expLoRaBLE-01.jpg?v=1612535997"

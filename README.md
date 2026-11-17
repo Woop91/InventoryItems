@@ -650,7 +650,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | PIM560 | Pimoroni Pico LiPo - 16MB | 1 | £11.25 | [Product](https://shop.pimoroni.com/products/pimoroni-pico-lipo) · [Guide](https://learn.pimoroni.com/article/getting-started-with-pico-lipo) |
-| WRL-17506 | SparkFun LoRa Thing Plus - expLoRaBLE | 1 | — | [Product](https://shop.pimoroni.com/products/sparkfun-lora-thing-plus-explorable) · [Guide](https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide) |
+| WRL-17506 | SparkFun LoRa Thing Plus - expLoRaBLE | 1 | £13.95 | [Product](https://shop.pimoroni.com/products/sparkfun-lora-thing-plus-explorable) · [Guide](https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide) |
 
 ## Pimoroni - Sensor
 

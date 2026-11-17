@@ -45,6 +45,7 @@ PIMORONI_PRODUCTS = [
     {"code": "WPM463", "name": "2 Channel Solid State Relay Module", "qty": 1, "price": 3.30},
     {"code": "POL-5065", "name": "Motoron Dual Motor Controller - M2T256 - I2C", "qty": 1, "price": 6.90},
     {"code": "POL-2122", "name": "Pololu 3.3V Step-Up/Step-Down Voltage Regulator S7V8F3", "qty": 1, "price": 4.60},
+    {"code": "WRL-17506", "name": "SparkFun LoRa Thing Plus - expLoRaBLE", "qty": 1, "price": 13.95},
 ]
 
 PRODUCT_DATA = {
@@ -359,6 +360,14 @@ PRODUCT_DATA = {
         "category": "Power",
         "page_url": "https://www.pololu.com/product/2122",
         "image_url": "https://a.pololu-files.com/picture/0J4337.1200.jpg"
+    },
+    "WRL-17506": {
+        "description": "SparkFun Thing Plus (Feather-footprint) board built on the Northern Mechatronics NM180100 system-in-package, which pairs an Ambiq Apollo3 Cortex-M4 (the chip in SparkFun's Artemis) with a Semtech SX1262 LoRa radio. It does LoRa on 868 and 915 MHz plus Bluetooth Low Energy, works with The Things Network (LoRaWAN), and programs from the Arduino IDE through the SparkFun Apollo3 core (RadioLib for LoRa). It has a U.FL antenna connector (no antenna on the board), a Qwiic I2C connector and a LiPo charger.",
+        "specifications": "SiP: NM180100 (Apollo3 + SX1262); MCU: Ambiq Apollo3 ARM Cortex-M4F, up to 96 MHz; Flash: 1 MB; RAM: 384 KB; LoRa: 863-870 MHz and 902-928 MHz, up to +22 dBm, -147.6 dBm sensitivity; Bluetooth: 5 Low Energy, +2 dBm, -95 dBm sensitivity; Antenna: U.FL; GPIO: 24; Logic: 3.3V; Power: USB-C, LiPo charging at 500 mA; Connector: Qwiic (I2C); Form factor: Thing Plus / Feather; Security: secure boot, secure key storage, secure OTA",
+        "learn_guide_url": "https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide",
+        "category": "Microcontroller",
+        "page_url": "https://shop.pimoroni.com/products/sparkfun-lora-thing-plus-explorable",
+        "image_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/17506-SparkFun_LoRa_Thing_Plus_____expLoRaBLE-01.jpg?v=1612535997"
     },
 }
 

@@ -3932,7 +3932,8 @@
     "in_use": true,
     "my_photos": [
       "images/my-photos/IMG_5827.jpg"
-    ]
+    ],
+    "in_use_note": "Faulty since Nov 18, 2026: it holds the I2C clock line low in either orientation and no longer answers. Replace before reuse."
   },
   "pimoroni_COM3900": {
     "product_id": "COM3900",

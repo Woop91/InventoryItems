@@ -159,7 +159,7 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 18px; }
     <p class="notice" id="send-status" role="status"></p>
   </section>
 
-  <footer>Readings are saved on disk and retained across restarts. USB supplies every sensor reading; the Desk radio relay supplies readings transmitted by the air box. Charts leave gaps when no data was recorded. Times are Eastern.</footer>
+  <footer>Readings are saved on disk and retained across restarts. Current values refresh every 5 seconds; charts refresh every 10 seconds (every minute for 7 days, 30 days and All). USB supplies every sensor reading; the Desk radio relay supplies readings transmitted by the air box. Charts leave gaps when no data was recorded. Times are Eastern.</footer>
 </main>
 <script>
 const rows = [];
@@ -223,7 +223,16 @@ function drawChart(id, series, opts = {}) {
     g.fillText(lab, L - 6, y + 4);
   }
   g.textAlign = 'center';
-  for (let i = 0; i <= 5; i++) { const t = t0 + windowS * i / 5; g.fillText(fmtT(t).replace(/:\d\d /, ' '), L + pw * i / 5, h - 5); }
+  const tickCount = Math.max(1, Math.min(5, Math.floor(pw / (windowS >= 86400 ? 160 : 110))));
+  for (let i = 0; i <= tickCount; i++) {
+    const t = t0 + windowS * i / tickCount;
+    const label = new Date(t * 1000).toLocaleString('en-US', {
+      timeZone: 'America/New_York', month: windowS >= 86400 ? 'short' : undefined,
+      day: windowS >= 86400 ? 'numeric' : undefined, hour: 'numeric', minute: '2-digit'
+    });
+    g.textAlign = i === 0 ? 'left' : i === tickCount ? 'right' : 'center';
+    g.fillText(label, L + pw * i / tickCount, h - 5);
+  }
   for (const [k, , c] of series) {
     g.strokeStyle = css(c); g.lineWidth = 2; g.lineJoin = 'round'; g.beginPath();
     let started = false, previous = null;
@@ -262,6 +271,7 @@ function render() {
     'Saved history: ' + fmtDate(status.first) + ' to ' + fmtDate(status.last) + ' · ' + status.total.toLocaleString() + ' readings.' +
     (status.largest_gap_s > 120 ? ' Recording gap in this range: ' + Math.round(status.largest_gap_s / 60) + ' minutes.' : '') : 'No saved history yet.';
   document.querySelector('#sendform button').disabled = !status.can_send;
+  document.querySelector('#sendform button').textContent = 'Send over LoRa';
   const d = r ? r[1] : {};
   document.getElementById('co2').textContent = fmt(d.scd41_co2, 0);
   const cc = document.getElementById('co2chip');
@@ -338,18 +348,24 @@ document.getElementById('sendform').addEventListener('submit', async e => {
   } catch (err) { document.getElementById('send-status').textContent = 'Dashboard unreachable. Message was not sent.'; }
 });
 
+let polling = false, pollAgain = false;
 async function poll() {
+  if (polling) { pollAgain = true; return; }
+  polling = true;
   const request = ++requestNumber, requestedRange = range;
   try {
     const res = await fetch('data.json?range=' + range, { cache: 'no-store' });
     if (!res.ok) throw new Error('History request failed');
     const data = await res.json();
-    if (request !== requestNumber || range !== requestedRange) return;
+    if (request !== requestNumber || range !== requestedRange) { pollAgain = true; return; }
     status = data;
     rows.splice(0, rows.length, ...status.rows);
   } catch (e) {
     if (request !== requestNumber) return;
     status = { ...status, live: false, can_send: false, requestError: 'Dashboard unreachable. Displayed values and charts are saved readings.' };
+  } finally {
+    polling = false;
+    if (pollAgain) { pollAgain = false; queueMicrotask(poll); }
   }
   render();
 }

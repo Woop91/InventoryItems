@@ -318,6 +318,16 @@ $("rooms").addEventListener("click", (e) => {
   const c = e.target.closest(".room"); if (!c) return;
   selected = c.dataset.id;
   try { localStorage.setItem("box", selected); } catch (err) {}
+  for (const id of ["co2-val", "temp-val", "hum-val", "dist-val", "bpm-val"]) $(id).textContent = "–";
+  for (const id of ["temp-meta", "hum-meta", "dist-meta", "bpm-meta", "co2-hint"]) $(id).textContent = "Loading this room…";
+  $("co2-badge").textContent = "Waiting for reading";
+  $("co2-badge").className = "badge none";
+  needle(null);
+  renderRooms();
+  $("sub").textContent = `Showing ${boxes.find((b) => b.id === selected)?.name || "sensor box"}`;
+  setConn("stale", "Loading selected room…");
+  $("table").innerHTML = "";
+  $("history-info").textContent = "Loading saved history for this room…";
   hist = null;
   $("charts").innerHTML = "";
   buildChartShells();
@@ -416,7 +426,7 @@ function tickLabel(ts, step) {
   return d.toLocaleTimeString("en-US", { timeZone: TZ, hour: "numeric", minute: step < 3600 ? "2-digit" : undefined });
 }
 function tipTime(ts) {
-  return new Date(ts * 1000).toLocaleString("en-US", { timeZone: TZ, weekday: "short", hour: "numeric", minute: "2-digit" }) + " ET";
+  return new Date(ts * 1000).toLocaleString("en-US", { timeZone: TZ, month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET";
 }
 
 function buildChartShells() {

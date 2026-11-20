@@ -7,7 +7,7 @@ import unittest
 from contextlib import contextmanager
 from http.server import ThreadingHTTPServer
 from urllib.error import HTTPError
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -120,6 +120,13 @@ class AirHistoryTests(unittest.TestCase):
         self.store.add(1000, {'scd41_co2': 800}, 'radio')
         self.assertEqual(self.store.read('all')['count'], 1)
 
+    def test_malformed_relay_payloads_do_not_stop_collection(self):
+        for body in ([], {'boxes': None}, {'boxes': [None]},
+                     {'boxes': [{'age_s': 1, 'reading': {'lora': None}}]},
+                     {'boxes': [{'age_s': 1, 'reading': {'lora': {'peers': []}}}]}):
+            with self.subTest(body=body):
+                self.assertIsNone(self.air.radio_sample(body))
+
     def test_api_shows_old_values_as_offline_and_preserves_all_history(self):
         stamp = self.air.time.time() - 86400
         self.store.add(stamp, {'scd41_co2': 800}, 'usb')
@@ -132,6 +139,27 @@ class AirHistoryTests(unittest.TestCase):
             self.assertEqual(result['latest'], [stamp, {'scd41_co2': 800}])
             self.assertEqual(result['count'], 1)
             self.assertEqual(result['rows'][0][1]['scd41_co2'], 800)
+
+    def test_current_values_update_while_long_range_chart_is_cached(self):
+        now = self.air.time.time()
+        self.store.add(now - 1, {'scd41_co2': 800}, 'radio')
+        collector = self.air.Collector(self.store)
+        collector.public('all')
+        self.store.add(now, {'scd41_co2': 900}, 'radio')
+        result = collector.public('all')
+        self.assertEqual(result['latest'][1]['scd41_co2'], 900)
+        self.assertTrue(result['live'])
+        self.assertEqual(self.air.Collector(self.air.Store(self.store.path)).public('all')['count'], 2)
+
+    def test_send_rejects_cross_origin_simple_post(self):
+        collector = self.air.Collector(self.store)
+        with serve(self.air.make_handler(collector)) as url:
+            request = Request(url + '/send', data=b'{"text":"test"}',
+                              headers={'Content-Type': 'text/plain', 'Origin': 'https://example.invalid'})
+            with self.assertRaises(HTTPError) as raised:
+                urlopen(request, timeout=3)
+            self.assertEqual(raised.exception.code, 415)
+            raised.exception.close()
 
 
 if __name__ == '__main__':

@@ -54,6 +54,12 @@ class Store:
             con.execute('INSERT OR IGNORE INTO samples VALUES (?,?,?)',
                         (ts, json.dumps(payload, allow_nan=False), source))
 
+    def latest(self):
+        with closing(self.connect()) as con:
+            row = con.execute('SELECT ts,payload,source FROM samples ORDER BY ts DESC LIMIT 1').fetchone()
+        return {'latest': [row[0], json.loads(row[1])] if row else None,
+                'source': row[2] if row else None, 'last': row[0] if row else None}
+
     def read(self, range_name='2h'):
         now = time.time()
         con = self.connect()
@@ -73,7 +79,8 @@ class Store:
                     'latest': [latest[0], json.loads(latest[1])] if latest else None,
                     'source': latest[2] if latest else None, 'first': first, 'last': last,
                     'total': total, 'count': count, 'start': start, 'end': now,
-                    'bucket': bucket, 'largest_gap_s': gap or 0}
+                    'bucket': bucket,
+                    'largest_gap_s': max(gap or 0, min(now - start, now - last) if last is not None else 0)}
         finally:
             con.close()
 
@@ -88,12 +95,19 @@ class Store:
 def radio_sample(body, now=None):
     now = time.time() if now is None else now
     candidates = []
+    if not isinstance(body, dict) or not isinstance(body.get('boxes'), list):
+        return None
     for box in body.get('boxes', []):
+        if not isinstance(box, dict):
+            continue
         age = box.get('age_s')
         if age is None or not isinstance(age, (int, float)) or not 0 <= age <= 30:
             continue
-        peer = (box.get('reading') or {}).get('lora', {}).get('peers', {}).get('lipo')
-        if not peer or not isinstance(peer.get('age_s'), (int, float)):
+        reading = box.get('reading')
+        link = reading.get('lora') if isinstance(reading, dict) else None
+        peers = link.get('peers') if isinstance(link, dict) else None
+        peer = peers.get('lipo') if isinstance(peers, dict) else None
+        if not isinstance(peer, dict) or not isinstance(peer.get('d'), dict) or not isinstance(peer.get('age_s'), (int, float)):
             continue
         total_age = age + peer['age_s']
         if not 0 <= total_age <= 45:
@@ -109,6 +123,8 @@ class Collector:
     def __init__(self, store):
         self.store = store
         self.lock = threading.Lock()
+        self.history_lock = threading.Lock()
+        self.history_cache = {}
         self.usb = None
         self.usb_at = 0
         self.usb_error = None
@@ -146,6 +162,8 @@ class Collector:
                 time.sleep(3)
 
     def on_lora(self, ev):
+        if not isinstance(ev, dict):
+            return
         now = time.time()
         with self.lock:
             if ev.get('e') == 'down':
@@ -190,7 +208,16 @@ class Collector:
             time.sleep(5)
 
     def public(self, range_name):
-        result = self.store.read(range_name)
+        range_name = range_name if range_name in RANGES or range_name == 'all' else '2h'
+        refresh_s = 60 if range_name in ('7d', '30d', 'all') else 10
+        with self.history_lock:
+            cached_at, cached = self.history_cache.get(range_name, (0, None))
+            if cached is None or time.monotonic() - cached_at >= refresh_s:
+                cached = self.store.read(range_name)
+                self.history_cache[range_name] = (time.monotonic(), cached)
+            result = dict(cached)
+        # Current values never wait for the chart refresh interval.
+        result.update(self.store.latest())
         age = time.time() - result['last'] if result['last'] is not None else None
         with self.lock:
             result.update(serial=self.usb is not None, usb_error=self.usb_error,
@@ -260,6 +287,8 @@ def make_handler(collector):
         def do_POST(self):
             if self.path != '/send':
                 return self.send({'error': 'not found'}, code=404)
+            if self.headers.get('Content-Type', '').split(';', 1)[0].strip().lower() != 'application/json':
+                return self.send({'queued': False, 'error': 'application/json required'}, code=415)
             try:
                 n = int(self.headers.get('Content-Length', '0'))
                 if not 0 < n <= 2000:

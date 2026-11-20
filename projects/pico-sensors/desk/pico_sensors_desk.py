@@ -213,8 +213,9 @@ class Service:
                 con.execute("INSERT INTO readings VALUES (?,?,?,?,?,?,?,?,?)", (
                     int(stamp), d.get("co2_ppm"), d.get("temp_f"), d.get("humidity_pct"),
                     d.get("distance_mm"), d.get("bpm"), int(bool(d.get("finger"))), d.get("rssi"), box.mac))
-                con.execute("INSERT OR REPLACE INTO latest_snapshots VALUES (?,?,?)",
-                            (box.mac, stamp, json.dumps(d)))
+                if box.mac:
+                    con.execute("INSERT OR REPLACE INTO latest_snapshots VALUES (?,?,?)",
+                                (box.mac, stamp, json.dumps(d)))
                 con.commit()
                 with lock:
                     box.latest, box.latest_at, box.error = d, stamp, None
@@ -269,7 +270,7 @@ def history(con, mac, span):
         "stats": stats,
         "box": mac,
         "coverage": {"first": first, "last": last, "count": count,
-                     "largest_gap_s": largest_gap or 0},
+                     "largest_gap_s": max(largest_gap or 0, min(span, now - last) if last is not None else 0)},
     }
 
 

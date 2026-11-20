@@ -183,13 +183,15 @@ footer { margin-top: 20px; font-size: 12px; color: var(--muted); }
     <div class="spacer"></div>
     <span class="pill" id="conn"><span class="dot"></span><span id="conn-text">Connecting…</span></span>
     <div class="seg" role="group" aria-label="Time range" id="ranges">
-      <button data-r="1h">1h</button><button data-r="6h" aria-pressed="true">6h</button><button data-r="24h">24h</button><button data-r="7d">7d</button><button data-r="30d">30d</button>
+      <button data-r="1h">1h</button><button data-r="6h" aria-pressed="true">6h</button><button data-r="24h">24h</button><button data-r="7d">7d</button><button data-r="30d">30d</button><button data-r="all">All</button>
     </div>
     <button class="iconbtn" id="theme" aria-label="Switch light or dark">Dark</button>
     <a class="iconbtn" id="csv" href="/export.csv?range=6h" title="Every room, as a spreadsheet">CSV</a>
   </header>
 
   <section class="rooms" id="rooms" aria-label="Rooms"></section>
+  <p class="hint" id="reading-info" role="status"></p>
+  <p class="hint" id="history-info" role="status">Loading saved history…</p>
 
   <section class="top">
     <div class="card hero">
@@ -316,26 +318,33 @@ $("rooms").addEventListener("click", (e) => {
   const c = e.target.closest(".room"); if (!c) return;
   selected = c.dataset.id;
   try { localStorage.setItem("box", selected); } catch (err) {}
-  loadLatest(); loadHistory();
+  hist = null;
+  $("charts").innerHTML = "";
+  buildChartShells();
+  loadLatest().then(loadHistory);
 });
 
 async function loadLatest() {
   let j;
   try { j = await (await fetch("/api/latest", { cache: "no-store" })).json(); }
-  catch (e) { return setConn("stale", "Dashboard service unreachable"); }
+  catch (e) {
+    $("reading-info").textContent = "Dashboard service unreachable. Displayed values are saved readings.";
+    return setConn("stale", "Dashboard service unreachable");
+  }
   boxes = j.boxes || [];
   if (!boxes.length) return setConn("stale", "Waiting for a sensor box");
   if (!boxes.some((b) => b.id === selected)) selected = boxes[0].id;
   renderRooms();
   const box = boxes.find((b) => b.id === selected);
-  const r = box.reading;
+  const r = box.reading || {};
   $("sub").textContent = boxes.length > 1 ? `Showing ${box.name}` : `${box.name} · Pico W sensor box`;
   if (!isLive(box)) {
-    setConn("stale", r ? `${box.name} offline · last seen ${ago(box.age_s)}` : `Waiting for ${box.name}`);
+    setConn("stale", box.reading ? `${box.name} offline · last seen ${ago(box.age_s)}` : `Waiting for ${box.name}`);
   } else {
     setConn("live", `Live · ${r.ip || box.host}`);
   }
-  if (!r) return;
+  $("reading-info").textContent = isLive(box) ? `Latest reading ${tipTime(Date.now() / 1000 - box.age_s)}.` :
+    `${box.name} is offline. ${box.reading ? "Values below are the last saved reading." : "No current reading is available."} Check its power and Wi-Fi connection.`;
   const [cls, label, hint] = co2Status(r.co2_ppm);
   $("co2-val").innerHTML = `${fmt(r.co2_ppm, 0)}<small>ppm</small>`;
   const b = $("co2-badge");
@@ -526,13 +535,27 @@ function drawTable() {
     <tbody>${rows.join("") || `<tr><td colspan="${METRICS.length + 1}">No readings in this range</td></tr>`}</tbody>`;
 }
 
+let historyRequest = 0;
 async function loadHistory() {
+  if (!selected) return;
+  const request = ++historyRequest, requestedBox = selected, requestedRange = range;
   try {
     const box = selected ? `&box=${encodeURIComponent(selected)}` : "";
-    hist = await (await fetch(`/api/history?range=${range}${box}`, { cache: "no-store" })).json();
-    if (!hist.t) return;
+    const response = await fetch(`/api/history?range=${range}${box}`, { cache: "no-store" });
+    if (!response.ok) throw new Error("History request failed");
+    const data = await response.json();
+    if (request !== historyRequest || selected !== requestedBox || range !== requestedRange) return;
+    if (!data.t) throw new Error("History unavailable");
+    hist = data;
+    const c = hist.coverage;
+    $("history-info").textContent = c && c.first != null ?
+      `Saved history: ${tipTime(c.first)} to ${tipTime(c.last)} · ${c.count.toLocaleString()} readings.` +
+      (c.largest_gap_s > 120 ? ` Recording gap in this range: ${Math.round(c.largest_gap_s / 60)} minutes. Missing readings were not saved.` : "") :
+      "No saved history for this room.";
     drawCharts();
-  } catch (e) { /* keep the last charts */ }
+  } catch (e) {
+    if (request === historyRequest) $("history-info").textContent = "History unavailable. Retrying automatically; any charts shown are from the previous successful request.";
+  }
 }
 
 $("ranges").addEventListener("click", (e) => {
@@ -544,7 +567,7 @@ $("ranges").addEventListener("click", (e) => {
 });
 let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => hist && drawCharts(), 120); });
 
-loadLatest(); loadHistory();
+loadLatest().then(loadHistory);
 setInterval(loadLatest, 5000);
 setInterval(loadHistory, 60000);
 </script>

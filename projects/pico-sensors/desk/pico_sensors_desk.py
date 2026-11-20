@@ -34,7 +34,7 @@ DB_FILE = DATA_DIR / "readings.sqlite"
 DASHBOARD = Path(__file__).resolve().parent / "dashboard.html"
 
 FIELDS = ("co2_ppm", "temp_f", "humidity_pct", "distance_mm", "bpm")
-RANGES = {"1h": 3600, "6h": 6 * 3600, "24h": 86400, "7d": 7 * 86400, "30d": 30 * 86400}
+RANGES = {"1h": 3600, "6h": 6 * 3600, "24h": 86400, "7d": 7 * 86400, "30d": 30 * 86400, "all": None}
 POINTS = 360          # buckets per chart
 RESCAN_S = 600        # look for new boxes this often
 RETRY_SCAN_S = 120    # and at most this often while a box is missing
@@ -62,6 +62,7 @@ def save_cfg(cfg):
 def db():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(DB_FILE, timeout=10)
+    con.execute("PRAGMA journal_mode=WAL")
     con.execute("""CREATE TABLE IF NOT EXISTS readings (
         ts INTEGER NOT NULL, co2_ppm REAL, temp_f REAL, humidity_pct REAL,
         distance_mm REAL, bpm REAL, finger INTEGER, rssi INTEGER, mac TEXT)""")
@@ -69,6 +70,7 @@ def db():
     if "mac" not in cols:                       # history from the one-box version
         con.execute("ALTER TABLE readings ADD COLUMN mac TEXT")
     con.execute("CREATE INDEX IF NOT EXISTS readings_mac_ts ON readings(mac, ts)")
+    con.execute("CREATE TABLE IF NOT EXISTS latest_snapshots (mac TEXT PRIMARY KEY, ts REAL, payload TEXT)")
     con.commit()
     return con
 
@@ -118,6 +120,23 @@ class Service:
         self.boxes = [Box(e) for e in cfg["boxes"]]
         self.last_scan = 0
         self.scanning = False
+        con = db()
+        try:
+            for box in self.boxes:
+                row = con.execute("SELECT ts,payload FROM latest_snapshots WHERE mac = ?", (box.mac,)).fetchone()
+                if row:
+                    box.latest_at, payload = row
+                    box.latest = json.loads(payload)
+                    box.error = "Waiting for a fresh reading"
+                else:
+                    old = con.execute("SELECT ts,co2_ppm,temp_f,humidity_pct,distance_mm,bpm "
+                                      "FROM readings WHERE mac IS ? ORDER BY ts DESC LIMIT 1", (box.mac,)).fetchone()
+                    if old:
+                        box.latest_at = old[0]
+                        box.latest = dict(zip(FIELDS, old[1:]))
+                        box.error = "Waiting for a fresh reading"
+        finally:
+            con.close()
 
     # ---------------------------------------------------------------- discovery
     def subnets(self):
@@ -190,12 +209,17 @@ class Service:
                         save_cfg(self.cfg)
                     # rows saved before this box's MAC was known belong to it
                     con.execute("UPDATE readings SET mac = ? WHERE mac IS NULL", (mac,))
-                box.latest, box.latest_at, box.error = d, time.time(), None
+                stamp = time.time()
                 con.execute("INSERT INTO readings VALUES (?,?,?,?,?,?,?,?,?)", (
-                    int(time.time()), d.get("co2_ppm"), d.get("temp_f"), d.get("humidity_pct"),
+                    int(stamp), d.get("co2_ppm"), d.get("temp_f"), d.get("humidity_pct"),
                     d.get("distance_mm"), d.get("bpm"), int(bool(d.get("finger"))), d.get("rssi"), box.mac))
+                con.execute("INSERT OR REPLACE INTO latest_snapshots VALUES (?,?,?)",
+                            (box.mac, stamp, json.dumps(d)))
                 con.commit()
+                with lock:
+                    box.latest, box.latest_at, box.error = d, stamp, None
             except Exception as e:  # noqa: BLE001 - any failure means "box offline"
+                con.rollback()
                 box.error = f"{type(e).__name__}: {e}"
                 threading.Thread(target=self.scan_soon, args=(True,), daemon=True).start()
             time.sleep(self.cfg.get("poll_s", 5))
@@ -211,11 +235,16 @@ class Service:
         threading.Thread(target=self.background_scans, daemon=True).start()
 
     def box(self, box_id):
-        return next((b for b in self.boxes if b.mac == box_id), self.boxes[0] if self.boxes else None)
+        if not box_id:
+            return self.boxes[0] if self.boxes else None
+        return next((b for b in self.boxes if b.mac == box_id), None)
 
 
 def history(con, mac, span):
     now = int(time.time())
+    if span is None:
+        first = con.execute("SELECT MIN(ts) FROM readings WHERE mac IS ?", (mac,)).fetchone()[0]
+        span = max(60, now - first + 1) if first is not None else 86400
     start = now - span
     bucket = max(5, span // POINTS)
     cols = ", ".join(f"AVG({f})" for f in FIELDS)
@@ -228,11 +257,19 @@ def history(con, mac, span):
             f"SELECT MIN({f}), MAX({f}), AVG({f}) FROM readings WHERE mac IS ? AND ts >= ? AND {f} IS NOT NULL",
             (mac, start)).fetchone()
         stats[f] = {"min": mn, "max": mx, "avg": av}
+    first, last, count = con.execute(
+        "SELECT MIN(ts), MAX(ts), COUNT(*) FROM readings WHERE mac IS ?", (mac,)).fetchone()
+    largest_gap = con.execute(
+        "SELECT MAX(ts-prev) FROM (SELECT ts,LAG(ts) OVER (ORDER BY ts) prev "
+        "FROM readings WHERE mac IS ? AND ts >= ?)", (mac, start)).fetchone()[0]
     return {
         "start": start, "end": now, "bucket": bucket,
         "t": [r[0] for r in rows],
         **{f: [None if r[i + 1] is None else round(r[i + 1], 1) for r in rows] for i, f in enumerate(FIELDS)},
         "stats": stats,
+        "box": mac,
+        "coverage": {"first": first, "last": last, "count": count,
+                     "largest_gap_s": largest_gap or 0},
     }
 
 
@@ -253,7 +290,10 @@ def make_handler(svc):
             for k, v in (extra or {}).items():
                 self.send_header(k, v)
             self.end_headers()
-            self.wfile.write(body)
+            try:
+                self.wfile.write(body)
+            except (BrokenPipeError, ConnectionResetError):
+                pass
 
         def do_GET(self):
             u = urllib.parse.urlparse(self.path)
@@ -279,7 +319,7 @@ def make_handler(svc):
                 try:
                     rows = con.execute(
                         "SELECT ts, mac, co2_ppm, temp_f, humidity_pct, distance_mm, bpm FROM readings "
-                        "WHERE ts >= ? ORDER BY ts", (int(time.time()) - span,)).fetchall()
+                        "WHERE ts >= ? ORDER BY ts", (int(time.time()) - span if span is not None else 0,)).fetchall()
                 finally:
                     con.close()
                 buf = io.StringIO()

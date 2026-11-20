@@ -1,6 +1,6 @@
 # Electronics Product Inventory
 
-Personal inventory of **388 products** — 191 from Adafruit, 132 from AliExpress, 40 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, 14 photographed parts whose store isn't recorded yet, and the bench gear (Riden RD6012 power supply, Hantek DSO2D10 oscilloscope and a TP-Link TL-WN823N USB Wi-Fi adapter), store not recorded either. **50 parts are marked as in use**, with my own photos.
+Personal inventory of **454 products** — 191 from Adafruit, 132 from AliExpress, 40 from Pimoroni, 1 each from Waveshare, SparkFun, Mouser, Amazon, Orbtronic, Battery Junction, Voltaplex and Home Depot, 80 photographed parts whose store isn't recorded yet, and the bench gear (Riden RD6012 power supply, Hantek DSO2D10 oscilloscope and a TP-Link TL-WN823N USB Wi-Fi adapter), store not recorded either. **51 parts are marked as in use**, with my own photos, and 90 more have my photos from Nov 19, 2026.
 
 > Open **index.html** in a browser for a visual catalog: every product with its picture, grouped by category (or store), with search, sorting and filters.
 
@@ -35,6 +35,7 @@ This is a personal catalog of electronics parts. It includes:
 | `fetch_product_images.py` | Script that downloads a picture for any product that lacks a local one | Only if updating products |
 | `build_catalog.py` | Script that builds `index.html` (and, with `--readme`, the product tables below) | Only if updating products |
 | `data/parts_in_use.json` | The parts I'm currently using, with my photos (`images/my-photos/`) | Reference only |
+| `data/photographed_parts.json` | Parts I photographed but am not using, with my photos | Reference only |
 | `mark_in_use.py` | Script that applies `data/parts_in_use.json` to `products.json` | Only if updating products |
 
 ---
@@ -219,7 +220,7 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | Pico Breakout Garden Base | Accessory | Pimoroni | 7 |
 | pHAT Stack - Solder Yourself Kit | Accessory | Pimoroni | 2 |
 | 01Studio PiHAT Expansion Board for Raspberry Pi (with OLED) | Breakout Board | AliExpress | 3 |
-| Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic | Breakout Board | Adafruit | 1 |
+| Adafruit DRV2605L Haptic Motor Controller   STEMMA QT / Qwiic | Breakout Board | Adafruit | 3 |
 | Adafruit DS3502 I2C Digital 10K Potentiometer Breakout | Breakout Board | Adafruit | 2 |
 | Adafruit I2C Stemma QT Rotary Encoder Breakout with NeoPixel | Breakout Board | Adafruit | 2 |
 | Adafruit Infineon Trust M Breakout Board   STEMMA QT / Qwiic | Breakout Board | Adafruit | 2 |
@@ -356,15 +357,21 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 
 - [Accessory](#home-depot---accessory) (1)
 
-### Store not recorded (17 products)
+### Store not recorded (83 products)
 
-- [Microcontroller](#store-not-recorded---microcontroller) (5)
-- [Sensor](#store-not-recorded---sensor) (2)
-- [Display](#store-not-recorded---display) (2)
-- [Breakout Board](#store-not-recorded---breakout-board) (1)
+- [Microcontroller](#store-not-recorded---microcontroller) (9)
+- [Sensor](#store-not-recorded---sensor) (24)
+- [Display](#store-not-recorded---display) (7)
+- [LED](#store-not-recorded---led) (8)
+- [Breakout Board](#store-not-recorded---breakout-board) (8)
 - [FeatherWing](#store-not-recorded---featherwing) (1)
-- [Wireless/RF](#store-not-recorded---wirelessrf) (4)
-- [Tool](#store-not-recorded---tool) (2)
+- [Motor Driver/ESC](#store-not-recorded---motor-driveresc) (1)
+- [Switch/Button](#store-not-recorded---switchbutton) (4)
+- [Wireless/RF](#store-not-recorded---wirelessrf) (10)
+- [Prototyping](#store-not-recorded---prototyping) (2)
+- [Power](#store-not-recorded---power) (4)
+- [Tool](#store-not-recorded---tool) (3)
+- [Storage](#store-not-recorded---storage) (2)
 
 ---
 
@@ -1044,8 +1051,12 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
+| arduino-pro-mini-compatible-board-atmega328p-blue | Arduino Pro Mini compatible board (ATmega328P, blue) | 1 | — |  |
+| lilygo-t7-s3-esp32-s3 | LILYGO T7 S3 (ESP32-S3) | 1 | — |  |
+| pro-micro-compatible-board-atmega32u4-usb-c-black | Pro Micro compatible board (ATmega32U4, USB-C, black) | 1 | — |  |
 | raspberry-pi-4-model-b | Raspberry Pi 4 Model B | 1 | — |  |
 | raspberry-pi-pico-w | Raspberry Pi Pico W | 1 | — |  |
+| sb-components-roundypi-rp2040-round-display | SB Components RoundyPi (RP2040, round display) | 1 | — |  |
 | waveshare-rp2040-pizero | Waveshare RP2040-PiZero | 1 | — |  |
 | waveshare-rp2040-plus | Waveshare RP2040-Plus | 1 | — |  |
 | yd-rp2040-rp2040-development-board-black | YD-RP2040 RP2040 Development Board (black) | 1 | — |  |
@@ -1054,21 +1065,68 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
+| 24-ghz-radar-module-with-patch-antennas-unmarked | 24 GHz Radar Module with Patch Antennas (unmarked) | 1 | — |  |
 | adafruit-vl53l1x-time-of-flight-distance-sensor-stemma-qt | Adafruit VL53L1X Time of Flight Distance Sensor (STEMMA QT) | 1 | — |  |
+| adxl345-3-axis-accelerometer-module | ADXL345 3-Axis Accelerometer Module | 1 | — |  |
+| aqara-motion-sensor-p1 | Aqara Motion Sensor P1 | 1 | — |  |
+| aqara-presence-sensor-fp2 | Aqara Presence Sensor FP2 | 1 | — |  |
+| aqara-water-leak-sensor-sjcgq11lm | Aqara Water Leak Sensor (SJCGQ11LM) | 1 | — |  |
+| benewake-tfmini-i2c-lidar | Benewake TFmini I2C LiDAR | 1 | — |  |
+| blue-sensor-module-with-qfn-chip-unidentified | Blue Sensor Module with QFN Chip (unidentified) | 1 | — |  |
+| cjmcu-101-opt101-light-sensor | CJMCU-101 OPT101 Light Sensor | 1 | — |  |
 | cjmcu-3216-ap3216c-light-and-proximity-sensor | CJMCU-3216 AP3216C Light and Proximity Sensor | 1 | — |  |
+| hc-sr04-ultrasonic-distance-sensor-blue | HC-SR04 Ultrasonic Distance Sensor (blue) | 1 | — |  |
+| hc-sr501-pir-motion-sensor | HC-SR501 PIR Motion Sensor | 1 | — |  |
+| hi-link-hlk-ld1020-microwave-radar-module | Hi-Link HLK-LD1020 Microwave Radar Module | 1 | — |  |
+| hx710b-air-pressure-sensor-module | HX710B Air Pressure Sensor Module | 1 | — |  |
+| ir-obstacle-flame-sensor-modules-and-transistors | IR Obstacle / Flame Sensor Modules and Transistors | 1 | — |  |
+| keyestudio-hc-sr04-ultrasonic-sensor-module | Keyestudio HC-SR04 Ultrasonic Sensor Module | 1 | — |  |
+| mq-gas-sensor-modules-flying-fish | MQ Gas Sensor Modules (Flying-Fish) | 1 | — |  |
+| pulse-sensor-optical-heart-rate | Pulse Sensor (Optical Heart Rate) | 1 | — |  |
+| rotary-position-sensor-module-a01648 | Rotary Position Sensor Module (A01648) | 1 | — |  |
+| seeed-grove-12-bit-magnetic-rotary-position-sensor-as5600 | Seeed Grove 12-bit Magnetic Rotary Position Sensor (AS5600) | 1 | — |  |
+| shielded-microwave-radar-module-unmarked | Shielded Microwave Radar Module (unmarked) | 1 | — |  |
+| sparkfun-gps-breakout-neo-m9n-sma-qwiic | SparkFun GPS Breakout - NEO-M9N, SMA (Qwiic) | 1 | — |  |
+| sparkfun-qwiic-ir-breakout-mlx90632 | SparkFun Qwiic IR Breakout - MLX90632 | 1 | — |  |
+| useful-sensors-person-sensor-v2-0 | Useful Sensors Person Sensor v2.0 | 1 | — |  |
 
 ## Store not recorded - Display
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
 | 1602-16x2-character-lcd-with-pcf8574-i2c-backpack-blue | 1602 16x2 Character LCD with PCF8574 I2C Backpack (blue) | 1 | — |  |
+| 7-segment-and-bar-graph-led-displays-assorted | 7-Segment and Bar Graph LED Displays (assorted) | 1 | — |  |
 | adafruit-rgb-matrix-hat-rtc-for-raspberry-pi | Adafruit RGB Matrix HAT + RTC for Raspberry Pi | 1 | — |  |
+| futaba-8-md-06inkm-8-character-vfd-display | Futaba 8-MD-06INKM 8-Character VFD Display | 1 | — |  |
+| max7219-8x8-led-dot-matrix-module-single-red | MAX7219 8x8 LED Dot Matrix Module (single, red) | 1 | — |  |
+| waveshare-e-paper-esp32-driver-board | Waveshare e-Paper ESP32 Driver Board | 1 | — |  |
+| waveshare-e-paper-esp8266-driver-board | Waveshare e-Paper ESP8266 Driver Board | 1 | — |  |
+
+## Store not recorded - LED
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 8x8-rgb-led-matrix-ws2812b-64-leds | 8x8 RGB LED Matrix (WS2812B, 64 LEDs) | 1 | — |  |
+| led-assortment-rgb-red-green-amber-pink | LED Assortment (RGB, red, green, amber, pink) | 1 | — |  |
+| lifx-a19-smart-bulb | LIFX A19 Smart Bulb | 1 | — |  |
+| neopixel-style-rgb-led-ring-and-strip | NeoPixel-style RGB LED Ring and Strip | 1 | — |  |
+| philips-hue-white-a21-1600-lm-bulb | Philips Hue White A21 1600 lm Bulb | 1 | — |  |
+| skinny-addressable-led-strips-with-jst-sh-cables-2 | Skinny Addressable LED Strips with JST-SH Cables (2) | 1 | — |  |
+| warm-white-led-strip-board-5-leds | Warm White LED Strip Board (5 LEDs) | 1 | — |  |
+| yeelight-smart-led-bulb-color-yldp06yl | Yeelight Smart LED Bulb (Color) YLDP06YL | 1 | — |  |
 
 ## Store not recorded - Breakout Board
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
+| ads1115-16-bit-adc-module-hw-ads1115 | ADS1115 16-bit ADC Module (HW-ADS1115) | 1 | — |  |
+| cjmcu-608-atecc608-crypto-authentication-module | CJMCU-608 ATECC608 Crypto Authentication Module | 1 | — |  |
+| cjmcu-i2c-breakout-chip-not-identified | CJMCU I2C Breakout (chip not identified) | 1 | — |  |
 | pimoroni-haptic-bzzz-breakout-drv2605l | Pimoroni Haptic Bzzz Breakout (DRV2605L) | 1 | — |  |
+| sparkfun-ftdi-basic-breakout-5v | SparkFun FTDI Basic Breakout - 5V | 1 | — |  |
+| sparkfun-opto-isolator-breakout-2-channel | SparkFun Opto-isolator Breakout (2 channel) | 1 | — |  |
+| tiny-rtc-i2c-module-ds1307 | Tiny RTC I2C Module (DS1307) | 1 | — |  |
+| txs0108e-8-channel-bidirectional-logic-level-converter | TXS0108E 8-Channel Bidirectional Logic Level Converter | 1 | — |  |
 
 ## Store not recorded - FeatherWing
 
@@ -1076,14 +1134,51 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 |------|---------|----:|------:|-------|
 | adafruit-rgb-matrix-featherwing | Adafruit RGB Matrix FeatherWing | 1 | — |  |
 
+## Store not recorded - Motor Driver/ESC
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| mks-tmc2209-v2-0-stepper-motor-driver | MKS TMC2209 V2.0 Stepper Motor Driver | 1 | — |  |
+
+## Store not recorded - Switch/Button
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 433mhz-smart-switch-item-2201-10a | 433MHz Smart Switch (Item 2201-10A) | 1 | — |  |
+| aqara-dual-relay-module-llkzmk11lm | Aqara Dual Relay Module (LLKZMK11LM) | 1 | — |  |
+| aqara-wireless-mini-switch-wxkg12lm | Aqara Wireless Mini Switch (WXKG12LM) | 1 | — |  |
+| sweep-hands-ir-hand-wave-switch-sw-v2-0 | Sweep-hands IR Hand-Wave Switch SW V2.0 | 1 | — |  |
+
 ## Store not recorded - Wireless/RF
 
 | ID | Product | Qty | Price | Links |
 |------|---------|----:|------:|-------|
+| 433mhz-rf-transmitter-and-receiver-kit-green | 433MHz RF Transmitter and Receiver Kit (green) | 1 | — |  |
+| 433mhz-transmitter-and-receiver-modules-crystal | 433MHz Transmitter and Receiver Modules (crystal) | 1 | — |  |
+| esp-01-esp8266-wi-fi-module | ESP-01 ESP8266 Wi-Fi Module | 1 | — |  |
+| hoperf-rfm970-rf-module | HopeRF RFM970 RF Module | 1 | — |  |
+| open-smart-rf-433-modules | OPEN-SMART RF 433 Modules | 1 | — |  |
+| raytac-mdbt50q-nrf52840-module | Raytac MDBT50Q nRF52840 Module | 1 | — |  |
 | tplink-usb-wifi-adapter | TP-Link TL-WN823N | 1 | — | [Product](https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn823n/) |
 | waveshare-pico-ble | Waveshare Pico-BLE | 1 | — |  |
 | waveshare-pico-can-b | Waveshare Pico-CAN-B | 1 | — |  |
 | waveshare-pico-lora-sx126x | Waveshare Pico-LoRa-SX126X | 1 | — |  |
+
+## Store not recorded - Prototyping
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| bte18-09-bte18-10-port-test-led-boards | BTE18-09 / BTE18-10 Port Test LED Boards | 1 | — |  |
+| sparkfun-qwiic-shield-for-photon | SparkFun Qwiic Shield for Photon | 1 | — |  |
+
+## Store not recorded - Power
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| 12v-temperature-controlled-fan-speed-module-ntc | 12V Temperature-Controlled Fan Speed Module (NTC) | 1 | — |  |
+| sparkfun-babybuck-regulator-breakout-5v | SparkFun BabyBuck Regulator Breakout - 5V | 1 | — |  |
+| usb-c-pd-trigger-board-with-voltage-select-cmtpd | USB-C PD Trigger Board with Voltage Select (CMTPD) | 1 | — |  |
+| wemo-smart-plug | Wemo Smart Plug | 1 | — |  |
 
 ## Store not recorded - Tool
 
@@ -1091,3 +1186,11 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 |------|---------|----:|------:|-------|
 | DSO2D10 | Hantek DSO2D10 | 1 | — | [Product](https://www.hantek.com/products/detail/17182) · [Guide](https://www.eevblog.com/forum/testgear/hantek-dso2x1x-models-master-thread/) |
 | RD6012 | Riden RD6012 | 1 | — | [Product](https://www.banggood.com/RIDEN-RD6012-RD6012W-USB-WiFi-DC-DC-Voltage-Current-Step-Down-Power-Supply-Module-Buck-Voltage-Converter-Voltmeter-60V-12A-p-1687705.html) · [Guide](https://sigrok.org/wiki/RDTech_RD_series) |
+| berry-pulse-oximeter-bm1000 | Berry Pulse Oximeter BM1000 | 1 | — |  |
+
+## Store not recorded - Storage
+
+| ID | Product | Qty | Price | Links |
+|------|---------|----:|------:|-------|
+| microsd-card-module-spi | MicroSD Card Module (SPI) | 1 | — |  |
+| sparkfun-openlog-artemis | SparkFun OpenLog Artemis | 1 | — |  |

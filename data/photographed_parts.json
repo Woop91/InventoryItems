@@ -1,0 +1,1070 @@
+[
+  {
+    "key": "aliexpress_mega-2560-pro-embed-board-atmega2560-ch340g",
+    "photos": [
+      "IMG_5983.jpg",
+      "IMG_5984.jpg"
+    ]
+  },
+  {
+    "key": "pimoroni_POL-3781",
+    "photos": [
+      "IMG_5982.jpg"
+    ]
+  },
+  {
+    "key": "pimoroni_POL-2122",
+    "photos": [
+      "IMG_6086.jpg"
+    ]
+  },
+  {
+    "key": "pimoroni_POL-5065",
+    "photos": [
+      "IMG_6087.jpg"
+    ]
+  },
+  {
+    "key": "benewake_TF03-100",
+    "photos": [
+      "IMG_6020.jpg",
+      "IMG_6023.jpg",
+      "IMG_6026.jpg",
+      "IMG_6028.jpg"
+    ]
+  },
+  {
+    "key": "877",
+    "photos": [
+      "IMG_6102.jpg",
+      "IMG_6103.jpg"
+    ]
+  },
+  {
+    "key": "1048",
+    "photos": [
+      "IMG_6107.jpg",
+      "IMG_6108.jpg"
+    ]
+  },
+  {
+    "key": "1201",
+    "photos": [
+      "IMG_6143.jpg",
+      "IMG_6144.jpg",
+      "IMG_6145.jpg"
+    ]
+  },
+  {
+    "key": "2305",
+    "photos": [
+      "IMG_6146.jpg",
+      "IMG_6147.jpg"
+    ]
+  },
+  {
+    "key": "3070",
+    "photos": [
+      "IMG_6148.jpg"
+    ]
+  },
+  {
+    "key": "5188",
+    "photos": [
+      "IMG_6149.jpg"
+    ]
+  },
+  {
+    "key": "757",
+    "photos": [
+      "IMG_6152.jpg"
+    ]
+  },
+  {
+    "key": "2717",
+    "photos": [
+      "IMG_6153.jpg",
+      "IMG_6154.jpg"
+    ]
+  },
+  {
+    "key": "4886",
+    "photos": [
+      "IMG_6155.jpg",
+      "IMG_6156.jpg"
+    ]
+  },
+  {
+    "key": "2200",
+    "photos": [
+      "IMG_6157.jpg"
+    ]
+  },
+  {
+    "key": "3500",
+    "photos": [
+      "IMG_6159.jpg",
+      "IMG_6160.jpg"
+    ]
+  },
+  {
+    "key": "1431",
+    "photos": [
+      "IMG_6161.jpg",
+      "IMG_6162.jpg",
+      "IMG_6163.jpg"
+    ]
+  },
+  {
+    "key": "326",
+    "photos": [
+      "IMG_6164.jpg"
+    ]
+  },
+  {
+    "key": "1612",
+    "photos": [
+      "IMG_6129.jpg"
+    ]
+  },
+  {
+    "key": "aliexpress_inmp441-i2s-mems-omnidirectional-microphone-module",
+    "photos": [
+      "IMG_6047.jpg",
+      "IMG_6048.jpg"
+    ]
+  },
+  {
+    "key": "aliexpress_sr602-mini-pir-motion-sensor-module-with-lens",
+    "photos": [
+      "IMG_6127.jpg",
+      "IMG_6128.jpg"
+    ]
+  },
+  {
+    "key": "aliexpress_gy-271-hmc5883l-3-axis-compass-module",
+    "photos": [
+      "IMG_6059.jpg",
+      "IMG_6060.jpg",
+      "IMG_6069.jpg",
+      "IMG_6070.jpg"
+    ]
+  },
+  {
+    "key": "aliexpress_433mhz-1-channel-12v-relay-receiver-with-rf-remote",
+    "photos": [
+      "IMG_6113.jpg",
+      "IMG_6114.jpg"
+    ]
+  },
+  {
+    "key": "aliexpress_433mhz-4-button-cloning-remote-control",
+    "photos": [
+      "IMG_6181.jpg"
+    ]
+  },
+  {
+    "key": "aliexpress_portable-led-tester-box-2-150-ma",
+    "photos": [
+      "IMG_6122.jpg",
+      "IMG_6123.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Arduino Pro Mini compatible board (ATmega328P, blue)",
+    "category": "Microcontroller",
+    "brand": null,
+    "model": "Pro Mini",
+    "description": "Small ATmega328P board without USB, programmed through an FTDI adapter. Several on hand, 3.3V and 5V versions.",
+    "technical_specs": "MCU: ATmega328P; Voltage: 3.3V/8MHz or 5V/16MHz; Programming: FTDI 6-pin",
+    "photos": [
+      "IMG_5974.jpg",
+      "IMG_5977.jpg",
+      "IMG_5980.jpg",
+      "IMG_5981.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Pro Micro compatible board (ATmega32U4, USB-C, black)",
+    "category": "Microcontroller",
+    "brand": null,
+    "model": "Pro Micro",
+    "description": "ATmega32U4 board with native USB on a USB-C connector, Arduino Leonardo compatible. Several on hand.",
+    "technical_specs": "MCU: ATmega32U4; USB: Type-C, native HID; Voltage: 5V",
+    "photos": [
+      "IMG_5975.jpg",
+      "IMG_5976.jpg",
+      "IMG_5978.jpg",
+      "IMG_5979.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SparkFun Qwiic IR Breakout - MLX90632",
+    "category": "Sensor",
+    "brand": "SparkFun",
+    "model": "SPX-15804",
+    "description": "Contactless infrared thermometer on a Qwiic board, read over I2C.",
+    "technical_specs": "Sensor: MLX90632 FIR; Interface: I2C (Qwiic)",
+    "photos": [
+      "IMG_5985.jpg",
+      "IMG_5986.jpg",
+      "IMG_6083.jpg",
+      "IMG_6084.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Useful Sensors Person Sensor v2.0",
+    "category": "Sensor",
+    "brand": "Useful Sensors",
+    "model": "Person Sensor v2.0",
+    "description": "Small camera board that detects faces on board and reports them over I2C. Several on hand.",
+    "technical_specs": "Interface: I2C (Qwiic connector); On-board ML face detection",
+    "photos": [
+      "IMG_5988.jpg",
+      "IMG_6073.jpg",
+      "IMG_6075.jpg",
+      "IMG_6077.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SparkFun Opto-isolator Breakout (2 channel)",
+    "category": "Breakout Board",
+    "brand": "SparkFun",
+    "model": null,
+    "description": "Two-channel opto-isolator breakout for switching a signal across isolated circuits.",
+    "technical_specs": "Channels: 2; Pins: IN1, IN2, OUT1, OUT2, GND",
+    "photos": [
+      "IMG_5989.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "ESP-01 ESP8266 Wi-Fi Module",
+    "category": "Wireless/RF",
+    "brand": null,
+    "model": "ESP-01",
+    "description": "Tiny ESP8266 Wi-Fi module with an 8-pin header.",
+    "technical_specs": "Chip: ESP8266; Interface: UART; Supply: 3.3V",
+    "photos": [
+      "IMG_5987.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SparkFun BabyBuck Regulator Breakout - 5V",
+    "category": "Power",
+    "brand": "SparkFun",
+    "model": "COM-21256",
+    "description": "Small buck regulator breakout with a 5V output.",
+    "technical_specs": "Output: 5V; Type: Buck (step-down)",
+    "photos": [
+      "IMG_5990.jpg",
+      "IMG_5996.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SparkFun OpenLog Artemis",
+    "category": "Storage",
+    "brand": "SparkFun",
+    "model": "DEV-16832",
+    "description": "Data logger with an Artemis module, microSD slot and Qwiic connector that logs I2C sensors automatically.",
+    "technical_specs": "MCU: Artemis (Apollo3); Storage: microSD; Interface: Qwiic",
+    "photos": [
+      "IMG_5991.jpg",
+      "IMG_5992.jpg",
+      "IMG_5993.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SparkFun GPS Breakout - NEO-M9N, SMA (Qwiic)",
+    "category": "Sensor",
+    "brand": "SparkFun",
+    "model": "GPS-17285",
+    "description": "u-blox NEO-M9N GNSS receiver with an SMA antenna connector and Qwiic.",
+    "technical_specs": "Receiver: u-blox NEO-M9N; Antenna: SMA; Interface: I2C (Qwiic), UART, SPI",
+    "photos": [
+      "IMG_5994.jpg",
+      "IMG_5995.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Waveshare e-Paper ESP8266 Driver Board",
+    "category": "Display",
+    "brand": "Waveshare",
+    "model": null,
+    "description": "ESP-12F board with an FPC connector for driving Waveshare SPI e-Paper panels.",
+    "technical_specs": "Module: ESP-12F (ESP8266); USB: micro-USB; Display: 24-pin e-Paper FPC",
+    "photos": [
+      "IMG_5997.jpg",
+      "IMG_6004.jpg",
+      "IMG_5998.jpg",
+      "IMG_6005.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Waveshare e-Paper ESP32 Driver Board",
+    "category": "Display",
+    "brand": "Waveshare",
+    "model": null,
+    "description": "ESP32-WROOM-32 board with an FPC connector for driving Waveshare SPI e-Paper panels.",
+    "technical_specs": "Module: ESP32-WROOM-32; USB: micro-USB; Display: 24-pin e-Paper FPC",
+    "photos": [
+      "IMG_6006.jpg",
+      "IMG_6007.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Futaba 8-MD-06INKM 8-Character VFD Display",
+    "category": "Display",
+    "brand": "Futaba",
+    "model": "8-MD-06INKM",
+    "description": "8-character dot-matrix vacuum fluorescent display with a built-in driver.",
+    "technical_specs": "Characters: 8 (5x7 dot matrix); Type: VFD",
+    "photos": [
+      "IMG_5999.jpg",
+      "IMG_6001.jpg",
+      "IMG_6002.jpg",
+      "IMG_6003.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "LILYGO T7 S3 (ESP32-S3)",
+    "category": "Microcontroller",
+    "brand": "LILYGO",
+    "model": "T7 S3",
+    "description": "ESP32-S3-WROOM-1 board with USB-C and a LiPo battery connector.",
+    "technical_specs": "Module: ESP32-S3-WROOM-1; USB: Type-C; Battery: LiPo JST",
+    "photos": [
+      "IMG_6011.jpg",
+      "IMG_6012.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SparkFun Qwiic Shield for Photon",
+    "category": "Prototyping",
+    "brand": "SparkFun",
+    "model": "DEV-14477",
+    "description": "Adds Qwiic connectors to a Particle Photon.",
+    "technical_specs": "Interface: I2C (Qwiic)",
+    "photos": [
+      "IMG_6013.jpg",
+      "IMG_6014.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "MKS TMC2209 V2.0 Stepper Motor Driver",
+    "category": "Motor Driver/ESC",
+    "brand": "MKS",
+    "model": "TMC2209 V2.0",
+    "description": "Silent stepper driver module in the StepStick footprint. At least two on hand.",
+    "technical_specs": "Driver: TMC2209; Control: STEP/DIR, UART; Footprint: StepStick",
+    "photos": [
+      "IMG_6015.jpg",
+      "IMG_6016.jpg",
+      "IMG_6017.jpg",
+      "IMG_6065.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Keyestudio HC-SR04 Ultrasonic Sensor Module",
+    "category": "Sensor",
+    "brand": "Keyestudio",
+    "model": "HC-SR04",
+    "description": "Ultrasonic distance sensor on a black Keyestudio board.",
+    "technical_specs": "Range: about 2-400 cm; Pins: VCC, Trig, Echo, GND",
+    "photos": [
+      "IMG_6018.jpg",
+      "IMG_6019.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Benewake TFmini I2C LiDAR",
+    "category": "Sensor",
+    "brand": "Benewake",
+    "model": "TFmini (IIC)",
+    "description": "Small single-point LiDAR range finder, I2C version with a 3.3V to 5V booster.",
+    "technical_specs": "Interface: I2C; Range: about 0.3-12 m",
+    "photos": [
+      "IMG_6021.jpg",
+      "IMG_6022.jpg",
+      "IMG_6027.jpg",
+      "IMG_6029.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Seeed Grove 12-bit Magnetic Rotary Position Sensor (AS5600)",
+    "category": "Sensor",
+    "brand": "Seeed Studio",
+    "model": "AS5600",
+    "description": "Contactless magnetic angle sensor on a Grove board.",
+    "technical_specs": "Sensor: AS5600; Resolution: 12-bit; Interface: I2C (Grove)",
+    "photos": [
+      "IMG_6024.jpg",
+      "IMG_6025.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "MQ Gas Sensor Modules (Flying-Fish)",
+    "category": "Sensor",
+    "brand": "Flying-Fish",
+    "model": null,
+    "description": "Set of four MQ-series gas sensor modules with analog and digital outputs.",
+    "technical_specs": "Outputs: A0, D0; Adjustable threshold",
+    "photos": [
+      "IMG_6030.jpg",
+      "IMG_6031.jpg",
+      "IMG_6032.jpg",
+      "IMG_6034.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SparkFun FTDI Basic Breakout - 5V",
+    "category": "Breakout Board",
+    "brand": "SparkFun",
+    "model": null,
+    "description": "USB to serial adapter for programming boards like the Pro Mini.",
+    "technical_specs": "Chip: FTDI FT232RL; Voltage: 5V; USB: mini-USB",
+    "photos": [
+      "IMG_6035.jpg",
+      "IMG_6036.jpg",
+      "IMG_6037.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "HC-SR04 Ultrasonic Distance Sensor (blue)",
+    "category": "Sensor",
+    "brand": null,
+    "model": "HC-SR04",
+    "description": "Ultrasonic distance sensor. One has an I2C/UART-capable board.",
+    "technical_specs": "Range: about 2-400 cm; Pins: VCC, Trig, Echo, GND",
+    "photos": [
+      "IMG_6038.jpg",
+      "IMG_6039.jpg",
+      "IMG_6040.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "TXS0108E 8-Channel Bidirectional Logic Level Converter",
+    "category": "Breakout Board",
+    "brand": null,
+    "model": "TXS0108E",
+    "description": "8-channel level shifter boards. Several on hand.",
+    "technical_specs": "Channels: 8; Side A: 1.2-3.6V; Side B: 1.65-5.5V",
+    "photos": [
+      "IMG_6042.jpg",
+      "IMG_6043.jpg",
+      "IMG_6044.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "SB Components RoundyPi (RP2040, round display)",
+    "category": "Microcontroller",
+    "brand": "SB Components",
+    "model": "SKU24018",
+    "description": "RP2040 board with a round 1.28in display and microSD slot.",
+    "technical_specs": "MCU: RP2040; Display: 1.28in round LCD; Storage: microSD",
+    "photos": [
+      "IMG_6045.jpg",
+      "IMG_6046.jpg",
+      "IMG_6089.jpg",
+      "IMG_6091.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Sweep-hands IR Hand-Wave Switch SW V2.0",
+    "category": "Switch/Button",
+    "brand": null,
+    "model": "SW V2.0",
+    "description": "Infrared hand-wave on/off switch board for LED strips.",
+    "technical_specs": "Sensor: IR reflective; Terminals: IN+, IN-, OUT+, OUT-",
+    "photos": [
+      "IMG_6049.jpg",
+      "IMG_6050.jpg",
+      "IMG_6051.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "24 GHz Radar Module with Patch Antennas (unmarked)",
+    "category": "Sensor",
+    "brand": null,
+    "model": null,
+    "description": "Microwave radar board with printed patch antennas. Model not marked; identified from photos only.",
+    "technical_specs": "Antenna: printed patch array; Pins: 3",
+    "photos": [
+      "IMG_6052.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Shielded Microwave Radar Module (unmarked)",
+    "category": "Sensor",
+    "brand": null,
+    "model": null,
+    "description": "Microwave motion sensor in a metal can. Model not marked; identified from photos only.",
+    "technical_specs": "Pins: 3",
+    "photos": [
+      "IMG_6053.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Rotary Position Sensor Module (A01648)",
+    "category": "Sensor",
+    "brand": null,
+    "model": null,
+    "description": "Purple board with a blue rotary position sensor marked A01648 and an analog output.",
+    "technical_specs": "Pins: GND, OUT, VCC",
+    "photos": [
+      "IMG_6054.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "ADXL345 3-Axis Accelerometer Module",
+    "category": "Sensor",
+    "brand": null,
+    "model": "ADXL345",
+    "description": "3-axis digital accelerometer breakout.",
+    "technical_specs": "Sensor: ADXL345; Interface: I2C/SPI",
+    "photos": [
+      "IMG_6055.jpg",
+      "IMG_6061.jpg",
+      "IMG_6062.jpg",
+      "IMG_6071.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "ADS1115 16-bit ADC Module (HW-ADS1115)",
+    "category": "Breakout Board",
+    "brand": null,
+    "model": "ADS1115",
+    "description": "4-channel 16-bit analog to digital converter.",
+    "technical_specs": "Chip: ADS1115; Channels: 4; Interface: I2C",
+    "photos": [
+      "IMG_6056.jpg",
+      "IMG_6066.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "CJMCU I2C Breakout (chip not identified)",
+    "category": "Breakout Board",
+    "brand": "CJMCU",
+    "model": null,
+    "description": "Small CJMCU board with VCC, GND, SCL and SDA. The chip marking isn't legible in the photos.",
+    "technical_specs": "Interface: I2C",
+    "photos": [
+      "IMG_6057.jpg",
+      "IMG_6058.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "CJMCU-101 OPT101 Light Sensor",
+    "category": "Sensor",
+    "brand": "CJMCU",
+    "model": "CJMCU-101",
+    "description": "Photodiode with built-in amplifier for light intensity.",
+    "technical_specs": "Sensor: OPT101; Output: analog voltage",
+    "photos": [
+      "IMG_6063.jpg",
+      "IMG_6068.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Blue Sensor Module with QFN Chip (unidentified)",
+    "category": "Sensor",
+    "brand": null,
+    "model": null,
+    "description": "Blue module with G, O, V pins and a QFN chip. Not identified from the photos.",
+    "technical_specs": "Pins: G, O, V",
+    "photos": [
+      "IMG_6064.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "CJMCU-608 ATECC608 Crypto Authentication Module",
+    "category": "Breakout Board",
+    "brand": "CJMCU",
+    "model": "CJMCU-608",
+    "description": "Secure key storage and crypto chip on a small I2C board.",
+    "technical_specs": "Chip: ATECC608; Interface: I2C",
+    "photos": [
+      "IMG_6066.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Hi-Link HLK-LD1020 Microwave Radar Module",
+    "category": "Sensor",
+    "brand": "Hi-Link",
+    "model": "HLK-LD1020",
+    "description": "Microwave motion sensor with a digital output.",
+    "technical_specs": "Type: microwave radar; Pins: V, O, G",
+    "photos": [
+      "IMG_6067.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "HX710B Air Pressure Sensor Module",
+    "category": "Sensor",
+    "brand": null,
+    "model": "HX710B",
+    "description": "Air pressure sensor with a 24-bit ADC on a red board. At least two on hand.",
+    "technical_specs": "ADC: HX710B; Pins: VCC, OUT, SCK, GND",
+    "photos": [
+      "IMG_6072.jpg",
+      "IMG_6078.jpg",
+      "IMG_6080.jpg",
+      "IMG_6081.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Skinny Addressable LED Strips with JST-SH Cables (2)",
+    "category": "LED",
+    "brand": null,
+    "model": null,
+    "description": "Two thin LED strips with small JST-SH connectors, photographed with a controller board.",
+    "technical_specs": "Connector: JST-SH",
+    "photos": [
+      "IMG_6092.jpg",
+      "IMG_6093.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "USB-C PD Trigger Board with Voltage Select (CMTPD)",
+    "category": "Power",
+    "brand": null,
+    "model": "CMTPD",
+    "description": "Requests 5, 9, 12, 15 or 20V from a USB-C PD charger and outputs it on a screw terminal.",
+    "technical_specs": "Input: USB-C PD; Output: 5/9/12/15/20V selectable; Terminal: 2-pin screw",
+    "photos": [
+      "IMG_6094.jpg",
+      "IMG_6095.jpg",
+      "IMG_6096.jpg",
+      "IMG_6097.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "12V Temperature-Controlled Fan Speed Module (NTC)",
+    "category": "Power",
+    "brand": null,
+    "model": null,
+    "description": "Fan controller that sets fan speed from an NTC temperature probe.",
+    "technical_specs": "Input: 12V DC; Fan output: max 0.8A; Probe: NTC",
+    "photos": [
+      "IMG_6099.jpg",
+      "IMG_6100.jpg",
+      "IMG_6101.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "MicroSD Card Module (SPI)",
+    "category": "Storage",
+    "brand": null,
+    "model": null,
+    "description": "MicroSD card breakout with SPI pins. Two on hand.",
+    "technical_specs": "Interface: SPI; Pins: GND, VCC, MISO, MOSI, SCK, CS",
+    "photos": [
+      "IMG_6104.jpg",
+      "IMG_6105.jpg",
+      "IMG_6106.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Tiny RTC I2C Module (DS1307)",
+    "category": "Breakout Board",
+    "brand": null,
+    "model": "DS1307",
+    "description": "Real-time clock module with a coin cell holder and EEPROM. Several on hand.",
+    "technical_specs": "RTC: DS1307; EEPROM: AT24C32; Interface: I2C",
+    "photos": [
+      "IMG_6109.jpg",
+      "IMG_6110.jpg",
+      "IMG_6111.jpg",
+      "IMG_6112.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Pulse Sensor (Optical Heart Rate)",
+    "category": "Sensor",
+    "brand": null,
+    "model": null,
+    "description": "Clip-on optical heart rate sensor with a green LED and analog output.",
+    "technical_specs": "Output: analog; Supply: 3-5V",
+    "photos": [
+      "IMG_6115.jpg",
+      "IMG_6116.jpg",
+      "IMG_6117.jpg",
+      "IMG_6118.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "IR Obstacle / Flame Sensor Modules and Transistors",
+    "category": "Sensor",
+    "brand": null,
+    "model": null,
+    "description": "A bin of IR sensor modules with LM393 comparators, plus loose transistors and IR LEDs.",
+    "technical_specs": "Outputs: D0 (some A0)",
+    "photos": [
+      "IMG_6119.jpg",
+      "IMG_6120.jpg",
+      "IMG_6121.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "LED Assortment (RGB, red, green, amber, pink)",
+    "category": "LED",
+    "brand": null,
+    "model": null,
+    "description": "Sorted 5mm and 3mm LEDs in labeled bins.",
+    "technical_specs": "Colors: RGB, red, green, amber, pink",
+    "photos": [
+      "IMG_6122.jpg",
+      "IMG_6123.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "HC-SR501 PIR Motion Sensor",
+    "category": "Sensor",
+    "brand": null,
+    "model": "HC-SR501",
+    "description": "Adjustable PIR motion sensor with a Fresnel dome.",
+    "technical_specs": "Range: up to about 7 m; Output: digital",
+    "photos": [
+      "IMG_6124.jpg",
+      "IMG_6125.jpg",
+      "IMG_6126.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "NeoPixel-style RGB LED Ring and Strip",
+    "category": "LED",
+    "brand": null,
+    "model": null,
+    "description": "Addressable RGB LED ring and short strip.",
+    "technical_specs": "LEDs: WS2812-style 5050",
+    "photos": [
+      "IMG_6130.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "8x8 RGB LED Matrix (WS2812B, 64 LEDs)",
+    "category": "LED",
+    "brand": null,
+    "model": null,
+    "description": "Addressable 8x8 RGB LED panel.",
+    "technical_specs": "LEDs: 64 WS2812B-style",
+    "photos": [
+      "IMG_6131.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "7-Segment and Bar Graph LED Displays (assorted)",
+    "category": "Display",
+    "brand": null,
+    "model": null,
+    "description": "4-digit and single-digit 7-segment displays, an LED bar graph and an 8x8 red matrix.",
+    "technical_specs": "Mixed",
+    "photos": [
+      "IMG_6132.jpg",
+      "IMG_6133.jpg",
+      "IMG_6134.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "MAX7219 8x8 LED Dot Matrix Module (single, red)",
+    "category": "Display",
+    "brand": null,
+    "model": "MAX7219",
+    "description": "Single 8x8 red LED matrix on a MAX7219 driver board.",
+    "technical_specs": "Driver: MAX7219; Interface: SPI",
+    "photos": [
+      "IMG_6135.jpg",
+      "IMG_6136.jpg",
+      "IMG_6137.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "BTE18-09 / BTE18-10 Port Test LED Boards",
+    "category": "Prototyping",
+    "brand": "betemcu",
+    "model": "BTE18-09, BTE18-10",
+    "description": "Rows of LEDs on headers for checking pin states. Purple and green versions.",
+    "technical_specs": "Type: LED indicator boards",
+    "photos": [
+      "IMG_6138.jpg",
+      "IMG_6140.jpg",
+      "IMG_6141.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Warm White LED Strip Board (5 LEDs)",
+    "category": "LED",
+    "brand": null,
+    "model": null,
+    "description": "Short rigid board with five warm white SMD LEDs.",
+    "technical_specs": "LEDs: 5 x warm white SMD",
+    "photos": [
+      "IMG_6142.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "433MHz Transmitter and Receiver Modules (crystal)",
+    "category": "Wireless/RF",
+    "brand": null,
+    "model": null,
+    "description": "Small blue 433MHz ASK modules with crystals.",
+    "technical_specs": "Frequency: 433MHz; Modulation: ASK",
+    "photos": [
+      "IMG_6165.jpg",
+      "IMG_6166.jpg",
+      "IMG_6167.jpg",
+      "IMG_6168.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "OPEN-SMART RF 433 Modules",
+    "category": "Wireless/RF",
+    "brand": "OPEN-SMART",
+    "model": "RF 433",
+    "description": "433MHz RF modules on blue OPEN-SMART boards.",
+    "technical_specs": "Frequency: 433MHz",
+    "photos": [
+      "IMG_6169.jpg",
+      "IMG_6170.jpg",
+      "IMG_6171.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "433MHz RF Transmitter and Receiver Kit (green)",
+    "category": "Wireless/RF",
+    "brand": null,
+    "model": null,
+    "description": "Common green 433MHz transmitter and receiver pair.",
+    "technical_specs": "Frequency: 433MHz; Modulation: ASK",
+    "photos": [
+      "IMG_6172.jpg",
+      "IMG_6173.jpg",
+      "IMG_6174.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Raytac MDBT50Q nRF52840 Module",
+    "category": "Wireless/RF",
+    "brand": "Raytac",
+    "model": "MDBT50Q",
+    "description": "Bluetooth LE module with an nRF52840, plus a carrier board.",
+    "technical_specs": "Chip: nRF52840; Radio: Bluetooth 5, 802.15.4",
+    "photos": [
+      "IMG_6175.jpg",
+      "IMG_6176.jpg",
+      "IMG_6177.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "HopeRF RFM970 RF Module",
+    "category": "Wireless/RF",
+    "brand": "HopeRF",
+    "model": "RFM970",
+    "description": "RF transceiver modules on tape. FCC ID 2ASEORFM970.",
+    "technical_specs": "Packaging: cut tape",
+    "photos": [
+      "IMG_6178.jpg",
+      "IMG_6179.jpg",
+      "IMG_6180.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Wemo Smart Plug",
+    "category": "Power",
+    "brand": "Wemo",
+    "model": null,
+    "description": "Wi-Fi smart plug. Two on hand.",
+    "technical_specs": "Rating: 15A; Control: Wi-Fi, HomeKit",
+    "photos": [
+      "IMG_6183.jpg",
+      "IMG_6184.jpg",
+      "IMG_6185.jpg",
+      "IMG_6186.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "LIFX A19 Smart Bulb",
+    "category": "LED",
+    "brand": "LIFX",
+    "model": "A19",
+    "description": "Wi-Fi colour smart bulb. HomeKit setup cards for at least three bulbs.",
+    "technical_specs": "Base: E26; Control: Wi-Fi, HomeKit",
+    "photos": [
+      "IMG_6187.jpg",
+      "IMG_6188.jpg",
+      "IMG_6192.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Aqara Dual Relay Module (LLKZMK11LM)",
+    "category": "Switch/Button",
+    "brand": "Aqara",
+    "model": "LLKZMK11LM",
+    "description": "Zigbee two-channel relay for wiring behind a switch.",
+    "technical_specs": "Rating: 10A 250V; Protocol: Zigbee",
+    "photos": [
+      "IMG_6189.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Aqara Water Leak Sensor (SJCGQ11LM)",
+    "category": "Sensor",
+    "brand": "Aqara",
+    "model": "SJCGQ11LM",
+    "description": "Zigbee water leak sensor. Two on hand.",
+    "technical_specs": "Battery: CR2032; Protocol: Zigbee",
+    "photos": [
+      "IMG_6190.jpg",
+      "IMG_6191.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Aqara Wireless Mini Switch (WXKG12LM)",
+    "category": "Switch/Button",
+    "brand": "Aqara",
+    "model": "WXKG12LM",
+    "description": "Zigbee wireless button.",
+    "technical_specs": "Battery: CR2032; Protocol: Zigbee",
+    "photos": [
+      "IMG_6193.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Aqara Motion Sensor P1",
+    "category": "Sensor",
+    "brand": "Aqara",
+    "model": "MS-S02",
+    "description": "Zigbee motion and light sensor on a stand, HomeKit code on the base.",
+    "technical_specs": "Protocol: Zigbee",
+    "photos": [
+      "IMG_6194.jpg",
+      "IMG_6195.jpg",
+      "IMG_6200.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Philips Hue White A21 1600 lm Bulb",
+    "category": "LED",
+    "brand": "Philips Hue",
+    "model": "9290023351",
+    "description": "Hue white smart bulb with Zigbee and Bluetooth. Two on hand.",
+    "technical_specs": "Output: 1600 lm, 2700K; Base: E26; Protocol: Zigbee, Bluetooth",
+    "photos": [
+      "IMG_6196.jpg",
+      "IMG_6197.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Yeelight Smart LED Bulb (Color) YLDP06YL",
+    "category": "LED",
+    "brand": "Yeelight",
+    "model": "YLDP06YL",
+    "description": "Wi-Fi colour smart bulb. Two photographed.",
+    "technical_specs": "Power: 10W; Base: E27; Control: Wi-Fi",
+    "photos": [
+      "IMG_6198.jpg",
+      "IMG_6199.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "433MHz Smart Switch (Item 2201-10A)",
+    "category": "Switch/Button",
+    "brand": null,
+    "model": "2201-10A",
+    "description": "Mains relay switch with Wi-Fi and 433MHz RF control. Two on hand.",
+    "technical_specs": "Input: AC 90-250V; Max current: 10A; RF: 433MHz",
+    "photos": [
+      "IMG_6201.jpg",
+      "IMG_6202.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Berry Pulse Oximeter BM1000",
+    "category": "Tool",
+    "brand": "Berry",
+    "model": "BM1000",
+    "description": "Fingertip pulse oximeter (SpO2 and pulse rate).",
+    "technical_specs": "SpO2: 0-100%; Pulse: 25-250 bpm; Battery: 2 x AAA",
+    "photos": [
+      "IMG_6203.jpg",
+      "IMG_6204.jpg",
+      "IMG_6205.jpg"
+    ]
+  },
+  {
+    "key": null,
+    "name": "Aqara Presence Sensor FP2",
+    "category": "Sensor",
+    "brand": "Aqara",
+    "model": "FP2",
+    "description": "mmWave presence sensor with zones, Wi-Fi, HomeKit and Matter.",
+    "technical_specs": "Radar: mmWave; Power: USB-C 5V; Control: Wi-Fi",
+    "photos": [
+      "IMG_6206.jpg"
+    ]
+  }
+]

@@ -12,6 +12,10 @@ Photos live in images/my-photos/. Every product listed here gets
 in_use = true and my_photos; every other product has in_use cleared, so this
 file is the single list of what is in use. Safe to re-run.
 
+data/photographed_parts.json has the same format for parts I've photographed
+but am not using: they get my_photos (added to any in-use photos) and are
+created when new, but are not marked in use.
+
 Usage:
     python mark_in_use.py && python build_catalog.py --readme
 """
@@ -21,6 +25,7 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 DATA = SCRIPT_DIR / "data" / "parts_in_use.json"
+PHOTOGRAPHED = SCRIPT_DIR / "data" / "photographed_parts.json"
 PRODUCTS = SCRIPT_DIR / "products.json"
 PHOTO_DIR = "images/my-photos"
 
@@ -32,6 +37,11 @@ def slug(s: str) -> str:
 def main() -> None:
     products = json.loads(PRODUCTS.read_text(encoding="utf-8"))
     entries = json.loads(DATA.read_text(encoding="utf-8"))
+    for e in entries:
+        e["_in_use"] = True
+    in_use_count = len(entries)
+    if PHOTOGRAPHED.exists():
+        entries += [dict(e, _in_use=False) for e in json.loads(PHOTOGRAPHED.read_text(encoding="utf-8"))]
     for p in products.values():
         p.pop("in_use", None)
         p.pop("my_photos", None)
@@ -41,6 +51,11 @@ def main() -> None:
         key = e.get("key")
         if key is None:
             key = f"photo_{slug(e['name'])}"
+        if e.get("key") is not None and key in products and not e["_in_use"]:
+            merged = products[key].get("my_photos", [])
+            products[key]["my_photos"] = merged + [x for x in photos if x not in merged]
+            continue
+        if e.get("key") is None:
             first = photos[0] if photos else None
             products[key] = {
                 "product_id": slug(e["name"]),
@@ -62,7 +77,10 @@ def main() -> None:
             }
             added += 1
         elif key not in products:
-            raise SystemExit(f"unknown product key in {DATA.name}: {key}")
+            raise SystemExit(f"unknown product key in the data files: {key}")
+        if not e["_in_use"]:
+            products[key]["my_photos"] = photos
+            continue
         products[key]["in_use"] = True
         products[key]["my_photos"] = photos
         if e.get("note"):
@@ -70,7 +88,7 @@ def main() -> None:
         else:
             products[key].pop("in_use_note", None)
     PRODUCTS.write_text(json.dumps(products, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"Marked {len(entries)} parts in use ({added} new to the inventory); products.json has {len(products)}")
+    print(f"Marked {in_use_count} parts in use, {len(entries) - in_use_count} photographed ({added} new to the inventory); products.json has {len(products)}")
 
 
 if __name__ == "__main__":

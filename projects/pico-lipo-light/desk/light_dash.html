@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Air Box Live</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f4f3ef; --surface: #fcfcfb; --surface-2: #f6f5f1;
+  --ink: #0b0b0b; --ink-2: #52514e; --muted: #6f6d68;
+  --grid: #e1e0d9; --axis: #83817a; --ring: rgba(11,11,11,0.08);
+  --shadow: 0 1px 2px rgba(20,20,10,0.04), 0 8px 24px rgba(20,20,10,0.06);
+  --scd: #2a78d6; --bme: #eb6834; --aht: #168761;
+  --red: #b0367f; --nh3: #6250d6; --ox: #b07d00;
+  --good-ink: #006300; --good-bg: #e6f5e6;
+  --warn-ink: #7a5200; --warn-bg: #fff4d9;
+  --bad-ink: #9a3a12; --bad-bg: #fde9e0;
+  --crit-ink: #9e2222; --crit-bg: #fbe3e3;
+  --heading: #1f4f8f; --action: #1f6f5c; --action-ink: #ffffff;
+  --message-in: #e8f1fb; --message-in-ink: #0b2a4a;
+  --message-out: #e6f5e6; --message-out-ink: #08350a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink);
+  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1080px; margin: 0 auto; padding: 20px 16px 40px; }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 16px; }
+h1 { font-size: 22px; margin: 0; color: var(--heading); }
+.sub { color: var(--muted); font-size: 13px; }
+.badge { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.live { color: var(--good-ink); background: var(--good-bg); }
+.stale { color: var(--warn-ink); background: var(--warn-bg); }
+.poor { color: var(--bad-ink); background: var(--bad-bg); }
+.down { color: var(--crit-ink); background: var(--crit-bg); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.card { background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); border: 1px solid var(--ring); padding: 14px 16px; }
+.label { font-size: 13px; color: var(--ink-2); font-weight: 600; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+.value { font-size: 34px; font-weight: 700; letter-spacing: -0.5px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.unit { font-size: 15px; color: var(--muted); font-weight: 500; margin-left: 4px; }
+.note { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+.rows { margin-top: 6px; display: grid; gap: 3px; font-size: 14px; font-variant-numeric: tabular-nums; }
+.rows div { display: flex; align-items: center; gap: 7px; }
+.rows div b { margin-left: auto; font-size: 17px; }
+.chip { font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px; margin-left: auto; }
+.tabs { display: flex; gap: 6px; margin: 18px 0 10px; flex-wrap: wrap; align-items: center; }
+.tabs button { font: inherit; font-size: 13px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--axis);
+  background: var(--surface); color: var(--ink-2); cursor: pointer; }
+.tabs button.on { background: var(--heading); border-color: var(--heading); color: var(--action-ink); }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--heading); outline-offset: 3px; }
+button:disabled { cursor: default; }
+.tabs a { color: var(--heading); padding: 5px 12px; }
+.notice { color: var(--ink-2); overflow-wrap: anywhere; }
+.chart { margin-bottom: 14px; }
+.chart h2 { font-size: 14px; margin: 0 0 4px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.chart h2 span { color: var(--muted); font-weight: 500; font-size: 12.5px; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--ink-2); margin-bottom: 4px; }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+canvas { width: 100%; height: 160px; display: block; }
+footer { color: var(--muted); font-size: 12.5px; margin-top: 18px; }
+.lora { margin-top: 14px; }
+.lora-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.lh { font-size: 16px; margin: 0; color: var(--action); }
+.peers { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 12px; }
+.peer { background: var(--surface-2); border-radius: 10px; padding: 10px 12px; border: 1px solid var(--ring); }
+.peer b { font-size: 15px; }
+.peer .kv { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--ink-2); margin-top: 4px; font-variant-numeric: tabular-nums; }
+.peer .kv span strong { color: var(--ink); }
+.msgs { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; max-height: 260px; overflow-y: auto; }
+.msg { max-width: 80%; padding: 7px 11px; border-radius: 12px; font-size: 14px; overflow-wrap: anywhere; }
+.msg.in { align-self: flex-start; background: var(--message-in); color: var(--message-in-ink); }
+.msg.out { align-self: flex-end; background: var(--message-out); color: var(--message-out-ink); }
+.msg .meta { display: block; font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+.msg .meta.bad { color: var(--crit-ink); }
+.sendrow { display: flex; gap: 8px; margin-top: 12px; }
+.sendrow input { flex: 1; min-width: 0; font: inherit; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--axis); background: var(--surface); color: var(--ink); }
+.sendrow button { font: inherit; font-weight: 600; padding: 8px 14px; border-radius: 10px; border: 0; background: var(--action); color: var(--action-ink); cursor: pointer; }
+.empty { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Pico LiPo air box</h1>
+    <span id="status" class="badge stale">connecting…</span>
+    <span class="sub" id="updated"></span>
+  </header>
+  <p class="notice" id="source-info" role="status">Connecting to the air box…</p>
+  <p class="notice" id="history-info" role="status">Loading saved history…</p>
+
+  <section class="grid">
+    <div class="card">
+      <div class="label"><span class="dot" style="background:var(--scd)"></span>CO₂ <span class="sub">SCD41</span><span id="co2chip" class="chip"></span></div>
+      <div class="value"><span id="co2">–</span><span class="unit">ppm</span></div>
+      <div class="note">Under 800 fresh · 800–1200 getting stuffy · over 1200 open a window</div>
+    </div>
+    <div class="card">
+      <div class="label">Temperature</div>
+      <div class="rows" id="temps"></div>
+      <div class="note">Three sensors side by side. A degree or two apart is normal; a sensor next to the gas sensors' heaters reads warm.</div>
+    </div>
+    <div class="card">
+      <div class="label">Humidity</div>
+      <div class="rows" id="hums"></div>
+    </div>
+    <div class="card">
+      <div class="label"><span class="dot" style="background:var(--bme)"></span>Pressure <span class="sub">BME688</span></div>
+      <div class="value"><span id="hpa">–</span><span class="unit">hPa</span></div>
+      <div class="note" id="inhg"></div>
+    </div>
+    <div class="card">
+      <div class="label"><span class="dot" style="background:var(--bme)"></span>Air quality (VOC) <span class="sub">BME688</span></div>
+      <div class="value"><span id="voc">–</span><span class="unit">kΩ</span></div>
+      <div class="note">Gas-sensor resistance: higher means cleaner air. Compare it with its own recent values; it has no fixed scale.</div>
+    </div>
+    <div class="card">
+      <div class="label">Gases <span class="sub">MICS6814</span><span id="micschip" class="chip"></span></div>
+      <div class="rows" id="mics"></div>
+      <div class="note">Sensor resistances. Reducing gases (CO, alcohol) and ammonia pull theirs down; NO₂ pushes the oxidising one up.</div>
+    </div>
+  </section>
+
+  <div class="tabs" id="tabs">
+    <button data-r="10m">10 min</button>
+    <button data-r="30m">30 min</button>
+    <button data-r="2h" class="on" aria-pressed="true">2 hours</button>
+    <button data-r="6h">6 hours</button>
+    <button data-r="24h">24 hours</button>
+    <button data-r="7d">7 days</button>
+    <button data-r="30d">30 days</button>
+    <button data-r="all">All</button>
+    <a href="/export.csv">CSV · all readings</a>
+    <span class="sub" style="margin-left:6px">Times are Eastern.</span>
+  </div>
+
+  <section class="card">
+    <div class="chart"><h2>CO₂ <span>ppm</span></h2><canvas id="c-co2"></canvas></div>
+    <div class="chart"><h2>Temperature <span>°F</span></h2><div class="legend" id="l-temp"></div><canvas id="c-temp"></canvas></div>
+    <div class="chart"><h2>Humidity <span>%</span></h2><div class="legend" id="l-hum"></div><canvas id="c-hum"></canvas></div>
+    <div class="chart"><h2>Pressure <span>hPa</span></h2><canvas id="c-hpa"></canvas></div>
+    <div class="chart"><h2>Gas sensors <span>kΩ, log scale</span></h2><div class="legend" id="l-gas"></div><canvas id="c-gas"></canvas></div>
+  </section>
+
+  <section class="card lora">
+    <div class="lora-head">
+      <h2 class="lh">LoRa link</h2>
+      <span id="lbadge" class="badge stale">waiting</span>
+      <span class="sub" id="lsub"></span>
+    </div>
+    <div id="peers" class="peers"></div>
+    <div class="msgs" id="msgs"></div>
+    <form id="sendform" class="sendrow" autocomplete="off">
+      <input id="sendtext" maxlength="180" aria-label="Message to the other box" placeholder="Message to the other box">
+      <button type="submit">Send over LoRa</button>
+    </form>
+    <p class="notice" id="send-status" role="status"></p>
+  </section>
+
+  <footer>Readings are saved on disk and retained across restarts. Current values refresh every 5 seconds; charts refresh every 10 seconds (every minute for 7 days, 30 days and All). USB supplies every sensor reading; the Desk radio relay supplies readings transmitted by the air box. Charts leave gaps when no data was recorded. Times are Eastern.</footer>
+</main>
+<script>
+const rows = [];
+let range = '2h', windowS = 7200, status = { serial: false };
+let requestNumber = 0;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const fmtT = t => new Date(t * 1000).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', second: '2-digit' });
+const fmtDate = t => new Date(t * 1000).toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ET';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const ago = t => { const s = Math.max(0, Math.round(Date.now() / 1000 - t)); return s < 60 ? s + ' s ago' : Math.round(s / 60) + ' min ago'; };
+const fmt = (v, d) => v == null ? '–' : (+v).toFixed(d);
+
+const SERIES = {
+  temp: [['scd41_temp_f', 'SCD41', '--scd'], ['bme688_temp_f', 'BME688', '--bme'], ['aht10_temp_f', 'AHT10', '--aht']],
+  hum: [['scd41_hum', 'SCD41', '--scd'], ['bme688_hum', 'BME688', '--bme'], ['aht10_hum', 'AHT10', '--aht']],
+  gas: [['bme688_gas_kohm', 'BME688 VOC', '--bme'], ['mics6814_red_kohm', 'Reducing (CO)', '--red'],
+        ['mics6814_nh3_kohm', 'Ammonia (NH₃)', '--nh3'], ['mics6814_ox_kohm', 'Oxidising (NO₂)', '--ox']],
+};
+for (const [id, key] of [['l-temp', 'temp'], ['l-hum', 'hum'], ['l-gas', 'gas']])
+  document.getElementById(id).innerHTML = SERIES[key].map(([, n, c]) => `<span><i style="background:var(${c})"></i>${n}</span>`).join('');
+
+function co2Rating(v) {
+  if (v < 800) return ['fresh', 'live'];
+  if (v <= 1200) return ['getting stuffy', 'stale'];
+  if (v <= 2000) return ['stuffy', 'poor'];
+  return ['poor', 'down'];
+}
+
+function drawChart(id, series, opts = {}) {
+  const cv = document.getElementById(id), dpr = window.devicePixelRatio || 1;
+  const w = cv.clientWidth, h = cv.clientHeight;
+  cv.width = w * dpr; cv.height = h * dpr;
+  const g = cv.getContext('2d'); g.scale(dpr, dpr); g.clearRect(0, 0, w, h);
+  const now = status.end || Date.now() / 1000, t0 = status.start || now - windowS;
+  windowS = Math.max(1, now - t0);
+  const pts = rows.filter(r => r[0] >= t0);
+  const L = 50, R = 8, T = 8, B = 20, pw = w - L - R, ph = h - T - B;
+  const vals = [];
+  for (const [k] of series) for (const r of pts) if (r[1][k] != null) vals.push(r[1][k]);
+  g.font = '11px system-ui, sans-serif'; g.fillStyle = css('--muted'); g.strokeStyle = css('--grid'); g.lineWidth = 1;
+  let lo, hi, ticks;
+  const log = opts.log;
+  if (!vals.length) { lo = 0; hi = 1; }
+  else if (log) {
+    lo = Math.floor(Math.log10(Math.max(0.01, Math.min(...vals))));
+    hi = Math.ceil(Math.log10(Math.max(...vals)));
+    if (hi === lo) hi = lo + 1;
+  } else {
+    let mn = Math.min(...vals), mx = Math.max(...vals);
+    const pad = Math.max((mx - mn) * 0.15, opts.minSpan || 1);
+    lo = mn - pad; hi = mx + pad;
+    if (opts.zero) lo = Math.max(0, lo);
+  }
+  const yOf = v => T + ph - ph * (log ? (Math.log10(Math.max(v, 1e-3)) - lo) / (hi - lo) : (v - lo) / (hi - lo));
+  ticks = log ? Array.from({ length: hi - lo + 1 }, (_, i) => Math.pow(10, lo + i)) : [0, 1, 2, 3, 4].map(i => lo + (hi - lo) * i / 4);
+  g.textAlign = 'right';
+  for (const v of ticks) {
+    const y = yOf(v);
+    g.beginPath(); g.moveTo(L, y); g.lineTo(L + pw, y); g.stroke();
+    const lab = log ? (v >= 1000 ? (v / 1000) + 'M' : v >= 1 ? v + 'k' : v * 1000 + '') : (Math.abs(hi - lo) < 10 ? v.toFixed(1) : v.toFixed(0));
+    g.fillText(lab, L - 6, y + 4);
+  }
+  g.textAlign = 'center';
+  const tickCount = Math.max(1, Math.min(5, Math.floor(pw / (windowS >= 86400 ? 160 : 110))));
+  for (let i = 0; i <= tickCount; i++) {
+    const t = t0 + windowS * i / tickCount;
+    const label = new Date(t * 1000).toLocaleString('en-US', {
+      timeZone: 'America/New_York', month: windowS >= 86400 ? 'short' : undefined,
+      day: windowS >= 86400 ? 'numeric' : undefined, hour: 'numeric', minute: '2-digit'
+    });
+    g.textAlign = i === 0 ? 'left' : i === tickCount ? 'right' : 'center';
+    g.fillText(label, L + pw * i / tickCount, h - 5);
+  }
+  for (const [k, , c] of series) {
+    g.strokeStyle = css(c); g.lineWidth = 2; g.lineJoin = 'round'; g.beginPath();
+    let started = false, previous = null;
+    for (const r of pts) {
+      const v = r[1][k];
+      if (v == null) { started = false; continue; }
+      if (previous != null && r[0] - previous > Math.max(45, (status.bucket || 2) * 3)) started = false;
+      const x = L + pw * (r[0] - t0) / windowS, y = yOf(v);
+      started ? g.lineTo(x, y) : g.moveTo(x, y); started = true; previous = r[0];
+    }
+    g.stroke();
+    g.fillStyle = css(c);
+    for (const r of pts) if (r[1][k] != null) {
+      const x = L + pw * (r[0] - t0) / windowS, y = yOf(r[1][k]);
+      g.beginPath(); g.arc(x, y, 2, 0, Math.PI * 2); g.fill();
+    }
+  }
+  if (!vals.length) { g.fillStyle = css('--ink-2'); g.textAlign = 'center'; g.fillText('No readings recorded in this range', L + pw / 2, T + ph / 2); }
+}
+
+function rowsHtml(list, d, unit, dec) {
+  return list.map(([k, n, c]) => `<div><span class="dot" style="background:var(${c})"></span>${n}<b>${fmt(d[k], dec)}${d[k] == null ? '' : unit}</b></div>`).join('');
+}
+
+function render() {
+  const s = document.getElementById('status');
+  const r = status.latest;
+  const age = r ? Date.now() / 1000 - r[0] : Infinity;
+  if (!status.live || age > 45) { s.className = 'badge down'; s.textContent = 'Offline · saved readings'; }
+  else { s.className = 'badge live'; s.textContent = status.source === 'radio' ? 'Live via Desk · LoRa' : 'Live · USB'; }
+  document.getElementById('updated').textContent = r ? 'Last reading ' + fmtDate(r[0]) : 'No saved readings';
+  document.getElementById('source-info').textContent = status.requestError || (status.live ?
+    (status.source === 'radio' ? 'Receiving through Desk. Separate BME688 and AHT10 temperature and humidity readings require USB or a radio firmware update; unavailable values show –.' : 'Connected by USB. All reporting sensor channels are saved.') :
+    'No fresh readings. Values below are historical. Check the air box power, USB cable and Desk connection.');
+  document.getElementById('history-info').textContent = status.first != null ?
+    'Saved history: ' + fmtDate(status.first) + ' to ' + fmtDate(status.last) + ' · ' + status.total.toLocaleString() + ' readings.' +
+    (status.largest_gap_s > 120 ? ' Recording gap in this range: ' + Math.round(status.largest_gap_s / 60) + ' minutes.' : '') : 'No saved history yet.';
+  document.querySelector('#sendform button').disabled = !status.can_send;
+  document.querySelector('#sendform button').textContent = 'Send over LoRa';
+  const d = r ? r[1] : {};
+  document.getElementById('co2').textContent = fmt(d.scd41_co2, 0);
+  const cc = document.getElementById('co2chip');
+  if (d.scd41_co2 != null) { const [t, k] = co2Rating(d.scd41_co2); cc.textContent = t; cc.className = 'chip ' + k; } else cc.textContent = '';
+  document.getElementById('temps').innerHTML = rowsHtml(SERIES.temp, d, ' °F', 1);
+  document.getElementById('hums').innerHTML = rowsHtml(SERIES.hum, d, '%', 1);
+  document.getElementById('hpa').textContent = fmt(d.bme688_hpa, 1);
+  document.getElementById('inhg').textContent = d.bme688_hpa != null ? (d.bme688_hpa * 0.02953).toFixed(2) + ' inHg' : '';
+  document.getElementById('voc').textContent = fmt(d.bme688_gas_kohm, 1);
+  document.getElementById('mics').innerHTML = rowsHtml(SERIES.gas.slice(1), d, ' kΩ', 1);
+  const mc = document.getElementById('micschip');
+  if (d.mics6814_warm_s != null) {
+    const warm = d.mics6814_warm_s >= 600;
+    mc.textContent = warm ? 'warmed up' : 'warming up, ' + Math.ceil((600 - d.mics6814_warm_s) / 60) + ' min left';
+    mc.className = 'chip ' + (warm ? 'live' : 'stale');
+  } else mc.textContent = '';
+  renderLora(status.lora);
+  if (status.source === 'radio') {
+    document.getElementById('lbadge').textContent = status.live ? 'Receiving via Desk' : 'Relay offline';
+    document.getElementById('lbadge').className = 'badge ' + (status.live ? 'live' : 'down');
+    document.getElementById('lsub').textContent = 'USB not connected. Radio readings are being recorded on this workstation.';
+    document.getElementById('peers').textContent = 'Desk relays the Pico LiPo broadcasts over Wi-Fi.';
+    document.querySelector('#sendform button').textContent = 'Desk → Pico LiPo';
+  }
+  drawChart('c-co2', [['scd41_co2', 'SCD41', '--scd']], { minSpan: 50 });
+  drawChart('c-temp', SERIES.temp, { minSpan: 1 });
+  drawChart('c-hum', SERIES.hum, { minSpan: 2 });
+  drawChart('c-hpa', [['bme688_hpa', 'BME688', '--bme']], { minSpan: 1 });
+  drawChart('c-gas', SERIES.gas, { log: true });
+}
+
+const signal = (rssi, snr) => snr >= 5 && rssi > -100 ? 'strong' : snr >= -5 ? 'fair' : 'weak';
+let lastMsgCount = -1;
+function renderLora(L) {
+  const b = document.getElementById('lbadge'), sub = document.getElementById('lsub');
+  if (!L) return;
+  const peers = Object.entries(L.peers || {});
+  const fresh = peers.some(([, p]) => Date.now() / 1000 - p.last < 45);
+  if (L.up === false) { b.className = 'badge down'; b.textContent = 'radio down'; }
+  else if (fresh) { b.className = 'badge live'; b.textContent = 'talking'; }
+  else if (L.up) { b.className = 'badge stale'; b.textContent = 'listening, other box not heard'; }
+  else { b.className = 'badge stale'; b.textContent = 'starting'; }
+  sub.textContent = L.up === false ? (L.error || '') :
+    (L.beacons_out ? 'This box sent ' + L.beacons_out + (L.beacons_out === 1 ? ' beacon' : ' beacons') + (L.last_out ? ', last ' + ago(L.last_out) : '') : '');
+  document.getElementById('peers').innerHTML = peers.length ? peers.map(([name, p]) => {
+    const d = p.d || {}, bits = [];
+    if (d.co2 != null) bits.push('CO₂ <strong>' + d.co2 + '</strong> ppm');
+    if (d.temp_f != null) bits.push('<strong>' + d.temp_f + '</strong> °F');
+    if (d.hum != null) bits.push('<strong>' + Math.round(d.hum) + '</strong>% RH');
+    return '<div class="peer"><b>' + esc(name) + '</b> <span class="sub">heard ' + ago(p.last) + '</span>' +
+      '<div class="kv"><span>signal <strong>' + signal(p.rssi, p.snr) + '</strong></span><span>RSSI <strong>' + p.rssi +
+      '</strong> dBm</span><span>SNR <strong>' + p.snr + '</strong> dB</span></div>' +
+      (bits.length ? '<div class="kv">' + bits.map(x => '<span>' + x + '</span>').join('') + '</div>' : '') + '</div>';
+  }).join('') : '<div class="empty">No other box heard yet. Beacons go out every 15 seconds.</div>';
+  const msgs = L.messages || [], box = document.getElementById('msgs');
+  box.innerHTML = msgs.length ? msgs.map(m => {
+    const when = fmtT(m.t) + ' ET';
+    const meta = m.in ? 'from ' + esc(m.who) + ' · ' + when :
+      (m.status === 'delivered' ? 'delivered to ' + esc(m.who || 'other box') : m.status === 'not delivered' ? 'not delivered' : 'sending…') + ' · ' + when;
+    return '<div class="msg ' + (m.in ? 'in' : 'out') + '">' + esc(m.x) +
+      '<span class="meta' + (m.status === 'not delivered' ? ' bad' : '') + '">' + meta + '</span></div>';
+  }).join('') : '<div class="empty">No messages yet.</div>';
+  if (msgs.length !== lastMsgCount) { box.scrollTop = box.scrollHeight; lastMsgCount = msgs.length; }
+}
+document.getElementById('sendform').addEventListener('submit', async e => {
+  e.preventDefault();
+  const inp = document.getElementById('sendtext'), text = inp.value.trim();
+  if (!text) return;
+  try {
+    const r = await fetch('send', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text }) });
+    const queued = (await r.json()).queued;
+    if (queued) inp.value = '';
+    document.getElementById('send-status').textContent = queued ? 'Message queued for transmission.' : 'Message could not be queued. Check the connection.';
+  } catch (err) { document.getElementById('send-status').textContent = 'Dashboard unreachable. Message was not sent.'; }
+});
+
+let polling = false, pollAgain = false;
+async function poll() {
+  if (polling) { pollAgain = true; return; }
+  polling = true;
+  const request = ++requestNumber, requestedRange = range;
+  try {
+    const res = await fetch('data.json?range=' + range, { cache: 'no-store' });
+    if (!res.ok) throw new Error('History request failed');
+    const data = await res.json();
+    if (request !== requestNumber || range !== requestedRange) { pollAgain = true; return; }
+    status = data;
+    rows.splice(0, rows.length, ...status.rows);
+  } catch (e) {
+    if (request !== requestNumber) return;
+    status = { ...status, live: false, can_send: false, requestError: 'Dashboard unreachable. Displayed values and charts are saved readings.' };
+  } finally {
+    polling = false;
+    if (pollAgain) { pollAgain = false; queueMicrotask(poll); }
+  }
+  render();
+}
+document.getElementById('tabs').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  document.querySelectorAll('#tabs button').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+  range = b.dataset.r; poll();
+});
+window.addEventListener('resize', render);
+poll(); setInterval(poll, 5000);
+</script>
+</body>
+</html>

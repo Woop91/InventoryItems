@@ -1,0 +1,13 @@
+[Unit]
+Description=Pico LiPo air readings: durable USB and Desk radio history
+Wants=pico-sensors-desk.service
+After=network-online.target pico-sensors-desk.service
+
+[Service]
+ExecStart=/usr/bin/python3 -I %h/.local/share/pico-sensors/air-app/light_dash.py
+Restart=always
+RestartSec=5
+Nice=10
+
+[Install]
+WantedBy=default.target

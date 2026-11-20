@@ -2,6 +2,19 @@
 
 A Raspberry Pi Pico W on a Pimoroni Pico Breakout Garden Base reads Pimoroni breakouts, buzzes when the air gets stuffy, scrolls the readings across a green LED matrix and serves them over Wi-Fi. A small service on the workstation keeps the history and shows it on a dashboard.
 
+The dashboard also offers **All** saved history and reports the stored date range
+and recording gaps. Data remains in SQLite across restarts; missing intervals
+cannot be recovered from the devices. Latest readings are restored after a
+service restart with their original age, so an offline box cannot appear fresh.
+Room selection is resolved before requesting history, and selecting an offline
+room clears the previous room's current values.
+
+The [Pico LiPo dashboard](../pico-lipo-light/README.md) separately records the
+air box's LoRa readings relayed by Desk. Keep this workstation connected to the
+sensor LAN even when its internet connection uses Ethernet. On NetworkManager,
+the sensor Wi-Fi profile should autoconnect with a high priority and
+`connection.autoconnect-retries 0` (retry indefinitely).
+
 | Part | I2C address | What it gives |
 |---|---|---|
 | SCD41 CO2 sensor | 0x62 | CO2 (ppm), temperature, humidity |

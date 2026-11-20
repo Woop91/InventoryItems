@@ -24,7 +24,10 @@
   {
     "key": "pimoroni_PIM438",
     "photos": [
-      "IMG_5827.jpg"
+      "IMG_5827.jpg",
+      "IMG_5967.jpg",
+      "IMG_5968.jpg",
+      "IMG_5969.jpg"
     ],
     "note": "Faulty since Nov 18, 2026: it holds the I2C clock line low in either orientation and no longer answers. Replace before reuse."
   },
@@ -39,7 +42,10 @@
     "key": "pimoroni_PIM373",
     "photos": [
       "IMG_5827.jpg",
-      "IMG_5830.jpg"
+      "IMG_5830.jpg",
+      "IMG_5967.jpg",
+      "IMG_5968.jpg",
+      "IMG_5969.jpg"
     ]
   },
   {

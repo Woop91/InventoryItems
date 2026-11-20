@@ -3599,7 +3599,10 @@
     "in_use": true,
     "my_photos": [
       "images/my-photos/IMG_5827.jpg",
-      "images/my-photos/IMG_5830.jpg"
+      "images/my-photos/IMG_5830.jpg",
+      "images/my-photos/IMG_5967.jpg",
+      "images/my-photos/IMG_5968.jpg",
+      "images/my-photos/IMG_5969.jpg"
     ]
   },
   "pimoroni_PIM301": {
@@ -3929,11 +3932,14 @@
     "source": "pimoroni.com",
     "last_scraped": null,
     "image_source_url": "https://cdn.shopify.com/s/files/1/0174/1800/products/MAX30101Breakout_3of3.jpg?v=1636048040",
+    "in_use_note": "Faulty since Nov 18, 2026: it holds the I2C clock line low in either orientation and no longer answers. Replace before reuse.",
     "in_use": true,
     "my_photos": [
-      "images/my-photos/IMG_5827.jpg"
-    ],
-    "in_use_note": "Faulty since Nov 18, 2026: it holds the I2C clock line low in either orientation and no longer answers. Replace before reuse."
+      "images/my-photos/IMG_5827.jpg",
+      "images/my-photos/IMG_5967.jpg",
+      "images/my-photos/IMG_5968.jpg",
+      "images/my-photos/IMG_5969.jpg"
+    ]
   },
   "pimoroni_COM3900": {
     "product_id": "COM3900",

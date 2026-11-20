@@ -260,10 +260,10 @@ python build_catalog.py --readme  # rebuild index.html and the README tables
 | CJMCU-3216 AP3216C Light and Proximity Sensor | Sensor | Store not recorded | 5 |
 | Generic SCD41 CO2 Sensor Module (purple) | Sensor | AliExpress | 4 |
 | INA219  High Side DC Current Sensor Breakout   26V ±3.2A Max | Sensor | Adafruit | 2 |
-| MAX30101 Breakout - Heart Rate, Oximeter, Smoke Sensor | Sensor | Pimoroni | 1 |
+| MAX30101 Breakout - Heart Rate, Oximeter, Smoke Sensor | Sensor | Pimoroni | 4 |
 | MICS6814 3-in-1 Gas Sensor Breakout (CO, NO2, NH3) | Sensor | Pimoroni | 2 |
 | SCD41 CO2 Sensor Breakout (Carbon Dioxide / Temperature / Humidity) | Sensor | Pimoroni | 3 |
-| VL53L1X Time of Flight (ToF) Sensor Breakout | Sensor | Pimoroni | 2 |
+| VL53L1X Time of Flight (ToF) Sensor Breakout | Sensor | Pimoroni | 5 |
 | Waveshare Pico-BLE | Wireless/RF | Store not recorded | 3 |
 | Waveshare Pico-CAN-B | Wireless/RF | Store not recorded | 3 |
 | Waveshare Pico-LoRa-SX126X | Wireless/RF | Store not recorded | 1 |
